@@ -26,5 +26,13 @@ namespace ConsoleApp1.Tests
             var result = ob.gettingNodesFromURLPL("http://www.slownik-online.pl/kopalinski/402FB89DD53C6221C12565DB0067FFF5.php");
             result.ForEach(Assert.NotNull);
         }
+
+        [Test]
+        public void SprawdzaniePoprawnosciGetWords()
+        {
+            PolishWordsFactory ob = new PolishWordsFactory();
+            var result = ob.GetWords();
+            result.ForEach(Assert.NotNull);
+        }
     }
 }

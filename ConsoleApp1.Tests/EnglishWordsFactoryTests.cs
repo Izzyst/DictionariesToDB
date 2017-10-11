@@ -15,8 +15,16 @@ namespace ConsoleApp1.Tests
         public void SprawdzaniePoprawnosciGettingNodesfromUrl()
         {
             EnglishWordsFactory ob = new EnglishWordsFactory();
-            var result = ob.gettingNodesfromURL("");
-            Assert.AreEqual(result, "");
+            var result = ob.gettingNodesfromURL("https://www.collinsdictionary.com/dictionary/english/12-oclock-flasher");
+            Assert.NotNull(result);
+        }
+
+        [Test]
+        public void SprawdzaniePoprawnosciGetWords()
+        {
+            EnglishWordsFactory ob = new EnglishWordsFactory();
+            var result = ob.GetWords();
+            result.ForEach(Assert.NotNull);
         }
     }
 }
