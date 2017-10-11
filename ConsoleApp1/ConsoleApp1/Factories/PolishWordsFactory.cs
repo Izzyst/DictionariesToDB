@@ -38,7 +38,7 @@ namespace ConsoleApp1.Factories
 
         
 
-        private List<Words> gettingNodesFromURLPL(string html)
+        public List<Words> gettingNodesFromURLPL(string html)
         {
             List<string> definitions = new List<string>();
             List<string> defs = new List<string>();
