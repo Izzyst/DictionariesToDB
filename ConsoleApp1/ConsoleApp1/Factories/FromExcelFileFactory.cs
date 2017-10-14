@@ -7,6 +7,7 @@ namespace ConsoleApp1.Factories
 {
     public class FromExcelFileFactory : AbstractDictionary
     {
+
         public override List<Words> GetWords()
         {
             List<Words> words = new List<Words>();

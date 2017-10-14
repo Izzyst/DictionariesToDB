@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var sessionFactory = NHibernateHelper.CreateSessionFactory();
+           /* var sessionFactory = NHibernateHelper.CreateSessionFactory();
 
             using (var session = sessionFactory.OpenSession())
             {
@@ -52,7 +52,10 @@ namespace ConsoleApp1
                 }
 
                 Console.ReadKey();
-            }
+            }*/
+            PolishEWordsFactory ob = new PolishEWordsFactory();
+            ob.GetWords();
+            Console.ReadKey();
         }
 
         private static void WriteStorePretty(object store)

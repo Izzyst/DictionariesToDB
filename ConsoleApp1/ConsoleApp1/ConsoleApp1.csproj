@@ -71,6 +71,7 @@
     <Compile Include="Factories\EnglishWordsFactory.cs" />
     <Compile Include="Factories\FromCsvFileFactory.cs" />
     <Compile Include="Factories\FromExcelFileFactory.cs" />
+    <Compile Include="Factories\PolishEWordsFactory.cs" />
     <Compile Include="Factories\PolishWordsFactory.cs" />
     <Compile Include="Mapping\DefinitionMapp.cs" />
     <Compile Include="Mapping\WordMapp.cs" />

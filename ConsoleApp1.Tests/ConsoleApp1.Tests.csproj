@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnglishWordsFactoryTests.cs" />
+    <Compile Include="FromCsvFileFactoryTests.cs" />
+    <Compile Include="FromExcelFileFactoryTests.cs" />
+    <Compile Include="PolishEWordsFactoryTests.cs" />
     <Compile Include="PolishWordsFactoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

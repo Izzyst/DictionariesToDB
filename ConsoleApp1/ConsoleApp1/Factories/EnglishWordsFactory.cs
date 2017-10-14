@@ -86,11 +86,7 @@ namespace ConsoleApp1.Factories
                             links.AddRange(w);// AddRange - dopisuje liste do listy
                         }
                     });
-                    /*   for (int i = 0; i < subwords.Count; i++)
-                   {
-                        w=getWords(subwords[i], 1);
-                        words.AddRange(w);// AddRange - dopisuje liste do listy
-                   }*/
+
                 }
 
                 count++;

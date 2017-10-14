@@ -14,8 +14,9 @@ namespace ConsoleApp1.Factories
         public override List<Words> GetWords()
         {
             List<string> links = new List<string>();
+            Console.WriteLine("laduje linki dla slownika kopalinskiego");
             links = this.GetLinksPL();
-            Parallel.ForEach(links, item =>
+            links.ForEach( item =>
             {
                 var temp = gettingNodesFromURLPL(item);
                 if (temp != null)
@@ -40,34 +41,36 @@ namespace ConsoleApp1.Factories
 
         public List<Words> gettingNodesFromURLPL(string html)
         {
-            List<string> definitions = new List<string>();
-            List<string> defs = new List<string>();
-            var webGet = new HtmlWeb();
-            var doc = webGet.Load(html);
-            List<Words> w = new List<Words>();
-            // Word:
+             List<string> definitions = new List<string>();
+              List<string> defs = new List<string>();
+              var webGet = new HtmlWeb();
+              var doc = webGet.Load(html);
+              List<Words> w = new List<Words>();
+              // Word:
 
-            HtmlNodeCollection node = doc.DocumentNode.SelectNodes("//td/b/font[@class='10ptGeorgia']"); // słowa
-            // definitions for Word
-            HtmlNodeCollection
-                nodes = doc.DocumentNode.SelectNodes("//td/font[@class='10ptGeorgia']"); // definicje dla danego słowa
-            if (nodes != null && node != null)
-            {
-                for (int i = 0; i < node.Count; i++)
-                {
-                    if (node[i] != null && nodes[i].InnerText.Length > 10)
-                    {
-                        List<String> d = new List<String>();
+              HtmlNodeCollection node = doc.DocumentNode.SelectNodes("//td/b/font[@class='10ptGeorgia']"); // słowa
 
-                        defs.Add(Strip(node[i].InnerText));
-                        definitions.Add(Strip(nodes[i].InnerText));
-                        d.Add(definitions.Last());
-                        //Console.WriteLine(Defs.Last() + " - " + definitions.Last());
-                        Words n = new Words(defs.Last(), d);
-                        w.Add(n);
-                    }
-                }
-                return w;
+              HtmlNodeCollection nodes = doc.DocumentNode.SelectNodes("//td/font[@class='10ptGeorgia']"); // definicje dla danego słowa
+              if (nodes.Count >=node.Count)
+              {
+                  for (int i = 0; i < node.Count; i++)
+                  {
+
+                      Console.WriteLine("-> {0} - {1}", node[i].InnerText, nodes[i].InnerText);
+                      if (node[i] != null && nodes[i] != null && nodes[i].InnerText.Length > 10)
+                      {
+                          List<String> d = new List<String>();
+
+                          defs.Add(Strip(node[i].InnerText));
+                          definitions.Add(Strip(nodes[i].InnerText));
+                          d.Add(definitions.Last());
+                          Console.WriteLine(d + " - " + definitions.Last());
+                          Words n = new Words(defs.Last(), d);
+                          w.Add(n);
+                      }
+                  }
+
+                    return w;
             }
             throw new Exception("No matching nodes found!");
 
@@ -82,7 +85,6 @@ namespace ConsoleApp1.Factories
             HtmlNodeCollection nodes = doc.DocumentNode.SelectNodes("//div[@align='CENTER']/a");
             string html = "";
             int amountOfWords = 5;
-            Console.WriteLine("Laduje linki dla Kopalinskiego: ...");
             foreach (HtmlNode item in nodes)
             {
                 html = "http://www.slownik-online.pl" + item.Attributes["href"].Value;// letterz A-Z
