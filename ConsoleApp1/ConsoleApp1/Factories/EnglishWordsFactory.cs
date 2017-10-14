@@ -17,47 +17,20 @@ namespace ConsoleApp1.Factories
             links = this.GetLinks();
             Parallel.ForEach(links, item =>
             {
-                var temp = gettingNodesfromURL(item);
-                lock (words)//lock blokuje zasoby kolekci które są obecnie używane przez jeden z wątków
+                var temp = GetWordFromNode(item, "//span[@class='orth']", "//div[@class='def']");
+                if (temp != null)
                 {
-                    words.Add(temp);
+                    lock (words)//lock blokuje zasoby kolekci które są obecnie używane przez jeden z wątków
+                    {
+                        words.Add(temp);
+                    }
                 }
+                
             });
             return words;
         }
 
 
-        public Words gettingNodesfromURL(string html)
-        {
-            List<string> definitions = new List<string>();
-            var webGet = new HtmlWeb();
-            var doc = webGet.Load(html);
-            // Word:
-            try
-            {
-                Words w;
-                HtmlNode node = doc.DocumentNode.SelectSingleNode("//span[@class='orth']");
-                // definitions for Word
-                HtmlNodeCollection nodes = doc.DocumentNode.SelectNodes("//div[@class='def']");
-                if (nodes == null)
-                    throw new Exception("No matching nodes found!");
-                else
-                {
-                    foreach (HtmlNode link in nodes)
-                    {
-                        definitions.Add(Strip(link.InnerText));
-                    }
-                    w = new Words(node.InnerText, definitions);
-                    return w;
-                }
-
-            }
-            catch (Exception)
-            {
-                //  throw;
-                return null;
-            }
-        }
 
         public List<String> GetLinks()
         {

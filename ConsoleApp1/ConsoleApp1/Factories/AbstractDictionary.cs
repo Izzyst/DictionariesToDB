@@ -64,6 +64,28 @@ namespace ConsoleApp1.Factories
             return text;
         }
 
+        public virtual Words GetWordFromNode(string html, string wordPath, string definitionsPath)
+        {
+            List<string> definitions = new List<string>();
+            var webGet = new HtmlWeb();
+            var doc = webGet.Load(html);
+            // Word:
+            Words w;
+            HtmlNode node = doc.DocumentNode.SelectSingleNode(wordPath);
+            // definitions for Word
+            HtmlNodeCollection nodes = doc.DocumentNode.SelectNodes(definitionsPath);
+            if (nodes == null || node == null)
+                return null;
+
+            foreach (HtmlNode link in nodes)
+            {
+                definitions.Add(Strip(link.InnerText));
+            }
+
+            w = new Words(node.InnerText, definitions);
+            return w;
+        }
+
         private bool CheckException(string link)
         {
             if (link ==
