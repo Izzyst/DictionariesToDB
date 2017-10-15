@@ -47,3 +47,5 @@ Temporary Items
 .apdisk
 *.exe
 *.exe
+*.suo
+ConsoleApp1/.vs/ConsoleApp1/v15/.suo

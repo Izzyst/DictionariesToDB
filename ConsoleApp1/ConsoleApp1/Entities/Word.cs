@@ -13,7 +13,7 @@ namespace ConsoleApp1.Entities
             Defs = new List<Definition>();
         }
 
-        public virtual void AddProduct(Definition definition)
+        public virtual void AddDefinition(Definition definition)
         {
             definition.WordObj = this;
             Defs.Add(definition);

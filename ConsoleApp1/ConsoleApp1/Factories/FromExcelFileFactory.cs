@@ -21,10 +21,11 @@ namespace ConsoleApp1.Factories
             int colCount = xlWorksheet.UsedRange.Columns.Count;
 
             // Console.WriteLine("ilosc wierszy: " + rowCount + " ilość kolumn: " + colCount);
-            List<string> def = new List<string>();
+            List<string> def;
             List<string> word2 = new List<string>();
             for (int i = 1; i <= rowCount; i++)
             {
+                def = new List<string>();
                 string w = "";
                 if (x.Cells[i, 1].Value2 != null)
                 {
@@ -42,7 +43,7 @@ namespace ConsoleApp1.Factories
 
                 }
                 words.Add(new Words(w, def));
-                def.Clear();
+                //def.Clear();
                 
             }
             return words;

@@ -20,6 +20,14 @@ namespace ConsoleApp1.Tests
         }
 
         [Test]
+        public void SprawdzeniePoprawnosciZwracaniaDefinicjiGetWords()
+        {
+            FromCsvFileFactory ob = new FromCsvFileFactory();
+            var result = ob.GetWords();
+            result.ForEach(i => i.Defs.ForEach(Assert.NotNull));
+        }
+
+        [Test]
         public void SprawdzaniePoprawnosciGetWords()
         {
             EnglishWordsFactory ob = new EnglishWordsFactory();

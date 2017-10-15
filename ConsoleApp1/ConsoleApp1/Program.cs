@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using ConsoleApp1.Entities;
 using ConsoleApp1.Factories;
+using FluentNHibernate.Testing.Values;
 using NHibernate.Mapping;
 
 namespace ConsoleApp1
@@ -10,7 +11,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-           /* var sessionFactory = NHibernateHelper.CreateSessionFactory();
+           var sessionFactory = NHibernateHelper.CreateSessionFactory();
 
             using (var session = sessionFactory.OpenSession())
             {
@@ -29,12 +30,25 @@ namespace ConsoleApp1
 
                     // add products to the stores, there's some crossover in the products in each
                     // store, because the store-product relationship is many-to-many
-                    AddProductsToStore(barginBasin, potatoes, fish, milk, bread, cheese);
-                    AddProductsToStore(superMart, bread, cheese);
+                    AddDefToWord(barginBasin, potatoes, fish, milk, bread, cheese);
+                    AddDefToWord(superMart, bread, cheese);
 
                     // save both stores, this saves everything else via cascading
                     session.SaveOrUpdate(barginBasin);
                     session.SaveOrUpdate(superMart);
+                    /*FromExcelFileFactory ob = new FromExcelFileFactory();
+                    var list = ob.GetWords();
+
+                    foreach (var word in list)
+                    {
+                        var w = new Word {W = word.Word};
+
+                        foreach (var def in word.Defs)
+                        {
+                            var d = new Definition {Def = def};
+                            w.AddDefinition(d);
+                        }
+                    }*/
 
                     transaction.Commit();
                 }
@@ -52,9 +66,8 @@ namespace ConsoleApp1
                 }
 
                 Console.ReadKey();
-            }*/
-            PolishEWordsFactory ob = new PolishEWordsFactory();
-            ob.GetWords();
+            }
+            
             Console.ReadKey();
         }
 
@@ -63,11 +76,11 @@ namespace ConsoleApp1
             Console.WriteLine("{0}", store.ToString());
         }
 
-        public static void AddProductsToStore(Word store, params Definition[] products)
+        public static void AddDefToWord(Word word, params Definition[] defs)
         {
-            foreach (var product in products)
+            foreach (var def in defs)
             {
-                store.AddProduct(product);
+                word.AddDefinition(def);
             }
         }
 

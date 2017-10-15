@@ -16,7 +16,14 @@ namespace ConsoleApp1.Tests
         {
             FromCsvFileFactory ob = new FromCsvFileFactory();
             var result = ob.GetWords();
-            result.ForEach(Assert.NotNull);
+            result.ForEach(Assert.NotNull); 
+        }
+        [Test]
+        public void SprawdzeniePoprawnosciZwracaniaDefinicjiGetWords()
+        {
+            FromCsvFileFactory ob = new FromCsvFileFactory();
+            var result = ob.GetWords();
+            result.ForEach(i => i.Defs.ForEach(Assert.NotNull));
         }
     }
 }

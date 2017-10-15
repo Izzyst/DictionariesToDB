@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using ConsoleApp1.Domain;
+using ConsoleApp1.Entities;
 
 namespace ConsoleApp1.Factories
 {
@@ -15,32 +16,38 @@ namespace ConsoleApp1.Factories
             using (var reader = new StreamReader(fs))
             {
                 string word = "";
-                List<string> defs = new List<string>();
+                List<string> defs;
 
                 while (!reader.EndOfStream)
                 {
+                    defs = new List<string>();
                     var line = reader.ReadLine();
                     var cols = line.Split(',').Count();
                     var values = line.Split(',');
                     //Word
                     word = values[0];
+                    //Word w = new Word();
+                    //w.W = values[0];
                     //definition
                     for (int i = 1; i <= cols - 1; i++)
                     {
                         defs.Add(values[i]);
+                        //Definition d = new Definition();
+                        //d.Def = values[i];
+                        //d.WordObj = w;
                     }
-                    // Defs.ForEach(i => Console.WriteLine("{0}\t", i));
-
-                    words.Add(new Words(word, defs));
-                    defs.Clear();
+                                      
+                    var ob = new Words(word, defs);
+                    words.Add(ob);
+                    //defs.Clear();
                 }
             }
             foreach (var item in words)
             {
                 if (item != null)
                 {
-                    Console.WriteLine("{0}\t", item.Word);
-                    //Console.WriteLine("{0}\t", item.Defs[0]);
+                    Console.WriteLine("{0} ", item.Word);
+
                 }
             }
             return words;

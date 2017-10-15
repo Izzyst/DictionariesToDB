@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using ConsoleApp1.Domain;
+using ConsoleApp1.Entities;
 using HtmlAgilityPack;
 
 namespace ConsoleApp1.Factories
@@ -11,6 +12,14 @@ namespace ConsoleApp1.Factories
     {
         public abstract List<Words> GetWords();
         Random rnd = new Random();
+
+        public static void AddDefToWord(Word word, params Definition[] defs)
+        {
+            foreach (var def in defs)
+            {
+                word.AddDefinition(def);
+            }
+        }
 
         public List<string> GetRandomLinksFromPage(string html, int amount, string path, string domain)
         {

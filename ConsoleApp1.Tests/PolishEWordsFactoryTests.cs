@@ -18,5 +18,20 @@ namespace ConsoleApp1.Tests
             var result = ob.GetWords();
             result.ForEach(Assert.NotNull);
         }
+
+        [Test]
+        public void SprawdzeniePoprawnosciGettingLinksFromSubCategory()
+        {
+            PolishEWordsFactory ob = new PolishEWordsFactory();
+            var result = ob.GettingLinksFromSubCategory("https://www.bryk.pl/slowniki/slownik-wyrazow-obcych/e");
+            result.ForEach(Assert.NotNull);
+        }
+        [Test]
+        public void SprawdzeniePoprawnosciZwracaniaDefinicjiGetWords()
+        {
+            FromCsvFileFactory ob = new FromCsvFileFactory();
+            var result = ob.GetWords();
+            result.ForEach(i => i.Defs.ForEach(Assert.NotNull));
+        }
     }
 }
