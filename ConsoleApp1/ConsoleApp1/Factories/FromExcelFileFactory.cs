@@ -42,7 +42,7 @@ namespace ConsoleApp1.Factories
                     }
 
                 }
-                words.Add(new Words(w, def));
+                words.Add(new Words(w, def, "exel"));
                 //def.Clear();
                 
             }

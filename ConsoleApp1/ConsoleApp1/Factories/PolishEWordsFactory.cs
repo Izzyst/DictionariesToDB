@@ -26,7 +26,7 @@ namespace ConsoleApp1.Factories
             Parallel.ForEach(linksToWords, toWord =>
             {
                 var word = GetWordFromNode(toWord, "//div[@class='left-col-wrap']/div/h1",
-                    "//div[@class='entry-top']/div[@class='explanation']/ol/li");
+                    "//div[@class='entry-top']/div[@class='explanation']/ol/li", "pl");
                 if (word != null)
                 {
                     lock (words)

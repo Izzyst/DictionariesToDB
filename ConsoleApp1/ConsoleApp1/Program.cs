@@ -5,6 +5,7 @@ using ConsoleApp1.Entities;
 using ConsoleApp1.Factories;
 using FluentNHibernate.Testing.Values;
 using NHibernate.Mapping;
+using NHibernate;
 
 namespace ConsoleApp1
 {
@@ -14,9 +15,48 @@ namespace ConsoleApp1
         {
             //InsertWordToDatabase(GetWordsFromFactory("csv"));
             //InsertWordToDatabase(GetWordsFromFactory("Excel"));
-            InsertWordToDatabase(GetWordsFromFactory("Polish"));
-            //InsertWordToDatabase(GetWordsFromFactory("English"));
+           // List<Words> list = new List<Words>();
+           // list.AddRange(GetWordsFromFactory("Polish"));
+            //list.AddRange(GetWordsFromFactory("English"));
+            // InsertWordToDatabase(list);
+            // InsertWordToDatabase(list);
+            GetFromDatabase();
             Console.ReadKey();
+        }
+
+        static void GetFromDatabase()
+        {
+            var sessionFactory = NHibernateHelper.CreateSessionFactory();
+            ISessionFactory factory = new NHibernate.Cfg.Configuration().Configure().BuildSessionFactory();
+
+            using (var session = sessionFactory.OpenSession())
+            {
+
+                ICriteria criteria = session.CreateCriteria(typeof(Word));
+                IList<Word> list = criteria.List<Word>();
+                foreach (var item in list)
+                {
+                    Console.WriteLine("Id: {0}, Slowo: {1}, Jezyk: {2}", item.Id, item.W, item.Lang);
+                }
+
+
+            }
+
+            /*
+             using (mySession.BeginTransaction())
+            {
+                // Poniżej trworzymy kryteria pobierania danych z tabeli
+                ICriteria criteria = mySession.CreateCriteria<Car>();
+                IList<Car> list = criteria.List<Car>();
+                // Gdybyśmy chcieli zdefiniować warunki wyszukiwania wystarczy zrobić to w poniższy sposób
+                // IList<Car> list = criteria.List<Car>().Where(a => a.CarId > 3).ToList();
+                foreach (var item in list)
+                {
+                    Console.WriteLine("Id: {0}, Marka: {1}, Model: {2}", item.CarId, item.Brand, item.Model);
+                }
+            }
+            */
+
         }
 
         static void InsertWordToDatabase(List<Words> list)
@@ -29,14 +69,15 @@ namespace ConsoleApp1
                 {
                     foreach (var word in list)
                     {
-                        var w = new Word { W = word.Word };
+                        var w = new Word { W = word.Word, Lang=word.Language};
 
                         foreach (var def in word.Defs)
                         {
                             var d = new Definition { Def = def };
                             w.AddDefinition(d);
                         }
-                        session.SaveOrUpdate(w);
+                        //session.SaveOrUpdate(w);
+                        session.Save(w);
                     }
 
                     transaction.Commit();

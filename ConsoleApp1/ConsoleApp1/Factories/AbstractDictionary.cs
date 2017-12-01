@@ -10,6 +10,9 @@ namespace ConsoleApp1.Factories
 {
     public abstract class AbstractDictionary
     {
+        private int wordMaxLenght = 150;
+        private int definitionMaxLenght = 350;
+
         public abstract List<Words> GetWords();
         Random rnd = new Random();
 
@@ -73,7 +76,7 @@ namespace ConsoleApp1.Factories
             return text;
         }
 
-        public virtual Words GetWordFromNode(string html, string wordPath, string definitionsPath)
+        public virtual Words GetWordFromNode(string html, string wordPath, string definitionsPath, string language)
         {
             List<string> definitions = new List<string>();
             var webGet = new HtmlWeb();
@@ -88,31 +91,25 @@ namespace ConsoleApp1.Factories
 
             foreach (HtmlNode link in nodes)
             {
-                definitions.Add(Strip(link.InnerText));
+                definitions.Add(CutIfTooLongString(Strip(link.InnerText), definitionMaxLenght));
             }
 
-            w = new Words(node.InnerText, definitions);
+            w = new Words(CutIfTooLongString(node.InnerText, wordMaxLenght), definitions, language);
             return w;
         }
 
         private bool CheckException(string link)
         {
-            if (link ==
-                "http://anchoredgoods.com/?lib/my-wedding-vendor-workbook-organizer")
-                return true;
-            if (link ==
-                "http://www.toonyunmusic.com/?ebooks/organizational-change-cross-functional-teams-foreword-by-francoise-chevalier-hec-paris-bert-a"
-            )
-                return true;
-            if (link ==
-                "http://www.vicelimoservices.com/books/mid-atlantic-lighthouses-2-nd-hudson-river-to-chesapeake-bay-lighthouse-series"
-            )
-                return true;
-            if (link ==
-                    "http://slownik-wyrazowobcych.eu/freebooks/squirrel-me-timbers-fiction-picture-books"
-                )
-                return true;
             return false;
+        }
+
+        public string CutIfTooLongString(string text, int lenght)
+        {
+            if (text.Length > lenght)
+            {
+                return text.Substring(0, lenght - 3) + "...";
+            }
+            return text;
         }
     }
 }

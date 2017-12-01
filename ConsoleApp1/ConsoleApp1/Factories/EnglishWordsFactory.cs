@@ -17,7 +17,7 @@ namespace ConsoleApp1.Factories
             links = this.GetLinks();
             Parallel.ForEach(links, item =>
             {
-                var temp = GetWordFromNode(item, "//span[@class='orth']", "//div[@class='def']");
+                var temp = GetWordFromNode(item, "//span[@class='orth']", "//div[@class='def']", "eng");
                 if (temp != null)
                 {
                     lock (words)//lock blokuje zasoby kolekci które są obecnie używane przez jeden z wątków

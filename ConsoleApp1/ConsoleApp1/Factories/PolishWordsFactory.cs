@@ -65,7 +65,7 @@ namespace ConsoleApp1.Factories
                           definitions.Add(Strip(nodes[i].InnerText));
                           d.Add(definitions.Last());
                           Console.WriteLine(d + " - " + definitions.Last());
-                          Words n = new Words(defs.Last(), d);
+                          Words n = new Words(defs.Last(), d, "pl");
                           w.Add(n);
                       }
                   }

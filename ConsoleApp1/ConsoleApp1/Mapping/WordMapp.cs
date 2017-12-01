@@ -9,7 +9,8 @@ namespace ConsoleApp1.Mapping
         public WordMapp()
         {
             Id(c => c.Id);
-            Map(c => c.W);
+            Map(c => c.W).Length(150);
+            Map(c => c.Lang).Length(15);
             HasMany(x => x.Defs) //HasMany is creating a one-to-many relationship with Defs (one Word to many Defs)
                 .Inverse() //Inverse on HasMany is an NHibernate term, and it means that the other end of the relationship is responsible for saving.
                 .Cascade

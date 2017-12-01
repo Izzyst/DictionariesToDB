@@ -11,7 +11,7 @@ namespace ConsoleApp1.Tests
         public void SprawdzaniePoprawnosciGettingNodesfromUrl()
         {
             EnglishWordsFactory ob = new EnglishWordsFactory();
-            var result = ob.GetWordFromNode("https://www.collinsdictionary.com/dictionary/english/12-oclock-flasher", "//span[@class='orth']", "//div[@class='def']");
+            var result = ob.GetWordFromNode("https://www.collinsdictionary.com/dictionary/english/12-oclock-flasher", "//span[@class='orth']", "//div[@class='def']", "eng");
             Assert.NotNull(result);
         }
 

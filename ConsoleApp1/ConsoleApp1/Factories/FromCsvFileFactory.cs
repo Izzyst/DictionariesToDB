@@ -37,7 +37,7 @@ namespace ConsoleApp1.Factories
                         //d.WordObj = w;
                     }
                                       
-                    var ob = new Words(word, defs);
+                    var ob = new Words(word, defs, "csv");
                     words.Add(ob);
                     //defs.Clear();
                 }
