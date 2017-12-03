@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ConsoleApp1" 
+                  assembly="ConsoleApp1">
+  <class name="Word" table="Word">
+    <id name="Id" column="Id">
+      <generator class="identity" />
+    </id>
+    <property name="W" column="W" />
+    <property name="Lang" column="Lang" />
+  </class>
+</hibernate-mapping>

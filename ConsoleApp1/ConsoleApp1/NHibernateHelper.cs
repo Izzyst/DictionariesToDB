@@ -1,69 +1,100 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ConsoleApp1.Factories;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using NHibernate.Cfg;
-using NHibernate.Tool.hbm2ddl;
+using ConsoleApp1.Entities;
+using System.Data.SqlClient;
+using ConsoleApp1.Domain;
 
 namespace ConsoleApp1
 {
     public class NHibernateHelper
     {
-        /*  public static ISessionFactory CreateSessionFactory()
-          {
+        public NHibernateHelper(){ }            
 
-              return Fluently.Configure()
-                  .Database(MsSqlConfiguration.MsSql2012.ConnectionString(c=>c.FromConnectionStringWithKey("localDB")))
-                  .Mappings(m => m.FluentMappings
-                      .AddFromAssemblyOf<Program>())
-                      .ExposeConfiguration(cfg=>new SchemaExport(cfg)
-                      .Create(true,true))
-                      .BuildSessionFactory();
+        private static ISessionFactory sessionFactory;
 
-          }
-
-          private static MySQLConfiguration CreateMysqlConfig()
-          {
-              return MySQLConfiguration.Standard
-                  .ShowSql()
-                  .ConnectionString(c => c
-                      .Database("WCF")
-                      .Server("localhost")
-                      .Password("")
-                      .Username("root"));
-
-          }*/
-        private static ISessionFactory _sessionFactory;
-
-        /* public static ISessionFactory SessionFactory
-         {
-             get
-             {
-                 if (_sessionFactory == null)
-                 {
-                     InitializeSessionFactory();
-                 }
-                 return _sessionFactory;
-             }
-         }*/
         public static ISessionFactory CreateSessionFactory()
         {
-           return  _sessionFactory = Fluently.Configure().Database(MsSqlConfiguration.MsSql2012.ConnectionString
-                    ("Data Source=ROCA-BLANDA\\SQLEXPRESS01;Initial Catalog=WCF;Integrated Security=True").ShowSql())
-                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Program>())
-                .ExposeConfiguration(cfg => new SchemaExport(cfg).Create(false, true)).BuildSessionFactory();
+            return sessionFactory = Fluently.Configure().Database(MsSqlConfiguration.MsSql2012.ConnectionString
+                     ("Data Source=ROCA-BLANDA\\SQLEXPRESS01;Initial Catalog=WCF;Integrated Security=True").ShowSql())
+                 .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Word>().AddFromAssemblyOf<Definition>())
+                 // .ExposeConfiguration(cfg => new SchemaExport(cfg).Create(false, true))// odpowiada za nadipywanie bazy
+                 .BuildSessionFactory();
         }
-    
 
-    /* public static ISession OpenSession()
-     {
-         return SessionFactory.OpenSession();
-     }*/
+        public void InsertWordToDatabase(List<Words> list)
+        {
+            var sessionFactory = NHibernateHelper.CreateSessionFactory();
+
+            using (var session = sessionFactory.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    foreach (var word in list)
+                    {
+                        var w = new Word { W = word.Word, Lang = word.Language };
+
+                        foreach (var def in word.Defs)
+                        {
+                            var d = new Definition { Def = def };
+                            w.AddDefinition(d);
+                        }
+                        //session.SaveOrUpdate(w);
+                        session.Save(w);
+                    }
+                    transaction.Commit();
+                }
+
+            }
+        }
+        // dpisac opcje wybierającą dany język z bazy danych i nie powtarzające się elementy
+        public void GetAllData(string language)
+        {
+            var sessionFactory = NHibernateHelper.CreateSessionFactory();
+
+            using (var session = sessionFactory.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    ICriteria criteria = session.CreateCriteria<Word>();
+                    IList<Word> list = criteria.List<Word>();
+                    ICriteria criteria2 = session.CreateCriteria<Definition>();
+                    IList<Definition> list2 = criteria2.List<Definition>();
+                    // Gdybyśmy chcieli zdefiniować warunki wyszukiwania wystarczy zrobić to w poniższy sposób
+                    // IList<Car> list = criteria.List<Car>().Where(a => a.CarId > 3).ToList();
+                    foreach (var item in list)
+                    {
+                        Console.WriteLine("Id: {0}, Marka: {1}, Model: {2}", item.Id, item.W, item.Lang);
+
+                    }
+                    foreach (var item in list2)
+                    {
+                        Console.WriteLine("Id: {0}, Marka: {1}, Model: {2}", item.Id, item.Def, item.WordObj.Id);
+
+                    }
+                }
+            }
+        }
+
+
+        public void DeleteData()
+        {
+            // Usunięcie wszystkich rekordów
+            using (ISession session = sessionFactory.OpenSession())
+            {
+                SqlConnection con = session.Connection as SqlConnection;
+                SqlCommand cmd = new SqlCommand("Delete from Word, Definition", con);
+                cmd.ExecuteNonQuery();
+            }
+            Console.WriteLine("Rezultat operacji: Dane zostały usunięte z tabel Word, Definition");
+            Console.WriteLine();
+ 
+        }
+
+        
+
     }
 }

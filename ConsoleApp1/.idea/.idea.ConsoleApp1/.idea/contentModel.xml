@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Izabela\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_ConsoleApp1.-849105659.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1" t="IncludeFlat">
+      <e p="ConsoleApp1" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ConsoleApp1.csproj" t="IncludeRecursive" />
+        <e p="docs" t="Include">
+          <e p="MySqlCommand.xml" t="Include" />
+          <e p="MySqlCommandBuilder.xml" t="Include" />
+          <e p="MySqlConnection.xml" t="Include" />
+          <e p="MySqlConnectionStringBuilder.xml" t="Include" />
+          <e p="MySqlDataAdapter.xml" t="Include" />
+          <e p="MySqlDataReader.xml" t="Include" />
+          <e p="MySqlException.xml" t="Include" />
+          <e p="MySqlHelper.xml" t="Include" />
+          <e p="MySqlParameter.xml" t="Include" />
+          <e p="MySqlParameterCollection.xml" t="Include" />
+          <e p="MySqlTransaction.xml" t="Include" />
+        </e>
+        <e p="Entities" t="Include">
+          <e p="Definition.cs" t="Include" />
+          <e p="Word.cs" t="Include" />
+        </e>
+        <e p="Factories" t="Include">
+          <e p="AbstractDictionary.cs" t="Include" />
+          <e p="EnglishWordsFactory.cs" t="Include" />
+          <e p="FromCsvFileFactory.cs" t="Include" />
+          <e p="FromExcelFileFactory.cs" t="Include" />
+          <e p="PolishEWordsFactory.cs" t="Include" />
+          <e p="PolishWordsFactory.cs" t="Include" />
+        </e>
+        <e p="Mapping" t="Include">
+          <e p="DefinitionMapp.cs" t="Include" />
+          <e p="WordMapp.cs" t="Include" />
+        </e>
+        <e p="NHibernateHelper.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Words.cs" t="Include" />
+      </e>
+      <e p="ConsoleApp1.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests" t="IncludeRecursive">
+      <e p="App.config" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="ConsoleApp1.Tests.csproj" t="IncludeRecursive" />
+      <e p="EnglishWordsFactoryTests.cs" t="Include" />
+      <e p="FromCsvFileFactoryTests.cs" t="Include" />
+      <e p="FromExcelFileFactoryTests.cs" t="Include" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
+      <e p="PolishEWordsFactoryTests.cs" t="Include" />
+      <e p="PolishWordsFactoryTests.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>
