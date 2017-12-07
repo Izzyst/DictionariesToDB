@@ -10,6 +10,6 @@ namespace WebServiceDictionaries.Models
         public int Id { get; set; }
         public string W { get; set; }
         public string Lang { get; set; }
-        public List<string> Defs { get; set; }
+        public string Defs { get; set; }
     }
 }

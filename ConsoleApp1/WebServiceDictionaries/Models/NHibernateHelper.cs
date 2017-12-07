@@ -73,15 +73,14 @@ namespace WebServiceDictionaries.Models
                         Console.WriteLine("Id: {0}, Marka: {1}, Model: {2}", item.Id, item.Def, item.WordObj.Id);
 
                     }*/
+
                     return list;
                 }
-
             }
-
-            
+           
         }
 
-        public static List<Word> GetRandomWordsFromDictionary(string language)
+        public static List<WordTest> GetRandomWordsFromDictionary(string language)
         {
             var sessionFactory = NHibernateHelper.CreateSessionFactory();
             language = "pl";// rozwiązanie chwilowe, nie działa przekazywanie parametru
@@ -95,17 +94,30 @@ namespace WebServiceDictionaries.Models
                     IList<Definition> list2 = criteria2.List<Definition>();
                     // Gdybyśmy chcieli zdefiniować warunki wyszukiwania wystarczy zrobić to w poniższy sposób
                     List<Word> list = criteria.List<Word>().Where(a => a.Lang == language).ToList();
-                    /* foreach (var item in list)
-                     {
-                         Console.WriteLine("Id: {0}, Marka: {1}, Model: {2}", item.Id, item.W, item.Lang);
 
-                     }
-                     foreach (var item in list2)
-                     {
-                         Console.WriteLine("Id: {0}, Marka: {1}, Model: {2}", item.Id, item.Def, item.WordObj.Id);
+                    var innerJoinQuery =
+                        from words in list
+                        join definitions in list2 on words.Id equals definitions.WordObj.Id
+                        select new { id = words.Id, word = words.W, definition = definitions.Def };
 
-                     }*/
-                    return list;
+                    
+                    List<WordTest> wordsTest = new List<WordTest>();
+
+                    foreach (var item in list)
+                    {
+                        List<Definition> definitions = new List<Definition>();
+                        var w = new WordTest();
+                        w.Id = item.Id;
+                        w.W = item.W;
+                        w.Lang = item.Lang;
+                        //definitions.Add(item.Defs);
+                        w.Defs.Add(item.Defs[0]?.Def);
+                        wordsTest.Add(w);
+
+                    }
+
+
+                    return wordsTest;
                 }
 
             }

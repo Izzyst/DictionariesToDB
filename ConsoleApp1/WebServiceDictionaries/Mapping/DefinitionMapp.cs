@@ -9,7 +9,7 @@ namespace WebServiceDictionaries.Mapping
         {
             Id(c => c.Id);
             Map(c => c.Def).Length(355);
-            References(c => c.WordObj).Not.LazyLoad();// References creates a many-to-one relationship between two entities
+            References(c => c.WordObj);// References creates a many-to-one relationship between two entities
         }
     }
 }

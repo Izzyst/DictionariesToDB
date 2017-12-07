@@ -1,9 +1,10 @@
-﻿using ConsoleApp1.Entities;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
 using Newtonsoft.Json;
 using System.Web.Http.Description;
+using WebServiceDictionaries.Models;
 
 namespace WebServiceDictionaries.Controllers.Api
 {

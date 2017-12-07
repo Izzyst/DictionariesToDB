@@ -7,7 +7,7 @@ namespace WebServiceDictionaries.Models
         public virtual int Id { get; protected set; }
         public virtual string W { get; set; }
         public virtual string Lang { get; set; }
-        public virtual List<Definition> Defs { get; set; }
+        public virtual IList<Definition> Defs { get; set; }
 
         public Word()
         {

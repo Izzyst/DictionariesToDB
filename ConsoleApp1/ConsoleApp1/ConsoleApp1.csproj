@@ -86,8 +86,6 @@
     <Compile Include="Factories\FromExcelFileFactory.cs" />
     <Compile Include="Factories\PolishEWordsFactory.cs" />
     <Compile Include="Factories\PolishWordsFactory.cs" />
-    <Compile Include="Mapping\DefinitionMapp.cs" />
-    <Compile Include="Mapping\WordMapp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Words.cs" />
@@ -110,8 +108,6 @@
     <Content Include="docs\MySqlParameter.xml" />
     <Content Include="docs\MySqlParameterCollection.xml" />
     <Content Include="docs\MySqlTransaction.xml" />
-    <Content Include="Mapping\Definition.hbm.xml" />
-    <Content Include="Mapping\Word.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

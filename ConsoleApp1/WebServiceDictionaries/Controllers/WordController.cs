@@ -15,27 +15,15 @@ namespace WebServiceDictionaries.Controllers
         [System.Web.Http.HttpGet]
         public JsonResult GetApp(string language)//, int? amoutOfWords)
         {
-            List<Word> words;
+            List<WordTest> words;
             words = NHibernateHelper.GetRandomWordsFromDictionary(language);
-            List<WordTest> wordsTest = new List<WordTest>();
-
-            foreach (var item in words)
-            {
-                var w = new WordTest();
-                w.Id = item.Id;
-                w.W = item.W;
-                w.Lang = item.Lang;
-               // w.Defs.Add(item.Defs);
-
-                wordsTest.Add(w);
-
-            }
+            
             /* if (words == null)
 {
     return BadRequest();
 }*/
             //var result =  JsonConvert.SerializeObject(value: words);
-            return Json(wordsTest, JsonRequestBehavior.AllowGet);
+            return Json(words, JsonRequestBehavior.AllowGet);
         }
     }
 }
