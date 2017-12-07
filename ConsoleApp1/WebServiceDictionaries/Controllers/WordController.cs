@@ -8,21 +8,13 @@ namespace WebServiceDictionaries.Controllers
     public class WordController : Controller
     {
 
-
-        // GET: Word/GetA/5
-        //[ResponseType(typeof(Word))]
-        //[System.Web.Http.Route("GetApp/{language}")]
+        //   /Word/GetWords?language=ang
         [System.Web.Http.HttpGet]
-        public JsonResult GetApp(string language)//, int? amoutOfWords)
+        public JsonResult GetWords(string language)//, int? amoutOfWords)
         {
             List<WordTest> words;
             words = NHibernateHelper.GetRandomWordsFromDictionary(language);
             
-            /* if (words == null)
-{
-    return BadRequest();
-}*/
-            //var result =  JsonConvert.SerializeObject(value: words);
             return Json(words, JsonRequestBehavior.AllowGet);
         }
     }

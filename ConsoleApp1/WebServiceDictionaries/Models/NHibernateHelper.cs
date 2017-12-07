@@ -9,6 +9,7 @@ using System.Linq;
 
 namespace WebServiceDictionaries.Models
 {
+    
     public static class NHibernateHelper
     {       
 
@@ -61,18 +62,6 @@ namespace WebServiceDictionaries.Models
                     IList<Word> list = criteria.List<Word>();
                     ICriteria criteria2 = session.CreateCriteria<Definition>();
                     IList<Definition> list2 = criteria2.List<Definition>();
-                    // Gdybyśmy chcieli zdefiniować warunki wyszukiwania wystarczy zrobić to w poniższy sposób
-                    // IList<Car> list = criteria.List<Car>().Where(a => a.CarId > 3).ToList();
-                   /* foreach (var item in list)
-                    {
-                        Console.WriteLine("Id: {0}, Marka: {1}, Model: {2}", item.Id, item.W, item.Lang);
-
-                    }
-                    foreach (var item in list2)
-                    {
-                        Console.WriteLine("Id: {0}, Marka: {1}, Model: {2}", item.Id, item.Def, item.WordObj.Id);
-
-                    }*/
 
                     return list;
                 }
@@ -83,7 +72,7 @@ namespace WebServiceDictionaries.Models
         public static List<WordTest> GetRandomWordsFromDictionary(string language)
         {
             var sessionFactory = NHibernateHelper.CreateSessionFactory();
-            language = "pl";// rozwiązanie chwilowe, nie działa przekazywanie parametru
+            //language = "pl";// rozwiązanie chwilowe, nie działa przekazywanie parametru
             using (var session = sessionFactory.OpenSession())
             {
                 using (var transaction = session.BeginTransaction())
@@ -100,18 +89,15 @@ namespace WebServiceDictionaries.Models
                         join definitions in list2 on words.Id equals definitions.WordObj.Id
                         select new { id = words.Id, word = words.W, definition = definitions.Def };
 
-                    
                     List<WordTest> wordsTest = new List<WordTest>();
 
-                    foreach (var item in list)
+                    foreach (var item in innerJoinQuery)
                     {
-                        List<Definition> definitions = new List<Definition>();
                         var w = new WordTest();
-                        w.Id = item.Id;
-                        w.W = item.W;
-                        w.Lang = item.Lang;
-                        //definitions.Add(item.Defs);
-                        w.Defs.Add(item.Defs[0]?.Def);
+                        w.Id = item.id;
+                        w.W = item.word;
+                        w.Defs=item.definition;
+                        w.Lang = language;
                         wordsTest.Add(w);
 
                     }
@@ -141,4 +127,5 @@ namespace WebServiceDictionaries.Models
         
 
     }
+
 }
