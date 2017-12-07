@@ -22,13 +22,11 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\C
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\ConsoleApp1.Tests.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\ConsoleApp1.Tests.pdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\ConsoleApp1.exe
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\NHibernate.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\FluentNHibernate.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\HtmlAgilityPack.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\ConsoleApp1.pdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\ConsoleApp1.exe.config
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\nunit.framework.xml
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\NHibernate.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\FluentNHibernate.pdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\FluentNHibernate.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\HtmlAgilityPack.pdb

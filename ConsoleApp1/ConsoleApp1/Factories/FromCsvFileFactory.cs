@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using ConsoleApp1.Domain;
-using ConsoleApp1.Entities;
 
 namespace ConsoleApp1.Factories
 {

@@ -1,14 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using ConsoleApp1.Domain;
-using ConsoleApp1.Entities;
 using ConsoleApp1.Factories;
-using FluentNHibernate.Testing.Values;
-using NHibernate.Mapping;
-using NHibernate;
-using NHibernate.Cfg;
-using System.IO;
-using System.Linq;
 
 namespace ConsoleApp1
 {
@@ -20,8 +13,8 @@ namespace ConsoleApp1
             //list.AddRange(GetWordsFromFactory("Polish"));
             //list.AddRange(GetWordsFromFactory("English"));
 
-            NHibernateHelper helper = new NHibernateHelper();
-            helper.GetAllData("pl");
+            //NHibernateHelper helper = new NHibernateHelper();
+            //NHibernateHelper.GetAllData("pl");
 
             Console.ReadKey();
         }
