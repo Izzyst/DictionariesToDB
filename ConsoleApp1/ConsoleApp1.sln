@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{3B4048BF-3283-4D6F-AC8F-551B206BAAA1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1.Tests", "..\ConsoleApp1.Tests\ConsoleApp1.Tests.csproj", "{B230AC78-E45F-4060-9157-83E5843A59B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceDictionaries", "WebServiceDictionaries\WebServiceDictionaries.csproj", "{F4F80389-7CA1-4217-9C0C-85D6E02EC3BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App3", "..\App3\App3\App3.csproj", "{06CC1B9F-BE19-4AC9-8194-4296FCD49907}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,12 @@ Global
 		{F4F80389-7CA1-4217-9C0C-85D6E02EC3BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4F80389-7CA1-4217-9C0C-85D6E02EC3BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4F80389-7CA1-4217-9C0C-85D6E02EC3BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06CC1B9F-BE19-4AC9-8194-4296FCD49907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06CC1B9F-BE19-4AC9-8194-4296FCD49907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06CC1B9F-BE19-4AC9-8194-4296FCD49907}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{06CC1B9F-BE19-4AC9-8194-4296FCD49907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06CC1B9F-BE19-4AC9-8194-4296FCD49907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06CC1B9F-BE19-4AC9-8194-4296FCD49907}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

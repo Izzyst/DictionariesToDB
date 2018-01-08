@@ -6,6 +6,7 @@ using NHibernate;
 using System.Data.SqlClient;
 using ConsoleApp1.Domain;
 using System.Linq;
+using NHibernate.Tool.hbm2ddl;
 
 namespace WebServiceDictionaries.Models
 {
@@ -18,9 +19,9 @@ namespace WebServiceDictionaries.Models
         public static ISessionFactory CreateSessionFactory()
         {
             return sessionFactory = Fluently.Configure().Database(MsSqlConfiguration.MsSql2012.ConnectionString
-                     ("Data Source=ROCA-BLANDA\\SQLEXPRESS01;Initial Catalog=WCF;Integrated Security=True").ShowSql())
+                     ("Data Source=ROCA-BLANDA\\SQLEXPRESS;Initial Catalog=Dictionaries;Integrated Security=True").ShowSql())
                  .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Word>().AddFromAssemblyOf<Definition>())
-                 // .ExposeConfiguration(cfg => new SchemaExport(cfg).Create(false, true))// odpowiada za nadipywanie bazy
+                 // .ExposeConfiguration(cfg => new SchemaExport(cfg).Create(false, true))// odpowiada za nadipywanie bazy + wygenerowanie od nowa tabel
                  .BuildSessionFactory();
         }
 
