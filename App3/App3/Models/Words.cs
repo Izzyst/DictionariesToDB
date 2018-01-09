@@ -26,6 +26,17 @@ namespace App3.Models
             this.Language = Language;
         }
 
+        //na potrzeby tymczasowe, usunąć po dorobieniu pobierania danych z SQLite
+        public Words(int id, string word, string defs, string Language)
+        {
+            List<string> list = new List<string>();
+            list.Add(defs);
+            this.Id = id;
+            this.Word = word;
+            this.Defs = list;
+            this.Language = Language;
+        }
+
         public void ToString()
         {
             Console.WriteLine(this.Word + ": \t");

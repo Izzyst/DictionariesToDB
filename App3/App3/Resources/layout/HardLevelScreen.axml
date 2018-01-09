@@ -2,19 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
-  <Button
+    android:layout_height="match_parent">
+  <TextView
+        android:text="Wymagać od kogoś czegoś"
+        android:layout_width="match_parent"
+        android:layout_height="254.0dp"
+        android:id="@+id/textView1"
+        android:layout_marginBottom="90.5dp" />  
+    <Button
         android:text="hard 1"
         android:id="@+id/hard1Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-  <Button
+    <Button
         android:text="hard 2"
         android:id="@+id/hard2Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-  <Button
+    <Button
         android:text="hard 3"
         android:id="@+id/hard3Btn"
         android:layout_width="wrap_content"
