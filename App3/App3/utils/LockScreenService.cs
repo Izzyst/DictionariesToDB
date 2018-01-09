@@ -2,12 +2,15 @@
 using Android.Content;
 using Android.OS;
 using Android.Widget;
+using System;
 
 namespace App3.utils
 {
     [Service]
     public class LockScreenService : Service
     {
+        private static string level;
+
         LockScreenReceiver receiver;
         public override IBinder OnBind(Intent intent)
         {
@@ -17,11 +20,9 @@ namespace App3.utils
         public override void OnCreate()
         {
             base.OnCreate();
-            Toast.MakeText(this.ApplicationContext, "LockScreenService works", ToastLength.Short).Show();
-
-            StateRecever(true);
-
+            StateRecever(true);    
         }
+
 
         public override void OnDestroy()
         {

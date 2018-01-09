@@ -25,7 +25,6 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\C
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\HtmlAgilityPack.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\ConsoleApp1.pdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\ConsoleApp1.exe.config
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\nunit.framework.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\bin\Debug\HtmlAgilityPack.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1.Tests\obj\Debug\ConsoleApp1.Tests.csprojResolveAssemblyReference.cache

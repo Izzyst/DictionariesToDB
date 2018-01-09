@@ -15,15 +15,23 @@ public final class R {
     public static final class attr {
     }
     public static final class id {
-        public static final int Unlock=0x7f060004;
-        public static final int spinner=0x7f060000;
-        public static final int spinnerLanguage=0x7f060001;
-        public static final int switchButton=0x7f060002;
-        public static final int textView1=0x7f060003;
+        public static final int Unlock=0x7f06000a;
+        public static final int getDataBtn=0x7f060006;
+        public static final int hard1Btn=0x7f060000;
+        public static final int hard2Btn=0x7f060001;
+        public static final int hard3Btn=0x7f060002;
+        public static final int medium1Btn=0x7f060007;
+        public static final int medium2Btn=0x7f060008;
+        public static final int spinner=0x7f060003;
+        public static final int spinnerLanguage=0x7f060004;
+        public static final int switchButton=0x7f060005;
+        public static final int textView1=0x7f060009;
     }
     public static final class layout {
-        public static final int main=0x7f020000;
-        public static final int unlockscreen=0x7f020001;
+        public static final int hardlevelscreen=0x7f020000;
+        public static final int main=0x7f020001;
+        public static final int mediumlevelscreen=0x7f020002;
+        public static final int unlockscreen=0x7f020003;
     }
     public static final class string {
         public static final int Language=0x7f030002;

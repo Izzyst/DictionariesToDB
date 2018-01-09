@@ -11,15 +11,16 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             List<Words> list = new List<Words>();
-            //List<string> defs = new List<string>();
-            //defs.Add("def test");
-           // list.AddRange(collection: Program.GetWordsFromFactory("English"));
-            //Words w1 = new Words("table", defs, "pl");
-            //Words w2 = new Words("table2", defs, "pl");
-            //list.Add(w1);
-            //list.Add(w2);
-          //  NHibernateHelper.InsertWordToDatabase(list);
+            // list.AddRange(collection: Program.GetWordsFromFactory("English"));
+            //  NHibernateHelper.InsertWordToDatabase(list);
 
+            //string url = @"http://api.wunderground.com/api/02e5dd8c34e3e657/geolookup/conditions/forecast/q/Dhaka,Bangladesh.json";
+
+            //using (var client = new HttpClient())
+            //{
+            //    var result = await client.GetStringAsync(url);
+            //    return JsonConvert.DeserializeObject<YourModelForTheResponse>(result);
+            //}
             Console.ReadKey();
         }
 

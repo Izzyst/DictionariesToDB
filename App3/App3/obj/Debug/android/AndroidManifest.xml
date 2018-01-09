@@ -11,6 +11,8 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:allowBackup="true" android:label="@string/app_name" android:name="android.app.Application" android:debuggable="true">
+    <activity android:label="HardLevelActivity" android:name="md5db1d84f0b2adc09d2fa403805cf2e153.HardLevelActivity" />
+    <activity android:label="MediumLevelActivity" android:name="md5db1d84f0b2adc09d2fa403805cf2e153.MediumLevelActivity" />
     <activity android:label="LockScreenActivity" android:launchMode="singleInstance" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="md5db1d84f0b2adc09d2fa403805cf2e153.LockScreenActivity" />
     <activity android:label="App3" android:name="md5db1d84f0b2adc09d2fa403805cf2e153.MainActivity">
       <intent-filter>
