@@ -61,6 +61,7 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\DataToLevel.cs" />
     <Compile Include="LevelStrategy\EasyLevel.cs" />
     <Compile Include="LevelStrategy\HardLevel.cs" />
     <Compile Include="HardLevelActivity.cs" />

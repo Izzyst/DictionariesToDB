@@ -4,6 +4,8 @@ using Android.Content.PM;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using App3.LevelStrategy;
+using App3.Models;
 
 namespace App3
 {
@@ -16,9 +18,16 @@ namespace App3
             SetContentView(Resource.Layout.UnlockScreen);
             MakeFullScreen();
             Button button = (Button)FindViewById(Resource.Id.Unlock);
+            TextView textView = (TextView)FindViewById(Resource.Id.textView1);
 
-            button.Click += (o, e) => {
-                // Toast.MakeText(this, "unlocked!", ToastLength.Short).Show();
+            EasyLevel level = new EasyLevel();
+            DataToLevel data = level.GetWords();
+
+            textView.Text = data.Def;
+            button.Text = data.WordList[0].Word;
+
+            button.Click += (o, e) =>
+            {
                 Finish();
             };
         }
