@@ -83,26 +83,24 @@ namespace WebServiceDictionaries.Models
                     ICriteria criteria2 = session.CreateCriteria<Definition>();
                     IList<Definition> list2 = criteria2.List<Definition>();
                     // Gdybyśmy chcieli zdefiniować warunki wyszukiwania wystarczy zrobić to w poniższy sposób
-                    List<Word> list = criteria.List<Word>().Where(a => a.Lang == language).ToList();
+                    List<Word> list = criteria.List<Word>().Where(a => a.Lang == language).Take(100).ToList();
 
                     var innerJoinQuery =
-                        from words in list
-                        join definitions in list2 on words.Id equals definitions.WordObj.Id
-                        select new { id = words.Id, word = words.W, definition = definitions.Def };
+                        (from words in list
+                         join definitions in list2 on words.Id equals definitions.WordObj.Id
+                         select new { id = words.Id, word = words.W, definition = definitions.Def }).Take(100);
 
                     List<WordTest> wordsTest = new List<WordTest>();
 
                     foreach (var item in innerJoinQuery)
                     {
-                        var w = new WordTest();
-                        w.Id = item.id;
-                        w.W = item.word;
-                        w.Defs=item.definition;
-                        w.Lang = language;
-                        wordsTest.Add(w);
+                        var w = new WordTest() { Id = item.id, W = item.word, Defs = item.definition, Lang = language };
+                         wordsTest.Add(w);
+                    };
+                       
+           
 
-                    }
-
+                   
 
                     return wordsTest;
                 }

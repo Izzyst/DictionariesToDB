@@ -2,6 +2,7 @@
 using Android.Widget;
 using Android.OS;
 using App3.utils;
+using App3.FilePicker;
 using System;
 using System.Net;
 using System.Threading.Tasks;
@@ -9,6 +10,10 @@ using System.IO;
 using System.Json;
 using Android.Content;
 using Android.Preferences;
+using Android.App.Usage;
+using System.Collections.Generic;
+using App3.LevelStrategy;
+using Android.Content.Res;
 
 namespace App3
 {
@@ -18,12 +23,12 @@ namespace App3
         Spinner spinner;
         Spinner spinnerLang;
         Switch switchBtn;
-        WebClient mClient;
-        Uri mUrl;
         Button dataBtn;
         public static string level;
-        static string language;
         ISharedPreferences prefs;
+        ISharedPreferencesEditor editor;
+
+        private List<string> fileFist = new List<string>();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,6 +39,8 @@ namespace App3
             spinnerLang = FindViewById<Spinner>(Resource.Id.spinnerLanguage);
             switchBtn = FindViewById<Switch>(Resource.Id.switchButton);
             dataBtn = FindViewById<Button>(Resource.Id.getDataBtn);
+          //  openDialogBtn = FindViewById<Button>(Resource.Id.openDialog);
+
 
             LockScreen.GetInstance().Init(this);
 
@@ -47,90 +54,67 @@ namespace App3
 
             level = spinner.SelectedItem.ToString();
 
+            //ustawienie spinnera wg wczesniejszego ustawienia
             int spinnerPosition = adapter.GetPosition(GetSharedPreferences("level_data"));
             spinner.SetSelection(spinnerPosition);
 
             // =================spinner for choosing language==========================================
-            spinnerLang.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(SpinnerItemSelected);
+            spinnerLang.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(SpinnerLangItemSelected);
             var adapterLang = ArrayAdapter.CreateFromResource(
                     this, Resource.Array.language_array, Android.Resource.Layout.SimpleSpinnerItem);
 
-            // do odkomentowania po zrobieniu osobnej metody dla zapisu 
-            //adapterLang.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-            //spinnerLang.Adapter = adapterLang;
-
-            //language = spinnerLang.SelectedItem.ToString();
+            // do odkomentowania po zrobieniu osobnej metody dla zapisu ====
+            adapterLang.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            spinnerLang.Adapter = adapterLang;
+            //ustawienie spinnera wg wczesniejszego ustawienia
+            int spinnerPositionLang = adapterLang.GetPosition(GetSharedPreferences("language_data"));
+            spinnerLang.SetSelection(spinnerPositionLang);
+            //===============================================================
 
             // spr czy LockScreen jest aktywny i ustawienie odpowiedniej wartości na togglebuttonie
-            if (LockScreen.GetInstance().IsActive())
-            {
-                switchBtn.Checked = true;
-                
-                
-            }
+            if (LockScreen.GetInstance().IsActive())  { switchBtn.Checked = true;}
             else { switchBtn.Checked = false; }
 
-            switchBtn.Click += (o, e) => {
-                if (switchBtn.Checked)
-                    LockScreen.GetInstance().Active();
-                else
-                    LockScreen.GetInstance().Deactivate();
+            switchBtn.Click += (o, e) =>
+            {
+                if (switchBtn.Checked)  LockScreen.GetInstance().Active();
+                else  LockScreen.GetInstance().Deactivate();
             };
 
-             
+            dataBtn.Click += (o, e) =>
+            {
+                GettingWordsFromDatabase.GetWords("pl", 50);
+            };
+
+           
             
 
-            dataBtn.Click += async (sender, e) => {
-
-                // Get the latitude and longitude entered by the user and create a query.
-                string url = "http://localhost:51915/Word/GetWords?language=pl/";// +
-                                                                                 //latitude.Text +
-                mUrl = new Uri("http://127.0.0.1:51915/Word/GetWords?language=pl/");                                                       //"&lng=" +
-                                                                                 //longitude.Text +
-                                                                                 //"&username=demo";
-
-                // Fetch the weather information asynchronously, 
-                // parse the results, then update the screen:
-                JsonValue json = await FetchDataAsync(url);
-                //mClient.DownloadDataAsync(mUrl);
-            };
-        }
- 
-
-        // Gets weather data from the passed URL.
-        private async Task<JsonValue> FetchDataAsync(string url)
-        {
-            // Create an HTTP web request using the URL:
-            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(new Uri(url));
-            request.ContentType = "application/json";
-            request.Method = "GET";
-
-            // Send the request to the server and wait for the response:
-            using (WebResponse response = await request.GetResponseAsync())
-            {
-                // Get a stream representation of the HTTP web response:
-                using (Stream stream = response.GetResponseStream())
-                {
-                    // Use this stream to build a JSON document object:
-                    JsonValue jsonDoc = await Task.Run(() => JsonObject.Load(stream));
-                    Console.Out.WriteLine("Response: {0}", jsonDoc.ToString());
-
-                    // Return the JSON document:
-                    return jsonDoc;
-                }
-            }
         }
 
         private void SpinnerItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;
             string toast = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
-            //Toast.MakeText(this, toast, ToastLength.Long).Show();
             level = toast;
             prefs = PreferenceManager.GetDefaultSharedPreferences(this);
-            ISharedPreferencesEditor editor = prefs.Edit();
+            editor = prefs.Edit();
             editor.PutString("level_data", toast);
             editor.Apply();
+            LockScreen.GetInstance().Deactivate();
+            switchBtn.Checked = false;
+        }
+
+        private void SpinnerLangItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+            Spinner spinner = (Spinner)sender;
+            string toast = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
+            level = toast;
+            prefs = PreferenceManager.GetDefaultSharedPreferences(this);
+            editor = prefs.Edit();
+            editor.PutString("language_data", toast);
+            editor.Apply();
+            LockScreen.GetInstance().Deactivate();
+            switchBtn.Checked = false;
         }
 
         public string GetSharedPreferences(string keyName)
@@ -138,9 +122,12 @@ namespace App3
             //getting data from shared prefs
             prefs = PreferenceManager.GetDefaultSharedPreferences(this.ApplicationContext);
             string levelData = prefs.GetString(keyName, level);
-            Toast.MakeText(this, levelData, ToastLength.Long).Show();
+            //Toast.MakeText(this, levelData, ToastLength.Long).Show();
             return levelData;
         }
+
+
     }
+
 }
 

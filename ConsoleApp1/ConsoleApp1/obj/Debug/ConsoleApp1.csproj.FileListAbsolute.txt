@@ -36,3 +36,4 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1\ConsoleApp1\obj\D
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1\ConsoleApp1\bin\Debug\MySql.Data.xml
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache

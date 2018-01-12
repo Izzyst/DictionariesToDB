@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="20dp">
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -31,13 +32,21 @@
         android:gravity="left"
         android:checked="true"
         android:textOn="On"
-        android:textOff="Off" />
+        android:textOff="Off"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp" />
     <Button
         android:text="Download dictionary"
         android:id="@+id/getDataBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-<!--
+
+<!--  <Button
+        android:text="Choose file csv/excl"
+        android:id="@+id/openDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
   <Button
         android:text="Upload Your file"
         android:id="@+id/File"
