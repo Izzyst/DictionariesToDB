@@ -24,7 +24,7 @@ namespace App3
             DataToLevel data = level.GetWords();
 
             textView.Text = data.Def;
-            button.Text = data.WordList[0].Word;
+            button.Text = data.WordList[0].W;
 
             button.Click += (o, e) =>
             {

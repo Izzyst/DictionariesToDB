@@ -40,7 +40,11 @@
         android:id="@+id/getDataBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
+    <Button
+        android:text="Choose your file"
+        android:id="@+id/chooseFileBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 <!--  <Button
         android:text="Choose file csv/excl"
         android:id="@+id/openDialog"

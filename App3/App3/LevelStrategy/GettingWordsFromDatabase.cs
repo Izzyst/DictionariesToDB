@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.Content.Res;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using App3.Models;
 using App3.Resources.DataHelper;
 using Newtonsoft.Json;
@@ -48,7 +38,6 @@ namespace App3.LevelStrategy
                 List<Word> w = db.SelectTableWord();
             }
 
-            
             return list;
         }
 

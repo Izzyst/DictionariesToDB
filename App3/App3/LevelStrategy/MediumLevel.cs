@@ -1,15 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using App3.Models;
+using App3.Resources.DataHelper;
 
 namespace App3.LevelStrategy
 {
@@ -22,27 +14,22 @@ namespace App3.LevelStrategy
 
         public DataToLevel GetWords()
         {
-            List<Words> list = new List<Words>();
+            List<Word> list = new List<Word>();
             DataToLevel data = new DataToLevel();
-            list = GenerateExampleList();
+            Database db = new Database();
+            list = db.SelectRandomWord();
+            list.AddRange(db.SelectRandomWord());
+            list.AddRange(db.SelectRandomWord());
+           // list = GenerateExampleList();
             var rnd = new Random();
             int x = rnd.Next(0, 2);
             data.Id = list[x].Id;
-            data.Def = list[x].Defs[0];
+            data.Def = list[x].Def;
             data.WordList = list;
 
             return data;
         }
 
-        public List<Words> GenerateExampleList()
-        {
-            List<Words> list = new List<Words>();
 
-            Words w1tmp = new Words(0, "home", "place where you live", "ang");
-            Words w2tmp = new Words(1, "bedroom", "room where you sleep", "ang");
-            list.Add(w1tmp);
-            list.Add(w2tmp);
-            return list;
-        }
     }
 }

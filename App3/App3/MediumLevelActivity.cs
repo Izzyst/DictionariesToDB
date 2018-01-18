@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content.PM;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
@@ -10,7 +11,7 @@ using System.Linq;
 
 namespace App3
 {
-    [Activity(Label = "MediumLevelActivity")]//, LaunchMode = LaunchMode.SingleInstance, Theme = "@android:style/Theme.Holo.NoActionBar.Fullscreen")]
+    [Activity(Label = "MediumLevelActivity", LaunchMode = LaunchMode.SingleInstance, Theme = "@android:style/Theme.Holo.NoActionBar.Fullscreen")]//, LaunchMode = LaunchMode.SingleInstance, Theme = "@android:style/Theme.Holo.NoActionBar.Fullscreen")]
     public class MediumLevelActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -26,8 +27,8 @@ namespace App3
             DataToLevel data = level.GetWords();
             
             textView.Text = data.Def;
-            button1.Text = data.WordList[0].Word;
-            button2.Text = data.WordList[1].Word;
+            button1.Text = data.WordList[0].W;
+            button2.Text = data.WordList[1].W;
 
             button1.Click += (o, e) => {
                 if(data.WordList[0].Id == data.Id)

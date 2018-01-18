@@ -121,6 +121,8 @@ class MonoPackageManager_Resources {
 		"Plugin.CurrentActivity.dll",
 		"Plugin.DeviceInfo.Abstractions.dll",
 		"Plugin.DeviceInfo.dll",
+		"Plugin.FilePicker.Abstractions.dll",
+		"Plugin.FilePicker.dll",
 		"SQLite-net.dll",
 		"SQLite.Net.dll",
 		"SQLite.Net.Platform.XamarinAndroid.dll",

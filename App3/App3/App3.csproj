@@ -95,6 +95,12 @@
     <Reference Include="Plugin.DeviceInfo.Abstractions, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\ConsoleApp1\packages\Xam.Plugin.DeviceInfo.2.1.2\lib\MonoAndroid10\Plugin.DeviceInfo.Abstractions.dll</HintPath>
     </Reference>
+    <Reference Include="Plugin.FilePicker, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugin.FilePicker.1.1.0\lib\MonoAndroid10\Plugin.FilePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.FilePicker.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugin.FilePicker.1.1.0\lib\MonoAndroid10\Plugin.FilePicker.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="SQLite-net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\ConsoleApp1\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
     </Reference>
@@ -197,11 +203,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FilePicker\FilePickerActivity.cs" />
-    <Compile Include="FilePicker\FileListAdapter.cs" />
-    <Compile Include="FilePicker\FileListFragment.cs" />
-    <Compile Include="FilePicker\FileListRowViewHolder.cs" />
-    <Compile Include="FilePicker\Helpers.cs" />
     <Compile Include="LevelStrategy\GettingWordsFromDatabase.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="Models\DataToLevel.cs" />
@@ -232,9 +233,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\UnlockScreen.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\MediumLevelScreen.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -245,6 +243,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\file_picker_list_item.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\UnlockScreen.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -2,15 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
 using Android.Util;
-using Android.Views;
-using Android.Widget;
 using App3.Models;
 using SQLite;
 
@@ -63,6 +55,23 @@ namespace App3.Resources.DataHelper
                 {
                     return connection.Table<Word>().ToList();
                     
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEX", ex.Message);
+                return null;
+            }
+        }
+
+        public List<Word> SelectRandomWord()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(path)))
+                {
+                    return connection.Query<Word>("SELECT * FROM Word ORDER BY RANDOM() LIMIT 1");
+
                 }
             }
             catch (SQLiteException ex)

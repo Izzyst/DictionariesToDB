@@ -2,21 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-  <TextView
-        android:text="Wymagać od kogoś czegoś"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="254.0dp"
-        android:id="@+id/textView1"
-        android:layout_marginBottom="90.5dp" />  
-  <Button
-        android:text="medium 1"
-        android:id="@+id/medium1Btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:text="medium 2"
-        android:id="@+id/medium2Btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:text="Wymagać od kogoś czegoś"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/textView1" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <Button
+            android:text="medium 1"
+            android:id="@+id/medium1Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="medium 2"
+            android:id="@+id/medium2Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </LinearLayout>

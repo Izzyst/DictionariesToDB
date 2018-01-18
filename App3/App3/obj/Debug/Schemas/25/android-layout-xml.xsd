@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>12.01.2018 17:16:56</xs:documentation>
+    <xs:documentation>18.01.2018 22:26:43</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -82,6 +82,7 @@
       <xs:element ref="RadioGroup" />
       <xs:element ref="TextSwitcher" />
       <xs:element ref="fragment" />
+      <xs:element ref="com.xamarin.forms.platform.android.FormsViewGroup" />
       <xs:element ref="android.support.v4.widget.Space" />
       <xs:element ref="android.support.v4.widget.SlidingPaneLayout" />
       <xs:element ref="android.support.v4.widget.NestedScrollView" />
@@ -92,7 +93,6 @@
       <xs:element ref="android.support.v4.view.PagerTitleStrip" />
       <xs:element ref="android.support.v4.view.PagerTabStrip" />
       <xs:element ref="android.support.v4.app.FragmentTabHost" />
-      <xs:element ref="com.xamarin.forms.platform.android.FormsViewGroup" />
       <xs:element ref="android.support.v7.view.menu.ExpandedMenuView" />
       <xs:element ref="android.support.v7.view.menu.ListMenuItemView" />
       <xs:element ref="android.support.v7.view.menu.ActionMenuItemView" />
@@ -1464,6 +1464,16 @@
     <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
   </xs:complexType>
+  <xs:element name="com.xamarin.forms.platform.android.FormsViewGroup" type="com.xamarin.forms.platform.android.FormsViewGroup">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Xamarin.Forms.Platform.Android.FormsViewGroup</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.xamarin.forms.platform.android.FormsViewGroup">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:element name="android.support.v4.widget.Space" type="android.support.v4.widget.Space">
     <xs:annotation>
       <xs:documentation>Runtime Type: Android.Support.V4.Widget.Space</xs:documentation>
@@ -1564,16 +1574,6 @@
   <xs:complexType name="android.support.v4.app.FragmentTabHost">
     <xs:complexContent mixed="false">
       <xs:extension base="TabHost" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="com.xamarin.forms.platform.android.FormsViewGroup" type="com.xamarin.forms.platform.android.FormsViewGroup">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Xamarin.Forms.Platform.Android.FormsViewGroup</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="com.xamarin.forms.platform.android.FormsViewGroup">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.v7.view.menu.ExpandedMenuView" type="android.support.v7.view.menu.ExpandedMenuView">

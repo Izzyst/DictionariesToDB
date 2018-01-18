@@ -18,6 +18,8 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\a
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Plugin.CurrentActivity.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Plugin.DeviceInfo.Abstractions.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Plugin.DeviceInfo.dll
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Plugin.FilePicker.Abstractions.dll
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Plugin.FilePicker.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\SQLite-net.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\SQLite.Net.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\SQLite.Net.Platform.XamarinAndroid.dll

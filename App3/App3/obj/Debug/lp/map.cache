@@ -12,6 +12,8 @@ PInvoke.Windows.Core
 Plugin.CurrentActivity
 Plugin.DeviceInfo.Abstractions
 Plugin.DeviceInfo
+Plugin.FilePicker.Abstractions
+Plugin.FilePicker
 SQLite-net
 SQLite.Net
 SQLite.Net.Platform.XamarinAndroid

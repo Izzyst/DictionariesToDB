@@ -2,18 +2,15 @@
 using Android.Widget;
 using Android.OS;
 using App3.utils;
-using App3.FilePicker;
 using System;
-using System.Net;
-using System.Threading.Tasks;
-using System.IO;
-using System.Json;
 using Android.Content;
 using Android.Preferences;
 using Android.App.Usage;
 using System.Collections.Generic;
 using App3.LevelStrategy;
 using Android.Content.Res;
+using Plugin.FilePicker;
+using Plugin.FilePicker.Abstractions;
 
 namespace App3
 {
@@ -24,6 +21,7 @@ namespace App3
         Spinner spinnerLang;
         Switch switchBtn;
         Button dataBtn;
+        Button fileBtn;
         public static string level;
         ISharedPreferences prefs;
         ISharedPreferencesEditor editor;
@@ -39,7 +37,8 @@ namespace App3
             spinnerLang = FindViewById<Spinner>(Resource.Id.spinnerLanguage);
             switchBtn = FindViewById<Switch>(Resource.Id.switchButton);
             dataBtn = FindViewById<Button>(Resource.Id.getDataBtn);
-          //  openDialogBtn = FindViewById<Button>(Resource.Id.openDialog);
+            dataBtn = FindViewById<Button>(Resource.Id.getDataBtn);
+            fileBtn = FindViewById<Button>(Resource.Id.chooseFileBtn);
 
 
             LockScreen.GetInstance().Init(this);
@@ -86,8 +85,25 @@ namespace App3
                 GettingWordsFromDatabase.GetWords("pl", 50);
             };
 
-           
-            
+            fileBtn.Click += async delegate
+            {
+              try
+                {
+                    var crossFilePicker = Plugin.FilePicker.CrossFilePicker.Current;
+                    var myResult = await crossFilePicker.PickFile();
+                    if (!string.IsNullOrEmpty(myResult.FileName)) //Just the file name, it doesn't has the path
+                    {
+                        foreach (byte b in myResult.DataArray) //Empty array
+                            b.ToString();
+                    }
+                }
+                catch (InvalidOperationException ex)
+                {
+                    ex.ToString(); //"Only one operation can be active at a time"
+                }
+
+            };
+
 
         }
 

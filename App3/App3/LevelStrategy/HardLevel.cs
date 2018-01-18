@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using App3.Models;
+using App3.Resources.DataHelper;
 
 namespace App3.LevelStrategy
 {
@@ -13,30 +14,20 @@ namespace App3.LevelStrategy
 
         public DataToLevel GetWords()
         {
-            List<Words> list = new List<Words>();
+            List<Word> list = new List<Word>();
             DataToLevel data = new DataToLevel();
-            list = GenerateExampleList();
+            Database db = new Database();
+            //list = GenerateExampleList();
+            list.AddRange(db.SelectRandomWord());
+            list.AddRange(db.SelectRandomWord());
+            list.AddRange(db.SelectRandomWord());
             var rnd = new Random();
             int x = rnd.Next(0, 3);
             data.Id = list[x].Id;
-            data.Def = list[x].Defs[0];
+            data.Def = list[x].Def;
             data.WordList = list;
 
             return data;
-        }
-
-        public List<Words> GenerateExampleList()
-        {
-            List<Words> list = new List<Words>();
-
-            Words w1tmp = new Words(0, "home", "place where you live", "ang");
-            Words w2tmp = new Words(1, "bedroom", "room where you sleep", "ang");
-            Words w3tmp = new Words(2, "bathroom", "room where you take a bath", "ang");
-            list.Add(w1tmp);
-            list.Add(w2tmp);
-            list.Add(w3tmp);
-
-            return list;
         }
 
     }
