@@ -33,15 +33,29 @@ namespace App3
             button1.Click += (o, e) => {
                 if(data.WordList[0].Id == data.Id)
                 {
+                    Android.Graphics.Color color = Android.Graphics.Color.Green;
+                    button1.SetTextColor(color);
                     Finish();
                 }
-                
+                else
+                {
+                    Android.Graphics.Color color = Android.Graphics.Color.Red;
+                    button1.SetTextColor(color);
+                }
+
             };
             button2.Click += (o, e) => {
 
                 if (data.WordList[1].Id == data.Id)
                 {
+                    Android.Graphics.Color color = Android.Graphics.Color.Green;
+                    button2.SetTextColor(color);
                     Finish();
+                }
+                else
+                {
+                    Android.Graphics.Color color = Android.Graphics.Color.Red;
+                    button2.SetTextColor(color);
                 }
             };       
         }

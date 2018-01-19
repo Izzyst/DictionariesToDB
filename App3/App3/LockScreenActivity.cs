@@ -29,6 +29,8 @@ namespace App3
             button.Click += (o, e) =>
             {
                 Finish();
+                Android.Graphics.Color color = Android.Graphics.Color.Green;
+                button.SetTextColor(color);
             };
         }
 
