@@ -20,6 +20,7 @@ namespace App3.Resources.DataHelper
                 using (var connection = new SQLiteConnection(path))
                 {
                     connection.CreateTable<Word>();
+                    
                     return true;
                 }
             }
@@ -28,6 +29,24 @@ namespace App3.Resources.DataHelper
                 Log.Info("SQLiteEX", ex.Message);
                 return false;
             }
+        }
+
+        public bool DropTable()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(path)))
+                {
+                    connection.Query<Word>("DROP TABLE IF EXISTS Word");
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEX", ex.Message);
+                return false;
+            }
+            
         }
 
         public bool InsertIntoTableWord(Word word)

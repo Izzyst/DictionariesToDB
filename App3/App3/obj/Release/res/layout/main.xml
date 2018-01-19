@@ -1,0 +1,12 @@
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="20dp" xmlns:android="http://schemas.android.com/apk/res/android"><TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip" android:text="@string/Level" /><Spinner android:id="@+id/spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:prompt="@string/Level" /><TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip" android:text="@string/Language" /><Spinner android:id="@+id/spinnerLanguage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:prompt="@string/Language" /><Switch android:text="Turn on/off lock screen" android:id="@+id/switchButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:checked="true" android:textOn="On" android:textOff="Off" android:paddingTop="25dp" android:paddingBottom="25dp" /><Button android:text="Download dictionary" android:id="@+id/getDataBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" /><Button android:text="Choose your file" android:id="@+id/chooseFileBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" /><!--  <Button
+        android:text="Choose file csv/excl"
+        android:id="@+id/openDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+  <Button
+        android:text="Upload Your file"
+        android:id="@+id/File"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  --></LinearLayout>

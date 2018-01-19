@@ -19,7 +19,7 @@ namespace WebServiceDictionaries.Models
         public static ISessionFactory CreateSessionFactory()
         {
             return sessionFactory = Fluently.Configure().Database(MsSqlConfiguration.MsSql2012.ConnectionString
-                     ("Data Source=ROCA-BLANDA\\SQLEXPRESS;Initial Catalog=Dictionaries;Integrated Security=True").ShowSql())
+                     ("Data Source=sql6003.site4now.net;Initial Catalog=DB_A32E3F_Dictionaries;User ID=DB_A32E3F_Dictionaries_admin;Password=LubieChomiki123").ShowSql())
                  .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Word>().AddFromAssemblyOf<Definition>())
                  // .ExposeConfiguration(cfg => new SchemaExport(cfg).Create(false, true))// odpowiada za nadipywanie bazy + wygenerowanie od nowa tabel
                  .BuildSessionFactory();

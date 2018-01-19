@@ -21,14 +21,15 @@ namespace WebServiceDictionaries.Controllers
             return Json(words, JsonRequestBehavior.AllowGet);
         }
 
-        //   /Word/InsertWords?language=pl
+        //   /Word/InsertWords?language=Polish
         [System.Web.Http.HttpGet]
         public int InsertWords(string language)//, int? amoutOfWords)
         {
             List<Words> list = new List<Words>();          
             try
             {
-                list.AddRange(collection: Program.GetWordsFromFactory("Polish"));
+
+                list.AddRange(collection: Program.GetWordsFromFactory(language));
                 NHibernateHelper.InsertWordToDatabase(list);
 
             }catch(Exception e)

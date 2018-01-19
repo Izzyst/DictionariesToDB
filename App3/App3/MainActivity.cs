@@ -82,7 +82,18 @@ namespace App3
 
             dataBtn.Click += (o, e) =>
             {
-                GettingWordsFromDatabase.GetWords("pl", 50);
+                string lang = GetSharedPreferences("language_data");
+                if (lang == "Polish") lang = "pl";
+                else lang = "eng";
+                if (GettingWordsFromDatabase.InsertWordsToSqlite(lang)==1)
+                {
+                    Toast.MakeText(this, "Done!", ToastLength.Long).Show();
+                }
+                else
+                {
+                    Toast.MakeText(this, "Developer gapa ;P", ToastLength.Long).Show();
+                }
+
             };
 
             fileBtn.Click += async delegate
