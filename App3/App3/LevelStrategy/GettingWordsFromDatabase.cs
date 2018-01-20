@@ -7,13 +7,26 @@ using Android.Content.Res;
 using App3.Models;
 using App3.Resources.DataHelper;
 using Newtonsoft.Json;
+using System.Threading;
+using Android.OS;
+using Android.Widget;
+using Android.Content;
+using Android.Preferences;
 
 namespace App3.LevelStrategy
 {
     public static class GettingWordsFromDatabase
     {
-        public static int InsertWordsToSqlite(string language)
+        public static int InsertWordsToSqlite()
         {
+            string data= "";
+            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(Application.Context);
+            string language = prefs.GetString("language_data", data);
+
+            if (language == "Polish") language = "pl";
+            else language = "eng";
+
+            MainActivity.isWorking = true;
             List<Words> list = new List<Words>();
             string json;
             Database db;
@@ -31,14 +44,14 @@ namespace App3.LevelStrategy
                     {
                         db.InsertIntoTableWord(item);
                     }
-                }
+                }              
                 return 1;
             }
             catch(Exception ex)
             {
                 return 0;
             }
-            
+           
         }
 
         public static List<Words> GetWords(string language, int amount)

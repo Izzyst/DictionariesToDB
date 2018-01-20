@@ -11,17 +11,22 @@ using App3.LevelStrategy;
 using Android.Content.Res;
 using Plugin.FilePicker;
 using Plugin.FilePicker.Abstractions;
+using Android.Net;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace App3
 {
     [Activity(Label = "App3", MainLauncher = true)]
     public class MainActivity : Activity
     {
+        public static bool isWorking;
         Spinner spinner;
         Spinner spinnerLang;
         Switch switchBtn;
         Button dataBtn;
         Button fileBtn;
+        ProgressBar progressBar;
         public static string level;
         ISharedPreferences prefs;
         ISharedPreferencesEditor editor;
@@ -39,7 +44,9 @@ namespace App3
             dataBtn = FindViewById<Button>(Resource.Id.getDataBtn);
             dataBtn = FindViewById<Button>(Resource.Id.getDataBtn);
             fileBtn = FindViewById<Button>(Resource.Id.chooseFileBtn);
+            progressBar = FindViewById<ProgressBar>(Resource.Id.progressBar1);
 
+            
 
             LockScreen.GetInstance().Init(this);
 
@@ -76,23 +83,38 @@ namespace App3
 
             switchBtn.Click += (o, e) =>
             {
-                if (switchBtn.Checked)  LockScreen.GetInstance().Active();
+                if (switchBtn.Checked) {
+                    LockScreen.GetInstance().Active();
+                } 
                 else  LockScreen.GetInstance().Deactivate();
             };
 
-            dataBtn.Click += (o, e) =>
+            dataBtn.Click += async (o, e) =>
             {
-                string lang = GetSharedPreferences("language_data");
-                if (lang == "Polish") lang = "pl";
-                else lang = "eng";
-                if (GettingWordsFromDatabase.InsertWordsToSqlite(lang)==1)
+                isWorking = true;
+                progressBar.Visibility = Android.Views.ViewStates.Visible;
+                if(CheckConnection()==true)
                 {
-                    Toast.MakeText(this, "Done!", ToastLength.Long).Show();
+                    RunOnUiThread(() => progressBar.Visibility = Android.Views.ViewStates.Visible);
+                    Task<int> taks = new Task<int>(GettingWordsFromDatabase.InsertWordsToSqlite);
+                    taks.Start();
+                    int result = await taks;
+                    if (result == 1)
+                    {
+                        progressBar.Visibility = Android.Views.ViewStates.Invisible;
+                        LockScreen.GetInstance().Deactivate();
+                        switchBtn.Checked = false;
+                    }
+                    else
+                    {
+                        Toast.MakeText(this, "Developer gapa ;P", ToastLength.Long).Show();
+                        progressBar.Visibility = Android.Views.ViewStates.Invisible;
+                    }
                 }
                 else
                 {
-                    Toast.MakeText(this, "Developer gapa ;P", ToastLength.Long).Show();
-                }
+                    Toast.MakeText(this, "To download data, check your Internet connection", ToastLength.Long).Show();
+                }  
 
             };
 
@@ -117,6 +139,12 @@ namespace App3
 
 
         }
+
+        private int countstars()
+        {
+            return 5;
+        }
+
 
         private void SpinnerItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
@@ -151,6 +179,16 @@ namespace App3
             string levelData = prefs.GetString(keyName, level);
             //Toast.MakeText(this, levelData, ToastLength.Long).Show();
             return levelData;
+        }
+
+        public bool CheckConnection()
+        {
+            bool isOnline = false;
+            ConnectivityManager connectivityManager = (ConnectivityManager)GetSystemService(ConnectivityService);
+            NetworkInfo networkInfo = connectivityManager.ActiveNetworkInfo;
+            if (networkInfo!=null)
+                isOnline = true; 
+            return isOnline;
         }
 
 
