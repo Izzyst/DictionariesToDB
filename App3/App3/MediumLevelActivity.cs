@@ -5,6 +5,7 @@ using Android.Views;
 using Android.Widget;
 using App3.LevelStrategy;
 using App3.Models;
+using App3.Resources.DataHelper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace App3
     [Activity(Label = "MediumLevelActivity", LaunchMode = LaunchMode.SingleInstance, Theme = "@android:style/Theme.Holo.NoActionBar.Fullscreen")]//, LaunchMode = LaunchMode.SingleInstance, Theme = "@android:style/Theme.Holo.NoActionBar.Fullscreen")]
     public class MediumLevelActivity : Activity
     {
+        public static int numberOfClicks = 0;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -33,6 +35,7 @@ namespace App3
             button1.Click += (o, e) => {
                 if(data.WordList[0].Id == data.Id)
                 {
+                    SetNewScore(data.Score, data.WordList[0]);
                     Android.Graphics.Color color = Android.Graphics.Color.Green;
                     button1.SetTextColor(color);
                     Finish();
@@ -48,6 +51,7 @@ namespace App3
 
                 if (data.WordList[1].Id == data.Id)
                 {
+                    SetNewScore(data.Score, data.WordList[1]);
                     Android.Graphics.Color color = Android.Graphics.Color.Green;
                     button2.SetTextColor(color);
                     Finish();
@@ -60,6 +64,21 @@ namespace App3
             };       
         }
 
+        private void SetNewScore(int score, WordTable word)
+        {
+            Database db = new Database();
+            // jesli poprawna odp za pierwszym kliknięciem, update score oraz ilość kliknięć dla danego słowa
+            if (numberOfClicks == 1)
+            {
+                score++;
+                db.UpdateTableWord(score, numberOfClicks, word);
+            }
+            else
+            {
+                // jesli ilosc wybranych odp różna od 1, to update ilość klinięć
+                db.UpdateTableWord(-1, numberOfClicks, word);
+            }
+        }
 
         public override void OnBackPressed()
         {

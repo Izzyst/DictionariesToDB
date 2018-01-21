@@ -25,6 +25,9 @@ namespace App3.LevelStrategy
             int x = rnd.Next(0, 3);
             data.Id = list[x].Id;
             data.Def = list[x].Def;
+            data.Score = list[x].Score;
+            data.NumberOfAnsw = list[x].NumberOfAnswers;
+            
             data.WordList = list;
 
             return data;

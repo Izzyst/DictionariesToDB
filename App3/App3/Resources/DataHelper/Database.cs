@@ -97,13 +97,17 @@ namespace App3.Resources.DataHelper
             }
         }
 
-        public bool UpdateTableWord(WordTable word)
+        public bool UpdateTableWord(int score, int numberOfAns, WordTable word)
         {
             try
             {
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(path)))
                 {
-                   // connection.Query<Word>("UPDATE Word set IdW=?, W=?, Def=?, Lang=? where Id=?", word.IdW, word.W, word.Def, word.Lang, word.Id);
+                    if(score!=-1)
+                    {
+                        connection.Query<Word>("UPDATE WordTable set Score=?, NumberOfAnswers=? where Id=?", score, numberOfAns, word.Id);
+                    }
+                    else connection.Query<Word>("UPDATE WordTable set NumberOfAnswers=? where Id=?", numberOfAns, word.Id);
                     return true;
                 }
             }

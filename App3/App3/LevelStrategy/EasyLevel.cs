@@ -30,6 +30,9 @@ namespace App3.LevelStrategy
             list.AddRange(db.SelectRandomWord());
             data.Id = list[0].IdWordJson;
             data.Def = list[0].Def;
+            data.Score = list[0].Score;
+            data.NumberOfAnsw = list[0].NumberOfAnswers;
+
             data.WordList = list;
 
             return data;
