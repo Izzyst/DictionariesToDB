@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Newtonsoft.Json;
+using SQLite;
 
 namespace App3.Models
 {
@@ -35,5 +36,34 @@ namespace App3.Models
 
         [JsonProperty("Lang")]
         public string Lang { get; set; }
+    }
+
+    [Table("WordTable")]
+    public class WordTable
+    {
+        [Column("Id")]
+        [PrimaryKey]
+        [AutoIncrement]
+        public int Id { get; set; }
+
+        [Column("IdWordJson")]
+        public int IdWordJson { get; set; }
+
+        [Column("W")]
+        public string W { get; set; }
+
+        [Column("Def")]
+        public string Def { get; set; }
+
+        [Column("Lang")]
+        public string Lang { get; set; }
+
+        [Column("Score")]
+        public int Score { get; set; }
+
+        [Column("NumberOfAnswers")]
+        public int NumberOfAnswers { get; set; }
+
+        
     }
 }

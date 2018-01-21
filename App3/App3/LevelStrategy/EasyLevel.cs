@@ -23,12 +23,12 @@ namespace App3.LevelStrategy
 
         public DataToLevel GetWords()
         {
-            List<Word> list = new List<Word>();
+            List<WordTable> list = new List<WordTable>();
             DataToLevel data = new DataToLevel();
             //list = GenerateExampleList();
             Database db = new Database();
             list.AddRange(db.SelectRandomWord());
-            data.Id = list[0].Id;
+            data.Id = list[0].IdWordJson;
             data.Def = list[0].Def;
             data.WordList = list;
 

@@ -11,7 +11,6 @@ namespace App3.Resources.DataHelper
     public class Database
     {
         string path = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "myDb.db3");
-        //string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
 
         public bool CreateDatabase()
         {
@@ -19,8 +18,7 @@ namespace App3.Resources.DataHelper
             {
                 using (var connection = new SQLiteConnection(path))
                 {
-                    connection.CreateTable<Word>();
-                    
+                    connection.CreateTable<WordTable>();               
                     return true;
                 }
             }
@@ -37,7 +35,7 @@ namespace App3.Resources.DataHelper
             {
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(path)))
                 {
-                    connection.Query<Word>("DROP TABLE IF EXISTS Word");
+                    connection.Query<WordTable>("DROP TABLE IF EXISTS WordTable");
                     return true;
                 }
             }
@@ -49,7 +47,7 @@ namespace App3.Resources.DataHelper
             
         }
 
-        public bool InsertIntoTableWord(Word word)
+        public bool InsertIntoTableWord(WordTable word)
         {
             try
             {
@@ -66,13 +64,13 @@ namespace App3.Resources.DataHelper
             }
         }
 
-        public List<Word> SelectTableWord()
+        public List<WordTable> SelectTableWord()
         {
             try
             {
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(path)))
                 {
-                    return connection.Table<Word>().ToList();
+                    return connection.Table<WordTable>().ToList();
                     
                 }
             }
@@ -83,14 +81,13 @@ namespace App3.Resources.DataHelper
             }
         }
 
-        public List<Word> SelectRandomWord()
+        public List<WordTable> SelectRandomWord()
         {
             try
             {
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(path)))
                 {
-                    return connection.Query<Word>("SELECT * FROM Word ORDER BY RANDOM() LIMIT 1");
-
+                    return connection.Query<WordTable>("SELECT * FROM WordTable ORDER BY RANDOM() LIMIT 1");
                 }
             }
             catch (SQLiteException ex)
@@ -100,7 +97,7 @@ namespace App3.Resources.DataHelper
             }
         }
 
-        public bool UpdateTableWord(Word word)
+        public bool UpdateTableWord(WordTable word)
         {
             try
             {
@@ -117,7 +114,7 @@ namespace App3.Resources.DataHelper
             }
         }
 
-        public bool DeleteFromTableWord(Word word)
+        public bool DeleteFromTableWord(WordTable word)
         {
             try
             {
@@ -140,7 +137,7 @@ namespace App3.Resources.DataHelper
             {
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(path)))
                 {
-                    connection.Query<Word>("SELECT * FROM Word where Lang=?", lang);
+                    connection.Query<WordTable>("SELECT * FROM Word where Lang=?", lang);
                     return true;
                 }
             }

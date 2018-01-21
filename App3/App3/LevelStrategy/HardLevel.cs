@@ -14,7 +14,7 @@ namespace App3.LevelStrategy
 
         public DataToLevel GetWords()
         {
-            List<Word> list = new List<Word>();
+            List<WordTable> list = new List<WordTable>();
             DataToLevel data = new DataToLevel();
             Database db = new Database();
             //list = GenerateExampleList();

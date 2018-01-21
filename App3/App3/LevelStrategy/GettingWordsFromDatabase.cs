@@ -36,13 +36,22 @@ namespace App3.LevelStrategy
                 {
                     string url = "http://izzyst-001-site1.etempurl.com/Word/GetWords?language=" + language;
                     json = wc.DownloadString(url);
-                    dynamic items = JsonConvert.DeserializeObject<List<Word>>(json);
+                    List<Word> items = JsonConvert.DeserializeObject<List<Word>>(json);
                     db = new Database();
                     db.DropTable();
                     db.CreateDatabase();
                     foreach (var item in items)
                     {
-                        db.InsertIntoTableWord(item);
+                        WordTable wordTable = new WordTable();
+                        wordTable.IdWordJson = item.Id;
+                        wordTable.W = item.W;
+                        wordTable.Def = item.Def;
+                        wordTable.Lang = item.Def;
+                        wordTable.Score = 0;
+                        wordTable.NumberOfAnswers = 0;
+
+                        
+                        db.InsertIntoTableWord(wordTable);
                     }
                 }              
                 return 1;
@@ -75,7 +84,7 @@ namespace App3.LevelStrategy
                     db.InsertIntoTableWord(item);
                 }
 
-                List<Word> w = db.SelectTableWord();
+                List<WordTable> w = db.SelectTableWord();
             }
 
             return list;

@@ -6,7 +6,7 @@ namespace App3.Models
     {
         public int Id { get; set; }
         public string Def { get; set; }
-        public List<Word> WordList { get; set; }
+        public List<WordTable> WordList { get; set; }
 
     }
 }
