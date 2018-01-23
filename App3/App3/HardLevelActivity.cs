@@ -42,7 +42,9 @@ namespace App3
                     SetNewScore(data.Score, data.WordList[0]);
                     Android.Graphics.Color color = Android.Graphics.Color.Green;
                     button1.SetTextColor(color);
+                    numberOfClicks = 0;
                     Finish();
+
                 }
                 else
                 {
@@ -58,7 +60,9 @@ namespace App3
                     SetNewScore(data.Score, data.WordList[1]);
                     Android.Graphics.Color color = Android.Graphics.Color.Green;
                     button2.SetTextColor(color);
+                    numberOfClicks = 0;
                     Finish();
+
                 }
                 else
                 {
@@ -74,6 +78,7 @@ namespace App3
                     SetNewScore(data.Score, data.WordList[2]);
                     Android.Graphics.Color color = Android.Graphics.Color.Green;
                     button3.SetTextColor(color);
+                    numberOfClicks = 0;
                     Finish();
                 }
                 else
@@ -88,15 +93,15 @@ namespace App3
         {
             Database db = new Database();
             // jesli poprawna odp za pierwszym kliknięciem, update score oraz ilość kliknięć dla danego słowa
-            if (numberOfClicks==1)
+            if (numberOfClicks==1 & score != -1)
             {
-                score++;              
-                db.UpdateTableWord(score, numberOfClicks, word);
+                ++score;              
+                db.UpdateTableWord(score, 1, word);
             }
             else
             {
                 // jesli ilosc wybranych odp różna od 1, to update ilość klinięć
-                db.UpdateTableWord(-1, numberOfClicks, word);
+                db.UpdateTableWord(-1, 1, word);
             }
         }
 

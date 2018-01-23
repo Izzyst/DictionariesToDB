@@ -27,6 +27,7 @@ namespace App3
         Button dataBtn;
         Button fileBtn;
         ProgressBar progressBar;
+        TextView scores;
         public static string level;
         ISharedPreferences prefs;
         ISharedPreferencesEditor editor;
@@ -45,9 +46,9 @@ namespace App3
             dataBtn = FindViewById<Button>(Resource.Id.getDataBtn);
             fileBtn = FindViewById<Button>(Resource.Id.chooseFileBtn);
             progressBar = FindViewById<ProgressBar>(Resource.Id.progressBar1);
+            scores = FindViewById<TextView>(Resource.Id.textView1);
 
-            
-
+            scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
             LockScreen.GetInstance().Init(this);
 
             // =================spinner for choosing level==========================================
@@ -96,7 +97,7 @@ namespace App3
                 if(CheckConnection()==true)
                 {
                     RunOnUiThread(() => progressBar.Visibility = Android.Views.ViewStates.Visible);
-                    Task<int> taks = new Task<int>(GettingWordsFromDatabase.InsertWordsToSqlite);
+                    Task<int> taks = new Task<int>(GettingItemsFromDatabase.InsertWordsToSqlite);
                     taks.Start();
                     int result = await taks;
                     if (result == 1)
@@ -114,8 +115,8 @@ namespace App3
                 else
                 {
                     Toast.MakeText(this, "To download data, check your Internet connection", ToastLength.Long).Show();
-                }  
-
+                }
+                
             };
 
             fileBtn.Click += async delegate
@@ -136,7 +137,12 @@ namespace App3
                 }
 
             };
+        }
 
+        protected override void OnResume()
+        {
+            base.OnResume();
+            scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
 
         }
 
@@ -190,8 +196,6 @@ namespace App3
                 isOnline = true; 
             return isOnline;
         }
-
-
     }
 
 }

@@ -45,6 +45,7 @@
         android:id="@+id/chooseFileBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
 <!--  <Button
         android:text="Choose file csv/excl"
         android:id="@+id/openDialog"
@@ -64,4 +65,10 @@
         android:indeterminate="true"
         android:visibility="invisible"
         android:id="@+id/progressBar1" />
+    <TextView
+        android:text="Your Score: 0ptk/0ans"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
 </LinearLayout>

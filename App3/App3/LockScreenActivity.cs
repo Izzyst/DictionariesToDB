@@ -30,7 +30,9 @@ namespace App3
 
             button.Click += (o, e) =>
             {
+                numberOfClicks = 1;
                 SetNewScore(data.Score, data.WordList[0]);
+                numberOfClicks = 0;
                 Finish();
                 Android.Graphics.Color color = Android.Graphics.Color.Green;
                 button.SetTextColor(color);
@@ -49,7 +51,7 @@ namespace App3
             else
             {
                 // jesli ilosc wybranych odp różna od 1, to update ilość klinięć
-                db.UpdateTableWord(-1, numberOfClicks, word);
+                db.UpdateTableWord(-1, 1, word);
             }
         }
 

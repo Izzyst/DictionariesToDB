@@ -33,11 +33,13 @@ namespace App3
             button2.Text = data.WordList[1].W;
 
             button1.Click += (o, e) => {
-                if(data.WordList[0].Id == data.Id)
+                numberOfClicks++;
+                if (data.WordList[0].Id == data.Id)
                 {
                     SetNewScore(data.Score, data.WordList[0]);
                     Android.Graphics.Color color = Android.Graphics.Color.Green;
                     button1.SetTextColor(color);
+                    numberOfClicks = 0;
                     Finish();
                 }
                 else
@@ -48,12 +50,13 @@ namespace App3
 
             };
             button2.Click += (o, e) => {
-
+                numberOfClicks++;
                 if (data.WordList[1].Id == data.Id)
                 {
                     SetNewScore(data.Score, data.WordList[1]);
                     Android.Graphics.Color color = Android.Graphics.Color.Green;
                     button2.SetTextColor(color);
+                    numberOfClicks = 0;
                     Finish();
                 }
                 else
@@ -71,12 +74,12 @@ namespace App3
             if (numberOfClicks == 1)
             {
                 score++;
-                db.UpdateTableWord(score, numberOfClicks, word);
+                db.UpdateTableWord(score, 1, word);
             }
             else
             {
                 // jesli ilosc wybranych odp różna od 1, to update ilość klinięć
-                db.UpdateTableWord(-1, numberOfClicks, word);
+                db.UpdateTableWord(-1, 1, word);
             }
         }
 

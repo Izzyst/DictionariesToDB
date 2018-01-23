@@ -214,6 +214,7 @@
     <Compile Include="MediumLevelActivity.cs" />
     <Compile Include="LockScreenActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Models\ScoreTable.cs" />
     <Compile Include="Models\Words.cs" />
     <Compile Include="Models\WordsJson.cs" />
     <Compile Include="Resources\DataHelper\Database.cs" />

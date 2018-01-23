@@ -15,7 +15,7 @@ using Android.Preferences;
 
 namespace App3.LevelStrategy
 {
-    public static class GettingWordsFromDatabase
+    public static class GettingItemsFromDatabase
     {
         public static int InsertWordsToSqlite()
         {
@@ -61,6 +61,12 @@ namespace App3.LevelStrategy
                 return 0;
             }
            
+        }
+
+        public static string GetScoresFromDatabase()
+        {
+            Database db = new Database();
+            return db.GetScore();
         }
 
         public static List<Words> GetWords(string language, int amount)
