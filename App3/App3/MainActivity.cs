@@ -102,10 +102,20 @@ namespace App3
             if (LockScreen.GetInstance().IsActive())  { switchBtn.Checked = true;}
             else { switchBtn.Checked = false; }
 
-            switchBtn.Click += (o, e) =>
+            switchBtn.Click += async (o, e) =>
             {
                 if (switchBtn.Checked) {
                     LockScreen.GetInstance().Active();
+                    if(GettingItemsFromDatabase.CheckIfNewWordsNeededToDownload())
+                    {
+                        await DownloadDictionaryAsync();
+                    }
+                    if(GettingItemsFromDatabase.CheckIfDatabaseIsEmpty() == true)
+                    {
+                        switchBtn.Checked = false;
+                        LockScreen.GetInstance().Deactivate();
+                        Toast.MakeText(this, "You need to turn on Internet connection to download dictionary", ToastLength.Long).Show();
+                    }
                 } 
                 else  LockScreen.GetInstance().Deactivate();
             };
@@ -134,12 +144,6 @@ namespace App3
 
         }
 
-        private int countstars()
-        {
-            return 5;
-        }
-
-
         private void SpinnerItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;
@@ -165,15 +169,12 @@ namespace App3
             LockScreen.GetInstance().Deactivate();
             switchBtn.Checked = false;
 
-
             // spr czy baza jest pusta, jeśli nie to spr czy ten sam język, jeśli tak, to nie wykonuje pobierania danych
 
             if(GettingItemsFromDatabase.CheckIfDownloadDictionaryIsNeeded(toast) == true)
             {
                 await DownloadDictionaryAsync();
-            }
-            
-
+            }          
         }
 
         public string GetSharedPreferences(string keyName)
@@ -207,6 +208,7 @@ namespace App3
                 int result = await taks;
                 if (result == 1)
                 {
+                    Toast.MakeText(this, "Finished downloading", ToastLength.Long).Show();
                     progressBar.Visibility = Android.Views.ViewStates.Invisible;
                     LockScreen.GetInstance().Deactivate();
                     switchBtn.Checked = false;

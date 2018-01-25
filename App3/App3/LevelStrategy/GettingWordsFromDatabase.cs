@@ -108,10 +108,33 @@ namespace App3.LevelStrategy
             else return false;
         }
 
+        public static bool CheckIfDatabaseIsEmpty()
+        {
+            // spr czy baza jest pusta, jeśli nie to spr czy ten sam język, jeśli tak, to nie wykonuje pobierania danych
+            Database db = new Database();
+            var word = db.SelectRandomWord();
+            if (db.CheckIfDatabaseEmpty() == true)
+            {
+                return true;
+            }
+            else return false;
+        }
+
+
         public static string ChangeDictionaryAlias(string language)
         {
             if (language == "Polish") return  "pl";
             else return  "eng";
+        }
+
+        public static bool CheckIfNewWordsNeededToDownload()
+        {
+            Database db = new Database();
+            if(db.CheckIfNewWordsNeeded()==true || db.CheckIfDatabaseEmpty() == true)
+            {
+                return true;
+            }
+            return false;
         }
 
 
