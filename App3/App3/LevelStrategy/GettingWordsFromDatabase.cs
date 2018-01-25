@@ -12,6 +12,7 @@ using Android.OS;
 using Android.Widget;
 using Android.Content;
 using Android.Preferences;
+using System.Linq;
 
 namespace App3.LevelStrategy
 {
@@ -44,8 +45,8 @@ namespace App3.LevelStrategy
                     {
                         WordTable wordTable = new WordTable();
                         wordTable.IdWordJson = item.Id;
-                        wordTable.W = item.W;
-                        wordTable.Def = item.Def;
+                        wordTable.W = FirstCharToUpper(item.W);
+                        wordTable.Def = FirstCharToUpper(item.Def);
                         wordTable.Lang = item.Lang;
                         wordTable.Score = 0;
                         wordTable.NumberOfAnswers = 0;
@@ -61,6 +62,13 @@ namespace App3.LevelStrategy
                 return 0;
             }
            
+        }
+
+        public static string FirstCharToUpper(string input)
+        {
+            if (String.IsNullOrEmpty(input))
+                throw new ArgumentException("ARGH!");
+            return input.First().ToString().ToUpper() + input.Substring(1);
         }
 
         public static string GetScoresFromDatabase()

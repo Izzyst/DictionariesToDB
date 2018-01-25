@@ -83,7 +83,9 @@ namespace WebServiceDictionaries.Models
                     ICriteria criteria2 = session.CreateCriteria<Definition>();
                     IList<Definition> list2 = criteria2.List<Definition>();
                     // Gdybyśmy chcieli zdefiniować warunki wyszukiwania wystarczy zrobić to w poniższy sposób
-                    List<Word> list = criteria.List<Word>().Where(a => a.Lang == language).Take(100).ToList();
+                    Random rnd = new Random();
+                   // userList = userList.OrderBy(user => rnd.Next()).Take(usercount).ToList();
+                    List<Word> list = criteria.List<Word>().OrderBy(user => rnd.Next()).Where(a => a.Lang == language).Take(100).ToList();
 
                     var innerJoinQuery =
                         (from words in list
