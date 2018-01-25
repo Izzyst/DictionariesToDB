@@ -95,11 +95,11 @@
     <Reference Include="Plugin.DeviceInfo.Abstractions, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\ConsoleApp1\packages\Xam.Plugin.DeviceInfo.2.1.2\lib\MonoAndroid10\Plugin.DeviceInfo.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Plugin.FilePicker, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xam.Plugin.FilePicker.1.1.0\lib\MonoAndroid10\Plugin.FilePicker.dll</HintPath>
+    <Reference Include="Plugin.FilePicker, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Plugin.FilePicker.1.2.1\lib\MonoAndroid10\Plugin.FilePicker.dll</HintPath>
     </Reference>
-    <Reference Include="Plugin.FilePicker.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xam.Plugin.FilePicker.1.1.0\lib\MonoAndroid10\Plugin.FilePicker.Abstractions.dll</HintPath>
+    <Reference Include="Plugin.FilePicker.Abstractions, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Plugin.FilePicker.1.2.1\lib\MonoAndroid10\Plugin.FilePicker.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="SQLite-net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\ConsoleApp1\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>

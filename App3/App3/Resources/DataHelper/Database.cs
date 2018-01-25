@@ -117,6 +117,40 @@ namespace App3.Resources.DataHelper
             }
         }
 
+        public bool CheckIfNewWordsNeeded()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(path)))
+                {
+                    // var result = connection.Query<ScoreTable>("select 'Score' as 'Scores', 'NumberOfAnswers' as 'Answers' from WordTable");
+                    var result = connection.Query<ScoreTable>("select Score as Scores, NumberOfAnswers as Answers from WordTable");
+                    int scores = result.Sum(i => i.Scores);
+                    int answers = result.Sum(i => i.Answers);
+                    int count = 0;
+                    foreach(var item in result)
+                    {
+                        if (item.Scores > 3)
+                            count++;
+                    }
+
+                    var statistic = count / result.Count();
+                    // jeśli ilość słów, na które użytkownik odpowiedział conajmniej trzy razy poprawnie jest więcej niż 80% => zwraca true
+                    if (statistic > 0.8)
+                    {
+                        return true;
+                    }
+                    else return false;
+
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEX", ex.Message);
+                return false;
+            }
+        }
+
         public bool UpdateTableWord(int score, int numberOfAns, WordTable word)
         {
             try
@@ -147,6 +181,33 @@ namespace App3.Resources.DataHelper
                 {
                     connection.Delete(word);
                     return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEX", ex.Message);
+                return false;
+            }
+        }
+
+        public bool CheckIfDatabaseEmpty()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(path)))
+                {
+                    SQLite.TableMapping map = new TableMapping(typeof(WordTable)); // Instead of mapping to a specific table just map the whole database type
+                    object[] ps = new object[0]; // An empty parameters object since I never worked out how to use it properly! (At least I'm honest)
+
+                    Int32 tableCount = connection.Query(map, "SELECT * FROM sqlite_master WHERE type = 'table' AND name = 'WordTable'", ps).Count; // Executes the query from which we can count the results
+                    if (tableCount == 0)
+                    {
+                        return true;// database is empty
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
             }
             catch (SQLiteException ex)

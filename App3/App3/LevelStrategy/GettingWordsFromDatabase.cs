@@ -46,7 +46,7 @@ namespace App3.LevelStrategy
                         wordTable.IdWordJson = item.Id;
                         wordTable.W = item.W;
                         wordTable.Def = item.Def;
-                        wordTable.Lang = item.Def;
+                        wordTable.Lang = item.Lang;
                         wordTable.Score = 0;
                         wordTable.NumberOfAnswers = 0;
 
@@ -94,6 +94,24 @@ namespace App3.LevelStrategy
             }
 
             return list;
+        }
+
+        public static bool CheckIfDownloadDictionaryIsNeeded(string lang)
+        {
+            // spr czy baza jest pusta, jeśli nie to spr czy ten sam język, jeśli tak, to nie wykonuje pobierania danych
+            Database db = new Database();
+            var word = db.SelectRandomWord();
+            if (db.CheckIfDatabaseEmpty() == true || word[0].Lang != ChangeDictionaryAlias(lang))
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        public static string ChangeDictionaryAlias(string language)
+        {
+            if (language == "Polish") return  "pl";
+            else return  "eng";
         }
 
 

@@ -14,20 +14,25 @@ using Plugin.FilePicker.Abstractions;
 using Android.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using App3.Resources.DataHelper;
 
 namespace App3
 {
-    [Activity(Label = "App3", MainLauncher = true)]
+    [Activity(Label = "Linguistic lock screen", MainLauncher = true)]
     public class MainActivity : Activity
     {
         public static bool isWorking;
         Spinner spinner;
         Spinner spinnerLang;
         Switch switchBtn;
-        Button dataBtn;
         Button fileBtn;
         ProgressBar progressBar;
         TextView scores;
+        TextView fileText;
+        TextView chooseLanguageText;
+        RadioButton fileRadioBtn;
+        RadioButton externRadioBtn;
+
         public static string level;
         ISharedPreferences prefs;
         ISharedPreferencesEditor editor;
@@ -42,14 +47,29 @@ namespace App3
             spinner = FindViewById<Spinner>(Resource.Id.spinner);
             spinnerLang = FindViewById<Spinner>(Resource.Id.spinnerLanguage);
             switchBtn = FindViewById<Switch>(Resource.Id.switchButton);
-            dataBtn = FindViewById<Button>(Resource.Id.getDataBtn);
-            dataBtn = FindViewById<Button>(Resource.Id.getDataBtn);
             fileBtn = FindViewById<Button>(Resource.Id.chooseFileBtn);
             progressBar = FindViewById<ProgressBar>(Resource.Id.progressBar1);
             scores = FindViewById<TextView>(Resource.Id.textView1);
+            fileText = FindViewById<TextView>(Resource.Id.textView2);
+            chooseLanguageText = FindViewById<TextView>(Resource.Id.ChooseLanguageTextView);
+            fileRadioBtn = FindViewById<RadioButton>(Resource.Id.radio_file);
+            externRadioBtn = FindViewById<RadioButton>(Resource.Id.radio_extern);
 
             scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
             LockScreen.GetInstance().Init(this);
+
+            fileRadioBtn.Click += async delegate
+            {
+                fileBtn.Visibility = Android.Views.ViewStates.Visible;
+                chooseLanguageText.Visibility = Android.Views.ViewStates.Invisible;
+                spinnerLang.Visibility = Android.Views.ViewStates.Invisible;
+            };
+            externRadioBtn.Click += async delegate
+            {
+                chooseLanguageText.Visibility = Android.Views.ViewStates.Visible;
+                spinnerLang.Visibility = Android.Views.ViewStates.Visible;
+                fileBtn.Visibility = Android.Views.ViewStates.Invisible;
+            };
 
             // =================spinner for choosing level==========================================
             spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(SpinnerItemSelected);
@@ -90,52 +110,20 @@ namespace App3
                 else  LockScreen.GetInstance().Deactivate();
             };
 
-            dataBtn.Click += async (o, e) =>
-            {
-                isWorking = true;
-                progressBar.Visibility = Android.Views.ViewStates.Visible;
-                if(CheckConnection()==true)
-                {
-                    RunOnUiThread(() => progressBar.Visibility = Android.Views.ViewStates.Visible);
-                    Task<int> taks = new Task<int>(GettingItemsFromDatabase.InsertWordsToSqlite);
-                    taks.Start();
-                    int result = await taks;
-                    if (result == 1)
-                    {
-                        progressBar.Visibility = Android.Views.ViewStates.Invisible;
-                        LockScreen.GetInstance().Deactivate();
-                        switchBtn.Checked = false;
-                    }
-                    else
-                    {
-                        Toast.MakeText(this, "Developer gapa ;P", ToastLength.Long).Show();
-                        progressBar.Visibility = Android.Views.ViewStates.Invisible;
-                    }
-                }
-                else
-                {
-                    Toast.MakeText(this, "To download data, check your Internet connection", ToastLength.Long).Show();
-                }
-                
-            };
-
             fileBtn.Click += async delegate
             {
+                var filePath = "";
               try
                 {
                     var crossFilePicker = Plugin.FilePicker.CrossFilePicker.Current;
                     var myResult = await crossFilePicker.PickFile();
-                    if (!string.IsNullOrEmpty(myResult.FileName)) //Just the file name, it doesn't has the path
-                    {
-                        foreach (byte b in myResult.DataArray) //Empty array
-                            b.ToString();
-                    }
+                     filePath = myResult.FilePath;
+                    fileText.Text = filePath;
                 }
                 catch (InvalidOperationException ex)
                 {
                     ex.ToString(); //"Only one operation can be active at a time"
                 }
-
             };
         }
 
@@ -165,7 +153,7 @@ namespace App3
             switchBtn.Checked = false;
         }
 
-        private void SpinnerLangItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        private async void SpinnerLangItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;
             string toast = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
@@ -176,6 +164,16 @@ namespace App3
             editor.Apply();
             LockScreen.GetInstance().Deactivate();
             switchBtn.Checked = false;
+
+
+            // spr czy baza jest pusta, jeśli nie to spr czy ten sam język, jeśli tak, to nie wykonuje pobierania danych
+
+            if(GettingItemsFromDatabase.CheckIfDownloadDictionaryIsNeeded(toast) == true)
+            {
+                await DownloadDictionaryAsync();
+            }
+            
+
         }
 
         public string GetSharedPreferences(string keyName)
@@ -195,6 +193,36 @@ namespace App3
             if (networkInfo!=null)
                 isOnline = true; 
             return isOnline;
+        }
+
+        public async Task DownloadDictionaryAsync()
+        {
+            isWorking = true;
+            progressBar.Visibility = Android.Views.ViewStates.Visible;
+            if (CheckConnection() == true)
+            {
+                RunOnUiThread(() => progressBar.Visibility = Android.Views.ViewStates.Visible);
+                Task<int> taks = new Task<int>(GettingItemsFromDatabase.InsertWordsToSqlite);
+                taks.Start();
+                int result = await taks;
+                if (result == 1)
+                {
+                    progressBar.Visibility = Android.Views.ViewStates.Invisible;
+                    LockScreen.GetInstance().Deactivate();
+                    switchBtn.Checked = false;
+                }
+                else
+                {
+                    progressBar.Visibility = Android.Views.ViewStates.Invisible;
+                    Toast.MakeText(this, "Developer gapa ;P", ToastLength.Long).Show();
+                    progressBar.Visibility = Android.Views.ViewStates.Invisible;
+                }
+            }
+            else
+            {
+                progressBar.Visibility = Android.Views.ViewStates.Invisible;
+                Toast.MakeText(this, "To download data, check your Internet connection", ToastLength.Long).Show();
+            }
         }
     }
 

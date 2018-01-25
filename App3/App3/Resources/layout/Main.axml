@@ -4,48 +4,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp">
+  <Switch
+       android:text="Turn on/off lock screen"
+       android:textSize="20dp"
+       android:id="@+id/switchButton"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="left"
+       android:checked="true"
+       android:textOn="On"
+       android:textOff="Off"
+       android:paddingTop="30dp"
+       android:paddingBottom="25dp" />
+    
     <TextView
+        android:text="Choose type of dictionary:"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" />
+<!-- android:text="@string/radioGroupText" -->
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/radio_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your file (CSV or Excl)" />
+        <RadioButton
+            android:id="@+id/radio_extern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="External dictionary" />
+    </RadioGroup>
+  <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dip"
+        android:visibility="visible"
         android:text="@string/Level" />
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:prompt="@string/Level" />
+  <Spinner
+      android:id="@+id/spinner"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:visibility="visible"
+      android:prompt="@string/Level" />
     <TextView
+        android:id="@+id/ChooseLanguageTextView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dip"
+        android:visibility="visible"
         android:text="@string/Language" />
     <Spinner
         android:id="@+id/spinnerLanguage"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:visibility="visible"
         android:prompt="@string/Language" />
-    <Switch
-        android:text="Turn on/off lock screen"
-        android:id="@+id/switchButton"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:checked="true"
-        android:textOn="On"
-        android:textOff="Off"
-        android:paddingTop="25dp"
-        android:paddingBottom="25dp" />
-    <Button
-        android:text="Download dictionary"
-        android:id="@+id/getDataBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:text="Choose your file"
-        android:id="@+id/chooseFileBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
+   
 <!--  <Button
         android:text="Choose file csv/excl"
         android:id="@+id/openDialog"
@@ -66,9 +85,22 @@
         android:visibility="invisible"
         android:id="@+id/progressBar1" />
     <TextView
-        android:text="Your Score: 0ptk/0ans"
+        android:text="Your Score: 0 ptk/0 ans"
+        android:textSize="26dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1" />
+    <Button
+        android:visibility="invisible"
+        android:text="Choose your file"
+        android:id="@+id/chooseFileBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text=""
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
 </LinearLayout>

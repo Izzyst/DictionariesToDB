@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
+    <Jar>obj\Debug\lp\2\jl\formsviewgroup.jar</Jar>
+    <Jar>obj\Debug\lp\29\jl\support-annotations.jar</Jar>
     <Jar>C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\lp\2\jl\formsviewgroup.jar</Jar>
     <Jar>C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\lp\28\jl\classes.jar</Jar>
     <Jar>C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\lp\29\jl\support-annotations.jar</Jar>
