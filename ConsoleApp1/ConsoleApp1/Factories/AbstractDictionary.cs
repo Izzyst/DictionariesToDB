@@ -12,7 +12,8 @@ namespace ConsoleApp1.Factories
         private int wordMaxLenght = 150;
         private int definitionMaxLenght = 350;
 
-        public abstract List<Words> GetWords();
+        public virtual List<Words> GetWords() { return new List<Words>(); }
+        public virtual List<Words> GetWords(string path) { return new List<Words>(); }
         Random rnd = new Random();
 
        /* public static void AddDefToWord(Word word, params Definition[] defs)

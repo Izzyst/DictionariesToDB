@@ -8,10 +8,10 @@ namespace ConsoleApp1.Factories
 {
     public class FromCsvFileFactory : AbstractDictionary
     {
-        public override List<Words> GetWords()
+        public override List<Words> GetWords(string path)
         {
             List<Words> words = new List<Words>();
-            using (var fs = File.OpenRead(@"C:\Users\Izabela\Documents\words.csv"))
+            using (var fs = File.OpenRead(@path))
             using (var reader = new StreamReader(fs))
             {
                 string word = "";
@@ -45,7 +45,7 @@ namespace ConsoleApp1.Factories
             {
                 if (item != null)
                 {
-                    Console.WriteLine("{0} ", item.Word);
+                   // Console.WriteLine("{0} ", item.Word);
 
                 }
             }

@@ -8,11 +8,11 @@ namespace ConsoleApp1.Factories
     public class FromExcelFileFactory : AbstractDictionary
     {
 
-        public override List<Words> GetWords()
+        public override List<Words> GetWords(string path)
         {
             List<Words> words = new List<Words>();
             Excel.Application xlApp = new Excel.Application();
-            Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(@"C:\Users\Izabela\Documents\words.xlsx");
+            Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(@path);
             Excel._Worksheet xlWorksheet = xlWorkbook.Sheets[1];
             Excel.Range xlRange = xlWorksheet.UsedRange;
             Excel.Worksheet x = xlApp.ActiveSheet as Excel.Worksheet;

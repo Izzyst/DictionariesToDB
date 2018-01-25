@@ -123,12 +123,14 @@ namespace App3
             fileBtn.Click += async delegate
             {
                 var filePath = "";
-              try
+                try
                 {
                     var crossFilePicker = Plugin.FilePicker.CrossFilePicker.Current;
                     var myResult = await crossFilePicker.PickFile();
-                     filePath = myResult.FilePath;
+                    filePath = myResult.FilePath;
                     fileText.Text = filePath;
+                    GettingItemsFromDatabase.InsertFile(filePath);
+                    
                 }
                 catch (InvalidOperationException ex)
                 {

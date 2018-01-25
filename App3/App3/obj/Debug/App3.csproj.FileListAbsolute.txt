@@ -37,7 +37,6 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\Plugin.Fi
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\Plugin.FilePicker.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\SQLite-net.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\SQLite.Net.dll
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\SQLite.Net.Platform.XamarinAndroid.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\SQLitePCLRaw.batteries_green.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\SQLitePCLRaw.core.dll

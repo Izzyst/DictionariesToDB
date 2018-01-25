@@ -28,7 +28,6 @@ namespace App3.LevelStrategy
             else language = "eng";
 
             MainActivity.isWorking = true;
-            List<Words> list = new List<Words>();
             string json;
             Database db;
             try
@@ -62,6 +61,41 @@ namespace App3.LevelStrategy
                 return 0;
             }
            
+        }
+
+        public static int InsertFromFileToSqlite(List<Words> items)
+        {
+            MainActivity.isWorking = true;
+            Database db;
+            try
+            {
+                using (WebClient wc = new WebClient())
+                {
+                    db = new Database();
+                    db.DropTable();
+                    db.CreateDatabase();
+                    foreach (var item in items)
+                    {
+
+                        WordTable wordTable = new WordTable();
+                        wordTable.IdWordJson = item.Id;
+                        wordTable.W = FirstCharToUpper(item.Word);
+                        wordTable.Def = FirstCharToUpper(item.Defs[0]);
+                        wordTable.Lang = item.Language;
+                        wordTable.Score = 0;
+                        wordTable.NumberOfAnswers = 0;
+
+
+                        db.InsertIntoTableWord(wordTable);
+                    }
+                }
+                return 1;
+            }
+            catch (Exception ex)
+            {
+                return 0;
+            }
+
         }
 
         public static string FirstCharToUpper(string input)
@@ -145,6 +179,11 @@ namespace App3.LevelStrategy
             return false;
         }
 
-
+        public static void InsertFile(string path)
+        {
+            FromCsvFileFactory ob = new FromCsvFileFactory();
+            List<Words> list = ob.GetWords(path);
+            InsertFromFileToSqlite(list);
+        }
     }
 }

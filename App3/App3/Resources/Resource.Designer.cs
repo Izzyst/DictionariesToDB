@@ -30,8 +30,6 @@ namespace App3
 			global::PCLCrypto.Resource.String.Hello = global::App3.Resource.String.Hello;
 			global::PCLStorage.Resource.String.ApplicationName = global::App3.Resource.String.ApplicationName;
 			global::PCLStorage.Resource.String.Hello = global::App3.Resource.String.Hello;
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::App3.Resource.String.ApplicationName;
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::App3.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::App3.Resource.Attribute.actionBarSize;
 		}
 		
