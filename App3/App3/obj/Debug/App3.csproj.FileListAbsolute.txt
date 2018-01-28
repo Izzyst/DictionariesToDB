@@ -120,11 +120,9 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\App3.cspr
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\App3.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\App3.pdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\bin\App3.App3.apk
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\layout\unlockscreen.xml
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\layout\mediumlevelscreen.xml
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\layout\hardlevelscreen.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\layout\dialoglayout.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\layout\file_picker_list_item.xml
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\layout\unlockscreen.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\layout\main.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\values\strings.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\values\styles.xml
@@ -132,7 +130,6 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\drawa
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\drawable\folder.png
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\R.cs.flag
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\uploadflags.txt
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\App3.csprojResolveAssemblyReference.cache
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\App3.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\App3.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\FormsViewGroup.dll.mdb
@@ -144,8 +141,6 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\a
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\App3.dll
-bin\Debug\Plugin.FilePicker.Abstractions.dll.mdb
-bin\Debug\Plugin.FilePicker.dll.mdb
 bin\Debug\Microsoft.CSharp.pdb
 bin\Debug\Mono.Android.pdb
 bin\Debug\mscorlib.pdb

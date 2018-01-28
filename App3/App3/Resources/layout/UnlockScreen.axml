@@ -30,5 +30,17 @@
             android:layout_height="wrap_content"
             android:text="Egzekwować"
             android:id="@+id/Unlock" />
+      <Button
+            android:text="hard 2"
+            android:id="@+id/hard2Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:visibility="invisible"/>
+      <Button
+          android:text="hard 3"
+          android:id="@+id/hard3Btn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" 
+          android:visibility="invisible"/>
     </LinearLayout>
 </LinearLayout>

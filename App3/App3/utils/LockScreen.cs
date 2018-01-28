@@ -1,11 +1,11 @@
 ﻿using Android.App;
 using Android.Content;
 
-
 namespace App3.utils
 {
     public class LockScreen
     {
+        public static bool lockScreenIsShow = false;
         private static LockScreen lockScreen;
 
         Context context;
@@ -38,11 +38,6 @@ namespace App3.utils
 
         public void Active()
         {
-            //if (disableHomeButton)
-            //{
-            //    ShowSettingAccesability();
-            //}
-
             if (context != null)
             {
                 context.StartService(new Intent(context, typeof(LockScreenService)));
@@ -56,6 +51,16 @@ namespace App3.utils
                 context.StopService(new Intent(context, typeof(LockScreenService)));
             }
         }
+
+
+        /*
+         private void showSettingAccesability(){
+        if(!isMyServiceRunning(LockWindowAccessibilityService.class)) {
+            Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
+            context.startActivity(intent);
+        }
+    }
+             */
 
         private bool IsMyServiceRunning(System.Type cls)
         {

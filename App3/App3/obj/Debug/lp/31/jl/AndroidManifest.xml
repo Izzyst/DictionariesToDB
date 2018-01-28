@@ -16,11 +16,11 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="android.support.coreui" >
+    package="android.support.coreutils" >
 
     <uses-sdk
         android:minSdkVersion="9"
-        tools:overrideLibrary="android.support.coreui" />
+        tools:overrideLibrary="android.support.coreutils" />
 
     <meta-data
         android:name="android.support.VERSION"

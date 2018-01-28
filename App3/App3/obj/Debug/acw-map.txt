@@ -2,14 +2,6 @@ App3.MainApplication, App3;md5db1d84f0b2adc09d2fa403805cf2e153.MainApplication
 App3.MainApplication, App3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5db1d84f0b2adc09d2fa403805cf2e153.MainApplication
 App3.MainApplication;md5db1d84f0b2adc09d2fa403805cf2e153.MainApplication
 app3.MainApplication;md5db1d84f0b2adc09d2fa403805cf2e153.MainApplication
-App3.HardLevelActivity, App3;md5db1d84f0b2adc09d2fa403805cf2e153.HardLevelActivity
-App3.HardLevelActivity, App3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5db1d84f0b2adc09d2fa403805cf2e153.HardLevelActivity
-App3.HardLevelActivity;md5db1d84f0b2adc09d2fa403805cf2e153.HardLevelActivity
-app3.HardLevelActivity;md5db1d84f0b2adc09d2fa403805cf2e153.HardLevelActivity
-App3.MediumLevelActivity, App3;md5db1d84f0b2adc09d2fa403805cf2e153.MediumLevelActivity
-App3.MediumLevelActivity, App3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5db1d84f0b2adc09d2fa403805cf2e153.MediumLevelActivity
-App3.MediumLevelActivity;md5db1d84f0b2adc09d2fa403805cf2e153.MediumLevelActivity
-app3.MediumLevelActivity;md5db1d84f0b2adc09d2fa403805cf2e153.MediumLevelActivity
 App3.LockScreenActivity, App3;md5db1d84f0b2adc09d2fa403805cf2e153.LockScreenActivity
 App3.LockScreenActivity, App3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5db1d84f0b2adc09d2fa403805cf2e153.LockScreenActivity
 App3.LockScreenActivity;md5db1d84f0b2adc09d2fa403805cf2e153.LockScreenActivity

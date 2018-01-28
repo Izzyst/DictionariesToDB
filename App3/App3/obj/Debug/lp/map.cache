@@ -16,7 +16,6 @@ Plugin.FilePicker.Abstractions
 Plugin.FilePicker
 SQLite-net
 SQLite.Net
-SQLite.Net.Platform.XamarinAndroid
 SQLitePCLRaw.batteries_green
 SQLitePCLRaw.batteries_v2
 SQLitePCLRaw.core

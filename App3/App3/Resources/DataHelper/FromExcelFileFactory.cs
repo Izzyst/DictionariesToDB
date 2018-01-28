@@ -1,0 +1,60 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using App3.Models;
+//using Excel = Microsoft.Office.Interop.Excel;
+
+namespace App3.Resources.DataHelper
+{
+    public class FromExcelFileFactory
+    {
+        //public override List<Words> GetWords(string path)
+        //{
+        //    List<Words> words = new List<Words>();
+        //    Excel.Application xlApp = new Excel.Application();
+        //    Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(@path);
+        //    Excel._Worksheet xlWorksheet = xlWorkbook.Sheets[1];
+        //    Excel.Range xlRange = xlWorksheet.UsedRange;
+        //    Excel.Worksheet x = xlApp.ActiveSheet as Excel.Worksheet;
+
+        //    int rowCount = xlWorksheet.UsedRange.Rows.Count;
+        //    int colCount = xlWorksheet.UsedRange.Columns.Count;
+
+        //    // Console.WriteLine("ilosc wierszy: " + rowCount + " ilość kolumn: " + colCount);
+        //    List<string> def;
+        //    List<string> word2 = new List<string>();
+        //    for (int i = 1; i <= rowCount; i++)
+        //    {
+        //        def = new List<string>();
+        //        string w = "";
+        //        if (x.Cells[i, 1].Value2 != null)
+        //        {
+        //            Console.WriteLine(x.Cells[i, 1].Value2);
+        //            w = x.Cells[i, 1].Value2;
+        //        }
+
+        //        for (int j = 2; j <= colCount; j++)
+        //        {
+        //            if (x.Cells[i, j].Value2 != null)
+        //            {
+        //                def.Add(x.Cells[i, j].Value2);
+        //                Console.WriteLine(x.Cells[i, j].Value2);
+        //            }
+
+        //        }
+        //        words.Add(new Words(w, def, "exel"));
+        //        //def.Clear();
+
+        //    }
+        //    return words;
+        //}
+    }
+}
