@@ -19,8 +19,22 @@ namespace App3.LevelStrategy
             Database db = new Database();
             //list = GenerateExampleList();
             list.AddRange(db.SelectRandomWord());
-            list.AddRange(db.SelectRandomWord());
-            list.AddRange(db.SelectRandomWord());
+            WordTable w2 = db.SelectRandomWord()[0];
+            while (CheckIfDifferent(list[0], w2))
+            {
+                w2 = db.SelectRandomWord()[0];
+            }
+
+            list.Add(w2);
+
+            WordTable w3 = db.SelectRandomWord()[0];
+            while (CheckIfDifferent(list[0], w3))
+            {
+                w3 = db.SelectRandomWord()[0];
+            }
+
+            list.Add(w3);
+
             var rnd = new Random();
             int x = rnd.Next(0, 3);
             data.Id = list[x].Id;
@@ -31,6 +45,14 @@ namespace App3.LevelStrategy
             data.WordList = list;
 
             return data;
+        }
+        public bool CheckIfDifferent(WordTable word1, WordTable word2)
+        {
+            if (word1.IdWordJson != word2.IdWordJson)
+            {
+                return false;
+            }
+            return true;
         }
 
     }

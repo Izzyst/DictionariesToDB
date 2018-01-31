@@ -19,7 +19,14 @@ namespace App3.LevelStrategy
             Database db = new Database();
             list = db.SelectRandomWord();
             list.AddRange(db.SelectRandomWord());
-            list.AddRange(db.SelectRandomWord());
+            WordTable w = db.SelectRandomWord()[0];
+            while(CheckIfDifferent(list[0], w))
+            {
+                w = db.SelectRandomWord()[0];
+            }
+
+            list.Add(w);
+
            // list = GenerateExampleList();
             var rnd = new Random();
             int x = rnd.Next(0, 2);
@@ -30,6 +37,15 @@ namespace App3.LevelStrategy
             data.WordList = list;
 
             return data;
+        }
+
+        public bool CheckIfDifferent(WordTable word1, WordTable word2)
+        {
+            if(word1.IdWordJson != word2.IdWordJson)
+            {
+                return false;
+            }
+            return true;
         }
 
 

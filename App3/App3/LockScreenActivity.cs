@@ -10,6 +10,8 @@ using App3.LevelStrategy;
 using App3.Models;
 using App3.Resources.DataHelper;
 using App3.utils;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace App3
 {
@@ -35,140 +37,161 @@ namespace App3
             button3 = (Button)FindViewById(Resource.Id.hard3Btn);
             textView = (TextView)FindViewById(Resource.Id.textView1);
 
-            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(ApplicationContext);
-            string levelData = prefs.GetString("level_data", levelString);
-            SetViewForChosenLevel(levelData);
+           // ThreadPool.QueueUserWorkItem(o => SetViewForChosenLevel());
+            SetViewForChosenLevel();
         }
 
-        private void SetViewForChosenLevel(string lev)
+        private void SetViewForChosenLevel()
         {
-            if(lev == "Easy" || lev == "Latwy" || lev == "Łatwy")
+            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(ApplicationContext);
+            string lev = prefs.GetString("level_data", levelString);
+
+            if (lev == "Easy" || lev == "Latwy" || lev == "Łatwy")
             {
                 EasyLevel level = new EasyLevel();
                 DataToLevel data = level.GetWords();
 
-                textView.Text = data.Def;
-                button.Text = data.WordList[0].W;
+                RunOnUiThread(() => {
+                    textView.Text = data.Def;
+                    button.Text = data.WordList[0].W;
 
-                button.Click += (o, e) =>
-                {
-                    numberOfClicks = 1;
-                    SetNewScore(data.Score, data.WordList[0]);
-                    numberOfClicks = 0;
-                    Finish();
-                    Android.Graphics.Color color = Android.Graphics.Color.Green;
-                    button.SetTextColor(color);
-                    isFinished = true;
-                };
+                    button.Click += (o, e) =>
+                    {
+                        numberOfClicks = 1;
+                        SetNewScore(data.Score, data.WordList[0]);
+                        numberOfClicks = 0;
+                        Finish();
+                        Android.Graphics.Color color = Android.Graphics.Color.Green;
+                        button.SetTextColor(color);
+                        isFinished = true;
+                    };
+                });
+                
+                
             }
             else if(lev == "Medium" || lev == "Sredni" || lev == "Średni")
             {
                 MediumLevel level = new MediumLevel();
                 DataToLevel data = level.GetWords();
-                button2.Visibility = ViewStates.Visible;
-                textView.Text = data.Def;
-                button.Text = data.WordList[0].W;
-                button2.Text = data.WordList[1].W;
+                RunOnUiThread(() =>
+                {
+                    button2.Visibility = ViewStates.Visible;
+                    textView.Text = data.Def;
+                    button.Text = data.WordList[0].W;
+                    button2.Text = data.WordList[1].W;
 
-                button.Click += (o, e) => {
-                    numberOfClicks++;
-                    if (data.WordList[0].Id == data.Id)
+                    button.Click += (o, e) =>
                     {
-                        SetNewScore(data.Score, data.WordList[0]);
-                        Android.Graphics.Color color = Android.Graphics.Color.Green;
-                        button.SetTextColor(color);
-                        numberOfClicks = 0;
-                        Finish();
-                        isFinished = true;
-                    }
-                    else
-                    {
-                        Android.Graphics.Color color = Android.Graphics.Color.Red;
-                        button.SetTextColor(color);
-                    }
+                        numberOfClicks++;
+                        if (data.WordList[0].Id == data.Id)
+                        {
+                            SetNewScore(data.Score, data.WordList[0]);
+                            Android.Graphics.Color color = Android.Graphics.Color.Green;
+                            button.SetTextColor(color);
+                            numberOfClicks = 0;
+                            Finish();
+                            isFinished = true;
+                        }
+                        else
+                        {
+                            Android.Graphics.Color color = Android.Graphics.Color.Red;
+                            button.SetTextColor(color);
+                        }
 
-                };
-                button2.Click += (o, e) => {
-                    numberOfClicks++;
-                    if (data.WordList[1].Id == data.Id)
+                    };
+                    button2.Click += (o, e) =>
                     {
-                        SetNewScore(data.Score, data.WordList[1]);
-                        Android.Graphics.Color color = Android.Graphics.Color.Green;
-                        button2.SetTextColor(color);
-                        numberOfClicks = 0;
-                        Finish();
-                    }
-                    else
-                    {
-                        Android.Graphics.Color color = Android.Graphics.Color.Red;
-                        button2.SetTextColor(color);
-                    }
-                };
+                        numberOfClicks++;
+                        if (data.WordList[1].Id == data.Id)
+                        {
+                            SetNewScore(data.Score, data.WordList[1]);
+                            Android.Graphics.Color color = Android.Graphics.Color.Green;
+                            button2.SetTextColor(color);
+                            numberOfClicks = 0;
+                            Finish();
+                            isFinished = true;
+                        }
+                        else
+                        {
+                            Android.Graphics.Color color = Android.Graphics.Color.Red;
+                            button2.SetTextColor(color);
+                        }
+                    };
+                });
             }
             else
             {
                 HardLevel level = new HardLevel();
                 DataToLevel data = level.GetWords();
-                button2.Visibility = ViewStates.Visible;
-                button3.Visibility = ViewStates.Visible;
 
-                textView.Text = data.Def;
-                button.Text = data.WordList[0].W;
-                button2.Text = data.WordList[1].W;
-                button3.Text = data.WordList[2].W;
+                RunOnUiThread(() =>
+                {
+                    button2.Visibility = ViewStates.Visible;
+                    button3.Visibility = ViewStates.Visible;
 
-                button.Click += (o, e) => {
-                    numberOfClicks++;
-                    if (data.WordList[0].Id == data.Id)
-                    {
-                        SetNewScore(data.Score, data.WordList[0]);
-                        Android.Graphics.Color color = Android.Graphics.Color.Green;
-                        button.SetTextColor(color);
-                        numberOfClicks = 0;
-                        Finish();
-                        isFinished = true;
-                    }
-                    else
-                    {
-                        Android.Graphics.Color color = Android.Graphics.Color.Red;
-                        button.SetTextColor(color);
-                    }
+                    textView.Text = data.Def;
+                    button.Text = data.WordList[0].W;
+                    button2.Text = data.WordList[1].W;
+                    button3.Text = data.WordList[2].W;
 
-                };
-                button2.Click += (o, e) => {
-                    numberOfClicks++;
-                    if (data.WordList[1].Id == data.Id)
+                    button.Click += (o, e) =>
                     {
-                        SetNewScore(data.Score, data.WordList[1]);
-                        Android.Graphics.Color color = Android.Graphics.Color.Green;
-                        button2.SetTextColor(color);
-                        numberOfClicks = 0;
-                        Finish();
+                        numberOfClicks++;
+                        if (data.WordList[0].Id == data.Id)
+                        {
+                            SetNewScore(data.Score, data.WordList[0]);
+                            Android.Graphics.Color color = Android.Graphics.Color.Green;
+                            button.SetTextColor(color);
+                            numberOfClicks = 0;
+                            Finish();
+                            isFinished = true;
+                        }
+                        else
+                        {
+                            Android.Graphics.Color color = Android.Graphics.Color.Red;
+                            button.SetTextColor(color);
+                        }
 
-                    }
-                    else
+                    };
+                    button2.Click += (o, e) =>
                     {
-                        Android.Graphics.Color color = Android.Graphics.Color.Red;
-                        button2.SetTextColor(color);
-                    }
-                };
+                        numberOfClicks++;
+                        if (data.WordList[1].Id == data.Id)
+                        {
+                            SetNewScore(data.Score, data.WordList[1]);
+                            Android.Graphics.Color color = Android.Graphics.Color.Green;
+                            button2.SetTextColor(color);
+                            numberOfClicks = 0;
+                            Finish();
+                            isFinished = true;
 
-                button3.Click += (o, e) => {
-                    numberOfClicks++;
-                    if (data.WordList[2].Id == data.Id)
+                        }
+                        else
+                        {
+                            Android.Graphics.Color color = Android.Graphics.Color.Red;
+                            button2.SetTextColor(color);
+                        }
+                    };
+
+                    button3.Click += (o, e) =>
                     {
-                        SetNewScore(data.Score, data.WordList[2]);
-                        Android.Graphics.Color color = Android.Graphics.Color.Green;
-                        button3.SetTextColor(color);
-                        numberOfClicks = 0;
-                        Finish();
-                    }
-                    else
-                    {
-                        Android.Graphics.Color color = Android.Graphics.Color.Red;
-                        button3.SetTextColor(color);
-                    }
-                };
+                        numberOfClicks++;
+                        if (data.WordList[2].Id == data.Id)
+                        {
+                            SetNewScore(data.Score, data.WordList[2]);
+                            Android.Graphics.Color color = Android.Graphics.Color.Green;
+                            button3.SetTextColor(color);
+                            numberOfClicks = 0;
+                            Finish();
+                            isFinished = true;
+                        }
+                        else
+                        {
+                            Android.Graphics.Color color = Android.Graphics.Color.Red;
+                            button3.SetTextColor(color);
+                        }
+                    };
+                });
             }
         }
 
