@@ -222,19 +222,15 @@ namespace App3
         {
             Database db = new Database();
             // jesli poprawna odp za pierwszym kliknięciem, update score oraz ilość kliknięć dla danego słowa
-            if (numberOfClicks == 1 && score !=-1)
+            if (score>=0)
             {
                 score++;
-                db.UpdateTableWord(score, numberOfClicks, word);
-            }
-            else if(score == -1)
-            {
-                db.UpdateTableWord(-1, 1, word);
+                db.UpdateTableWord(score, word);
             }
             else
             {
-                // jesli ilosc wybranych odp różna od 1, to update ilość klinięć
-                db.UpdateTableWord(-1, 1, word);
+                // -1 oznacza niepoprawną odp
+                db.UpdateTableWord(-1, word);
             }
         }
 

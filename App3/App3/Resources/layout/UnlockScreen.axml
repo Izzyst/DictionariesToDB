@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/tapetaMob"
     android:gravity="center">
     <LinearLayout
         android:gravity="center"
@@ -30,17 +31,17 @@
             android:layout_height="wrap_content"
             android:text="Egzekwować"
             android:id="@+id/Unlock" />
-      <Button
+        <Button
             android:text="hard 2"
             android:id="@+id/hard2Btn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" 
-            android:visibility="invisible"/>
-      <Button
-          android:text="hard 3"
-          android:id="@+id/hard3Btn"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content" 
-          android:visibility="invisible"/>
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+        <Button
+            android:text="hard 3"
+            android:id="@+id/hard3Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
     </LinearLayout>
 </LinearLayout>

@@ -58,17 +58,18 @@ namespace App3
             scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
             LockScreen.GetInstance().Init(this);
 
-            fileRadioBtn.Click += async delegate
+            fileRadioBtn.Click += delegate
             {
                 fileBtn.Visibility = Android.Views.ViewStates.Visible;
                 chooseLanguageText.Visibility = Android.Views.ViewStates.Invisible;
                 spinnerLang.Visibility = Android.Views.ViewStates.Invisible;
             };
-            externRadioBtn.Click += async delegate
+            externRadioBtn.Click += delegate
             {
-                chooseLanguageText.Visibility = Android.Views.ViewStates.Visible;
-                spinnerLang.Visibility = Android.Views.ViewStates.Visible;
-                fileBtn.Visibility = Android.Views.ViewStates.Invisible;
+                //chooseLanguageText.Visibility = Android.Views.ViewStates.Visible;
+                //spinnerLang.Visibility = Android.Views.ViewStates.Visible;
+                //fileBtn.Visibility = Android.Views.ViewStates.Invisible;
+                HandleClickExternalRadioButton();
             };
 
             // =================spinner for choosing level==========================================
@@ -90,7 +91,6 @@ namespace App3
             var adapterLang = ArrayAdapter.CreateFromResource(
                     this, Resource.Array.language_array, Android.Resource.Layout.SimpleSpinnerItem);
 
-            // do odkomentowania po zrobieniu osobnej metody dla zapisu ====
             adapterLang.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             spinnerLang.Adapter = adapterLang;
             //ustawienie spinnera wg wczesniejszego ustawienia
@@ -128,10 +128,14 @@ namespace App3
                     var crossFilePicker = Plugin.FilePicker.CrossFilePicker.Current;
                     var myResult = await crossFilePicker.PickFile();
                     filePath = myResult.FilePath;
+                    fileText.Visibility = Android.Views.ViewStates.Visible;
                     fileText.Text = filePath;
                     if(GettingItemsFromDatabase.InsertFile(filePath)==false)
                     {
                         Toast.MakeText(this, "Check if choosen file has xls, xlsx or csv extension", ToastLength.Long).Show();
+                        externRadioBtn.Checked = true;
+                        HandleClickExternalRadioButton();
+                        fileText.Visibility = Android.Views.ViewStates.Gone;
                     }
                     
                 }
@@ -140,6 +144,13 @@ namespace App3
                     ex.ToString(); //"Only one operation can be active at a time"
                 }
             };
+        }
+
+        void HandleClickExternalRadioButton()
+        {
+            chooseLanguageText.Visibility = Android.Views.ViewStates.Visible;
+            spinnerLang.Visibility = Android.Views.ViewStates.Visible;
+            fileBtn.Visibility = Android.Views.ViewStates.Invisible;
         }
 
         protected override void OnResume()

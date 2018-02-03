@@ -105,7 +105,6 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\Xamarin.F
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\App3.csprojResolveAssemblyReference.cache
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\XbdMerge\Xamarin.Android.Support.Annotations.dll.stamp
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\XbdMerge\Xamarin.Android.Support.Compat.dll.stamp
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\XbdMerge\Xamarin.Android.Support.Core.UI.dll.stamp
@@ -126,15 +125,13 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\App3.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\App3.pdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\bin\App3.App3.apk
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\layout\dialoglayout.xml
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\layout\file_picker_list_item.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\layout\unlockscreen.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\layout\main.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\values\strings.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\values\styles.xml
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\drawable\file.png
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\drawable\folder.png
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\R.cs.flag
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\uploadflags.txt
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\drawable\tapetamob.jpg
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\App3.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\App3.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\FormsViewGroup.dll.mdb

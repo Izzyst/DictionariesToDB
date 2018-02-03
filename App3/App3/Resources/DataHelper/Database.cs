@@ -151,7 +151,7 @@ namespace App3.Resources.DataHelper
             }
         }
 
-        public bool UpdateTableWord(int score, int numberOfAns, WordTable word)
+        public bool UpdateTableWord(int score, WordTable word)
         {
             try
             {
@@ -159,10 +159,10 @@ namespace App3.Resources.DataHelper
                 {
                     if(score!=-1)
                     {
-                        connection.Query<WordTable>("UPDATE WordTable set Score=?, NumberOfAnswers=? where Id=?", score, numberOfAns, word.Id);
+                        connection.Query<WordTable>("UPDATE WordTable set Score=?, NumberOfAnswers=? where Id=?", score, ++word.NumberOfAnswers, word.Id);
                         var s = connection.Query<WordTable>("SELECT * FROM WordTable where Id=?", word.Id);
                     }
-                    else connection.Query<WordTable>("UPDATE WordTable set NumberOfAnswers=? where Id=?", numberOfAns, word.Id);
+                    else connection.Query<WordTable>("UPDATE WordTable set NumberOfAnswers=? where Id=?", ++word.NumberOfAnswers, word.Id);
                     return true;
                 }
             }

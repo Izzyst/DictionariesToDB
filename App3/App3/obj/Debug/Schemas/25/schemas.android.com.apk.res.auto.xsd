@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>29.01.2018 00:19:55</xs:documentation>
+    <xs:documentation>03.02.2018 16:07:52</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -385,7 +385,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -564,6 +563,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -1018,7 +1018,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -1197,6 +1196,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -1522,7 +1522,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -1701,6 +1700,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2026,7 +2026,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -2205,6 +2204,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3902,7 +3902,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -4081,6 +4080,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4406,7 +4406,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -4585,6 +4584,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5016,7 +5016,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -5195,6 +5194,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5762,7 +5762,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -5941,6 +5940,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -6266,7 +6266,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -6445,6 +6444,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -7763,7 +7763,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -7942,6 +7941,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8267,7 +8267,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -8446,6 +8445,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8832,7 +8832,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -9011,6 +9010,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9336,7 +9336,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -9515,6 +9514,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9930,7 +9930,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -10109,6 +10108,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10680,7 +10680,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -10859,6 +10858,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -11263,7 +11263,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -11442,6 +11441,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11954,7 +11954,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -12133,6 +12132,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12645,7 +12645,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -12824,6 +12823,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13149,7 +13149,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -13328,6 +13327,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13759,7 +13759,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -13938,6 +13937,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14784,7 +14784,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -14963,6 +14962,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15394,7 +15394,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -15573,6 +15572,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16004,7 +16004,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -16183,6 +16182,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16758,7 +16758,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -16937,6 +16936,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17447,7 +17447,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -17626,6 +17625,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18504,7 +18504,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -18683,6 +18682,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19008,7 +19008,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -19187,6 +19186,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19694,7 +19694,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -19873,6 +19872,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20385,7 +20385,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -20564,6 +20563,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20995,7 +20995,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -21174,6 +21173,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21686,7 +21686,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -21865,6 +21864,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22560,7 +22560,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -22739,6 +22738,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23064,7 +23064,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -23243,6 +23242,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25637,7 +25637,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -25816,6 +25815,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27980,7 +27980,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -28159,6 +28158,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28671,7 +28671,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -28850,6 +28849,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -29175,7 +29175,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -29354,6 +29353,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -29930,7 +29930,6 @@
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
             <xs:enumeration value="@drawable/file" />
-            <xs:enumeration value="@drawable/folder" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_dialog_close_dark" />
@@ -30109,6 +30108,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/tapetamob" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />

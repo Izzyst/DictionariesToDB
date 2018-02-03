@@ -132,10 +132,8 @@ namespace App3.LevelStrategy
                 {
                     db.InsertIntoTableWord(item);
                 }
-
                 List<WordTable> w = db.SelectTableWord();
             }
-
             return list;
         }
 
