@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Android.App;
 using Android.Util;
 using App3.Models;
 using SQLite;
@@ -107,7 +108,7 @@ namespace App3.Resources.DataHelper
                     var result = connection.Query<ScoreTable>("select Score as Scores, NumberOfAnswers as Answers from WordTable");
                     int scores = result.Sum(i => i.Scores);
                     int answers = result.Sum(i => i.Answers);
-                    return "Your Score: " + scores.ToString() + "ptk / " + answers.ToString() + " answers";
+                    return Application.Context.GetString(Resource.String.yourScore) + scores.ToString() + Application.Context.GetString(Resource.String.points) + answers.ToString() + Application.Context.GetString(Resource.String.answers);
                 }
             }
             catch (SQLiteException ex)

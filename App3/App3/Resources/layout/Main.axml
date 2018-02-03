@@ -4,21 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp">
-  <Switch
-       android:text="Turn on/off lock screen"
-       android:textSize="20dp"
-       android:id="@+id/switchButton"
-       android:layout_width="fill_parent"
-       android:layout_height="wrap_content"
-       android:gravity="left"
-       android:checked="true"
-       android:textOn="On"
-       android:textOff="Off"
-       android:paddingTop="30dp"
-       android:paddingBottom="25dp" />
-    
+    <Switch
+        android:text="@string/onOff"
+        android:textSize="20dp"
+        android:id="@+id/switchButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:checked="true"
+        android:textOn="On"
+        android:textOff="Off"
+        android:paddingTop="30dp"
+        android:paddingBottom="25dp" />
     <TextView
-        android:text="Choose type of dictionary:"
+        android:text="@string/radioButtonsDescription"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dip" />
@@ -31,26 +30,26 @@
             android:id="@+id/radio_file"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your file (CSV or Excl)" />
+            android:text="@string/radioButtonFile" />
         <RadioButton
             android:id="@+id/radio_extern"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="External dictionary" />
+            android:text="@string/externalDictionary" />
     </RadioGroup>
-  <TextView
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dip"
         android:visibility="visible"
         android:text="@string/Level" />
-  <Spinner
-      android:id="@+id/spinner"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:visibility="visible"
-      android:prompt="@string/Level" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:prompt="@string/Level" />
     <TextView
         android:id="@+id/ChooseLanguageTextView"
         android:layout_width="fill_parent"
@@ -64,19 +63,7 @@
         android:layout_height="wrap_content"
         android:visibility="visible"
         android:prompt="@string/Language" />
-   
-<!--  <Button
-        android:text="Choose file csv/excl"
-        android:id="@+id/openDialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-  <Button
-        android:text="Upload Your file"
-        android:id="@+id/File"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-  -->
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -85,7 +72,7 @@
         android:visibility="invisible"
         android:id="@+id/progressBar1" />
     <TextView
-        android:text="Your Score: 0 ptk/0 ans"
+        android:text="@string/YourScoreBeginning"
         android:textSize="26dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
@@ -93,7 +80,7 @@
         android:id="@+id/textView1" />
     <Button
         android:visibility="invisible"
-        android:text="Choose your file"
+        android:text="@string/chooseFile"
         android:id="@+id/chooseFileBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

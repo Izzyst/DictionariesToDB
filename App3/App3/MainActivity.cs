@@ -66,9 +66,6 @@ namespace App3
             };
             externRadioBtn.Click += delegate
             {
-                //chooseLanguageText.Visibility = Android.Views.ViewStates.Visible;
-                //spinnerLang.Visibility = Android.Views.ViewStates.Visible;
-                //fileBtn.Visibility = Android.Views.ViewStates.Invisible;
                 HandleClickExternalRadioButton();
             };
 
@@ -114,7 +111,7 @@ namespace App3
                     {
                         switchBtn.Checked = false;
                         LockScreen.GetInstance().Deactivate();
-                        Toast.MakeText(this, "You need to turn on Internet connection to download dictionary", ToastLength.Long).Show();
+                        Toast.MakeText(this, this.GetString(Resource.String.noInternetConnection), ToastLength.Long).Show();
                     }
                 } 
                 else  LockScreen.GetInstance().Deactivate();
@@ -132,7 +129,7 @@ namespace App3
                     fileText.Text = filePath;
                     if(GettingItemsFromDatabase.InsertFile(filePath)==false)
                     {
-                        Toast.MakeText(this, "Check if choosen file has xls, xlsx or csv extension", ToastLength.Long).Show();
+                        Toast.MakeText(this, this.GetString(Resource.String.wrongFileExtension), ToastLength.Long).Show();
                         externRadioBtn.Checked = true;
                         HandleClickExternalRadioButton();
                         fileText.Visibility = Android.Views.ViewStates.Gone;
@@ -223,7 +220,7 @@ namespace App3
                 int result = await taks;
                 if (result == 1)
                 {
-                    Toast.MakeText(this, "Finished downloading", ToastLength.Long).Show();
+                    Toast.MakeText(this, this.GetString(Resource.String.finishDownload), ToastLength.Long).Show();
                     progressBar.Visibility = Android.Views.ViewStates.Invisible;
                     LockScreen.GetInstance().Deactivate();
                     switchBtn.Checked = false;
@@ -231,14 +228,14 @@ namespace App3
                 else
                 {
                     progressBar.Visibility = Android.Views.ViewStates.Invisible;
-                    Toast.MakeText(this, "Developer gapa ;P", ToastLength.Long).Show();
+                    Toast.MakeText(this, this.GetString(Resource.String.developersError), ToastLength.Long).Show();
                     progressBar.Visibility = Android.Views.ViewStates.Invisible;
                 }
             }
             else
             {
                 progressBar.Visibility = Android.Views.ViewStates.Invisible;
-                Toast.MakeText(this, "To download data, check your Internet connection", ToastLength.Long).Show();
+                Toast.MakeText(this, this.GetString(Resource.String.noInternetConnection), ToastLength.Long).Show();
             }
         }
     }

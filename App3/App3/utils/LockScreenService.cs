@@ -26,7 +26,7 @@ namespace App3.utils
 
         public override void OnDestroy()
         {
-            Toast.MakeText(this.ApplicationContext, "LockScreenService has been stopped", ToastLength.Short).Show();
+            Toast.MakeText(this.ApplicationContext, this.GetString(Resource.String.serviceStopped), ToastLength.Short).Show();
             StateRecever(false);
             base.OnDestroy();
         }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Linguistic Lock Screen</string>
+  
+  <string name="Level">Wybierz poziom trudności</string>
+  <string-array name="levels_array">
+    <item name="Easy">Łatwy</item>
+    <item name="Medium">Średni</item>
+    <item name="Hard">Zaawansowany</item>
+  </string-array>
+
+  <string name="Language">Wybierz słownik</string>
+  <string-array name="language_array">
+    <item>Polski</item>
+    <item>Angielski</item>
+  </string-array>
+  <string name="noInternetConnection">Sprawdź połączenie z Internetem</string>
+  <string name="wrongFileExtension">Wybrany plik musi mieć rozszerzenie xls, xlsx lub csv</string>
+  <string name="finishDownload">Pobieranie słownika zakończone!</string>
+  <string name="developersError">Developer gapa ;P</string>
+  <string name="serviceStopped">Aplikacja została zatrzymana</string>
+  <string name="yourScore">Twój wynik: </string>
+  <string name="points"> ptk /  </string>
+  <string name="answers"> odpowiedzi</string>
+  <string name="onOff">Włącz/wyłącz blokadę ekranu</string>
+  <string name="radioButtonsDescription">Wybierz słownik:</string>
+  <string name="radioButtonFile">Twój plik (rozszerzenie: csv, xlx lub xlsx)</string>
+  <string name="YourScoreBeginning">Twój wynik: 0 ptk / 0 odpowiedzi</string>
+  <string name="chooseFile">Wybierz swój plik</string>
+  <string name="externalDictionary">Zewnętrzny słownik</string>
+</resources>

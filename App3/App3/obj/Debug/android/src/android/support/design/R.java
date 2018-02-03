@@ -3283,6 +3283,7 @@ containing a value of this type.
         public static int Hello=0x7f0b003e;
         public static int Language=0x7f0b0042;
         public static int Level=0x7f0b0041;
+        public static int YourScoreBeginning=0x7f0b004e;
         public static int abc_action_bar_home_description=0x7f0b0015;
         public static int abc_action_bar_home_description_format=0x7f0b0016;
         public static int abc_action_bar_home_subtitle_description_format=0x7f0b0017;
@@ -3314,10 +3315,15 @@ containing a value of this type.
         public static int abc_shareactionprovider_share_with=0x7f0b0025;
         public static int abc_shareactionprovider_share_with_application=0x7f0b0026;
         public static int abc_toolbar_collapse_description=0x7f0b0027;
+        public static int answers=0x7f0b004a;
         public static int app_name=0x7f0b0040;
         public static int appbar_scrolling_view_behavior=0x7f0b0036;
         public static int bottom_sheet_behavior=0x7f0b0037;
         public static int character_counter_pattern=0x7f0b0038;
+        public static int chooseFile=0x7f0b004f;
+        public static int developersError=0x7f0b0046;
+        public static int externalDictionary=0x7f0b0050;
+        public static int finishDownload=0x7f0b0045;
         public static int mr_button_content_description=0x7f0b0000;
         public static int mr_cast_button_connected=0x7f0b0001;
         public static int mr_cast_button_connecting=0x7f0b0002;
@@ -3339,13 +3345,21 @@ containing a value of this type.
         public static int mr_controller_volume_slider=0x7f0b0011;
         public static int mr_system_route_name=0x7f0b0012;
         public static int mr_user_route_category_name=0x7f0b0013;
+        public static int noInternetConnection=0x7f0b0043;
+        public static int onOff=0x7f0b004b;
         public static int password_toggle_content_description=0x7f0b0039;
         public static int path_password_eye=0x7f0b003a;
         public static int path_password_eye_mask_strike_through=0x7f0b003b;
         public static int path_password_eye_mask_visible=0x7f0b003c;
         public static int path_password_strike_through=0x7f0b003d;
+        public static int points=0x7f0b0049;
+        public static int radioButtonFile=0x7f0b004d;
+        public static int radioButtonsDescription=0x7f0b004c;
         public static int search_menu_title=0x7f0b0028;
+        public static int serviceStopped=0x7f0b0047;
         public static int status_bar_notification_info_overflow=0x7f0b0029;
+        public static int wrongFileExtension=0x7f0b0044;
+        public static int yourScore=0x7f0b0048;
     }
     public static final class style {
         public static int AlertDialog_AppCompat=0x7f0700ae;

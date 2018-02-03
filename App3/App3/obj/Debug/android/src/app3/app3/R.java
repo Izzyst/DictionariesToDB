@@ -3283,6 +3283,7 @@ containing a value of this type.
         public static final int Hello=0x7f0b003e;
         public static final int Language=0x7f0b0042;
         public static final int Level=0x7f0b0041;
+        public static final int YourScoreBeginning=0x7f0b004e;
         public static final int abc_action_bar_home_description=0x7f0b0015;
         public static final int abc_action_bar_home_description_format=0x7f0b0016;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f0b0017;
@@ -3314,10 +3315,15 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f0b0025;
         public static final int abc_shareactionprovider_share_with_application=0x7f0b0026;
         public static final int abc_toolbar_collapse_description=0x7f0b0027;
+        public static final int answers=0x7f0b004a;
         public static final int app_name=0x7f0b0040;
         public static final int appbar_scrolling_view_behavior=0x7f0b0036;
         public static final int bottom_sheet_behavior=0x7f0b0037;
         public static final int character_counter_pattern=0x7f0b0038;
+        public static final int chooseFile=0x7f0b004f;
+        public static final int developersError=0x7f0b0046;
+        public static final int externalDictionary=0x7f0b0050;
+        public static final int finishDownload=0x7f0b0045;
         public static final int mr_button_content_description=0x7f0b0000;
         public static final int mr_cast_button_connected=0x7f0b0001;
         public static final int mr_cast_button_connecting=0x7f0b0002;
@@ -3339,13 +3345,21 @@ containing a value of this type.
         public static final int mr_controller_volume_slider=0x7f0b0011;
         public static final int mr_system_route_name=0x7f0b0012;
         public static final int mr_user_route_category_name=0x7f0b0013;
+        public static final int noInternetConnection=0x7f0b0043;
+        public static final int onOff=0x7f0b004b;
         public static final int password_toggle_content_description=0x7f0b0039;
         public static final int path_password_eye=0x7f0b003a;
         public static final int path_password_eye_mask_strike_through=0x7f0b003b;
         public static final int path_password_eye_mask_visible=0x7f0b003c;
         public static final int path_password_strike_through=0x7f0b003d;
+        public static final int points=0x7f0b0049;
+        public static final int radioButtonFile=0x7f0b004d;
+        public static final int radioButtonsDescription=0x7f0b004c;
         public static final int search_menu_title=0x7f0b0028;
+        public static final int serviceStopped=0x7f0b0047;
         public static final int status_bar_notification_info_overflow=0x7f0b0029;
+        public static final int wrongFileExtension=0x7f0b0044;
+        public static final int yourScore=0x7f0b0048;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0700ae;
