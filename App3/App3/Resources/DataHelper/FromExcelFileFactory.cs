@@ -1,60 +1,89 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
+using System.Data;
+using System.IO;
+using System.Text.RegularExpressions;
 using App3.Models;
-//using Excel = Microsoft.Office.Interop.Excel;
+using ExcelDataReader;
+
 
 namespace App3.Resources.DataHelper
 {
     public class FromExcelFileFactory
     {
-        //public override List<Words> GetWords(string path)
-        //{
-        //    List<Words> words = new List<Words>();
-        //    Excel.Application xlApp = new Excel.Application();
-        //    Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(@path);
-        //    Excel._Worksheet xlWorksheet = xlWorkbook.Sheets[1];
-        //    Excel.Range xlRange = xlWorksheet.UsedRange;
-        //    Excel.Worksheet x = xlApp.ActiveSheet as Excel.Worksheet;
+        public List<Words> GetWords(string path)
+        {
 
-        //    int rowCount = xlWorksheet.UsedRange.Rows.Count;
-        //    int colCount = xlWorksheet.UsedRange.Columns.Count;
+            var file = new FileInfo(path);
+            using (
+                var stream = File.Open(path, FileMode.Open, FileAccess.Read))
+            {
+                IExcelDataReader reader;
 
-        //    // Console.WriteLine("ilosc wierszy: " + rowCount + " ilość kolumn: " + colCount);
-        //    List<string> def;
-        //    List<string> word2 = new List<string>();
-        //    for (int i = 1; i <= rowCount; i++)
-        //    {
-        //        def = new List<string>();
-        //        string w = "";
-        //        if (x.Cells[i, 1].Value2 != null)
-        //        {
-        //            Console.WriteLine(x.Cells[i, 1].Value2);
-        //            w = x.Cells[i, 1].Value2;
-        //        }
+                if (file.Extension.Equals(".xls"))
+                    reader = ExcelDataReader.ExcelReaderFactory.CreateBinaryReader(stream);
+                else if (file.Extension.Equals(".xlsx"))
+                    reader = ExcelDataReader.ExcelReaderFactory.CreateOpenXmlReader(stream);
+                else
+                    throw new Exception("Invalid FileName");
 
-        //        for (int j = 2; j <= colCount; j++)
-        //        {
-        //            if (x.Cells[i, j].Value2 != null)
-        //            {
-        //                def.Add(x.Cells[i, j].Value2);
-        //                Console.WriteLine(x.Cells[i, j].Value2);
-        //            }
+                //// reader.IsFirstRowAsColumnNames
+                var conf = new ExcelDataSetConfiguration
+                {
+                    ConfigureDataTable = _ => new ExcelDataTableConfiguration
+                    {
+                        UseHeaderRow = true
+                    }
+                };
 
-        //        }
-        //        words.Add(new Words(w, def, "exel"));
-        //        //def.Clear();
+                System.Data.DataSet result = reader.AsDataSet();
 
-        //    }
-        //    return words;
-        //}
+                //3. DataSet - Create column names from first row
+                DataTable dt = result.Tables[0];
+              //  var x = dt.Rows[0][0];
+                //var y= dt.Rows[1][1];
+
+                List<Words> words = new List<Words>();
+
+                int rowCount = dt.Rows.Count;
+                int colCount = dt.Columns.Count;
+
+                List<string> def;
+                List<string> word2 = new List<string>();
+                for (int i = 0; i < rowCount; i++)
+                {
+                    def = new List<string>();
+                    string w = "";
+                    if (dt.Rows[i][0].ToString() != "")
+                    {
+                       // Console.WriteLine(x.Cells[i, 1].Value2);
+                        w = Strip(dt.Rows[i][0].ToString());
+                    }
+
+                    for (int j = 1; j < colCount; j++)
+                    {
+                        if (dt.Rows[i][j].ToString() != "")
+                        {
+                            def.Add(Strip(dt.Rows[i][j].ToString()));
+                          //  Console.WriteLine(x.Cells[i, j].Value2);
+                        }
+
+                    }
+                    words.Add(new Words(w, def, "exel"));
+                    //def.Clear();
+
+                }
+                return words;
+            }
+        }
+        protected static string Strip(string text)
+        {
+            //usuwanie komentarzy 
+            text = Regex.Replace(text, @"([<>\?\*\\\""/\|])+", string.Empty);
+            //usuwanie skryptów oraz arkuszy styli
+            text = Regex.Replace(text, @"(<script[^<]*</script>)|(<style[^<]*</style>)|(&[^;]*;)", string.Empty);
+            text = Regex.Replace(text, @"<(.|\n)*?>", string.Empty);
+            return text;
+        }
     }
 }

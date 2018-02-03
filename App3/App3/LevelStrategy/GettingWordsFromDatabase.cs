@@ -181,7 +181,8 @@ namespace App3.LevelStrategy
 
         public static void InsertFile(string path)
         {
-            FromCsvFileFactory ob = new FromCsvFileFactory();
+            //FromCsvFileFactory ob = new FromCsvFileFactory();
+            FromExcelFileFactory ob = new FromExcelFileFactory();
             List<Words> list = ob.GetWords(path);
             InsertFromFileToSqlite(list);
         }

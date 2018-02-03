@@ -109,6 +109,8 @@ class MonoPackageManager_Resources {
 		"App3.dll",
 		"ComponentTrakCrypto.dll",
 		"ComponentTrakMVVM.dll",
+		"ExcelDataReader.DataSet.dll",
+		"ExcelDataReader.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
 		"PCLCrypto.dll",
