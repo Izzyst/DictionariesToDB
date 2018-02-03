@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
-using System.Text.RegularExpressions;
 using App3.Models;
 using ExcelDataReader;
 
@@ -40,8 +39,6 @@ namespace App3.Resources.DataHelper
 
                 //3. DataSet - Create column names from first row
                 DataTable dt = result.Tables[0];
-              //  var x = dt.Rows[0][0];
-                //var y= dt.Rows[1][1];
 
                 List<Words> words = new List<Words>();
 
@@ -56,34 +53,21 @@ namespace App3.Resources.DataHelper
                     string w = "";
                     if (dt.Rows[i][0].ToString() != "")
                     {
-                       // Console.WriteLine(x.Cells[i, 1].Value2);
-                        w = Strip(dt.Rows[i][0].ToString());
+                        w = FileFactory.Strip(dt.Rows[i][0].ToString());
                     }
 
                     for (int j = 1; j < colCount; j++)
                     {
                         if (dt.Rows[i][j].ToString() != "")
                         {
-                            def.Add(Strip(dt.Rows[i][j].ToString()));
-                          //  Console.WriteLine(x.Cells[i, j].Value2);
+                            def.Add(FileFactory.Strip(dt.Rows[i][j].ToString()));
                         }
 
                     }
                     words.Add(new Words(w, def, "exel"));
-                    //def.Clear();
-
                 }
                 return words;
             }
-        }
-        protected static string Strip(string text)
-        {
-            //usuwanie komentarzy 
-            text = Regex.Replace(text, @"([<>\?\*\\\""/\|])+", string.Empty);
-            //usuwanie skryptów oraz arkuszy styli
-            text = Regex.Replace(text, @"(<script[^<]*</script>)|(<style[^<]*</style>)|(&[^;]*;)", string.Empty);
-            text = Regex.Replace(text, @"<(.|\n)*?>", string.Empty);
-            return text;
         }
     }
 }

@@ -1,5 +1,7 @@
 ComponentTrakCrypto
 ComponentTrakMVVM
+ExcelDataReader.DataSet
+ExcelDataReader
 FormsViewGroup
 Newtonsoft.Json
 PCLCrypto
@@ -45,5 +47,3 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
-ExcelDataReader
-ExcelDataReader.DataSet

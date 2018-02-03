@@ -13,6 +13,7 @@ using Android.Widget;
 using Android.Content;
 using Android.Preferences;
 using System.Linq;
+using App3.Resources;
 
 namespace App3.LevelStrategy
 {
@@ -179,12 +180,32 @@ namespace App3.LevelStrategy
             return false;
         }
 
-        public static void InsertFile(string path)
+        public static bool InsertFile(string path)
         {
-            //FromCsvFileFactory ob = new FromCsvFileFactory();
-            FromExcelFileFactory ob = new FromExcelFileFactory();
-            List<Words> list = ob.GetWords(path);
-            InsertFromFileToSqlite(list);
+            var typeOfFile = FileFactory.CheckTypeOfFile(path);
+            List<Words> list = GetFromFile(typeOfFile, path);
+
+            // spr czy odp rozszerzenie
+            if (list.Count() != 0)
+            {
+                InsertFromFileToSqlite(list);
+                return true;
+            }
+            return false;
+        }
+
+        public static List<Words> GetFromFile(string typeOfFile, string path)
+        {
+            switch(typeOfFile)
+            {
+                case "xls":
+                    return new FromExcelFileFactory().GetWords(path);
+                case "xlsx":
+                    return new FromExcelFileFactory().GetWords(path);
+                case "csv":
+                    return new FromCsvFileFactory().GetWords(path);
+                default: return new List<Words>();
+            }
         }
     }
 }

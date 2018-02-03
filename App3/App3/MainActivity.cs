@@ -129,7 +129,10 @@ namespace App3
                     var myResult = await crossFilePicker.PickFile();
                     filePath = myResult.FilePath;
                     fileText.Text = filePath;
-                    GettingItemsFromDatabase.InsertFile(filePath);
+                    if(GettingItemsFromDatabase.InsertFile(filePath)==false)
+                    {
+                        Toast.MakeText(this, "Check if choosen file has xls, xlsx or csv extension", ToastLength.Long).Show();
+                    }
                     
                 }
                 catch (InvalidOperationException ex)
@@ -143,7 +146,6 @@ namespace App3
         {
             base.OnResume();
             scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
-
         }
 
         private void SpinnerItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)

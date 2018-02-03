@@ -2,14 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using App3.Models;
 
 namespace App3.Resources.DataHelper
@@ -32,12 +24,12 @@ namespace App3.Resources.DataHelper
                     var cols = line.Split(',').Count();
                     var values = line.Split(',');
                     //Word
-                    word = Strip(values[0]);
+                    word = FileFactory.Strip(values[0]);
 
                     //definitions
                     for (int i = 1; i <= cols - 1; i++)
                     {
-                        defs.Add(Strip(values[i]));
+                        defs.Add(FileFactory.Strip(values[i]));
                     }
 
                     var ob = new Words(word, defs, "csv");
@@ -48,14 +40,6 @@ namespace App3.Resources.DataHelper
 
             return words;
         }
-        protected static string Strip(string text)
-        {
-            //usuwanie komentarzy 
-            text = Regex.Replace(text, @"([<>\?\*\\\""/\|])+", string.Empty);
-            //usuwanie skryptów oraz arkuszy styli
-            text = Regex.Replace(text, @"(<script[^<]*</script>)|(<style[^<]*</style>)|(&[^;]*;)", string.Empty);
-            text = Regex.Replace(text, @"<(.|\n)*?>", string.Empty);
-            return text;
-        }
+       
     }
 }
