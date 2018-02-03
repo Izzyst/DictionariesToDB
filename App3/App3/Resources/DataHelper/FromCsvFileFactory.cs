@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-
+using System.Text.RegularExpressions;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -32,16 +32,12 @@ namespace App3.Resources.DataHelper
                     var cols = line.Split(',').Count();
                     var values = line.Split(',');
                     //Word
-                    word = values[0];
-                    //Word w = new Word();
-                    //w.W = values[0];
-                    //definition
+                    word = Strip(values[0]);
+
+                    //definitions
                     for (int i = 1; i <= cols - 1; i++)
                     {
-                        defs.Add(values[i]);
-                        //Definition d = new Definition();
-                        //d.Def = values[i];
-                        //d.WordObj = w;
+                        defs.Add(Strip(values[i]));
                     }
 
                     var ob = new Words(word, defs, "csv");
@@ -49,15 +45,17 @@ namespace App3.Resources.DataHelper
                     //defs.Clear();
                 }
             }
-            foreach (var item in words)
-            {
-                if (item != null)
-                {
-                    // Console.WriteLine("{0} ", item.Word);
 
-                }
-            }
             return words;
+        }
+        protected static string Strip(string text)
+        {
+            //usuwanie komentarzy 
+            text = Regex.Replace(text, @"([<>\?\*\\\""/\|])+", string.Empty);
+            //usuwanie skryptów oraz arkuszy styli
+            text = Regex.Replace(text, @"(<script[^<]*</script>)|(<style[^<]*</style>)|(&[^;]*;)", string.Empty);
+            text = Regex.Replace(text, @"<(.|\n)*?>", string.Empty);
+            return text;
         }
     }
 }

@@ -2,6 +2,7 @@
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
+using Android.Media;
 using Android.OS;
 using Android.Preferences;
 using Android.Views;
@@ -29,6 +30,7 @@ namespace App3
         TextView textView;
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            numberOfClicks = 0;
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.UnlockScreen);
             MakeFullScreen();
@@ -36,8 +38,8 @@ namespace App3
             button2 = (Button)FindViewById(Resource.Id.hard2Btn);
             button3 = (Button)FindViewById(Resource.Id.hard3Btn);
             textView = (TextView)FindViewById(Resource.Id.textView1);
-
-           // ThreadPool.QueueUserWorkItem(o => SetViewForChosenLevel());
+            
+            // ThreadPool.QueueUserWorkItem(o => SetViewForChosenLevel());
             SetViewForChosenLevel();
         }
 
@@ -59,11 +61,11 @@ namespace App3
                     {
                         numberOfClicks = 1;
                         SetNewScore(data.Score, data.WordList[0]);
-                        numberOfClicks = 0;
-                        Finish();
+                        numberOfClicks = 0;                      
                         Android.Graphics.Color color = Android.Graphics.Color.Green;
                         button.SetTextColor(color);
                         isFinished = true;
+                        Finish();
                     };
                 });
                 
@@ -89,13 +91,17 @@ namespace App3
                             Android.Graphics.Color color = Android.Graphics.Color.Green;
                             button.SetTextColor(color);
                             numberOfClicks = 0;
-                            Finish();
                             isFinished = true;
+                            Finish();
+                            
                         }
                         else
                         {
+                            SetNewScore(-1, data.WordList[0]);
                             Android.Graphics.Color color = Android.Graphics.Color.Red;
                             button.SetTextColor(color);
+                            //Thread.Sleep(1000);
+                            ShowAnotherDefinition();
                         }
 
                     };
@@ -107,14 +113,17 @@ namespace App3
                             SetNewScore(data.Score, data.WordList[1]);
                             Android.Graphics.Color color = Android.Graphics.Color.Green;
                             button2.SetTextColor(color);
-                            numberOfClicks = 0;
-                            Finish();
+                            numberOfClicks = 0;                      
                             isFinished = true;
+                            Finish();
                         }
                         else
                         {
+                            SetNewScore(-1, data.WordList[1]);
                             Android.Graphics.Color color = Android.Graphics.Color.Red;
                             button2.SetTextColor(color);
+                            //Thread.Sleep(2000);
+                            ShowAnotherDefinition();
                         }
                     };
                 });
@@ -142,14 +151,16 @@ namespace App3
                             SetNewScore(data.Score, data.WordList[0]);
                             Android.Graphics.Color color = Android.Graphics.Color.Green;
                             button.SetTextColor(color);
-                            numberOfClicks = 0;
-                            Finish();
+                            numberOfClicks = 0;                           
                             isFinished = true;
+                            Finish();
                         }
                         else
                         {
+                            SetNewScore(-1, data.WordList[0]);
                             Android.Graphics.Color color = Android.Graphics.Color.Red;
                             button.SetTextColor(color);
+                            ShowAnotherDefinition();
                         }
 
                     };
@@ -161,15 +172,17 @@ namespace App3
                             SetNewScore(data.Score, data.WordList[1]);
                             Android.Graphics.Color color = Android.Graphics.Color.Green;
                             button2.SetTextColor(color);
-                            numberOfClicks = 0;
-                            Finish();
+                            numberOfClicks = 0;              
                             isFinished = true;
+                            Finish();
 
                         }
                         else
                         {
+                            SetNewScore(-1, data.WordList[1]);
                             Android.Graphics.Color color = Android.Graphics.Color.Red;
                             button2.SetTextColor(color);
+                            ShowAnotherDefinition();
                         }
                     };
 
@@ -182,27 +195,41 @@ namespace App3
                             Android.Graphics.Color color = Android.Graphics.Color.Green;
                             button3.SetTextColor(color);
                             numberOfClicks = 0;
-                            Finish();
                             isFinished = true;
+                            Finish();
                         }
                         else
                         {
+                            SetNewScore(-1, data.WordList[2]);
                             Android.Graphics.Color color = Android.Graphics.Color.Red;
                             button3.SetTextColor(color);
+                            ShowAnotherDefinition();
                         }
                     };
                 });
             }
         }
 
+        private void ShowAnotherDefinition()
+        {
+            Finish();
+            Intent startLockScreenActIntent = new Intent(Application.Context, typeof(LockScreenActivity));
+            startLockScreenActIntent.SetFlags(ActivityFlags.NewTask);
+            Application.Context.StartActivity(startLockScreenActIntent);
+        }
+
         private void SetNewScore(int score, WordTable word)
         {
             Database db = new Database();
             // jesli poprawna odp za pierwszym kliknięciem, update score oraz ilość kliknięć dla danego słowa
-            if (numberOfClicks == 1)
+            if (numberOfClicks == 1 && score !=-1)
             {
                 score++;
                 db.UpdateTableWord(score, numberOfClicks, word);
+            }
+            else if(score == -1)
+            {
+                db.UpdateTableWord(-1, 1, word);
             }
             else
             {
@@ -224,7 +251,7 @@ namespace App3
             if (isFinished == false)
             {
                 Intent homeIntent = new Intent(Intent.ActionMain);
-                //homeIntent.AddCategory(Intent.CategoryHome);
+                homeIntent.AddCategory(Intent.CategoryHome);
                 homeIntent.SetFlags(ActivityFlags.NewTask);
                 StartActivity(homeIntent);
             }

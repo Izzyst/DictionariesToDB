@@ -48,7 +48,7 @@ namespace App3.LevelStrategy
         }
         public bool CheckIfDifferent(WordTable word1, WordTable word2)
         {
-            if (word1.IdWordJson != word2.IdWordJson)
+            if (word1.W != word2.W)
             {
                 return false;
             }
