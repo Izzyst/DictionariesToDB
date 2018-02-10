@@ -15,6 +15,7 @@ using Android.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using App3.Resources.DataHelper;
+using Android.App.Admin;
 
 namespace App3
 {
@@ -54,8 +55,8 @@ namespace App3
             chooseLanguageText = FindViewById<TextView>(Resource.Id.ChooseLanguageTextView);
             fileRadioBtn = FindViewById<RadioButton>(Resource.Id.radio_file);
             externRadioBtn = FindViewById<RadioButton>(Resource.Id.radio_extern);
-
-            scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
+            if(GettingItemsFromDatabase.CheckIfDbEmpty()==false)
+                scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
             LockScreen.GetInstance().Init(this);
 
             fileRadioBtn.Click += delegate
@@ -141,6 +142,16 @@ namespace App3
                     ex.ToString(); //"Only one operation can be active at a time"
                 }
             };
+
+            //aBtn.Click += async delegate
+            //{
+            //    DevicePolicyManager devicePolicyManager = (DevicePolicyManager)GetSystemService(Context.DevicePolicyService);
+            //    ComponentName demoDeviceAdmin = new ComponentName(this, Java.Lang.Class.FromType(typeof(DeviceAdmin)));
+            //    Intent intent = new Intent(DevicePolicyManager.ActionAddDeviceAdmin);
+            //    intent.PutExtra(DevicePolicyManager.ExtraDeviceAdmin, demoDeviceAdmin);
+            //    intent.PutExtra(DevicePolicyManager.ExtraAddExplanation, "Device administrator");
+            //    StartActivity(intent);
+            //};
         }
 
         void HandleClickExternalRadioButton()

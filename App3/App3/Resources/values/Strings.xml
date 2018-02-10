@@ -28,4 +28,5 @@
   <string name="YourScoreBeginning">Your Score: 0 pts /0 answers</string>
   <string name="chooseFile">Choose your file</string>
   <string name="externalDictionary">External dictionary</string>
+  <string name="permission_accessibility_setting_description">Turn on and it locks all soft key including HOME, RECENTS, BACK, MENU buttons.</string>
 </resources>

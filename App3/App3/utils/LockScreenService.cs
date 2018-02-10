@@ -21,8 +21,7 @@ namespace App3.utils
         {
             base.OnCreate();
             StateRecever(true);    
-        }
-
+        }    
 
         public override void OnDestroy()
         {
@@ -49,5 +48,8 @@ namespace App3.utils
                 }
             }
         }
-    }
+
+
+
+}
 }

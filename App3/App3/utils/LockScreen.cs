@@ -1,5 +1,6 @@
 ﻿using Android.App;
 using Android.Content;
+using System;
 
 namespace App3.utils
 {
@@ -7,11 +8,12 @@ namespace App3.utils
     {
         public static bool lockScreenIsShow = false;
         private static LockScreen lockScreen;
-
+        bool disableHomeButton = false;
         Context context;
         public void Init(Context context)
         {
             this.context = context;
+            this.disableHomeButton = true;
         }
 
         public static LockScreen GetInstance()
@@ -38,10 +40,15 @@ namespace App3.utils
 
         public void Active()
         {
+            if (disableHomeButton)
+            {
+                ShowSettingAccesability();
+            }
             if (context != null)
             {
                 context.StartService(new Intent(context, typeof(LockScreenService)));
             }
+
         }
 
         public void Deactivate()
@@ -53,14 +60,26 @@ namespace App3.utils
         }
 
 
-        /*
-         private void showSettingAccesability(){
-        if(!isMyServiceRunning(LockWindowAccessibilityService.class)) {
-            Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
-            context.startActivity(intent);
+        
+         private void ShowSettingAccesability(){
+        if(!IsServiceRunning(Application.Context, typeof(LockWindowAccessibilityService))) {
+            Intent intent = new Intent(Android.Provider.Settings.ActionAccessibilitySettings);
+            context.StartActivity(intent);
         }
     }
-             */
+             
+        public bool IsServiceRunning(Context context, Type serviceClass)
+        {
+            ActivityManager manager = (ActivityManager)context.GetSystemService(Context.ActivityService);
+            foreach (var service in manager.GetRunningServices(int.MaxValue))
+            {
+                if (service.Process == context.PackageName && service.Service.ClassName.EndsWith(serviceClass.Name))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         private bool IsMyServiceRunning(System.Type cls)
         {

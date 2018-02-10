@@ -17,10 +17,12 @@ using System.Threading.Tasks;
 namespace App3
 {
     [Activity(Label = "LockScreenActivity", LaunchMode = LaunchMode.SingleInstance, Theme = "@android:style/Theme.Holo.NoActionBar.Fullscreen")]
-    [IntentFilter(new[] { Intent.ActionMain },
-    Categories = new[] { Intent.CategoryHome, Intent.CategoryDefault })]
+    //[IntentFilter(new[] { Intent.ActionMain },
+    //Categories = new[] { Intent.CategoryLauncher })]
     public class LockScreenActivity : Activity
     {
+        ISharedPreferences prefs;
+        ISharedPreferencesEditor editor;
         string levelString;
         public static int numberOfClicks = 0;
         private static bool isFinished = false;
@@ -243,16 +245,29 @@ namespace App3
         protected override void OnPause()
         {
             base.OnPause();
-
-            if (isFinished == false)
-            {
-                Intent homeIntent = new Intent(Intent.ActionMain);
-                homeIntent.AddCategory(Intent.CategoryHome);
-                homeIntent.SetFlags(ActivityFlags.NewTask);
-                StartActivity(homeIntent);
-            }
+            int isShown = 0;
+            //if (isFinished == false)
+            //{
+                //Intent homeIntent = new Intent(Intent.ActionMain);
+                //homeIntent.AddCategory(Intent.CategoryHome);
+                //homeIntent.SetFlags(ActivityFlags.NewTask);
+                //StartActivity(homeIntent);
+                ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this);
+                editor = prefs.Edit();
+                editor.PutInt("isShown", isShown);
+                editor.Apply();
+            //}
         }
 
+    protected override void OnResume()
+        {
+            base.OnResume();
+            int isShown = 0;
+            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this);
+            editor = prefs.Edit();
+            editor.PutInt("isShown", isShown);
+            editor.Apply();
+        }
 
         public void MakeFullScreen()
         {

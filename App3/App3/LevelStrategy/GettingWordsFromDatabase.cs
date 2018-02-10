@@ -178,6 +178,16 @@ namespace App3.LevelStrategy
             return false;
         }
 
+        public static bool CheckIfDbEmpty()
+        {
+            Database db = new Database();
+            if (db.CheckIfDatabaseEmpty() == true)
+            {
+                return true;
+            }
+            return false;
+        }
+
         public static bool InsertFile(string path)
         {
             var typeOfFile = FileFactory.CheckTypeOfFile(path);
