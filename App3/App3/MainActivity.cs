@@ -152,6 +152,11 @@ namespace App3
             //    intent.PutExtra(DevicePolicyManager.ExtraAddExplanation, "Device administrator");
             //    StartActivity(intent);
             //};
+            int isShown = 0;
+            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this);
+            editor = prefs.Edit();
+            editor.PutInt("isShown", isShown);
+            editor.Apply();
         }
 
         void HandleClickExternalRadioButton()

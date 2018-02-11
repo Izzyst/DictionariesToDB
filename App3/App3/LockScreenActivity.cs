@@ -26,6 +26,7 @@ namespace App3
         string levelString;
         public static int numberOfClicks = 0;
         private static bool isFinished = false;
+        public static bool isActive;
         Button button;
         Button button2;
         Button button3;
@@ -262,7 +263,7 @@ namespace App3
     protected override void OnResume()
         {
             base.OnResume();
-            int isShown = 0;
+            int isShown = 1;
             ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this);
             editor = prefs.Edit();
             editor.PutInt("isShown", isShown);

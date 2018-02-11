@@ -25,7 +25,8 @@
     </activity>
     <receiver android:name="md5ce095f820c090cc03681baac37a9ba53.LockScreenReceiver" />
     <service android:name="md5ce095f820c090cc03681baac37a9ba53.LockScreenService" />
-    <service android:name="md5ce095f820c090cc03681baac37a9ba53.LockWindowAccessibilityService">
+    <service android:label="LockWindowAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:name="md5ce095f820c090cc03681baac37a9ba53.LockWindowAccessibilityService">
+      <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibilityservice" />
       <intent-filter>
         <action android:name="android.accessibilityservice.AccessibilityService" />
       </intent-filter>
