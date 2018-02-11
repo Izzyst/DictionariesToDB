@@ -2795,8 +2795,8 @@ namespace App3
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0083
-			public const int ChooseLanguageTextView = 2131427459;
+			// aapt resource value: 0x7f0b0084
+			public const int ChooseLanguageTextView = 2131427460;
 			
 			// aapt resource value: 0x7f0b00ba
 			public const int Unlock = 2131427514;
@@ -2900,8 +2900,8 @@ namespace App3
 			// aapt resource value: 0x7f0b005b
 			public const int checkbox = 2131427419;
 			
-			// aapt resource value: 0x7f0b0087
-			public const int chooseFileBtn = 2131427463;
+			// aapt resource value: 0x7f0b0082
+			public const int chooseFileBtn = 2131427458;
 			
 			// aapt resource value: 0x7f0b00af
 			public const int chronometer = 2131427503;
@@ -3152,8 +3152,8 @@ namespace App3
 			// aapt resource value: 0x7f0b0038
 			public const int pin = 2131427384;
 			
-			// aapt resource value: 0x7f0b0085
-			public const int progressBar1 = 2131427461;
+			// aapt resource value: 0x7f0b0086
+			public const int progressBar1 = 2131427462;
 			
 			// aapt resource value: 0x7f0b0006
 			public const int progress_circular = 2131427334;
@@ -3164,11 +3164,11 @@ namespace App3
 			// aapt resource value: 0x7f0b005d
 			public const int radio = 2131427421;
 			
-			// aapt resource value: 0x7f0b0081
-			public const int radio_extern = 2131427457;
-			
 			// aapt resource value: 0x7f0b0080
-			public const int radio_file = 2131427456;
+			public const int radio_extern = 2131427456;
+			
+			// aapt resource value: 0x7f0b0081
+			public const int radio_file = 2131427457;
 			
 			// aapt resource value: 0x7f0b0035
 			public const int right = 2131427381;
@@ -3257,11 +3257,11 @@ namespace App3
 			// aapt resource value: 0x7f0b004c
 			public const int spacer = 2131427404;
 			
-			// aapt resource value: 0x7f0b0082
-			public const int spinner = 2131427458;
+			// aapt resource value: 0x7f0b0083
+			public const int spinner = 2131427459;
 			
-			// aapt resource value: 0x7f0b0084
-			public const int spinnerLanguage = 2131427460;
+			// aapt resource value: 0x7f0b0085
+			public const int spinnerLanguage = 2131427461;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int split_action_bar = 2131427336;
@@ -3305,8 +3305,8 @@ namespace App3
 			// aapt resource value: 0x7f0b0051
 			public const int textSpacerNoTitle = 2131427409;
 			
-			// aapt resource value: 0x7f0b0086
-			public const int textView1 = 2131427462;
+			// aapt resource value: 0x7f0b0087
+			public const int textView1 = 2131427463;
 			
 			// aapt resource value: 0x7f0b0088
 			public const int textView2 = 2131427464;

@@ -62,8 +62,8 @@ namespace App3
             fileRadioBtn.Click += delegate
             {
                 fileBtn.Visibility = Android.Views.ViewStates.Visible;
-                chooseLanguageText.Visibility = Android.Views.ViewStates.Invisible;
-                spinnerLang.Visibility = Android.Views.ViewStates.Invisible;
+                chooseLanguageText.Visibility = Android.Views.ViewStates.Gone;
+                spinnerLang.Visibility = Android.Views.ViewStates.Gone;
             };
             externRadioBtn.Click += delegate
             {
@@ -143,15 +143,6 @@ namespace App3
                 }
             };
 
-            //aBtn.Click += async delegate
-            //{
-            //    DevicePolicyManager devicePolicyManager = (DevicePolicyManager)GetSystemService(Context.DevicePolicyService);
-            //    ComponentName demoDeviceAdmin = new ComponentName(this, Java.Lang.Class.FromType(typeof(DeviceAdmin)));
-            //    Intent intent = new Intent(DevicePolicyManager.ActionAddDeviceAdmin);
-            //    intent.PutExtra(DevicePolicyManager.ExtraDeviceAdmin, demoDeviceAdmin);
-            //    intent.PutExtra(DevicePolicyManager.ExtraAddExplanation, "Device administrator");
-            //    StartActivity(intent);
-            //};
             int isShown = 0;
             ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this);
             editor = prefs.Edit();
@@ -163,7 +154,7 @@ namespace App3
         {
             chooseLanguageText.Visibility = Android.Views.ViewStates.Visible;
             spinnerLang.Visibility = Android.Views.ViewStates.Visible;
-            fileBtn.Visibility = Android.Views.ViewStates.Invisible;
+            fileBtn.Visibility = Android.Views.ViewStates.Gone;
         }
 
         protected override void OnResume()
@@ -210,7 +201,6 @@ namespace App3
             //getting data from shared prefs
             prefs = PreferenceManager.GetDefaultSharedPreferences(this.ApplicationContext);
             string levelData = prefs.GetString(keyName, level);
-            //Toast.MakeText(this, levelData, ToastLength.Long).Show();
             return levelData;
         }
 
@@ -237,20 +227,20 @@ namespace App3
                 if (result == 1)
                 {
                     Toast.MakeText(this, this.GetString(Resource.String.finishDownload), ToastLength.Long).Show();
-                    progressBar.Visibility = Android.Views.ViewStates.Invisible;
+                    progressBar.Visibility = Android.Views.ViewStates.Gone;
                     LockScreen.GetInstance().Deactivate();
                     switchBtn.Checked = false;
                 }
                 else
                 {
-                    progressBar.Visibility = Android.Views.ViewStates.Invisible;
+                    progressBar.Visibility = Android.Views.ViewStates.Gone;
                     Toast.MakeText(this, this.GetString(Resource.String.developersError), ToastLength.Long).Show();
-                    progressBar.Visibility = Android.Views.ViewStates.Invisible;
+                    progressBar.Visibility = Android.Views.ViewStates.Gone;
                 }
             }
             else
             {
-                progressBar.Visibility = Android.Views.ViewStates.Invisible;
+                progressBar.Visibility = Android.Views.ViewStates.Gone;
                 Toast.MakeText(this, this.GetString(Resource.String.noInternetConnection), ToastLength.Long).Show();
             }
         }

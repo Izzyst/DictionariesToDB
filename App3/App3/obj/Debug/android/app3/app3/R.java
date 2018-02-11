@@ -2996,7 +2996,7 @@ containing a value of this type.
         public static final int tapetamob=0x7f02010b;
     }
     public static final class id {
-        public static final int ChooseLanguageTextView=0x7f0b0083;
+        public static final int ChooseLanguageTextView=0x7f0b0084;
         public static final int Unlock=0x7f0b00ba;
         public static final int action0=0x7f0b00a6;
         public static final int action_bar=0x7f0b0064;
@@ -3031,7 +3031,7 @@ containing a value of this type.
         public static final int center_horizontal=0x7f0b0031;
         public static final int center_vertical=0x7f0b0032;
         public static final int checkbox=0x7f0b005b;
-        public static final int chooseFileBtn=0x7f0b0087;
+        public static final int chooseFileBtn=0x7f0b0082;
         public static final int chronometer=0x7f0b00af;
         public static final int clip_horizontal=0x7f0b0039;
         public static final int clip_vertical=0x7f0b003a;
@@ -3115,12 +3115,12 @@ containing a value of this type.
         public static final int parallax=0x7f0b0037;
         public static final int parentPanel=0x7f0b004d;
         public static final int pin=0x7f0b0038;
-        public static final int progressBar1=0x7f0b0085;
+        public static final int progressBar1=0x7f0b0086;
         public static final int progress_circular=0x7f0b0006;
         public static final int progress_horizontal=0x7f0b0007;
         public static final int radio=0x7f0b005d;
-        public static final int radio_extern=0x7f0b0081;
-        public static final int radio_file=0x7f0b0080;
+        public static final int radio_extern=0x7f0b0080;
+        public static final int radio_file=0x7f0b0081;
         public static final int right=0x7f0b0035;
         public static final int right_icon=0x7f0b00b1;
         public static final int right_side=0x7f0b00ad;
@@ -3150,8 +3150,8 @@ containing a value of this type.
         public static final int snackbar_text=0x7f0b0077;
         public static final int snap=0x7f0b002e;
         public static final int spacer=0x7f0b004c;
-        public static final int spinner=0x7f0b0082;
-        public static final int spinnerLanguage=0x7f0b0084;
+        public static final int spinner=0x7f0b0083;
+        public static final int spinnerLanguage=0x7f0b0085;
         public static final int split_action_bar=0x7f0b0008;
         public static final int src_atop=0x7f0b001c;
         public static final int src_in=0x7f0b001d;
@@ -3166,7 +3166,7 @@ containing a value of this type.
         public static final int text2=0x7f0b00b6;
         public static final int textSpacerNoButtons=0x7f0b0052;
         public static final int textSpacerNoTitle=0x7f0b0051;
-        public static final int textView1=0x7f0b0086;
+        public static final int textView1=0x7f0b0087;
         public static final int textView2=0x7f0b0088;
         public static final int text_input_password_toggle=0x7f0b007e;
         public static final int textinput_counter=0x7f0b000c;

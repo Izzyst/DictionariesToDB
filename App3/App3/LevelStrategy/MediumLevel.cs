@@ -41,7 +41,7 @@ namespace App3.LevelStrategy
 
         public bool CheckIfDifferent(WordTable word1, WordTable word2)
         {
-            if(word1.W != word2.W)
+            if(!word1.W.Contains(word2.W))
             {
                 return false;
             }

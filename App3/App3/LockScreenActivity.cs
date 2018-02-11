@@ -10,15 +10,10 @@ using Android.Widget;
 using App3.LevelStrategy;
 using App3.Models;
 using App3.Resources.DataHelper;
-using App3.utils;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace App3
 {
     [Activity(Label = "LockScreenActivity", LaunchMode = LaunchMode.SingleInstance, Theme = "@android:style/Theme.Holo.NoActionBar.Fullscreen")]
-    //[IntentFilter(new[] { Intent.ActionMain },
-    //Categories = new[] { Intent.CategoryLauncher })]
     public class LockScreenActivity : Activity
     {
         ISharedPreferences prefs;
@@ -41,7 +36,7 @@ namespace App3
             button2 = (Button)FindViewById(Resource.Id.hard2Btn);
             button3 = (Button)FindViewById(Resource.Id.hard3Btn);
             textView = (TextView)FindViewById(Resource.Id.textView1);
-            
+
             // ThreadPool.QueueUserWorkItem(o => SetViewForChosenLevel());
             SetViewForChosenLevel();
         }
@@ -56,7 +51,8 @@ namespace App3
                 EasyLevel level = new EasyLevel();
                 DataToLevel data = level.GetWords();
 
-                RunOnUiThread(() => {
+                RunOnUiThread(() =>
+                {
                     textView.Text = data.Def;
                     button.Text = data.WordList[0].W;
 
@@ -64,17 +60,17 @@ namespace App3
                     {
                         numberOfClicks = 1;
                         SetNewScore(data.Score, data.WordList[0]);
-                        numberOfClicks = 0;                      
+                        numberOfClicks = 0;
                         Android.Graphics.Color color = Android.Graphics.Color.Green;
                         button.SetTextColor(color);
                         isFinished = true;
                         Finish();
                     };
                 });
-                
-                
+
+
             }
-            else if(lev == "Medium" || lev == "Sredni" || lev == "Średni")
+            else if (lev == "Medium" || lev == "Sredni" || lev == "Średni")
             {
                 MediumLevel level = new MediumLevel();
                 DataToLevel data = level.GetWords();
@@ -96,7 +92,7 @@ namespace App3
                             numberOfClicks = 0;
                             isFinished = true;
                             Finish();
-                            
+
                         }
                         else
                         {
@@ -116,7 +112,7 @@ namespace App3
                             SetNewScore(data.Score, data.WordList[1]);
                             Android.Graphics.Color color = Android.Graphics.Color.Green;
                             button2.SetTextColor(color);
-                            numberOfClicks = 0;                      
+                            numberOfClicks = 0;
                             isFinished = true;
                             Finish();
                         }
@@ -154,7 +150,7 @@ namespace App3
                             SetNewScore(data.Score, data.WordList[0]);
                             Android.Graphics.Color color = Android.Graphics.Color.Green;
                             button.SetTextColor(color);
-                            numberOfClicks = 0;                           
+                            numberOfClicks = 0;
                             isFinished = true;
                             Finish();
                         }
@@ -175,7 +171,7 @@ namespace App3
                             SetNewScore(data.Score, data.WordList[1]);
                             Android.Graphics.Color color = Android.Graphics.Color.Green;
                             button2.SetTextColor(color);
-                            numberOfClicks = 0;              
+                            numberOfClicks = 0;
                             isFinished = true;
                             Finish();
 
@@ -225,7 +221,7 @@ namespace App3
         {
             Database db = new Database();
             // jesli poprawna odp za pierwszym kliknięciem, update score oraz ilość kliknięć dla danego słowa
-            if (score>=0)
+            if (score >= 0)
             {
                 score++;
                 db.UpdateTableWord(score, word);
@@ -247,20 +243,14 @@ namespace App3
         {
             base.OnPause();
             int isShown = 0;
-            //if (isFinished == false)
-            //{
-                //Intent homeIntent = new Intent(Intent.ActionMain);
-                //homeIntent.AddCategory(Intent.CategoryHome);
-                //homeIntent.SetFlags(ActivityFlags.NewTask);
-                //StartActivity(homeIntent);
-                ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this);
-                editor = prefs.Edit();
-                editor.PutInt("isShown", isShown);
-                editor.Apply();
-            //}
+            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this);
+            editor = prefs.Edit();
+            editor.PutInt("isShown", isShown);
+            editor.Apply();
+
         }
 
-    protected override void OnResume()
+        protected override void OnResume()
         {
             base.OnResume();
             int isShown = 1;
