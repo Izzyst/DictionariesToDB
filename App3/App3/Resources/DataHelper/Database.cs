@@ -137,7 +137,7 @@ namespace App3.Resources.DataHelper
 
                     var statistic = count / result.Count();
                     // jeśli ilość słów, na które użytkownik odpowiedział conajmniej trzy razy poprawnie jest więcej niż 80% => zwraca true
-                    if (statistic > 0.8)
+                    if (statistic > 0.8 && count>80)
                     {
                         return true;
                     }

@@ -92,8 +92,11 @@ namespace App3
             adapterLang.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             spinnerLang.Adapter = adapterLang;
             //ustawienie spinnera wg wczesniejszego ustawienia
-            int spinnerPositionLang = adapterLang.GetPosition(GetSharedPreferences("language_data"));
+            string language = GetSharedPreferences("language_data");
+            int spinnerPositionLang = adapterLang.GetPosition(language);
             spinnerLang.SetSelection(spinnerPositionLang);
+            //spr. czy słownik w podręcznej bazie jest poprawny
+            GettingItemsFromDatabase.CheckIfDictionaryInDatabaseIsCorrect(language);
             //===============================================================
 
             // spr czy LockScreen jest aktywny i ustawienie odpowiedniej wartości na togglebuttonie
@@ -102,9 +105,16 @@ namespace App3
 
             switchBtn.Click += async (o, e) =>
             {
+                if (progressBar.Visibility == Android.Views.ViewStates.Visible)
+                {
+                    switchBtn.Checked = false;
+                    LockScreen.GetInstance().Deactivate();
+                    Toast.MakeText(this, this.GetString(Resource.String.WaitDownloading), ToastLength.Long).Show();
+                }
                 if (switchBtn.Checked) {
                     LockScreen.GetInstance().Active();
-                    if(GettingItemsFromDatabase.CheckIfNewWordsNeededToDownload())
+                    // spr czy baza nie jest pusta oraz czy wybrany słownik zgadza się z tym w podręcznej bazie
+                    if((GettingItemsFromDatabase.CheckIfNewWordsNeededToDownload()==true || GettingItemsFromDatabase.CheckIfDictionaryInDatabaseIsCorrect(language)==true) && externRadioBtn.Checked==true)
                     {
                         await DownloadDictionaryAsync();
                     }
@@ -114,34 +124,36 @@ namespace App3
                         LockScreen.GetInstance().Deactivate();
                         Toast.MakeText(this, this.GetString(Resource.String.noInternetConnection), ToastLength.Long).Show();
                     }
+
                 } 
                 else  LockScreen.GetInstance().Deactivate();
             };
 
+            
             fileBtn.Click += async delegate
             {
-                var filePath = "";
                 try
                 {
+                    var filePath = "";
                     var crossFilePicker = Plugin.FilePicker.CrossFilePicker.Current;
                     var myResult = await crossFilePicker.PickFile();
+
                     filePath = myResult.FilePath;
                     fileText.Visibility = Android.Views.ViewStates.Visible;
                     fileText.Text = filePath;
-                    if(GettingItemsFromDatabase.InsertFile(filePath)==false)
+                    if (GettingItemsFromDatabase.InsertFile(filePath) == false)
                     {
                         Toast.MakeText(this, this.GetString(Resource.String.wrongFileExtension), ToastLength.Long).Show();
                         externRadioBtn.Checked = true;
                         HandleClickExternalRadioButton();
                         fileText.Visibility = Android.Views.ViewStates.Gone;
                     }
-                    
                 }
                 catch (InvalidOperationException ex)
                 {
                     ex.ToString(); //"Only one operation can be active at a time"
                 }
-            };
+        };
 
             int isShown = 0;
             ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this);
@@ -192,7 +204,9 @@ namespace App3
 
             if(GettingItemsFromDatabase.CheckIfDownloadDictionaryIsNeeded(toast) == true)
             {
+                progressBar.Visibility = Android.Views.ViewStates.Visible;
                 await DownloadDictionaryAsync();
+                progressBar.Visibility = Android.Views.ViewStates.Gone;
             }          
         }
 

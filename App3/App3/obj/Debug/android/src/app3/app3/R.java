@@ -3281,6 +3281,7 @@ containing a value of this type.
         public static final int Hello=0x7f0c003e;
         public static final int Language=0x7f0c0042;
         public static final int Level=0x7f0c0041;
+        public static final int WaitDownloading=0x7f0c0051;
         public static final int YourScoreBeginning=0x7f0c004e;
         public static final int abc_action_bar_home_description=0x7f0c0015;
         public static final int abc_action_bar_home_description_format=0x7f0c0016;
@@ -3350,7 +3351,7 @@ containing a value of this type.
         public static final int path_password_eye_mask_strike_through=0x7f0c003b;
         public static final int path_password_eye_mask_visible=0x7f0c003c;
         public static final int path_password_strike_through=0x7f0c003d;
-        public static final int permission_accessibility_setting_description=0x7f0c0051;
+        public static final int permission_accessibility_setting_description=0x7f0c0052;
         public static final int points=0x7f0c0049;
         public static final int radioButtonFile=0x7f0c004d;
         public static final int radioButtonsDescription=0x7f0c004c;

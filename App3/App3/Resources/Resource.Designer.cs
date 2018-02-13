@@ -3678,6 +3678,9 @@ namespace App3
 			// aapt resource value: 0x7f0c0041
 			public const int Level = 2131492929;
 			
+			// aapt resource value: 0x7f0c0051
+			public const int WaitDownloading = 2131492945;
+			
 			// aapt resource value: 0x7f0c004e
 			public const int YourScoreBeginning = 2131492942;
 			
@@ -3885,8 +3888,8 @@ namespace App3
 			// aapt resource value: 0x7f0c003d
 			public const int path_password_strike_through = 2131492925;
 			
-			// aapt resource value: 0x7f0c0051
-			public const int permission_accessibility_setting_description = 2131492945;
+			// aapt resource value: 0x7f0c0052
+			public const int permission_accessibility_setting_description = 2131492946;
 			
 			// aapt resource value: 0x7f0c0049
 			public const int points = 2131492937;

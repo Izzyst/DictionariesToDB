@@ -28,4 +28,5 @@
   <string name="YourScoreBeginning">Twój wynik: 0 ptk / 0 odpowiedzi</string>
   <string name="chooseFile">Wybierz swój plik</string>
   <string name="externalDictionary">Zewnętrzny słownik</string>
+  <string name="WaitDownloading">Zaczekaj, pobieram słownik...</string>
 </resources>

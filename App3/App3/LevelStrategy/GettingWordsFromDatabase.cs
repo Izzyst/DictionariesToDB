@@ -141,8 +141,19 @@ namespace App3.LevelStrategy
         {
             // spr czy baza jest pusta, jeśli nie to spr czy ten sam język, jeśli tak, to nie wykonuje pobierania danych
             Database db = new Database();
-            var word = db.SelectRandomWord();
-            if (db.CheckIfDatabaseEmpty() == true || word[0].Lang != ChangeDictionaryAlias(lang))
+            var word = db.SelectRandomWord();//wybieram losowe słowo z podręcznej bazy danych
+            if (word[0].Lang != ChangeDictionaryAlias(lang) || db.CheckIfDatabaseEmpty() == true)
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        public static bool CheckIfDictionaryInDatabaseIsCorrect(string lang)
+        {
+            Database db = new Database();
+            var word = db.SelectRandomWord();//wybieram losowe słowo z podręcznej bazy danych
+            if (word[0].Lang != ChangeDictionaryAlias(lang))
             {
                 return true;
             }
@@ -164,7 +175,7 @@ namespace App3.LevelStrategy
 
         public static string ChangeDictionaryAlias(string language)
         {
-            if (language == "Polish") return  "pl";
+            if (language == "Polish" || language =="Polski") return  "pl";
             else return  "eng";
         }
 
