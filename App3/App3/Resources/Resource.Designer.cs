@@ -2795,8 +2795,8 @@ namespace App3
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0084
-			public const int ChooseLanguageTextView = 2131427460;
+			// aapt resource value: 0x7f0b0083
+			public const int ChooseLanguageTextView = 2131427459;
 			
 			// aapt resource value: 0x7f0b00ba
 			public const int Unlock = 2131427514;
@@ -3257,11 +3257,11 @@ namespace App3
 			// aapt resource value: 0x7f0b004c
 			public const int spacer = 2131427404;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int spinner = 2131427459;
-			
 			// aapt resource value: 0x7f0b0085
-			public const int spinnerLanguage = 2131427461;
+			public const int spinner = 2131427461;
+			
+			// aapt resource value: 0x7f0b0084
+			public const int spinnerLanguage = 2131427460;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int split_action_bar = 2131427336;

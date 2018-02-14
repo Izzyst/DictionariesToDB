@@ -117,7 +117,6 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\value
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\R.cs.flag
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\uploadflags.txt
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\xml\accessibilityservice.xml
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\App3.csprojResolveAssemblyReference.cache
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\App3.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\App3.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\FormsViewGroup.dll.mdb

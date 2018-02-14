@@ -3031,7 +3031,7 @@ containing a value of this type.
         public static int center_horizontal=0x7f0b0031;
         public static int center_vertical=0x7f0b0032;
         public static int checkbox=0x7f0b005b;
-        public static int chooseFileBtn=0x7f0b0087;
+        public static int chooseFileBtn=0x7f0b0082;
         public static int chronometer=0x7f0b00af;
         public static int clip_horizontal=0x7f0b0039;
         public static int clip_vertical=0x7f0b003a;
@@ -3115,12 +3115,12 @@ containing a value of this type.
         public static int parallax=0x7f0b0037;
         public static int parentPanel=0x7f0b004d;
         public static int pin=0x7f0b0038;
-        public static int progressBar1=0x7f0b0085;
+        public static int progressBar1=0x7f0b0086;
         public static int progress_circular=0x7f0b0006;
         public static int progress_horizontal=0x7f0b0007;
         public static int radio=0x7f0b005d;
-        public static int radio_extern=0x7f0b0081;
-        public static int radio_file=0x7f0b0080;
+        public static int radio_extern=0x7f0b0080;
+        public static int radio_file=0x7f0b0081;
         public static int right=0x7f0b0035;
         public static int right_icon=0x7f0b00b1;
         public static int right_side=0x7f0b00ad;
@@ -3150,7 +3150,7 @@ containing a value of this type.
         public static int snackbar_text=0x7f0b0077;
         public static int snap=0x7f0b002e;
         public static int spacer=0x7f0b004c;
-        public static int spinner=0x7f0b0082;
+        public static int spinner=0x7f0b0085;
         public static int spinnerLanguage=0x7f0b0084;
         public static int split_action_bar=0x7f0b0008;
         public static int src_atop=0x7f0b001c;
@@ -3166,7 +3166,7 @@ containing a value of this type.
         public static int text2=0x7f0b00b6;
         public static int textSpacerNoButtons=0x7f0b0052;
         public static int textSpacerNoTitle=0x7f0b0051;
-        public static int textView1=0x7f0b0086;
+        public static int textView1=0x7f0b0087;
         public static int textView2=0x7f0b0088;
         public static int text_input_password_toggle=0x7f0b007e;
         public static int textinput_counter=0x7f0b000c;
@@ -3281,6 +3281,7 @@ containing a value of this type.
         public static int Hello=0x7f0c003e;
         public static int Language=0x7f0c0042;
         public static int Level=0x7f0c0041;
+        public static int WaitDownloading=0x7f0c0051;
         public static int YourScoreBeginning=0x7f0c004e;
         public static int abc_action_bar_home_description=0x7f0c0015;
         public static int abc_action_bar_home_description_format=0x7f0c0016;
@@ -3350,7 +3351,7 @@ containing a value of this type.
         public static int path_password_eye_mask_strike_through=0x7f0c003b;
         public static int path_password_eye_mask_visible=0x7f0c003c;
         public static int path_password_strike_through=0x7f0c003d;
-        public static int permission_accessibility_setting_description=0x7f0c0051;
+        public static int permission_accessibility_setting_description=0x7f0c0052;
         public static int points=0x7f0c0049;
         public static int radioButtonFile=0x7f0c004d;
         public static int radioButtonsDescription=0x7f0c004c;

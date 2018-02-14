@@ -2996,7 +2996,7 @@ containing a value of this type.
         public static final int tapetamob=0x7f02010b;
     }
     public static final class id {
-        public static final int ChooseLanguageTextView=0x7f0b0084;
+        public static final int ChooseLanguageTextView=0x7f0b0083;
         public static final int Unlock=0x7f0b00ba;
         public static final int action0=0x7f0b00a6;
         public static final int action_bar=0x7f0b0064;
@@ -3150,8 +3150,8 @@ containing a value of this type.
         public static final int snackbar_text=0x7f0b0077;
         public static final int snap=0x7f0b002e;
         public static final int spacer=0x7f0b004c;
-        public static final int spinner=0x7f0b0083;
-        public static final int spinnerLanguage=0x7f0b0085;
+        public static final int spinner=0x7f0b0085;
+        public static final int spinnerLanguage=0x7f0b0084;
         public static final int split_action_bar=0x7f0b0008;
         public static final int src_atop=0x7f0b001c;
         public static final int src_in=0x7f0b001d;

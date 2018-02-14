@@ -7,14 +7,9 @@ using Android.Content;
 using Android.Preferences;
 using System.Collections.Generic;
 using App3.LevelStrategy;
-using Android.Content.Res;
-using Plugin.FilePicker;
-using Plugin.FilePicker.Abstractions;
 using Android.Net;
-using System.Threading;
 using System.Threading.Tasks;
-using App3.Resources.DataHelper;
-using Android.App.Admin;
+
 
 namespace App3
 {
