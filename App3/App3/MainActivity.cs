@@ -5,7 +5,6 @@ using App3.utils;
 using System;
 using Android.Content;
 using Android.Preferences;
-using Android.App.Usage;
 using System.Collections.Generic;
 using App3.LevelStrategy;
 using Android.Content.Res;
@@ -103,35 +102,9 @@ namespace App3
 
             switchBtn.Click += async (o, e) =>
             {
-                //if (progressBar.Visibility == Android.Views.ViewStates.Visible)
-                //{
-                //    switchBtn.Checked = false;
-                //    LockScreen.GetInstance().Deactivate();
-                //    Toast.MakeText(this, this.GetString(Resource.String.WaitDownloading), ToastLength.Long).Show();
-                //}
-                //if (switchBtn.Checked)
-                //{
-                //    LockScreen.GetInstance().Active();
-                //    // spr czy baza nie jest pusta oraz czy wybrany słownik zgadza się z tym w podręcznej bazie
-                //    if ((GettingItemsFromDatabase.CheckIfNewWordsNeededToDownload() == true || GettingItemsFromDatabase.CheckIfDictionaryInDatabaseIsCorrect(language) == true) && externRadioBtn.Checked == true)
-                //    {
-                //        await DownloadDictionaryAsync();
-                //    }
-                //    if (GettingItemsFromDatabase.CheckIfDatabaseIsEmpty() == true)
-                //    {
-                //        switchBtn.Checked = false;
-                //        LockScreen.GetInstance().Deactivate();
-                //        Toast.MakeText(this, this.GetString(Resource.String.noInternetConnection), ToastLength.Long).Show();
-                //    }
-
-                //}
-                //else LockScreen.GetInstance().Deactivate();
-
-
                ValidationForSwitchButton(language);
             };
-
-            
+          
             fileBtn.Click += async delegate
             {
                 try
@@ -147,8 +120,7 @@ namespace App3
                     {
                         Toast.MakeText(this, this.GetString(Resource.String.wrongFileExtension), ToastLength.Long).Show();
                         externRadioBtn.Checked = true;
-                        ChangeToFileView(false);
-                        fileText.Visibility = Android.Views.ViewStates.Gone;
+                        ChangeToFileView(false);                       
                     }
                 }
                 catch (InvalidOperationException ex)
@@ -256,6 +228,7 @@ namespace App3
         {
             if (switchBtn.Checked)
             {
+                LockScreen.GetInstance().Init(this);
                 if (progressBar.Visibility == Android.Views.ViewStates.Visible)
                 {
                     switchBtn.Checked = false;
@@ -272,7 +245,7 @@ namespace App3
                     }
                     else
                     {
-                        //przypadek, gdy wybrano słownik z własnego pliku, ale nie wgrano pliku i w bazie są stare dane
+                        //przypadek, gdy wybrano słownik z własnego pliku, ale nie wgrano pliku
                         externRadioBtn.Checked = true;
                         Toast.MakeText(this, this.GetString(Resource.String.wrongFileExtension), ToastLength.Long).Show();
                         ChangeToFileView(false);
@@ -280,7 +253,19 @@ namespace App3
                     }
                 }
                 else
-                {                  
+                {
+                    if (externRadioBtn.Checked==false && GettingItemsFromDatabase.GetTypeOfDictionaryInDb()!="csv" && GettingItemsFromDatabase.GetTypeOfDictionaryInDb() != "xlsx" && GettingItemsFromDatabase.GetTypeOfDictionaryInDb() != "xls")
+                    {
+                        //przypadek, gdy wybrano słownik z własnego pliku, ale nie wgrano pliku a w bazie są załadowane dane z poptzredniego pobierania zewnętrznego słownika
+                        externRadioBtn.Checked = true;
+                        Toast.MakeText(this, this.GetString(Resource.String.wrongFileExtension), ToastLength.Long).Show();
+                        ChangeToFileView(false);
+                    }
+                    if (externRadioBtn.Checked == true && GettingItemsFromDatabase.CheckIfDictionaryInDatabaseIsCorrect(language)==false)
+                    {
+                        await DownloadDictionaryAsync();
+                        LockScreen.GetInstance().Active();
+                    }
                     LockScreen.GetInstance().Active();
                 }
             }
@@ -294,11 +279,12 @@ namespace App3
             {
                 fileBtn.Visibility = Android.Views.ViewStates.Visible;
                 chooseLanguageText.Visibility = Android.Views.ViewStates.Gone;
-                spinnerLang.Visibility = Android.Views.ViewStates.Gone;
+                spinnerLang.Visibility = Android.Views.ViewStates.Gone;               
             }
             else
             {
                 fileBtn.Visibility = Android.Views.ViewStates.Gone;
+                fileText.Visibility = Android.Views.ViewStates.Gone;
                 chooseLanguageText.Visibility = Android.Views.ViewStates.Visible;
                 spinnerLang.Visibility = Android.Views.ViewStates.Visible;
             }

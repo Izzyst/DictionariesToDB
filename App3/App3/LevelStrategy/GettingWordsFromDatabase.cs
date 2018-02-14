@@ -7,9 +7,6 @@ using Android.Content.Res;
 using App3.Models;
 using App3.Resources.DataHelper;
 using Newtonsoft.Json;
-using System.Threading;
-using Android.OS;
-using Android.Widget;
 using Android.Content;
 using Android.Preferences;
 using System.Linq;
@@ -25,8 +22,7 @@ namespace App3.LevelStrategy
             ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(Application.Context);
             string language = prefs.GetString("language_data", data);
 
-            if (language == "Polish" || language=="Polski") language = "pl";
-            else language = "eng";
+            language = ChangeDictionaryAlias(language);
 
             MainActivity.isWorking = true;
             string json;
@@ -145,6 +141,13 @@ namespace App3.LevelStrategy
                 return true;
             }
             else return false;
+        }
+
+        public static string GetTypeOfDictionaryInDb()
+        {
+            Database db = new Database();
+            var word = db.SelectRandomWord();//wybieram losowe słowo z podręcznej bazy danych
+            return word[0].Lang;
         }
 
         public static bool CheckIfDictionaryInDatabaseIsCorrect(string lang)
