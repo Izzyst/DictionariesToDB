@@ -25,7 +25,7 @@ namespace App3.LevelStrategy
             ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(Application.Context);
             string language = prefs.GetString("language_data", data);
 
-            if (language == "Polish") language = "pl";
+            if (language == "Polish" || language=="Polski") language = "pl";
             else language = "eng";
 
             MainActivity.isWorking = true;
@@ -50,8 +50,7 @@ namespace App3.LevelStrategy
                         wordTable.Lang = item.Lang;
                         wordTable.Score = 0;
                         wordTable.NumberOfAnswers = 0;
-
-                        
+                      
                         db.InsertIntoTableWord(wordTable);
                     }
                 }              
@@ -85,7 +84,6 @@ namespace App3.LevelStrategy
                         wordTable.Lang = item.Language;
                         wordTable.Score = 0;
                         wordTable.NumberOfAnswers = 0;
-
 
                         db.InsertIntoTableWord(wordTable);
                     }
@@ -155,16 +153,15 @@ namespace App3.LevelStrategy
             var word = db.SelectRandomWord();//wybieram losowe słowo z podręcznej bazy danych
             if (word[0].Lang != ChangeDictionaryAlias(lang))
             {
-                return true;
+                return false;
             }
-            else return false;
+            else return true;
         }
 
         public static bool CheckIfDatabaseIsEmpty()
         {
             // spr czy baza jest pusta, jeśli nie to spr czy ten sam język, jeśli tak, to nie wykonuje pobierania danych
             Database db = new Database();
-            var word = db.SelectRandomWord();
             if (db.CheckIfDatabaseEmpty() == true)
             {
                 return true;
