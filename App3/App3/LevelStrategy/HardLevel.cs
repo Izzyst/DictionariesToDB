@@ -28,7 +28,7 @@ namespace App3.LevelStrategy
             list.Add(w2);
 
             WordTable w3 = db.SelectRandomWord()[0];
-            while (CheckIfDifferent(list[0], w3))
+            while (CheckIfDifferent(list[0], w3) && CheckIfDifferent(list[1], w3))
             {
                 w3 = db.SelectRandomWord()[0];
             }

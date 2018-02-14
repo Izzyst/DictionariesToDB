@@ -15,7 +15,7 @@ namespace App3.utils
     [MetaData("android.accessibilityservice", Resource = "@xml/accessibilityservice")]
     public class LockWindowAccessibilityService : AccessibilityService
     {
-        int isShown=0;
+        int isShown = 0;
         protected override bool OnKeyEvent(KeyEvent e)
         {
             ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this.ApplicationContext);
@@ -24,7 +24,7 @@ namespace App3.utils
 
             if (isActive == 1)
             {
-            if (e.KeyCode == Keycode.Home || e.KeyCode == Keycode.DpadCenter || e.KeyCode == Keycode.AppSwitch || e.KeyCode == Keycode.Menu)
+                if (e.KeyCode == Keycode.Home || e.KeyCode == Keycode.DpadCenter || e.KeyCode == Keycode.AppSwitch || e.KeyCode == Keycode.Menu)
                 {
                     return true;
                 }
@@ -34,12 +34,12 @@ namespace App3.utils
 
         public override void OnAccessibilityEvent(AccessibilityEvent e)
         {
-            //throw new NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public override void OnInterrupt()
         {
-            //throw new NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }

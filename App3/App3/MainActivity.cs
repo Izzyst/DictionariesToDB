@@ -62,7 +62,7 @@ namespace App3
                 ChangeToFileView(false);
             };
 
-            // =================spinner for choosing level==========================================
+            //    // =================spinner for choosing level==========================================
             spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(SpinnerItemSelected);
             var adapter = ArrayAdapter.CreateFromResource(
                     this, Resource.Array.levels_array, Android.Resource.Layout.SimpleSpinnerItem);
@@ -76,7 +76,7 @@ namespace App3
             int spinnerPosition = adapter.GetPosition(GetSharedPreferences("level_data"));
             spinner.SetSelection(spinnerPosition);
 
-            // =================spinner for choosing language==========================================
+            //    // =================spinner for choosing language==========================================
             spinnerLang.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(SpinnerLangItemSelected);
             var adapterLang = ArrayAdapter.CreateFromResource(
                     this, Resource.Array.language_array, Android.Resource.Layout.SimpleSpinnerItem);
@@ -87,19 +87,18 @@ namespace App3
             string language = GetSharedPreferences("language_data");
             int spinnerPositionLang = adapterLang.GetPosition(language);
             spinnerLang.SetSelection(spinnerPositionLang);
-            //spr. czy słownik w podręcznej bazie jest poprawny
-            GettingItemsFromDatabase.CheckIfDictionaryInDatabaseIsCorrect(language);
-            //===============================================================
 
-            // spr czy LockScreen jest aktywny i ustawienie odpowiedniej wartości na togglebuttonie
-            if (LockScreen.GetInstance().IsActive())  { switchBtn.Checked = true;}
+            //    //===============================================================
+
+            //    // spr czy LockScreen jest aktywny i ustawienie odpowiedniej wartości na togglebuttonie
+            if (LockScreen.GetInstance().IsActive()) { switchBtn.Checked = true; }
             else { switchBtn.Checked = false; }
 
             switchBtn.Click += async (o, e) =>
             {
-               ValidationForSwitchButton(language);
+                ValidationForSwitchButton(language);
             };
-          
+
             fileBtn.Click += async delegate
             {
                 try
@@ -115,14 +114,14 @@ namespace App3
                     {
                         Toast.MakeText(this, this.GetString(Resource.String.wrongFileExtension), ToastLength.Long).Show();
                         externRadioBtn.Checked = true;
-                        ChangeToFileView(false);                       
+                        ChangeToFileView(false);
                     }
                 }
                 catch (InvalidOperationException ex)
                 {
                     ex.ToString(); //"Only one operation can be active at a time"
-                }
-        };
+                    }
+            };
 
             int isShown = 0;
             ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this);
@@ -131,7 +130,7 @@ namespace App3
             editor.Apply();
         }
 
-        protected override void OnResume()
+            protected override void OnResume()
         {
             base.OnResume();
             scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
@@ -164,10 +163,10 @@ namespace App3
 
             // spr czy baza jest pusta, jeśli nie to spr czy ten sam język, jeśli tak, to nie wykonuje pobierania danych
 
-            if(GettingItemsFromDatabase.CheckIfDownloadDictionaryIsNeeded(toast) == true)
+            if (GettingItemsFromDatabase.CheckIfDownloadDictionaryIsNeeded(toast) == true)
             {
                 await DownloadDictionaryAsync();
-            }          
+            }
         }
 
         public string GetSharedPreferences(string keyName)
