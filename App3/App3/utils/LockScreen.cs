@@ -13,7 +13,12 @@ namespace App3.utils
         public void Init(Context context)
         {
             this.context = context;
-            this.disableHomeButton = true;
+        }
+
+        public void Init(Context context, bool homeButton)
+        {
+            this.context = context;
+            this.disableHomeButton = homeButton;
         }
 
         public static LockScreen GetInstance()
@@ -43,6 +48,7 @@ namespace App3.utils
             if (disableHomeButton)
             {
                 ShowSettingAccesability();
+                disableHomeButton = false;
             }
             if (context != null)
             {

@@ -56,7 +56,7 @@ namespace App3
             externRadioBtn = FindViewById<RadioButton>(Resource.Id.radio_extern);
             if(GettingItemsFromDatabase.CheckIfDbEmpty()==false)
                 scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
-            LockScreen.GetInstance().Init(this);
+            LockScreen.GetInstance().Init(this, true);
 
             fileRadioBtn.Click += delegate
             {
@@ -261,6 +261,7 @@ namespace App3
                         Toast.MakeText(this, this.GetString(Resource.String.wrongFileExtension), ToastLength.Long).Show();
                         ChangeToFileView(false);
                     }
+                    //po
                     if (externRadioBtn.Checked == true && GettingItemsFromDatabase.CheckIfDictionaryInDatabaseIsCorrect(language)==false)
                     {
                         await DownloadDictionaryAsync();
