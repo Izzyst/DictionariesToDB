@@ -130,6 +130,8 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\a
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\layout\moreinfolayout.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\layout\statisticslayout.xml
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\drawable\xls.jpg
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\drawable\exc.png
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\App3.dll
 bin\Debug\Microsoft.CSharp.pdb
 bin\Debug\Mono.Android.pdb

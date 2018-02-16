@@ -31,6 +31,10 @@
   <string name="chooseFile">Wybierz swój plik</string>
   <string name="externalDictionary">Zewnętrzny słownik</string>
   <string name="stat">Statystyki...</string>
-  <string name="info">Więcej informacji...</string>
+  <string name="info">Przed pierwszym użyciem...</string>
   <string name="WaitDownloading">Zaczekaj, pobieram słownik...</string>
+  <string name="about_csv">W przypadku wyboru opcji "Twój plik", zawartość pliku powinna wyglądać podobnie do przedstawionych przykładów poniżej. Przy błędnie stworzonym pliku, aplikacja może nie zadziałać poprawnie. 
+  W pliku o rozrzerzeniu csv każda linia rozpoczyna się od słowa, a po przecinku bez użycia spacji, są podawane jego definicje. Upewnij się, że każda z definicji nie zawiera przecinków, ponieważ zostanie potraktowana jako dwa lub więcej elementy. </string>
+  <string name="about_xls">Poniżej został przedstawiony prawidłowy plik typu xls lub xlsx. Pierwsza koluma zawiera definiowane słowo, a każda kolejna, to jego definicje.</string>
+  <string name="beforeUse">Przy pierwszym włączeniu aplikacji pojawi się okno "Ułatwienia dostępu". Aby aplikacja mogła działać poprawnie, znajdź LinguisticLockScreen i włącz ułatwienia.</string>
 </resources>
