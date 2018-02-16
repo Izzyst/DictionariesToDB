@@ -20,6 +20,7 @@
 			</intent-filter>
 			<meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibilityservice" />
 		</service>-->
+    <activity android:label="InfoActivity" android:name="md5db1d84f0b2adc09d2fa403805cf2e153.InfoActivity" />
     <activity android:label="LockScreenActivity" android:launchMode="singleInstance" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="md5db1d84f0b2adc09d2fa403805cf2e153.LockScreenActivity" />
     <activity android:label="Linguistic lock screen" android:name="md5db1d84f0b2adc09d2fa403805cf2e153.MainActivity">
       <intent-filter>
@@ -27,6 +28,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="StatisticsActivity" android:name="md5db1d84f0b2adc09d2fa403805cf2e153.StatisticsActivity" />
     <receiver android:name="md5ce095f820c090cc03681baac37a9ba53.LockScreenReceiver" />
     <service android:name="md5ce095f820c090cc03681baac37a9ba53.LockScreenService" />
     <service android:label="LockWindowAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:name="md5ce095f820c090cc03681baac37a9ba53.LockWindowAccessibilityService">

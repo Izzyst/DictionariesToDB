@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">Linguistic Lock Screen</string>
-  
+  <string name="statistics_name">Statystyki</string>
+  <string name="info_name">O aplikacji</string>
+
   <string name="Level">Wybierz poziom trudności</string>
   <string-array name="levels_array">
     <item name="Easy">Łatwy</item>
@@ -28,5 +30,7 @@
   <string name="YourScoreBeginning">Twój wynik: 0 ptk / 0 odpowiedzi</string>
   <string name="chooseFile">Wybierz swój plik</string>
   <string name="externalDictionary">Zewnętrzny słownik</string>
+  <string name="stat">Statystyki...</string>
+  <string name="info">Więcej informacji...</string>
   <string name="WaitDownloading">Zaczekaj, pobieram słownik...</string>
 </resources>

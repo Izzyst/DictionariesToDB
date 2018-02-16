@@ -207,6 +207,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InfoActivity.cs" />
     <Compile Include="LevelStrategy\GettingWordsFromDatabase.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="Models\DataToLevel.cs" />
@@ -225,6 +226,7 @@
     <Compile Include="Resources\FileFactory.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatisticsActivity.cs" />
     <Compile Include="utils\LockScreen.cs" />
     <Compile Include="utils\LockScreenReceiver.cs" />
     <Compile Include="utils\LockScreenService.cs" />
@@ -241,6 +243,12 @@
     </None>
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\UnlockScreen.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MoreInfoLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Statisticslayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

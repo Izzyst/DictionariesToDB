@@ -27,6 +27,8 @@ namespace App3
         TextView chooseLanguageText;
         RadioButton fileRadioBtn;
         RadioButton externRadioBtn;
+        TextView statText;
+        TextView infoText;
 
         public static string level;
         ISharedPreferences prefs;
@@ -47,10 +49,13 @@ namespace App3
             progressBar = FindViewById<ProgressBar>(Resource.Id.progressBar1);
             scores = FindViewById<TextView>(Resource.Id.textView1);
             fileText = FindViewById<TextView>(Resource.Id.textView2);
-            chooseLanguageText = FindViewById<TextView>(Resource.Id.ChooseLanguageTextView);
+            chooseLanguageText = FindViewById<TextView>(Resource.Id.ChooseLanguageTextView);          
             fileRadioBtn = FindViewById<RadioButton>(Resource.Id.radio_file);
             externRadioBtn = FindViewById<RadioButton>(Resource.Id.radio_extern);
-            if(GetSharedPreferences("isDbCreated;", isDbCreated) == 1)
+            statText = FindViewById<TextView>(Resource.Id.statistictextView);
+            infoText = FindViewById<TextView>(Resource.Id.infotextView);
+
+            if (GetSharedPreferences("isDbCreated;", isDbCreated) == 1)
                 if (GettingItemsFromDatabase.CheckIfDbEmpty() == false)
                 scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
             LockScreen.GetInstance().Init(this, true);
@@ -59,9 +64,24 @@ namespace App3
             {
                 ChangeToFileView(true);
             };
+
             externRadioBtn.Click += delegate
             {
                 ChangeToFileView(false);
+            };
+
+            statText.Click += delegate
+            {
+                Intent intent = new Intent(Application.Context, typeof(StatisticsActivity));
+                intent.SetFlags(ActivityFlags.NewTask);
+                Application.Context.StartActivity(intent);
+            };
+
+            infoText.Click += delegate
+            {
+                Intent intent = new Intent(Application.Context, typeof(InfoActivity));
+                intent.SetFlags(ActivityFlags.NewTask);
+                Application.Context.StartActivity(intent);
             };
 
             //    // =================spinner for choosing level==========================================
@@ -96,7 +116,7 @@ namespace App3
             if (LockScreen.GetInstance().IsActive()) { switchBtn.Checked = true; }
             else { switchBtn.Checked = false; }
 
-            switchBtn.Click += async (o, e) =>
+            switchBtn.Click += (o, e) =>
             {
                 language = GetSharedPreferences("language_data");
                 ValidationForSwitchButton(language);
