@@ -10,7 +10,7 @@ using Android.Widget;
 
 namespace App3.utils
 {
-    [Service(Label = "LockWindowAccessibilityService", Permission = Manifest.Permission.BindAccessibilityService)]
+    [Service(Label = "@string/app_name", Permission = Manifest.Permission.BindAccessibilityService)]
     [IntentFilter(new[] { "android.accessibilityservice.AccessibilityService" })]
     [MetaData("android.accessibilityservice", Resource = "@xml/accessibilityservice")]
     public class LockWindowAccessibilityService : AccessibilityService

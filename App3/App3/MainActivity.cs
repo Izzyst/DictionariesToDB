@@ -55,7 +55,7 @@ namespace App3
             statText = FindViewById<TextView>(Resource.Id.statistictextView);
             infoText = FindViewById<TextView>(Resource.Id.infotextView);
 
-            if (GetSharedPreferences("isDbCreated;", isDbCreated) == 1)
+            if (GetSharedPreferences("isDbCreated", isDbCreated) == 1)
                 if (GettingItemsFromDatabase.CheckIfDbEmpty() == false)
                 scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
             LockScreen.GetInstance().Init(this, true);
@@ -156,7 +156,7 @@ namespace App3
         protected override void OnResume()
         {
             base.OnResume();
-            if (GetSharedPreferences("isDbCreated;", isDbCreated) == 1)
+            if (GetSharedPreferences("isDbCreated", isDbCreated) == 1)
                 scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
         }
 
