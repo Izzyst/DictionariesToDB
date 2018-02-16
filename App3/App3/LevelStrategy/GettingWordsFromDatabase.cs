@@ -16,6 +16,18 @@ namespace App3.LevelStrategy
 {
     public static class GettingItemsFromDatabase
     {
+        private static int isDbCreated = 0;
+
+        public static void InsertSharedPref(string name, int value)
+        {
+            ISharedPreferencesEditor editor;
+            ISharedPreferences prefs;
+            prefs = PreferenceManager.GetDefaultSharedPreferences(Application.Context);
+            editor = prefs.Edit();
+            editor.PutInt(name, value);
+            editor.Apply();
+        }
+
         public static int InsertWordsToSqlite()
         {
             string data= "";
@@ -37,6 +49,7 @@ namespace App3.LevelStrategy
                     db = new Database();
                     db.DropTable();
                     db.CreateDatabase();
+                    InsertSharedPref("isDbCreated", 1);
                     foreach (var item in items)
                     {
                         WordTable wordTable = new WordTable();
@@ -70,6 +83,8 @@ namespace App3.LevelStrategy
                     db = new Database();
                     db.DropTable();
                     db.CreateDatabase();
+                    isDbCreated = 1;
+                    InsertSharedPref("isDbCreated", 1);
                     foreach (var item in items)
                     {
 
@@ -121,7 +136,7 @@ namespace App3.LevelStrategy
                 json = sr.ReadToEnd();
                 dynamic items = JsonConvert.DeserializeObject<List<Word>>(json);
                 db = new Database();
-                db.CreateDatabase();
+                InsertSharedPref("isDbCreated", 1);
                 foreach (var item in items)
                 {
                     db.InsertIntoTableWord(item);

@@ -34,12 +34,12 @@ namespace App3.utils
 
         public override void OnAccessibilityEvent(AccessibilityEvent e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public override void OnInterrupt()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }

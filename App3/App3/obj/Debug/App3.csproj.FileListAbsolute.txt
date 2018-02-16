@@ -117,6 +117,7 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\value
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\R.cs.flag
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\uploadflags.txt
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\res\xml\accessibilityservice.xml
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\App3.csprojResolveAssemblyReference.cache
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\App3.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\App3.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\FormsViewGroup.dll.mdb
@@ -127,14 +128,7 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\a
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\App3.csprojResolveAssemblyReference.cache
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\App3.dll
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\packages\Xamarin.Forms.2.3.3.193\lib\MonoAndroid10\FormsViewGroup.dll
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\packages\Xam.Plugin.DeviceInfo.2.1.2\lib\MonoAndroid10\Plugin.DeviceInfo.Abstractions.dll
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\packages\Xam.Plugin.DeviceInfo.2.1.2\lib\MonoAndroid10\Plugin.DeviceInfo.dll
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\packages\Xamarin.Forms.2.3.3.193\lib\MonoAndroid10\Xamarin.Forms.Core.dll
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\packages\Xamarin.Forms.2.3.3.193\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\packages\Xamarin.Forms.2.3.3.193\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll
 bin\Debug\Microsoft.CSharp.pdb
 bin\Debug\Mono.Android.pdb
 bin\Debug\mscorlib.pdb

@@ -31,6 +31,7 @@ namespace App3
         public static string level;
         ISharedPreferences prefs;
         ISharedPreferencesEditor editor;
+        int isDbCreated = 0;
 
         private List<string> fileFist = new List<string>();
 
@@ -38,7 +39,7 @@ namespace App3
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Main);
-
+            
             spinner = FindViewById<Spinner>(Resource.Id.spinner);
             spinnerLang = FindViewById<Spinner>(Resource.Id.spinnerLanguage);
             switchBtn = FindViewById<Switch>(Resource.Id.switchButton);
@@ -49,7 +50,8 @@ namespace App3
             chooseLanguageText = FindViewById<TextView>(Resource.Id.ChooseLanguageTextView);
             fileRadioBtn = FindViewById<RadioButton>(Resource.Id.radio_file);
             externRadioBtn = FindViewById<RadioButton>(Resource.Id.radio_extern);
-            if(GettingItemsFromDatabase.CheckIfDbEmpty()==false)
+            if(GetSharedPreferences("isDbCreated;", isDbCreated) == 1)
+                if (GettingItemsFromDatabase.CheckIfDbEmpty() == false)
                 scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
             LockScreen.GetInstance().Init(this, true);
 
@@ -96,6 +98,7 @@ namespace App3
 
             switchBtn.Click += async (o, e) =>
             {
+                language = GetSharedPreferences("language_data");
                 ValidationForSwitchButton(language);
             };
 
@@ -130,10 +133,11 @@ namespace App3
             editor.Apply();
         }
 
-            protected override void OnResume()
+        protected override void OnResume()
         {
             base.OnResume();
-            scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
+            if (GetSharedPreferences("isDbCreated;", isDbCreated) == 1)
+                scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
         }
 
         private void SpinnerItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
@@ -162,11 +166,12 @@ namespace App3
             switchBtn.Checked = false;
 
             // spr czy baza jest pusta, jeśli nie to spr czy ten sam język, jeśli tak, to nie wykonuje pobierania danych
-
-            if (GettingItemsFromDatabase.CheckIfDownloadDictionaryIsNeeded(toast) == true)
-            {
-                await DownloadDictionaryAsync();
-            }
+            
+            if (GetSharedPreferences("isDbCreated", isDbCreated) == 1)
+                if (GettingItemsFromDatabase.CheckIfDownloadDictionaryIsNeeded(toast) == true)
+                {
+                    await DownloadDictionaryAsync();
+                }
         }
 
         public string GetSharedPreferences(string keyName)
@@ -174,6 +179,13 @@ namespace App3
             //getting data from shared prefs
             prefs = PreferenceManager.GetDefaultSharedPreferences(this.ApplicationContext);
             string levelData = prefs.GetString(keyName, level);
+            return levelData;
+        }
+        public int GetSharedPreferences(string keyName, int level)
+        {
+            //getting data from shared prefs
+            prefs = PreferenceManager.GetDefaultSharedPreferences(this.ApplicationContext);
+            int levelData = prefs.GetInt(keyName, level);
             return levelData;
         }
 
