@@ -20,6 +20,7 @@ namespace App3
     {
         private List<string> list;
         ListView listView;
+        TextView textView;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -27,17 +28,23 @@ namespace App3
             this.Title = this.Resources.GetString(Resource.String.statistics_name);
 
             listView = FindViewById<ListView>(Resource.Id.listView1);
+            textView = FindViewById<TextView>(Resource.Id.emptyDict);
 
             list = new List<string>();
             Database db = new Database();
             if (db.CheckIfDatabaseEmpty() == false)
             {
+                textView.Visibility = Android.Views.ViewStates.Gone;
                 List<WordTable> words = new List<WordTable>();
                 words = db.SelectTableWord();
                 foreach (var item in words)
                 {
                     list.Add(item.W + " - " + item.Score.ToString() + "ptk");
                 }
+            }
+            else
+            {
+                textView.Visibility= Android.Views.ViewStates.Visible;
             }
 
             ArrayAdapter<string> adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, list);

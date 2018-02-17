@@ -104,6 +104,7 @@
         android:id="@+id/infotextView" />
     <TextView
         android:text="@string/stat"
+        android:layout_marginTop="8dp"
         android:textSize="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

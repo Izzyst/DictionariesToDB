@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">Linguistic Lock Screen</string>
-  <string name="statistics_name">Statistics</string>
+  <string name="statistics_name">Your dictionary</string>
   <string name="info_name">About application</string>
   
   <string name="Level">Choose level</string>
@@ -40,4 +40,5 @@
   <string name="about_xls">A valid xls or xlsx file is presented below. The first column contains the defined word, and each subsequent one is its definitions.</string>
   <string name="permission_accessibility_setting_description">Turn on and it locks all soft key including HOME, RECENTS, BACK, MENU buttons.</string>
   <string name="beforeUse">When you first enable the application, the "Accessibility" window will appear. For the application to work properly, find LinguisticLockScreen and enable the facilities.</string>
+  <string name="empty">Your dictionary is empty :/</string>
 </resources>

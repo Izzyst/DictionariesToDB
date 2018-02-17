@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">Linguistic Lock Screen</string>
-  <string name="statistics_name">Statystyki</string>
+  <string name="statistics_name">Twój słownik</string>
   <string name="info_name">O aplikacji</string>
 
   <string name="Level">Wybierz poziom trudności</string>
@@ -37,4 +37,5 @@
   W pliku o rozrzerzeniu csv każda linia rozpoczyna się od słowa, a po przecinku bez użycia spacji, są podawane jego definicje. Upewnij się, że każda z definicji nie zawiera przecinków, ponieważ zostanie potraktowana jako dwa lub więcej elementy. </string>
   <string name="about_xls">Poniżej został przedstawiony prawidłowy plik typu xls lub xlsx. Pierwsza koluma zawiera definiowane słowo, a każda kolejna, to jego definicje.</string>
   <string name="beforeUse">Przy pierwszym włączeniu aplikacji pojawi się okno "Ułatwienia dostępu". Aby aplikacja mogła działać poprawnie, znajdź LinguisticLockScreen i włącz ułatwienia.</string>
+  <string name="empty">Twój słownik jest pusty :/</string>
 </resources>

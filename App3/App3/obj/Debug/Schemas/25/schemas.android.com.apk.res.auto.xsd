@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>17.02.2018 16:19:14</xs:documentation>
+    <xs:documentation>17.02.2018 16:31:15</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -840,6 +840,7 @@
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/chooseFile" />
             <xs:enumeration value="@string/developersError" />
+            <xs:enumeration value="@string/empty" />
             <xs:enumeration value="@string/externalDictionary" />
             <xs:enumeration value="@string/finishDownload" />
             <xs:enumeration value="@string/Hello" />
@@ -4889,6 +4890,7 @@
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/chooseFile" />
             <xs:enumeration value="@string/developersError" />
+            <xs:enumeration value="@string/empty" />
             <xs:enumeration value="@string/externalDictionary" />
             <xs:enumeration value="@string/finishDownload" />
             <xs:enumeration value="@string/Hello" />
@@ -10489,6 +10491,7 @@
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/chooseFile" />
             <xs:enumeration value="@string/developersError" />
+            <xs:enumeration value="@string/empty" />
             <xs:enumeration value="@string/externalDictionary" />
             <xs:enumeration value="@string/finishDownload" />
             <xs:enumeration value="@string/Hello" />
@@ -13691,6 +13694,7 @@
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/chooseFile" />
             <xs:enumeration value="@string/developersError" />
+            <xs:enumeration value="@string/empty" />
             <xs:enumeration value="@string/externalDictionary" />
             <xs:enumeration value="@string/finishDownload" />
             <xs:enumeration value="@string/Hello" />
@@ -14325,6 +14329,7 @@
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/chooseFile" />
             <xs:enumeration value="@string/developersError" />
+            <xs:enumeration value="@string/empty" />
             <xs:enumeration value="@string/externalDictionary" />
             <xs:enumeration value="@string/finishDownload" />
             <xs:enumeration value="@string/Hello" />
@@ -15374,6 +15379,7 @@
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/chooseFile" />
             <xs:enumeration value="@string/developersError" />
+            <xs:enumeration value="@string/empty" />
             <xs:enumeration value="@string/externalDictionary" />
             <xs:enumeration value="@string/finishDownload" />
             <xs:enumeration value="@string/Hello" />
@@ -16008,6 +16014,7 @@
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/chooseFile" />
             <xs:enumeration value="@string/developersError" />
+            <xs:enumeration value="@string/empty" />
             <xs:enumeration value="@string/externalDictionary" />
             <xs:enumeration value="@string/finishDownload" />
             <xs:enumeration value="@string/Hello" />
@@ -18087,6 +18094,7 @@
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/chooseFile" />
             <xs:enumeration value="@string/developersError" />
+            <xs:enumeration value="@string/empty" />
             <xs:enumeration value="@string/externalDictionary" />
             <xs:enumeration value="@string/finishDownload" />
             <xs:enumeration value="@string/Hello" />
@@ -21052,6 +21060,7 @@
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/chooseFile" />
             <xs:enumeration value="@string/developersError" />
+            <xs:enumeration value="@string/empty" />
             <xs:enumeration value="@string/externalDictionary" />
             <xs:enumeration value="@string/finishDownload" />
             <xs:enumeration value="@string/Hello" />

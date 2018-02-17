@@ -2999,7 +2999,7 @@ containing a value of this type.
     }
     public static final class id {
         public static final int ChooseLanguageTextView=0x7f0b0083;
-        public static final int Unlock=0x7f0b00c2;
+        public static final int Unlock=0x7f0b00c3;
         public static final int action0=0x7f0b00ad;
         public static final int action_bar=0x7f0b0064;
         public static final int action_bar_activity_content=0x7f0b0001;
@@ -3053,6 +3053,7 @@ containing a value of this type.
         public static final int design_navigation_view=0x7f0b007a;
         public static final int disableHome=0x7f0b0012;
         public static final int edit_query=0x7f0b0066;
+        public static final int emptyDict=0x7f0b00c1;
         public static final int end=0x7f0b0021;
         public static final int end_padder=0x7f0b00c0;
         public static final int enterAlways=0x7f0b002a;
@@ -3065,8 +3066,8 @@ containing a value of this type.
         public static final int fill_horizontal=0x7f0b003c;
         public static final int fill_vertical=0x7f0b0033;
         public static final int fixed=0x7f0b003f;
-        public static final int hard2Btn=0x7f0b00c3;
-        public static final int hard3Btn=0x7f0b00c4;
+        public static final int hard2Btn=0x7f0b00c4;
+        public static final int hard3Btn=0x7f0b00c5;
         public static final int home=0x7f0b0005;
         public static final int homeAsUp=0x7f0b0013;
         public static final int icon=0x7f0b0049;
@@ -3081,9 +3082,9 @@ containing a value of this type.
         public static final int line1=0x7f0b00bc;
         public static final int line3=0x7f0b00be;
         public static final int listMode=0x7f0b000f;
-        public static final int listView1=0x7f0b00c1;
+        public static final int listView1=0x7f0b00c2;
         public static final int list_item=0x7f0b0048;
-        public static final int masked=0x7f0b00c6;
+        public static final int masked=0x7f0b00c7;
         public static final int media_actions=0x7f0b00b0;
         public static final int middle=0x7f0b0022;
         public static final int mini=0x7f0b003e;
@@ -3192,7 +3193,7 @@ containing a value of this type.
         public static final int up=0x7f0b0009;
         public static final int useLogo=0x7f0b0018;
         public static final int view_offset_helper=0x7f0b000e;
-        public static final int visible=0x7f0b00c5;
+        public static final int visible=0x7f0b00c6;
         public static final int volume_item_container=0x7f0b00a2;
         public static final int withText=0x7f0b0027;
         public static final int wrap_content=0x7f0b001f;
@@ -3337,6 +3338,7 @@ containing a value of this type.
         public static final int character_counter_pattern=0x7f0c0038;
         public static final int chooseFile=0x7f0c0051;
         public static final int developersError=0x7f0c0048;
+        public static final int empty=0x7f0c005a;
         public static final int externalDictionary=0x7f0c0052;
         public static final int finishDownload=0x7f0c0047;
         public static final int info=0x7f0c0055;

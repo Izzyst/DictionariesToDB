@@ -21,6 +21,7 @@ namespace App3
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.rowlayout);
+            this.Title = this.Resources.GetString(Resource.String.statistics_name);
             string text = Intent.GetStringExtra("MyData");
             TextView wordText = FindViewById<TextView>(Resource.Id.textView1);
             TextView defText = FindViewById<TextView>(Resource.Id.textView2);
