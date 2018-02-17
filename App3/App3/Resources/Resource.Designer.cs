@@ -2804,8 +2804,8 @@ namespace App3
 			// aapt resource value: 0x7f0b0083
 			public const int ChooseLanguageTextView = 2131427459;
 			
-			// aapt resource value: 0x7f0b00c1
-			public const int Unlock = 2131427521;
+			// aapt resource value: 0x7f0b00c2
+			public const int Unlock = 2131427522;
 			
 			// aapt resource value: 0x7f0b00ad
 			public const int action0 = 2131427501;
@@ -3002,11 +3002,11 @@ namespace App3
 			// aapt resource value: 0x7f0b003f
 			public const int @fixed = 2131427391;
 			
-			// aapt resource value: 0x7f0b00c2
-			public const int hard2Btn = 2131427522;
-			
 			// aapt resource value: 0x7f0b00c3
-			public const int hard3Btn = 2131427523;
+			public const int hard2Btn = 2131427523;
+			
+			// aapt resource value: 0x7f0b00c4
+			public const int hard3Btn = 2131427524;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int home = 2131427333;
@@ -3050,11 +3050,14 @@ namespace App3
 			// aapt resource value: 0x7f0b000f
 			public const int listMode = 2131427343;
 			
+			// aapt resource value: 0x7f0b00c1
+			public const int listView1 = 2131427521;
+			
 			// aapt resource value: 0x7f0b0048
 			public const int list_item = 2131427400;
 			
-			// aapt resource value: 0x7f0b00c5
-			public const int masked = 2131427525;
+			// aapt resource value: 0x7f0b00c6
+			public const int masked = 2131427526;
 			
 			// aapt resource value: 0x7f0b00b0
 			public const int media_actions = 2131427504;
@@ -3380,8 +3383,8 @@ namespace App3
 			// aapt resource value: 0x7f0b000e
 			public const int view_offset_helper = 2131427342;
 			
-			// aapt resource value: 0x7f0b00c4
-			public const int visible = 2131427524;
+			// aapt resource value: 0x7f0b00c5
+			public const int visible = 2131427525;
 			
 			// aapt resource value: 0x7f0b00a2
 			public const int volume_item_container = 2131427490;
