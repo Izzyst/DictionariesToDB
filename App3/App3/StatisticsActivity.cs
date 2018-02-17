@@ -9,6 +9,9 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using App3.Models;
+using App3.Resources.DataHelper;
+using static Android.Widget.AdapterView;
 
 namespace App3
 {
@@ -26,27 +29,28 @@ namespace App3
             listView = FindViewById<ListView>(Resource.Id.listView1);
 
             list = new List<string>();
-            list.Add("słowo 1");
-            list.Add("słowo 2");
-            list.Add("słowo 3");
-            list.Add("słowo 1");
-            list.Add("słowo 2");
-            list.Add("słowo 3");
-            list.Add("słowo 1");
-            list.Add("słowo 2");
-            list.Add("słowo 3");
-            list.Add("słowo 1");
-            list.Add("słowo 2");
-            list.Add("słowo 3");
-            list.Add("słowo 1");
-            list.Add("słowo 2");
-            list.Add("słowo 3");
-            list.Add("słowo 1");
-            list.Add("słowo 2");
-            list.Add("słowo 3");
+            Database db = new Database();
+            if (db.CheckIfDatabaseEmpty() == false)
+            {
+                List<WordTable> words = new List<WordTable>();
+                words = db.SelectTableWord();
+                foreach (var item in words)
+                {
+                    list.Add(item.W + " - " + item.Score.ToString() + "ptk");
+                }
+            }
 
-            ArrayAdapter<string> adapter = new ArrayAdapter<string>(this,Android.Resource.Layout.SimpleListItem1, list);
+            ArrayAdapter<string> adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, list);
             listView.Adapter = adapter;
+
+            listView.ItemClick += (object sender, ItemClickEventArgs e) => {
+                string selectedFromList = listView.GetItemAtPosition(e.Position).ToString();
+
+                Intent intent = new Intent(Application.Context, typeof(RowActivity));
+                intent.PutExtra("MyData", e.Position.ToString());
+                Application.Context.StartActivity(intent);
+            };
+
 
         }
     }

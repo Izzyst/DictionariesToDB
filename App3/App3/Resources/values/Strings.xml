@@ -31,7 +31,7 @@
   <string name="chooseFile">Choose your file</string>
   <string name="externalDictionary">External dictionary</string>
   <string name="WaitDownloading">Wait, downoading dictionary...</string>
-  <string name="stat">Statistics...</string>
+  <string name="stat">Your dictionary...</string>
   <string name="info">Before first use...</string>
   <string name="about_csv">
     If you choose the "Your file" option, the file content should look similar to the examples shown below. In the case of a mistakenly created file, the application may not work correctly.
