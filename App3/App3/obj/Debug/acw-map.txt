@@ -18,6 +18,10 @@ App3.RowActivity, App3;md5db1d84f0b2adc09d2fa403805cf2e153.RowActivity
 App3.RowActivity, App3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5db1d84f0b2adc09d2fa403805cf2e153.RowActivity
 App3.RowActivity;md5db1d84f0b2adc09d2fa403805cf2e153.RowActivity
 app3.RowActivity;md5db1d84f0b2adc09d2fa403805cf2e153.RowActivity
+App3.SettingsActivity, App3;md5db1d84f0b2adc09d2fa403805cf2e153.SettingsActivity
+App3.SettingsActivity, App3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5db1d84f0b2adc09d2fa403805cf2e153.SettingsActivity
+App3.SettingsActivity;md5db1d84f0b2adc09d2fa403805cf2e153.SettingsActivity
+app3.SettingsActivity;md5db1d84f0b2adc09d2fa403805cf2e153.SettingsActivity
 App3.StatisticsActivity, App3;md5db1d84f0b2adc09d2fa403805cf2e153.StatisticsActivity
 App3.StatisticsActivity, App3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5db1d84f0b2adc09d2fa403805cf2e153.StatisticsActivity
 App3.StatisticsActivity;md5db1d84f0b2adc09d2fa403805cf2e153.StatisticsActivity

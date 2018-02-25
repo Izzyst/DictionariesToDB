@@ -38,4 +38,5 @@
   <string name="about_xls">Poniżej został przedstawiony prawidłowy plik typu xls lub xlsx. Pierwsza koluma zawiera definiowane słowo, a każda kolejna, to jego definicje.</string>
   <string name="beforeUse">Przy pierwszym włączeniu aplikacji pojawi się okno "Ułatwienia dostępu". Aby aplikacja mogła działać poprawnie, znajdź LinguisticLockScreen i włącz ułatwienia.</string>
   <string name="empty">Twój słownik jest pusty :/</string>
+  <string name="settings">Ustawienia..</string>
 </resources>

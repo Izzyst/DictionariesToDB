@@ -227,6 +227,7 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RowActivity.cs" />
+    <Compile Include="SettingsActivity.cs" />
     <Compile Include="StatisticsActivity.cs" />
     <Compile Include="utils\LockScreen.cs" />
     <Compile Include="utils\LockScreenReceiver.cs" />
@@ -253,6 +254,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\rowlayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\settingsPagelayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

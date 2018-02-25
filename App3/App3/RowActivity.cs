@@ -29,12 +29,29 @@ namespace App3
             if (db.CheckIfDatabaseEmpty() == false)
             {
                 List<WordTable> words = new List<WordTable>();
+                List<string> defs = new List<string>();
                 words = db.SelectTableWord();
                 int x = 0;
                 if (Int32.TryParse(text, out x))
                 {
+                    int id = words[x].IdWordJson;
+                    foreach (var item in words)
+                    {
+                        if (item.IdWordJson == id)
+                        {
+                            defs.Add(item.Def);
+                        }
+                    }
                     wordText.Text = words[x].W;
-                    defText.Text = words[x].Def;
+
+                    string d = "";
+
+                    for (int i = 0; i < defs.Count; i++)
+                    {
+                        d += System.Environment.NewLine +  "- " +  defs[i];
+                    }
+
+                    defText.Text = d;
                 }
                 
             }

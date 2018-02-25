@@ -29,6 +29,7 @@
       </intent-filter>
     </activity>
     <activity android:label="RowActivity" android:name="md5db1d84f0b2adc09d2fa403805cf2e153.RowActivity" />
+    <activity android:label="SettingsActivity" android:name="md5db1d84f0b2adc09d2fa403805cf2e153.SettingsActivity" />
     <activity android:label="StatisticsActivity" android:name="md5db1d84f0b2adc09d2fa403805cf2e153.StatisticsActivity" />
     <receiver android:name="md5ce095f820c090cc03681baac37a9ba53.LockScreenReceiver" />
     <service android:name="md5ce095f820c090cc03681baac37a9ba53.LockScreenService" />

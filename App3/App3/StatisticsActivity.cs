@@ -31,23 +31,28 @@ namespace App3
             textView = FindViewById<TextView>(Resource.Id.emptyDict);
 
             list = new List<string>();
+            List<string> alphabeticaList = new List<string>();
             Database db = new Database();
             if (db.CheckIfDatabaseEmpty() == false)
             {
                 textView.Visibility = Android.Views.ViewStates.Gone;
                 List<WordTable> words = new List<WordTable>();
                 words = db.SelectTableWord();
-                foreach (var item in words)
+                for (int i = 0; i < words.Count-1; i++)
                 {
-                    list.Add(item.W + " - " + item.Score.ToString() + "ptk");
+                    if(words[i].IdWordJson != words[i+1].IdWordJson)
+                    {
+                        list.Add(words[i].W + " - " + words[i].Score.ToString() + "ptk");
+                    }                   
                 }
+                alphabeticaList = list.OrderBy(s => s).ToList();
             }
             else
             {
                 textView.Visibility= Android.Views.ViewStates.Visible;
             }
 
-            ArrayAdapter<string> adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, list);
+            ArrayAdapter<string> adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, alphabeticaList);
             listView.Adapter = adapter;
 
             listView.ItemClick += (object sender, ItemClickEventArgs e) => {
@@ -57,8 +62,6 @@ namespace App3
                 intent.PutExtra("MyData", e.Position.ToString());
                 Application.Context.StartActivity(intent);
             };
-
-
         }
     }
 }

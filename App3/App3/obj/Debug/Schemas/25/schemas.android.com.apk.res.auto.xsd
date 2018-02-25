@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>17.02.2018 16:31:15</xs:documentation>
+    <xs:documentation>25.02.2018 00:50:41</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -882,6 +882,7 @@
             <xs:enumeration value="@string/radioButtonsDescription" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/serviceStopped" />
+            <xs:enumeration value="@string/settings" />
             <xs:enumeration value="@string/stat" />
             <xs:enumeration value="@string/statistics_name" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
@@ -4932,6 +4933,7 @@
             <xs:enumeration value="@string/radioButtonsDescription" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/serviceStopped" />
+            <xs:enumeration value="@string/settings" />
             <xs:enumeration value="@string/stat" />
             <xs:enumeration value="@string/statistics_name" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
@@ -10533,6 +10535,7 @@
             <xs:enumeration value="@string/radioButtonsDescription" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/serviceStopped" />
+            <xs:enumeration value="@string/settings" />
             <xs:enumeration value="@string/stat" />
             <xs:enumeration value="@string/statistics_name" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
@@ -13736,6 +13739,7 @@
             <xs:enumeration value="@string/radioButtonsDescription" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/serviceStopped" />
+            <xs:enumeration value="@string/settings" />
             <xs:enumeration value="@string/stat" />
             <xs:enumeration value="@string/statistics_name" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
@@ -14371,6 +14375,7 @@
             <xs:enumeration value="@string/radioButtonsDescription" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/serviceStopped" />
+            <xs:enumeration value="@string/settings" />
             <xs:enumeration value="@string/stat" />
             <xs:enumeration value="@string/statistics_name" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
@@ -15421,6 +15426,7 @@
             <xs:enumeration value="@string/radioButtonsDescription" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/serviceStopped" />
+            <xs:enumeration value="@string/settings" />
             <xs:enumeration value="@string/stat" />
             <xs:enumeration value="@string/statistics_name" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
@@ -16056,6 +16062,7 @@
             <xs:enumeration value="@string/radioButtonsDescription" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/serviceStopped" />
+            <xs:enumeration value="@string/settings" />
             <xs:enumeration value="@string/stat" />
             <xs:enumeration value="@string/statistics_name" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
@@ -18136,6 +18143,7 @@
             <xs:enumeration value="@string/radioButtonsDescription" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/serviceStopped" />
+            <xs:enumeration value="@string/settings" />
             <xs:enumeration value="@string/stat" />
             <xs:enumeration value="@string/statistics_name" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
@@ -21102,6 +21110,7 @@
             <xs:enumeration value="@string/radioButtonsDescription" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/serviceStopped" />
+            <xs:enumeration value="@string/settings" />
             <xs:enumeration value="@string/stat" />
             <xs:enumeration value="@string/statistics_name" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
