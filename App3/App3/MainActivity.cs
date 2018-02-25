@@ -1,15 +1,10 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-using App3.utils;
-using System;
 using Android.Content;
 using Android.Preferences;
-using System.Collections.Generic;
 using App3.LevelStrategy;
-using Android.Net;
-using System.Threading.Tasks;
-
+using Android.Views;
 
 namespace App3
 {
@@ -18,47 +13,18 @@ namespace App3
     {
         public static bool isWorking;
         TextView scores;
-        TextView statText;
-        TextView infoText;
-        TextView settingsText;
 
         public static string level;
         ISharedPreferences prefs;
         ISharedPreferencesEditor editor;
         int isDbCreated = 0;
-        int firstShown = 0;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Main);       
 
-            statText = FindViewById<TextView>(Resource.Id.statistictextView);
-            infoText = FindViewById<TextView>(Resource.Id.infotextView);
-            settingsText = FindViewById<TextView>(Resource.Id.settingstextView);
             scores = FindViewById<TextView>(Resource.Id.textView1);
-
-            statText.Click += delegate
-            {
-                Intent intent = new Intent(Application.Context, typeof(StatisticsActivity));
-                intent.SetFlags(ActivityFlags.NewTask);
-                Application.Context.StartActivity(intent);
-            };
-
-            infoText.Click += delegate
-            {
-                Intent intent = new Intent(Application.Context, typeof(InfoActivity));
-                intent.SetFlags(ActivityFlags.NewTask);
-                Application.Context.StartActivity(intent);
-            };
-
-            settingsText.Click += delegate
-            {
-                Intent intent = new Intent(Application.Context, typeof(SettingsActivity));
-                intent.SetFlags(ActivityFlags.NewTask);
-                Application.Context.StartActivity(intent);
-            };
-
 
             int isShown = 0;
             ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this);
@@ -75,6 +41,35 @@ namespace App3
             }
         }
 
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Layout.myMenu, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch(item.ItemId)
+            {
+                case Resource.Id.about:
+                    Intent intent1 = new Intent(Application.Context, typeof(InfoActivity));
+                    intent1.SetFlags(ActivityFlags.NewTask);
+                    Application.Context.StartActivity(intent1);
+                    return true;
+                case Resource.Id.sett:
+                    Intent intent2 = new Intent(Application.Context, typeof(SettingsActivity));
+                    intent2.SetFlags(ActivityFlags.NewTask);
+                    Application.Context.StartActivity(intent2);
+                    return true;
+                case Resource.Id.dict:
+                    Intent intent3 = new Intent(Application.Context, typeof(StatisticsActivity));
+                    intent3.SetFlags(ActivityFlags.NewTask);
+                    Application.Context.StartActivity(intent3);
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);
+        }
+
         protected override void OnResume()
         {
             base.OnResume();
@@ -89,8 +84,6 @@ namespace App3
             int levelData = prefs.GetInt(keyName, level);
             return levelData;
         }
-
-
 
     }
 

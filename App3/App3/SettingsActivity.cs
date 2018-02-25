@@ -55,15 +55,15 @@ namespace App3
                     scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
             LockScreen.GetInstance().Init(this, true);
 
-            //fileRadioBtn.Click += delegate
-            //{
-            //    ChangeToFileView(true);
-            //};
+            fileRadioBtn.Click += delegate
+            {
+                ChangeToFileView(true);
+            };
 
-            //externRadioBtn.Click += delegate
-            //{
-            //    ChangeToFileView(false);
-            //};
+            externRadioBtn.Click += delegate
+            {
+                ChangeToFileView(false);
+            };
 
 
             //    // =================spinner for choosing level==========================================
