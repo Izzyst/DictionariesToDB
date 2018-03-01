@@ -107,6 +107,9 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "App3.dll" comes first in this list. */
 		"App3.dll",
+		"C1.Android.Chart.dll",
+		"C1.Android.Core.dll",
+		"C1.CollectionView.dll",
 		"ComponentTrakCrypto.dll",
 		"ComponentTrakMVVM.dll",
 		"ExcelDataReader.DataSet.dll",

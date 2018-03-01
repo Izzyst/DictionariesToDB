@@ -52,6 +52,18 @@
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="C1.Android.Chart">
+      <HintPath>..\packages\C1.Android.Chart.2.5.20173.241\lib\MonoAndroid10\C1.Android.Chart.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.Android.Core">
+      <HintPath>..\packages\C1.Android.Core.2.5.20173.241\lib\MonoAndroid10\C1.Android.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.CollectionView">
+      <HintPath>..\packages\C1.CollectionView.2.5.20173.241\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ComponentTrakCrypto, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ComponentTrak.MVVM.1.0.11\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10+xamarinmac20\ComponentTrakCrypto.dll</HintPath>
     </Reference>
@@ -331,7 +343,6 @@
     <Error Condition="!Exists('..\packages\Xamarin.Android.Support.v7.AppCompat.25.3.1\build\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Android.Support.v7.AppCompat.25.3.1\build\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.targets'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Android.Support.Design.25.3.1\build\MonoAndroid70\Xamarin.Android.Support.Design.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Android.Support.Design.25.3.1\build\MonoAndroid70\Xamarin.Android.Support.Design.targets'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Android.Support.v7.MediaRouter.25.3.1\build\MonoAndroid70\Xamarin.Android.Support.v7.MediaRouter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Android.Support.v7.MediaRouter.25.3.1\build\MonoAndroid70\Xamarin.Android.Support.v7.MediaRouter.targets'))" />
-    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets'))" />
   </Target>
   <Import Project="..\..\ConsoleApp1\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\ConsoleApp1\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

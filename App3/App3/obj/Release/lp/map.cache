@@ -47,3 +47,6 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
+C1.Android.Chart
+C1.Android.Core
+C1.CollectionView

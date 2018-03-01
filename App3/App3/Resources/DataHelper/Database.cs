@@ -20,6 +20,22 @@ namespace App3.Resources.DataHelper
                 using (var connection = new SQLiteConnection(path))
                 {
                     connection.CreateTable<WordTable>();
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEX", ex.Message);
+                return false;
+            }
+        }
+
+        public bool CreateScoresTable()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(path))
+                {
                     connection.CreateTable<ScoreRecordsTable>();
                     return true;
                 }

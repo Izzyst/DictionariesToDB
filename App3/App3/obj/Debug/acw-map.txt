@@ -38,6 +38,94 @@ App3.utils.LockWindowAccessibilityService, App3;md5ce095f820c090cc03681baac37a9b
 App3.utils.LockWindowAccessibilityService, App3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5ce095f820c090cc03681baac37a9ba53.LockWindowAccessibilityService
 App3.utils.LockWindowAccessibilityService;md5ce095f820c090cc03681baac37a9ba53.LockWindowAccessibilityService
 app3.utils.LockWindowAccessibilityService;md5ce095f820c090cc03681baac37a9ba53.LockWindowAccessibilityService
+C1.Android.Chart.ChartTooltip, C1.Android.Chart;md52c95c030059184f44b0f96f9c7afeed5.ChartTooltip
+C1.Android.Chart.ChartTooltip, C1.Android.Chart, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md52c95c030059184f44b0f96f9c7afeed5.ChartTooltip
+C1.Android.Chart.ChartTooltip;md52c95c030059184f44b0f96f9c7afeed5.ChartTooltip
+c1.android.chart.ChartTooltip;md52c95c030059184f44b0f96f9c7afeed5.ChartTooltip
+C1.Android.Chart.C1Sunburst, C1.Android.Chart;md52c95c030059184f44b0f96f9c7afeed5.C1Sunburst
+C1.Android.Chart.C1Sunburst, C1.Android.Chart, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md52c95c030059184f44b0f96f9c7afeed5.C1Sunburst
+C1.Android.Chart.C1Sunburst;md52c95c030059184f44b0f96f9c7afeed5.C1Sunburst
+c1.android.chart.C1Sunburst;md52c95c030059184f44b0f96f9c7afeed5.C1Sunburst
+C1.Android.Chart.FlexChart, C1.Android.Chart;md52c95c030059184f44b0f96f9c7afeed5.FlexChart
+C1.Android.Chart.FlexChart, C1.Android.Chart, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md52c95c030059184f44b0f96f9c7afeed5.FlexChart
+C1.Android.Chart.FlexChart;md52c95c030059184f44b0f96f9c7afeed5.FlexChart
+c1.android.chart.FlexChart;md52c95c030059184f44b0f96f9c7afeed5.FlexChart
+C1.Android.Chart.ChartBase, C1.Android.Chart;md52c95c030059184f44b0f96f9c7afeed5.ChartBase
+C1.Android.Chart.ChartBase, C1.Android.Chart, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md52c95c030059184f44b0f96f9c7afeed5.ChartBase
+C1.Android.Chart.ChartBase;md52c95c030059184f44b0f96f9c7afeed5.ChartBase
+c1.android.chart.ChartBase;md52c95c030059184f44b0f96f9c7afeed5.ChartBase
+C1.Android.Chart.FlexPie, C1.Android.Chart;md52c95c030059184f44b0f96f9c7afeed5.FlexPie
+C1.Android.Chart.FlexPie, C1.Android.Chart, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md52c95c030059184f44b0f96f9c7afeed5.FlexPie
+C1.Android.Chart.FlexPie;md52c95c030059184f44b0f96f9c7afeed5.FlexPie
+c1.android.chart.FlexPie;md52c95c030059184f44b0f96f9c7afeed5.FlexPie
+C1.Android.Chart.RenderCanvas, C1.Android.Chart;md52c95c030059184f44b0f96f9c7afeed5.RenderCanvas
+C1.Android.Chart.RenderCanvas, C1.Android.Chart, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md52c95c030059184f44b0f96f9c7afeed5.RenderCanvas
+C1.Android.Chart.RenderCanvas;md52c95c030059184f44b0f96f9c7afeed5.RenderCanvas
+c1.android.chart.RenderCanvas;md52c95c030059184f44b0f96f9c7afeed5.RenderCanvas
+C1.Android.Chart.PieCanvas, C1.Android.Chart;md52c95c030059184f44b0f96f9c7afeed5.PieCanvas
+C1.Android.Chart.PieCanvas, C1.Android.Chart, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md52c95c030059184f44b0f96f9c7afeed5.PieCanvas
+C1.Android.Chart.PieCanvas;md52c95c030059184f44b0f96f9c7afeed5.PieCanvas
+c1.android.chart.PieCanvas;md52c95c030059184f44b0f96f9c7afeed5.PieCanvas
+C1.Android.Chart.Interaction.C1LineMarker, C1.Android.Chart;md5f12c5d6fa4946b706a377bb398efaafe.C1LineMarker
+C1.Android.Chart.Interaction.C1LineMarker, C1.Android.Chart, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5f12c5d6fa4946b706a377bb398efaafe.C1LineMarker
+C1.Android.Chart.Interaction.C1LineMarker;md5f12c5d6fa4946b706a377bb398efaafe.C1LineMarker
+c1.android.chart.interaction.C1LineMarker;md5f12c5d6fa4946b706a377bb398efaafe.C1LineMarker
+C1.Android.Chart.Interaction.Line, C1.Android.Chart;md5f12c5d6fa4946b706a377bb398efaafe.Line
+C1.Android.Chart.Interaction.Line, C1.Android.Chart, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5f12c5d6fa4946b706a377bb398efaafe.Line
+C1.Android.Chart.Interaction.Line;md5f12c5d6fa4946b706a377bb398efaafe.Line
+c1.android.chart.interaction.Line;md5f12c5d6fa4946b706a377bb398efaafe.Line
+C1.Android.Chart.Annotation.AnnotationLayer, C1.Android.Chart;md5c363810a8e8757aafd4082b73e07e8ef.AnnotationLayer
+C1.Android.Chart.Annotation.AnnotationLayer, C1.Android.Chart, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5c363810a8e8757aafd4082b73e07e8ef.AnnotationLayer
+C1.Android.Chart.Annotation.AnnotationLayer;md5c363810a8e8757aafd4082b73e07e8ef.AnnotationLayer
+c1.android.chart.annotation.AnnotationLayer;md5c363810a8e8757aafd4082b73e07e8ef.AnnotationLayer
+C1.Android.Core.C1Border, C1.Android.Core;md5e77d0d2e319b690b0c23a47f3b507cd7.C1Border
+C1.Android.Core.C1Border, C1.Android.Core, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5e77d0d2e319b690b0c23a47f3b507cd7.C1Border
+C1.Android.Core.C1Border;md5e77d0d2e319b690b0c23a47f3b507cd7.C1Border
+c1.android.core.C1Border;md5e77d0d2e319b690b0c23a47f3b507cd7.C1Border
+C1.Android.Core.C1Easing/EasingFunc, C1.Android.Core;md5e77d0d2e319b690b0c23a47f3b507cd7.C1Easing_EasingFunc
+C1.Android.Core.C1Easing+EasingFunc, C1.Android.Core, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5e77d0d2e319b690b0c23a47f3b507cd7.C1Easing_EasingFunc
+C1.Android.Core.C1Easing.EasingFunc;md5e77d0d2e319b690b0c23a47f3b507cd7.C1Easing_EasingFunc
+c1.android.core.C1Easing_EasingFunc;md5e77d0d2e319b690b0c23a47f3b507cd7.C1Easing_EasingFunc
+C1.Android.Core.C1ToggleButton, C1.Android.Core;md5e77d0d2e319b690b0c23a47f3b507cd7.C1ToggleButton
+C1.Android.Core.C1ToggleButton, C1.Android.Core, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5e77d0d2e319b690b0c23a47f3b507cd7.C1ToggleButton
+C1.Android.Core.C1ToggleButton;md5e77d0d2e319b690b0c23a47f3b507cd7.C1ToggleButton
+c1.android.core.C1ToggleButton;md5e77d0d2e319b690b0c23a47f3b507cd7.C1ToggleButton
+C1.Android.Core.FrameCallback, C1.Android.Core;md5e77d0d2e319b690b0c23a47f3b507cd7.FrameCallback
+C1.Android.Core.FrameCallback, C1.Android.Core, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5e77d0d2e319b690b0c23a47f3b507cd7.FrameCallback
+C1.Android.Core.FrameCallback;md5e77d0d2e319b690b0c23a47f3b507cd7.FrameCallback
+c1.android.core.FrameCallback;md5e77d0d2e319b690b0c23a47f3b507cd7.FrameCallback
+C1.Android.Core.GestureListener, C1.Android.Core;md5e77d0d2e319b690b0c23a47f3b507cd7.GestureListener
+C1.Android.Core.GestureListener, C1.Android.Core, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5e77d0d2e319b690b0c23a47f3b507cd7.GestureListener
+C1.Android.Core.GestureListener;md5e77d0d2e319b690b0c23a47f3b507cd7.GestureListener
+c1.android.core.GestureListener;md5e77d0d2e319b690b0c23a47f3b507cd7.GestureListener
+C1.Android.Core.GlobalLayoutListener, C1.Android.Core;md5e77d0d2e319b690b0c23a47f3b507cd7.GlobalLayoutListener
+C1.Android.Core.GlobalLayoutListener, C1.Android.Core, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5e77d0d2e319b690b0c23a47f3b507cd7.GlobalLayoutListener
+C1.Android.Core.GlobalLayoutListener;md5e77d0d2e319b690b0c23a47f3b507cd7.GlobalLayoutListener
+c1.android.core.GlobalLayoutListener;md5e77d0d2e319b690b0c23a47f3b507cd7.GlobalLayoutListener
+C1.Android.Core.LayoutChangeListener, C1.Android.Core;md5e77d0d2e319b690b0c23a47f3b507cd7.LayoutChangeListener
+C1.Android.Core.LayoutChangeListener, C1.Android.Core, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5e77d0d2e319b690b0c23a47f3b507cd7.LayoutChangeListener
+C1.Android.Core.LayoutChangeListener;md5e77d0d2e319b690b0c23a47f3b507cd7.LayoutChangeListener
+c1.android.core.LayoutChangeListener;md5e77d0d2e319b690b0c23a47f3b507cd7.LayoutChangeListener
+C1.Android.Core.ScaleGestureListener, C1.Android.Core;md5e77d0d2e319b690b0c23a47f3b507cd7.ScaleGestureListener
+C1.Android.Core.ScaleGestureListener, C1.Android.Core, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5e77d0d2e319b690b0c23a47f3b507cd7.ScaleGestureListener
+C1.Android.Core.ScaleGestureListener;md5e77d0d2e319b690b0c23a47f3b507cd7.ScaleGestureListener
+c1.android.core.ScaleGestureListener;md5e77d0d2e319b690b0c23a47f3b507cd7.ScaleGestureListener
+C1.Android.Core.SwipeTouchListener, C1.Android.Core;md5e77d0d2e319b690b0c23a47f3b507cd7.SwipeTouchListener
+C1.Android.Core.SwipeTouchListener, C1.Android.Core, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5e77d0d2e319b690b0c23a47f3b507cd7.SwipeTouchListener
+C1.Android.Core.SwipeTouchListener;md5e77d0d2e319b690b0c23a47f3b507cd7.SwipeTouchListener
+c1.android.core.SwipeTouchListener;md5e77d0d2e319b690b0c23a47f3b507cd7.SwipeTouchListener
+C1.Android.Core.TouchListener, C1.Android.Core;md5e77d0d2e319b690b0c23a47f3b507cd7.TouchListener
+C1.Android.Core.TouchListener, C1.Android.Core, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5e77d0d2e319b690b0c23a47f3b507cd7.TouchListener
+C1.Android.Core.TouchListener;md5e77d0d2e319b690b0c23a47f3b507cd7.TouchListener
+c1.android.core.TouchListener;md5e77d0d2e319b690b0c23a47f3b507cd7.TouchListener
+C1.Android.Core.ScrollChangedListener, C1.Android.Core;md5e77d0d2e319b690b0c23a47f3b507cd7.ScrollChangedListener
+C1.Android.Core.ScrollChangedListener, C1.Android.Core, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5e77d0d2e319b690b0c23a47f3b507cd7.ScrollChangedListener
+C1.Android.Core.ScrollChangedListener;md5e77d0d2e319b690b0c23a47f3b507cd7.ScrollChangedListener
+c1.android.core.ScrollChangedListener;md5e77d0d2e319b690b0c23a47f3b507cd7.ScrollChangedListener
+C1.Android.Core.C1ArrayAdapter`1, C1.Android.Core;md5e77d0d2e319b690b0c23a47f3b507cd7.C1ArrayAdapter_1
+C1.Android.Core.C1ArrayAdapter`1, C1.Android.Core, Version=2.5.20173.241, Culture=neutral, PublicKeyToken=null;md5e77d0d2e319b690b0c23a47f3b507cd7.C1ArrayAdapter_1
+C1.Android.Core.C1ArrayAdapter`1;md5e77d0d2e319b690b0c23a47f3b507cd7.C1ArrayAdapter_1
+c1.android.core.C1ArrayAdapter_1;md5e77d0d2e319b690b0c23a47f3b507cd7.C1ArrayAdapter_1
 Plugin.FilePicker.FilePickerActivity, Plugin.FilePicker;md5cf4be63b82b35b5ba951617c70f88a94.FilePickerActivity
 Plugin.FilePicker.FilePickerActivity, Plugin.FilePicker, Version=1.2.1.0, Culture=neutral, PublicKeyToken=null;md5cf4be63b82b35b5ba951617c70f88a94.FilePickerActivity
 Plugin.FilePicker.FilePickerActivity;md5cf4be63b82b35b5ba951617c70f88a94.FilePickerActivity

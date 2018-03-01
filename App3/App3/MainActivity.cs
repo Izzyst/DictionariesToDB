@@ -7,6 +7,7 @@ using App3.LevelStrategy;
 using Android.Views;
 using App3.Resources.DataHelper;
 
+
 namespace App3
 {
     [Activity(Label = "Linguistic lock screen", MainLauncher = true)]
@@ -23,8 +24,7 @@ namespace App3
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.Main);       
-
+            SetContentView(Resource.Layout.Main);
             scores = FindViewById<TextView>(Resource.Id.textView1);
 
             int isShown = 0;
@@ -33,17 +33,9 @@ namespace App3
             editor.PutInt("isShown", isShown);
             editor.Apply();
 
-            bool firstRun = prefs.GetBoolean("firstRun", true);
-            if(firstRun)
-            {
-                firstRun = prefs.GetBoolean("firstRun", false);
-                Intent intent = new Intent(Application.Context, typeof(InfoActivity));
-                intent.SetFlags(ActivityFlags.NewTask);
-                Application.Context.StartActivity(intent);             
-            }
-
             Database ob = new Database();
             var scoresResults = ob.GetScoreResults();
+
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -80,6 +72,19 @@ namespace App3
             base.OnResume();
             if (GetSharedPreferences("isDbCreated", isDbCreated) == 1)
                 scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
+            bool firstRun = prefs.GetBoolean("firstRun", true);
+            if (firstRun)
+            {
+                ISharedPreferencesEditor editor = prefs.Edit();
+                editor.PutBoolean("firstRun", false);
+                // editor.Commit();    // applies changes synchronously on older APIs
+                editor.Apply();        // applies changes asynchronously on newer APIs
+                Database bd = new Database();
+                bd.CreateScoresTable();
+                Intent intent = new Intent(Application.Context, typeof(InfoActivity));
+                intent.SetFlags(ActivityFlags.NewTask);
+                Application.Context.StartActivity(intent);
+            }
         }
 
         public int GetSharedPreferences(string keyName, int level)

@@ -1,0 +1,5024 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.Android.Chart</name>
+    </assembly>
+    <members>
+        <member name="T:C1.Android.Chart.Annotation.AnnotationBase">
+            <summary>
+            Represents the base class of annotations for the <see cref="T:C1.Android.Chart.Annotation.AnnotationLayer"/> 
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.AnnotationBase.#ctor">
+            <summary>
+            Create an instance of BaseAnnotation.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.AnnotationBase.Attachment">
+            <summary>
+            Gets or sets the attachment of the annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationBase.AttachmentProperty">
+            <summary>
+            Identifies the Attachment dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.AnnotationBase.Location">
+            <summary>
+            Gets or sets the location of annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationBase.LocationProperty">
+            <summary>
+            Identifies the Location dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.AnnotationBase.PointIndex">
+            <summary>
+            Gets or sets the data point index of the annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationBase.PointIndexProperty">
+            <summary>
+            Identifies the PointIndex dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.AnnotationBase.Position">
+            <summary>
+            Gets or sets the position of annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationBase.PositionProperty">
+            <summary>
+            Identifies the ChartPositionType dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.AnnotationBase.SeriesIndex">
+            <summary>
+            Gets or sets the data series index of the annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationBase.SeriesIndexProperty">
+            <summary>
+            Identifies the SeriesIndex dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.AnnotationBase.TooltipText">
+            <summary>
+            Gets or sets the tooltip of the annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationBase.TooltipTextProperty">
+            <summary>
+            Identifies the TooltipText dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.AnnotationBase.AnnotationStyle">
+            <summary>
+            Gets or sets the style of annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationBase.AnnotationStyleProperty">
+            <summary>
+            Identifies the Style dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.AnnotationBase.GetSize">
+            <summary>
+            Gets the size of the annotation.
+            </summary>
+            <returns>The size of the annotation</returns>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.AnnotationLayer">
+            <summary>
+            Represents an annotation layer for <see cref="T:C1.Android.Chart.FlexChart"/>
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.AnnotationLayer.#ctor(Android.Content.Context)">
+            <summary>
+            Create an instance of AnnotationLayer.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.AnnotationLayer.Annotations">
+            <summary>
+            Gets the collection of annotation elements in the <see cref="T:C1.Android.Chart.Annotation.AnnotationLayer"/>
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.AnnotationLayer.Chart">
+            <summary>
+            Gets or sets the associated chart.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationLayer.ChartProperty">
+            <summary>
+            Identifies the Chart dependency property.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.Circle">
+            <summary>
+            Represents a circle annotation for <see cref="T:C1.Android.Chart.Annotation.AnnotationLayer"/>
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Circle.#ctor">
+            <summary>
+            Create an instance of Circle.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Circle.#ctor(System.String)">
+            <summary>
+            Create an instance of Circle.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Circle.#ctor(System.String,System.Int32)">
+            <summary>
+            Create an instance of Circle.
+            </summary>
+            <param name="value"></param>
+            <param name="radius"></param>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Circle.Radius">
+            <summary>
+            Gets or sets the radius of circle annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Circle.RadiusProperty">
+            <summary>
+            Identifies the Radius dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Circle.GetSize">
+            <summary>
+            Gets the annotation size.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.Ellipse">
+            <summary>
+            Represents an ellipse annotation for <see cref="T:C1.Android.Chart.Annotation.AnnotationLayer"/>
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Ellipse.#ctor">
+            <summary>
+            Create an instance of Ellipse.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Ellipse.#ctor(System.String)">
+            <summary>
+            Create an instance of Ellipse.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Ellipse.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Create an instance of Ellipse.
+            </summary>
+            <param name="value"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Ellipse.Width">
+            <summary>
+            Gets or sets the width of ellipse annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Ellipse.WidthProperty">
+            <summary>
+            Identifies the Width dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Ellipse.Height">
+            <summary>
+            Gets or sets the height of ellipse annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Ellipse.HeightProperty">
+            <summary>
+            Identifies the Height dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Ellipse.GetSize">
+            <summary>
+            Gets the annotation size.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.Image">
+            <summary>
+            Represents an image annotation for the <see cref="T:C1.Android.Chart.Annotation.AnnotationLayer"/>
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Image.#ctor">
+            <summary>
+            Create an instance of Image.
+            </summary> 
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Image.#ctor(System.String)">
+            <summary>
+            Create an instance of Image.
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Image.#ctor(System.String,System.Double,System.Double)">
+            <summary>
+            Create an instance of Image.
+            </summary>
+            <param name="path"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Image.#ctor(Android.Graphics.Bitmap)">
+            <summary>
+            Create an instance of Image.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Image.#ctor(Android.Graphics.Bitmap,System.Double,System.Double)">
+            <summary>
+            Create an instance of Image.
+            </summary>
+            <param name="value"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Image.Source">
+            <summary>
+            Gets or sets the <see cref="T:Android.Graphics.Bitmap"/> for image annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Image.SourceProperty">
+            <summary>
+            Identifies the Source dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Image.Width">
+            <summary>
+            Gets or sets the width of image annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Image.WidthProperty">
+            <summary>
+            Identifies the Width dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Image.Height">
+            <summary>
+            Gets or sets the height of image annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Image.HeightProperty">
+            <summary>
+            Identifies the Height dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Image.GetSize">
+            <summary>
+            Gets the annotation size.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.Line">
+            <summary>
+            Represents a line annotation for <see cref="T:C1.Android.Chart.Annotation.AnnotationLayer"/>
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Line.#ctor">
+            <summary>
+            Create an instance of Line.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Line.#ctor(System.String)">
+            <summary>
+            Create an instance of Line.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Line.#ctor(System.String,C1.Android.Core.C1Point,C1.Android.Core.C1Point)">
+            <summary>
+            Create an instance of Line.
+            </summary>
+            <param name="value"></param>
+            <param name="start"></param>
+            <param name="end"></param>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Line.Start">
+            <summary>
+            Gets or sets the start point of line annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Line.StartProperty">
+            <summary>
+            Identifies the Start dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Line.End">
+            <summary>
+            Gets or sets the end point of the line annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Line.EndProperty">
+            <summary>
+            Identifies the End dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Line.GetSize">
+            <summary>
+            Gets the annotation size.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.Polygon">
+            <summary>
+            Represents a polygon annotation for <see cref="T:C1.Android.Chart.Annotation.AnnotationLayer"/>
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Polygon.#ctor">
+            <summary>
+            Create an instance of Polygon.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Polygon.#ctor(System.String)">
+            <summary>
+            Create an instance of Polygon.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Polygon.Points">
+            <summary>
+            Gets the collection of points of the polygon annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Polygon.PointsProperty">
+            <summary>
+            Identifies the Points dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Polygon.GetSize">
+            <summary>
+            Gets the annotation size.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.Rectangle">
+            <summary>
+            Represents a rectangle annotation for <see cref="T:C1.Android.Chart.Annotation.AnnotationLayer"/>
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Rectangle.#ctor">
+            <summary>
+            Create an instance of Rectangle.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Rectangle.#ctor(System.String)">
+            <summary>
+            Create an instance of Rectangle.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Rectangle.#ctor(System.String,System.Double,System.Double)">
+            <summary>
+            Create an instance of Rectangle.
+            </summary>
+            <param name="value"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Rectangle.Width">
+            <summary>
+            Gets or sets the width of rectangle annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Rectangle.WidthProperty">
+            <summary>
+            Identifies the Width dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Rectangle.Height">
+            <summary>
+            Gets or sets the height of rectangle annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Rectangle.HeightProperty">
+            <summary>
+            Identifies the Height dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Rectangle.GetSize">
+            <summary>
+            Gets the annotation size.
+            </summary>
+            <returns>the annotation size</returns>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.Shape">
+            <summary>
+            Represents a base class of shape annotations for the <see cref="T:C1.Android.Chart.Annotation.AnnotationLayer"/>
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Shape.#ctor">
+            <summary>
+            Create an instance of Shape.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Shape.#ctor(System.String)">
+            <summary>
+            Create an instance of Shape.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Shape.Content">
+            <summary>
+            Gets or sets the text of the annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Shape.ContentProperty">
+            <summary>
+            Identifies the Text dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Shape.ContentStyle">
+            <summary>
+            Gets or sets the label style of annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Shape.ContentStyleProperty">
+            <summary>
+            Identifies the ContentStyle dependency property.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.Square">
+            <summary>
+            Represents a square annotation for the <see cref="T:C1.Android.Chart.Annotation.AnnotationLayer"/>
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Square.#ctor">
+            <summary>
+            Create an instance of Square.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Square.#ctor(System.String)">
+            <summary>
+            Create an instance of Square.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Square.#ctor(System.String,System.Int32)">
+            <summary>
+            Create an instance of Square.
+            </summary>
+            <param name="value"></param>
+            <param name="length"></param>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Square.Length">
+            <summary>
+            Gets or sets the length of the square annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Square.LengthProperty">
+            <summary>
+            Identifies the Length dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Square.GetSize">
+            <summary>
+            Gets the annotation size.
+            </summary>
+            <returns>the annotation size</returns>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.Template">
+            <summary>
+            Annotation template.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Template.#ctor">
+            <summary>
+            Create an instance of Template.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Template.AnnoTemplate">
+            <summary>
+            Gets or sets the <see cref="T:Android.Views.View"/> of annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Template.AnnoTemplateProperty">
+            <summary>
+            Identifies the AnnoTemplate dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Template.GetSize">
+            <summary>
+            Gets the annotation size.
+            </summary>
+            <returns>the annotation size</returns>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.Text">
+            <summary>
+            Represents a text annotation for the <see cref="T:C1.Android.Chart.Annotation.AnnotationLayer"/>
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Text.#ctor">
+            <summary>
+            Create an instance of Text.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.Text.#ctor(System.String)">
+            <summary>
+            Create an instance of Text.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.Text.Content">
+            <summary>
+            Gets or sets the text of the annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.Text.ContentProperty">
+            <summary>
+            Identifies the Text dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.AnnotationRenderer.HitTest(C1.Android.Chart._Point,System.Int32)">
+            <summary>
+            Finds top annotation under a point. Also, you can specify minimal distance to annotation.
+            </summary>
+            <param name="pt">Point searched.</param>
+            <param name="minDist">Minimum distance to the point.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.AnnotationRenderer.SaveBufferSize(C1.Android.Chart.Annotation.IAnnotationBase,C1.Android.Chart._Rect,C1.Android.Chart._Point[])">
+            <summary>
+            Saves annotation size statistics to use it for tooltip.
+            </summary>
+            <param name="anno">Annotation</param>
+            <param name="rect">Bounds of annotation</param>
+            <param name="pArray">Absolute points of dotted annotations (Line, Polygon)</param>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.AnnotationAttachment">
+            <summary>
+            Specifies the attachment of the annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationAttachment.DataIndex">
+            <summary>
+            Coordinates of the annotation point are defined by the data series index and 
+            the data point index.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationAttachment.DataCoordinate">
+            <summary>
+            Annotation point is specified in data coordinates.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationAttachment.Relative">
+            <summary>
+            Annotation point is specified as a relative position inside the control where
+            (0,0) is the top left corner and (1,1) is the bottom right corner.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationAttachment.Absolute">
+            <summary>
+            The annotation point is specified in control's pixel coordinates.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.AnnotationPosition">
+            <summary>
+            Specifies the position of the annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationPosition.Center">
+            <summary>
+            The annotation appears at the Center of the target point.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationPosition.Top">
+            <summary>
+            The annotation appears at the Top of the target point.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationPosition.Bottom">
+            <summary>
+            The annotation appears at the Bottom of the target point.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationPosition.Left">
+            <summary>
+            The annotation appears at the Left of the target point.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Annotation.AnnotationPosition.Right">
+            <summary>
+            The annotation appears at the Right of the target point.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.IAnnotationBase">
+            <summary>
+            IBaseAnnotation interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IAnnotationBase.Attachment">
+            <summary>
+            Gets or sets the attachment of the annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IAnnotationBase.Position">
+            <summary>
+            Gets or sets the position of annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IAnnotationBase.Location">
+            <summary>
+            Gets or sets the location of annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IAnnotationBase.PointIndex">
+            <summary>
+            Gets or sets the data point index of the annotation.
+            Applies only when the <see cref="P:C1.Android.Chart.Annotation.IAnnotationBase.Attachment"/> property is set to DataIndex.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IAnnotationBase.SeriesIndex">
+            <summary>
+            Gets or sets the data series index of the annotation.
+            Applies only when the <see cref="P:C1.Android.Chart.Annotation.IAnnotationBase.Attachment"/> is set to DataIndex.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IAnnotationBase.TooltipText">
+            <summary>
+            Gets or sets the tooltip of the annotation.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Annotation.IAnnotationBase.GetSize">
+            <summary>
+            Gets the size of the annotation.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.IAnnotationLayer">
+            <summary>
+            Annotation layer interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IAnnotationLayer.Annotations">
+            <summary>
+            Gets the annotation collection.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.ICircle">
+            <summary>
+            ICircle interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.ICircle.Radius">
+            <summary>
+            Gets or sets the radius of circle annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.IEllipse">
+            <summary>
+            IEllipse interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IEllipse.Width">
+            <summary>
+            Gets or sets the width of ellipse annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IEllipse.Height">
+            <summary>
+            Gets or sets the height of ellipse annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.IImage">
+            <summary>
+            IImage interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IImage.SourceImage">
+            <summary>
+            Gets or sets the source of image annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IImage.Width">
+            <summary>
+            Gets or sets the width of image annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IImage.Height">
+            <summary>
+            Gets or sets the height of image annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.ILine">
+            <summary>
+            ILine interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.ILine.Start">
+            <summary>
+            Gets or sets the start point of line annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.ILine.End">
+            <summary>
+            Gets or sets the end point of line annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.IPolygon">
+            <summary>
+            IPolygon interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IPolygon.Points">
+            <summary>
+            Gets the collection of points of the polygon annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.IRectangle">
+            <summary>
+            IRectangle interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IRectangle.Width">
+            <summary>
+            Gets or sets the width of rectangle annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IRectangle.Height">
+            <summary>
+            Gets or sets the height of rectangle annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.IShape">
+            <summary>
+            IShape interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IShape.Content">
+            <summary>
+            Gets or sets the text of shape annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.ISquare">
+            <summary>
+            ISquare interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.ISquare.Length">
+            <summary>
+            Gets or sets the length of the square annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Annotation.IText">
+            <summary>
+            IText interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Annotation.IText.Content">
+            <summary>
+            Gets or sets the text of the annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.RenderLabelLoadingEventArgs">
+            <summary>
+            Render symbol event arguments.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.RenderLabelLoadingEventArgs.Value">
+            <summary>
+            Gets or sets the original label value.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.RenderLabelLoadingEventArgs.LabelString">
+            <summary>
+            Gets or sets the label string.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.RenderLabelLoadingEventArgs.Axis">
+            <summary>
+            Gets the axis.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.RenderLabelLoadingEventArgs.Index">
+            <summary>
+            Gets the data point index.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.RenderLabelLoadingEventArgs.Rect">
+            <summary>
+            Gets the label rect in control pixel coordinates.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartAxis">
+            <summary>
+            Represents an axis in the chart.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartAxis.#ctor">
+            <summary>
+            Creates an instance of ChartAxis class.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.InnerUpdating">
+            <summary>
+            Determines wheter it is changed by zoom or translate behaviors.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.InitMin">
+            <summary>
+            Store Min value before perform behaviors.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.InitMax">
+            <summary>
+            Store Max value before perform behaviors.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.Title">
+            <summary>
+            Gets or sets the axis title.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.TitleProperty">
+            <summary>
+            Identifies the Title dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.Labels">
+            <summary>
+            Gets or sets a value indicating whether to show axis labels.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.LabelsProperty">
+            <summary>
+            Backing field for Labels property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.Position">
+            <summary>
+            Gets or sets the axis position.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.PositionProperty">
+            <summary>
+            Backing field for ChartPositionType property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.Origin">
+            <summary>
+            Gets or sets the axis origin.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.OriginProperty">
+            <summary>
+            Backing field for Origin property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.Reversed">
+            <summary>
+            Gets or sets a value indicating whether the axis is reversed.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.ReversedProperty">
+            <summary>
+            Backing field for Reversed property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.LabelAngle">
+            <summary>
+            Gets or sets the angle of rotation for axis labels. 
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.LabelAngleProperty">
+            <summary>
+            Backing field for LabelAngle property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.Format">
+            <summary>
+            Gets or set formatting string for axis labels.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.FormatProperty">
+            <summary>
+            Backing field for Format property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.MajorTickMarks">
+            <summary>
+            Gets or sets a value indicating the appearance of major tick marks.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.MajorTickMarksProperty">
+            <summary>
+            Backing field for MajorTickMarks property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.MajorGrid">
+            <summary>
+            Gets or set a value indicating whether to draw major grid.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.MajorGridProperty">
+            <summary>
+            Backing field for MajorGrid property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.MajorUnit">
+            <summary>
+            Gets or sets the distance betweem axis labels.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.MajorUnitProperty">
+            <summary>
+            Backing field for MajorUnit property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.MinorTickMarks">
+            <summary>
+            Gets or sets a value indicating the appearance of minor tick marks.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.MinorTickMarksProperty">
+            <summary>
+            Backing field for MinorTickMarks property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.MinorGrid">
+            <summary>
+            Gets or set a value indicating whether to draw minor grid.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.MinorGridProperty">
+            <summary>
+            Backing field for MinorGrid property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.MinorUnit">
+            <summary>
+            Gets or sets the distance between minor ticks and grid lines.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.MinorUnitProperty">
+            <summary>
+            Backing field for MinorUnit property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.AxisLine">
+            <summary>
+            Gets or sets a value indicating whether to draw axis line.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.AxisLineProperty">
+            <summary>
+            Backing field for AxisLine property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.Min">
+            <summary>
+            Gets or sets the axis minimum.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.MinProperty">
+            <summary>
+            Backing field for Min property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.Max">
+            <summary>
+            Gets or sets the axis maximum. 
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.MaxProperty">
+            <summary>
+            Backing field for Max property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.LogBase">
+            <summary>
+            Gets or sets the base for logarithmic axis.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.LogBaseProperty">
+            <summary>
+            Backing field for the LogBase property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.LabelAlignment">
+            <summary>
+            Gets or sets the axis labels alignment.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.LabelAlignmentProperty">
+            <summary>
+            Backing field for the LabelAlignment property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.Style">
+            <summary>
+            Gets or sets the axis style.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.StyleProperty">
+            <summary>
+            Identifies the Style dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.TitleStyle">
+            <summary>
+            Gets or sets the axis title style.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.TitleStyleProperty">
+            <summary>
+            Identifies the TitleStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.MajorGridStyle">
+            <summary>
+            Gets or sets the style of axis major grid.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.MajorGridStyleProperty">
+            <summary>
+            Identifies the MajorGridStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.MinorGridStyle">
+            <summary>
+            Gets or sets the style of axis minor grid.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.MinorGridStyleProperty">
+            <summary>
+            Identifies the MajorGridStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.OverlappingLabels">
+            <summary>
+            Gets or sets a value indicating how to handle the overlapping axis labels.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.OverlappingLabelsProperty">
+            <summary>
+            Identifies the ChartOverlappingLabels dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartAxis.Convert(System.Double)">
+            <summary>
+            Converts the specified value from data to pixel coordinate.
+            </summary>
+            <param name="val">The data value to convert.</param>
+            <returns>The corresponding value in control pixel coordinate.</returns>
+        </member>
+        <member name="M:C1.Android.Chart.ChartAxis.ConvertBack(System.Double)">
+            <summary>
+            Converts the specified value from control pixel to data coordinate.
+            </summary>
+            <param name="val">The value in control pixel coordinate.</param>
+            <returns>The corresponding data value.</returns>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.AxisType">
+            <summary>
+            Gets the axis type.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartAxis.AxisTypeProperty">
+            <summary>
+            Identifies axis type(X/Y) property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartAxis.Chart">
+            <summary>
+            Gets or sets the axis parent chart.
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.ChartAxis.LabelLoading">
+            <summary>
+            Fires when chart axis labels are loading.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.DataLabelBase">
+            <summary>
+            Base class for chart data labels.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.DataLabelBase.SetValue(C1.Android.Core.DependencyProperty,System.Object)">
+            <summary>
+            Set value of chart data label properties.
+            </summary>
+            <param name="dp"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:C1.Android.Chart.DataLabelBase.GetValue(C1.Android.Core.DependencyProperty)">
+            <summary>
+            Get value of chart data label properties.
+            </summary>
+            <param name="dp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.DataLabelBase.#ctor">
+            <summary>
+            Creates an istance of DataLabelBase.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.DataLabelBase.Content">
+            <summary>
+            Gets or sets the content of data labels.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.DataLabelBase.ContentProperty">
+            <summary>
+            Identifies the Content dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.DataLabelBase.Border">
+            <summary>
+            Gets or sets a value indicating whether the label has border.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.DataLabelBase.BorderProperty">
+            <summary>
+            Identifies the Border dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.DataLabelBase.ConnectingLine">
+            <summary>
+            Gets or sets a value indicating whether the data labels have a line connecting them with corresponding data point. 
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.DataLabelBase.ConnectingLineProperty">
+            <summary>
+            Identifies the ConnectingLine dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.DataLabelBase.Offset">
+            <summary>
+            Gets or sets the offset of data label from corresponding data point.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.DataLabelBase.OffsetProperty">
+            <summary>
+            Identifies the Offset dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.DataLabelBase.Style">
+            <summary>
+            Gets or sets the style of the label.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.DataLabelBase.StyleProperty">
+            <summary>
+            Identifies the Style dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.DataLabelBase.BorderStyle">
+            <summary>
+            Gets or sets the border style of the label.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.DataLabelBase.BorderStyleProperty">
+            <summary>
+            Identifies the BorderStyle dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.DataLabelBase.Invalidate">
+            <summary>
+            Invalidates the parent chart.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartDataLabel">
+            <summary>
+            Represents chart data label.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartDataLabel.Position">
+            <summary>
+            Gets or sets the position of data labels.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartDataLabel.PositionProperty">
+            <summary>
+            Identifies the ChartPositionType dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartDataLabel.OnPositionPropertyChanged(C1.Android.Chart.ChartLabelPosition,C1.Android.Chart.ChartLabelPosition)">
+            <summary>
+            Fires when data label position property changes.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.PieDataLabel">
+            <summary>
+            Represents pie chart data label.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.PieDataLabel.Position">
+            <summary>
+            Gets or sets the position of data labels.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.PieDataLabel.PositionProperty">
+            <summary>
+            Identifies the ChartPositionType dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartLegend.#ctor">
+            <summary>
+            Initializes a new instance of Legend class.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartSeries">
+            <summary>
+            Represents data series.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartSeries.#ctor">
+            <summary>
+            Create an instance of chart series.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartSeries.GetValues(System.Int32)">
+            <summary>
+            Gets the point data array for the specified coordinate dimension.
+            </summary>
+            <param name="dim">Specifies the dimension of data to retrieve (0=Y data, 1=X data, 2=Y1 data, ...)</param>
+            <returns>The point data array for the specified coordinate dimension</returns>
+        </member>
+        <member name="M:C1.Android.Chart.ChartSeries.GetDataType(System.Int32)">
+            <summary>
+            Gets the data type by dimension index.
+            </summary>
+            <param name="dim"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.ChartSeries.Invalidate">
+            <summary>
+            Invalidates the chart.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.ActualBinding">
+            <summary>
+            Gets the actual binding.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.ActualBindingX">
+            <summary>
+            Gets the actual x-binding.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.ActualItemsSource">
+            <summary>
+            Gets the actual items source.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.ActualChart">
+            <summary>
+            Gets the chart.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.MemberPaths">
+            <summary>
+            Gets the array of member bindings for the series.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.BindingX">
+            <summary>
+            Gets or sets the name of the property that contains X values for the series.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeries.BindingXProperty">
+            <summary>
+            Identifies the BindingX dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.Binding">
+            <summary>
+            Gets or sets the name of the property that contains Y values for the series.
+            </summary>
+            <remarks>
+            For complex chart types it may contain several names separated by commas.
+            </remarks>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeries.BindingProperty">
+            <summary>
+            Identifies the Binding dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.ItemsSource">
+            <summary>
+            Gets or sets the collection of objects that contains the series data.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeries.ItemsSourceProperty">
+            <summary>
+            Identifies the ItemsSource dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.Style">
+            <summary>
+            Gets or sets the series style.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeries.StyleProperty">
+            <summary>
+            Identifies the Style dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.AltStyle">
+            <summary>
+            Gets or sets the alternative series style.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeries.AltStyleProperty">
+            <summary>
+            Identifies the AltStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.SymbolStyle">
+            <summary>
+            Gets or sets the series symbol style.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeries.SymbolStyleProperty">
+            <summary>
+            Identifies the SymbolStyle dependency property.
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.ChartSeries.SymbolRendering">
+            <summary>
+            Fires before rendering symbol.
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.ChartSeries.SymbolRendered">
+            <summary>
+            Fires after rendering symbol.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.ChartType">
+            <summary>
+            Gets or sets the series chart type.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeries.ChartTypeProperty">
+            <summary>
+            Identifies the ChartType dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.Visibility">
+            <summary>
+            Gets or sets the series visibility.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeries.VisibilityProperty">
+            <summary>
+            Identifies the Visibility dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.SymbolMarker">
+            <summary>
+            Gets or sets the shape of marker to use for each data point in the series.
+            Applies to Scatter, LineSymbols, and SplineSymbols chart types.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeries.SymbolMarkerProperty">
+            <summary>
+            Identifies the ChartMarkerType dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.SymbolSize">
+            <summary>
+            Gets or sets the size(in pixels) of the symbols used to render this ChartSeries.
+            Applies to Scatter, LineSymbols, and SplineSymbols chart types.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeries.SymbolSizeProperty">
+            <summary>
+            Identifies the SymbolSize dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.SeriesName">
+            <summary>
+            Gets or sets the series display name.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeries.SeriesNameProperty">
+            <summary>
+            Identifies the SeriesName dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.AxisX">
+            <summary>
+            Gets or sets the series x-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.AxisY">
+            <summary>
+            Gets or sets the series y-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartSeries.Chart">
+            <summary>
+            Gets or sets the series parent chart.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartSeries.ToString">
+            <summary>
+            Returns the string that represents the current series.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.ChartSeries.OnPropertyChanged">
+            <summary>
+            Called on property changed.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartSeries.OnItemsSourcePropertyChanged">
+            <summary>
+            Called on ItemsSource changed.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartSeries.OnBindingPropertyChanged">
+            <summary>
+            Called when binding property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartSeries.OnVisiblityChanged">
+            <summary>
+            Called on visiblity property changed.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartSeries.SetStyle(C1.Android.Chart._Style,System.String)">
+            <summary>
+            Set series style.
+            </summary>
+            <param name="style"></param>
+            <param name="name"></param>
+        </member>
+        <member name="M:C1.Android.Chart.ChartSeries.GetStyle(System.String)">
+            <summary>
+            Get series style.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.ChartSeries.OnItemsSourceChanged">
+            <summary>
+            Invoked when items source changes.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartSeries.Dispose">
+            <summary>
+            Disposes resources.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.SeriesEventArgs">
+            <summary>
+            Provides arguments for series-related event.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.SeriesEventArgs.Series">
+            <summary>
+            Gets the chart series.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartTooltip">
+            <summary>
+            Represents chart tooltip.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartTooltip.#ctor(Android.Content.Context)">
+            <summary>
+            Create an instance of chart tooltip with specified context.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartTooltip.Point">
+            <summary>
+            Gets or sets the display point of chart tooltip.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartTooltip.IsOpen">
+            <summary>
+            Gets or sets whether to display the chart tooltip.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartTooltip.Content">
+            <summary>
+             Gets or sets the content of the chart tooltip.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartTooltip.Padding">
+            <summary>
+             Gets or sets the padding of the chart tooltip.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartTooltip.OnLayout(System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Override the android view OnLayout methed to override the layout logic.
+            </summary>
+            <param name="changed">Is layout changed</param>
+            <param name="left">Left position</param>
+            <param name="top">Top position</param>
+            <param name="right">Right position</param>
+            <param name="bottom">Bottom position</param>
+        </member>
+        <member name="T:C1.Android.Chart.IChartDataLabel">
+            <summary>
+            IChartDataLabel interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartDataLabel.Content">
+            <summary>
+            Gets or sets the label content.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartDataLabel.Position">
+            <summary>
+            Gets or sets the label position.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartDataLabel.Border">
+            <summary>
+            Gets or sets a value indicating whether data labels have border.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartDataLabel.ConnectingLine">
+            <summary>
+            Gets or sets a value indicating whether data labels have connecting lines.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartDataLabel.Offset">
+            <summary>
+            Gets or sets the offset of data label.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.IPieDataLabel">
+            <summary>
+            IPieDataLabel interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IPieDataLabel.Content">
+            <summary>
+            Gets or sets the label content.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IPieDataLabel.Position">
+            <summary>
+            Gets or sets the label position.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IPieDataLabel.Border">
+            <summary>
+            Gets or sets a value indicating whether data labels have border.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IPieDataLabel.ConnectingLine">
+            <summary>
+            Gets or sets a value indicating whether data labels have connecting lines.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IPieDataLabel.Offset">
+            <summary>
+            Gets or sets the offset of data label.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartHitTestInfo">
+            <summary>
+            Contains information about a part of a FlexChart control at
+            a specified coordinate.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartHitTestInfo.#ctor(C1.Android.Chart.IChartBase,C1.Android.Chart._Point,C1.Android.Chart.ChartElementType)">
+             Initializes a new instance of a @see:ChartHitTestInfo object.
+            
+             @param chart The chart control.
+             @param point The original point in window coordinates.
+             @param element The chart element.
+        </member>
+        <member name="M:C1.Android.Chart.ChartHitTestInfo.#ctor(C1.Android.Chart.IChartBase)">
+             Initializes a new instance of a @see:ChartHitTestInfo object.
+            
+             @param chart The chart control.
+        </member>
+        <member name="P:C1.Android.Chart.ChartHitTestInfo.Point">
+            Gets the point in control coordinates to which this ChartHitTestInfo object
+            refers to.
+        </member>
+        <member name="P:C1.Android.Chart.ChartHitTestInfo.Series">
+            <summary>
+             Gets the chart series at the specified coordinates.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartHitTestInfo.PointIndex">
+            <summary>
+            Gets the data point index at the specified coordinates.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartHitTestInfo.ChartElement">
+            <summary>
+            Gets the chart element at the specified coordinates.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartHitTestInfo.Distance">
+            <summary>
+            Gets the distance from the closest data point.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartHitTestInfo.Item">
+            <summary>
+            Gets the data object that corresponds to the closest data point.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartHitTestInfo.X">
+            <summary>
+            Gets the x-value of the closest data point.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartHitTestInfo.Y">
+            <summary>
+            Gets the y-value of the closest data point.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartHitTestInfo.Percentage">
+            <summary>
+            Gets the percentage of the closest data point.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartHitTestInfo.DataPoint">
+            <summary>
+            Gets the closest data point.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartHitTestInfo.Format(System.String)">
+            <summary>
+            Formats the string.
+            </summary>
+            <param name="s">An input string.</param>
+            <returns>Formatted string.</returns>
+        </member>
+        <member name="T:C1.Android.Chart.IChartAxis">
+            <summary>
+            IChartAxis interface.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IChartAxis.Convert(System.Double)">
+            <summary>
+            Converts from data to pixel coordinate.
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IChartAxis.ConvertBack(System.Double)">
+            <summary>
+            Converts from pixel to data coordinate.
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.Position">
+            <summary>
+            Gets the axis position.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.AxisType">
+            <summary>
+            Gets the axis type.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.Origin">
+            <summary>
+            Gets the axis origin.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.Reversed">
+            <summary>
+            Whether the axis is reversed.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.Labels">
+            <summary>
+            Whether to draw labels.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.MajorTickMarks">
+            <summary>
+            Gets the position of major tick marks.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.MajorGrid">
+            <summary>
+            Whether to draw major grid.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.MajorUnit">
+            <summary>
+            Gets the major unit.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.MinorTickMarks">
+            <summary>
+            Gets the position of major tick marks.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.MinorGrid">
+            <summary>
+            Whether to draw major grid.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.MinorUnit">
+            <summary>
+            Gets the major unit.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.LogBase">
+            <summary>
+            Gets the logarithmic base.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.AxisLine">
+            <summary>
+            Whether to draw axis line.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.LabelAlignment">
+            <summary>
+            Gets the label alignment.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.LabelAngle">
+            <summary>
+            Gets the label rotation angle.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.Min">
+            <summary>
+            Gets the axis minimum.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.Max">
+            <summary>
+            Gets the axis maximum.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IChartAxis.GetMin">
+            <summary>
+            Gets the actual minimum.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IChartAxis.GetMax">
+            <summary>
+            Gets the actual maximum.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.Format">
+            <summary>
+            Gets the format of axis labels.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.Title">
+            <summary>
+            Gets the axis title. 
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.OverlappingLabels">
+            <summary>
+            Gets or sets a value indicating how to handle the overlapping axis labels.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.Chart">
+            <summary>
+            Gets or sets the parent chart.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IChartAxis.FormatValue(System.Double)">
+            <summary>
+            Formats specified value.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IChartAxis.GetHeight(C1.Android.Core.IRenderEngine,System.Double)">
+            <summary>
+            Gets the axis height.
+            </summary>
+            <param name="engine"></param>
+            <param name="maxWidth"></param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.AnnoSize">
+            <summary>
+            Gets or sets annotation label size.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.HasOrigin">
+            <summary>
+            Whether the origin is set.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.DesiredSize">
+            <summary>
+            Gets or sets the axis desired size.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.Rect">
+            <summary>
+            Gets the axis rectangle.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IChartAxis.Layout(C1.Android.Chart._Rect,C1.Android.Chart._Rect)">
+            <summary>
+            Perfomes axis layout.
+            </summary>
+            <param name="axisRect"></param>
+            <param name="plotRect"></param>
+        </member>
+        <member name="M:C1.Android.Chart.IChartAxis.Render(C1.Android.Core.IRenderEngine)">
+            <summary>
+            Renders the axis.
+            </summary>
+            <param name="engine"></param>
+        </member>
+        <member name="M:C1.Android.Chart.IChartAxis.RenderPolar(C1.Android.Core.IRenderEngine,C1.Android.Chart.IRadarChart)">
+            <summary>
+            Renders polar or radar axis.
+            </summary>
+            <param name="engine"></param>
+            <param name="radarChart"></param>
+        </member>
+        <member name="M:C1.Android.Chart.IChartAxis.UpdateActualLimits(System.Nullable{C1.Android.Chart.DataType},System.Double,System.Double,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Double})">
+            <summary>
+            Updates axis limits.
+            </summary>
+            <param name="dataType"></param>
+            <param name="dataMin"></param>
+            <param name="dataMax"></param>
+            <param name="labels"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:C1.Android.Chart.IChartAxis.SetCustomConversion(System.Func{System.Double,System.Double,System.Double,System.Double},System.Func{System.Double,System.Double,System.Double,System.Double})">
+            <summary>
+            Set custom conversion.
+            </summary>
+            <param name="convert"></param>
+            <param name="convertBack"></param>
+        </member>
+        <member name="P:C1.Android.Chart.IChartAxis.CustomLabels">
+            <summary>
+            Gets or sets custom axis labels.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IChartAxis.GetValues">
+            <summary>
+            Gets label values.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart.IChartLegend">
+            <summary>
+            IChartLegend interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartLegend.Position">
+            <summary>
+            Gets or sets the legend position.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IChartLegend.GetPosition(System.Double,System.Double)">
+            <summary>
+            Gets the automatic position.
+            </summary>
+            <param name="w"></param>
+            <param name="h"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IChartLegend.GetDesiredSize(C1.Android.Core.IRenderEngine,System.Double,System.Double)">
+            <summary>
+            Gets the desired legend size.
+            </summary>
+            <param name="engine"></param>
+            <param name="w"></param>
+            <param name="h"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IChartLegend.Render(C1.Android.Core.IRenderEngine,C1.Android.Chart.ChartPositionType,C1.Android.Chart._Rect)">
+            <summary>
+            Render the legend.
+            </summary>
+            <param name="engine"></param>
+            <param name="pos"></param>
+            <param name="rect"></param>
+        </member>
+        <member name="M:C1.Android.Chart.IChartLegend.HitTest(System.Double,System.Double)">
+            <summary>
+            Hit testing.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Android.Chart.IChartLegend.Title">
+            <summary>
+            Gets the legend title.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartLegend.Orientation">
+            <summary>
+            Gets the legend orientation.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.IChartSeries">
+            <summary>
+            IChartSeries interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartSeries.ChartType">
+            <summary>
+            Gets or sets the chart type.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartSeries.Visibility">
+            <summary>
+            Gets or sets the series visibility.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartSeries.Name">
+            <summary>
+            Gets or sets the series name.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartSeries.AxisX">
+            <summary>
+            Gets or sets the series x-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartSeries.AxisY">
+            <summary>
+            Gets or sets the series y-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartSeries.Chart">
+            <summary>
+            Gets or sets the chart.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IChartSeries.GetValues(System.Int32)">
+            <summary>
+            Gets the data values.
+            </summary>
+            <param name="dim"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IChartSeries.GetDataType(System.Int32)">
+            <summary>
+            Gets the data type.
+            </summary>
+            <param name="dim"></param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Android.Chart.IChartSeries.SymbolSize">
+            <summary>
+            Gets the series symbol size.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartSeries.SymbolMarker">
+            <summary>
+            Gets the series symbol marker.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IChartSeries.GetItem(System.Int32)">
+            <summary>
+            Gets the data item by index. 
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Android.Chart.IChartSeries.HasCustomSymbol">
+            <summary>
+            Whether the series has custom symbol rendering.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IChartSeries.OnSymbolRendering(C1.Android.Chart.RenderSymbolEventArgs)">
+            <summary>
+            Ons the symbol rendering.
+            </summary>
+            <returns>Whether to perform default symbol rendering.</returns>
+            <param name="e">E.</param>
+        </member>
+        <member name="M:C1.Android.Chart.IChartSeries.OnSymbolRendered(C1.Android.Chart.RenderSymbolEventArgs)">
+            <summary>
+            Ons the symbol rendered.
+            </summary>
+            <param name="e">E.</param>
+        </member>
+        <member name="P:C1.Android.Chart.IChartSeries.DataSource">
+            <summary>
+            Gets or sets data source.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartSeries.Binding">
+            <summary>
+            Gets or sets the binding.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartSeries.BindingX">
+            <summary>
+            Gets or sets the x-binding.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Interaction.LineMarkerInteraction">
+            <summary>
+            Specifies how the LineMarker interacts with the user.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.LineMarkerInteraction.None">
+            <summary>
+            No interaction, the user specifies the position by clicking.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.LineMarkerInteraction.Move">
+            <summary>
+            The LineMarker moves with the pointer.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.LineMarkerInteraction.Drag">
+            <summary>
+            The LineMarker moves when the user drags the line.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Interaction.LineMarkerLines">
+            <summary>
+            Specifies the line type for the LineMarker.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.LineMarkerLines.None">
+            <summary>
+            Show no line.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.LineMarkerLines.Vertical">
+            <summary>
+            Show a vertical line.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.LineMarkerLines.Horizontal">
+            <summary>
+            Show a horizontal line.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.LineMarkerLines.Both">
+            <summary>
+            Show both vertical and horizontal lines.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Interaction.LineMarkerAlignment">
+            <summary>
+            Specifies the alignment of the LineMarker.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.LineMarkerAlignment.Auto">
+            <summary>
+            The LineMarker alignment adjusts automatically so that it stays inside the boundaries of the plot area.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.LineMarkerAlignment.Bottom">
+            <summary>
+            The LineMarker aligns to the bottom of the pointer.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.LineMarkerAlignment.Left">
+            <summary>
+            The LineMarker aligns to the left of the pointer.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.LineMarkerAlignment.Right">
+            <summary>
+            The LineMarker aligns to the right of the pointer.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.LineMarkerAlignment.Top">
+            <summary>
+            The LineMarker aligns to the top of the pointer.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Interaction.PositionChangedArgs">
+            <summary>
+            Represents the arguments of PositionChanged event.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Interaction.PositionChangedArgs.#ctor(C1.Android.Core.C1Point)">
+            <summary>
+            Create an instance of PositionChangedArgs.
+            </summary>
+            <param name="pt"></param>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.PositionChangedArgs.Position">
+            <summary>
+            Gets the target point at which to show the LineMarker.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Interaction.C1LineMarker">
+            <summary>
+            Represents an extension of the LineMarker for the FlexChart.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Interaction.C1LineMarker.#ctor(Android.Content.Context)">
+            <summary>
+            Creates an instance of LineMarker.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.C1LineMarker.X">
+            <summary>
+            Gets the current x-value as chart data coordinates.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.C1LineMarker.Y">
+            <summary>
+            Gets the current y-value as chart data coordinates.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.C1LineMarker.Alignment">
+            <summary>
+            Gets or sets the alignment of the LineMarker content.
+            </summary>
+            <remarks> By default, the LineMarker shows to the right, at the bottom of the target point. Use "|" to combine alignment values.</remarks>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.C1LineMarker.AlignmentProperty">
+            <summary>
+            Identifies the Alignment dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.C1LineMarker.Content">
+            <summary>
+            Gets or sets the content function that allows you to customize the text content of the LineMarker.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.C1LineMarker.ContentProperty">
+            <summary>
+            Identifies the Content dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.C1LineMarker.DragContent">
+            <summary>
+            Gets or sets a value indicating whether the content of the marker is draggable when the interaction mode is "Drag".
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.C1LineMarker.DragContentProperty">
+            <summary>
+            Identifies the DragContent dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.C1LineMarker.DragLines">
+            <summary>
+            Gets or sets a value indicating whether the lines are linked when the horizontal or vertical line is dragged when the interaction mode is "Drag".
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.C1LineMarker.DragLinesProperty">
+            <summary>
+            Identifies the DragLines dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.C1LineMarker.DragThreshold">
+            <summary>
+            Gets or sets the maximum distance from the horizontal or vertical line that the marker can be dragged.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.C1LineMarker.DragThresholdProperty">
+            <summary>
+            Identifies the DragThreshold dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.C1LineMarker.Interaction">
+            <summary>
+            Gets or sets the interaction mode of the LineMarker.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.C1LineMarker.InteractionProperty">
+            <summary>
+            Identifies the Interaction dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.C1LineMarker.Lines">
+            <summary>
+            Gets or sets the visibility of the LineMarker lines.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.C1LineMarker.LinesProperty">
+            <summary>
+            Identifies the Lines dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.C1LineMarker.HorizontalPosition">
+            <summary>         /// Gets or sets the horizontal position of the LineMarker relative to the plot area.         /// Its value range is (0, 1).If set this value,then the line marker's horizontal position is fixed.         /// If the value is null or undefined and interaction is set to LineMarkerInteraction.Move or LineMarkerInteraction.Drag,          /// the horizontal position of the marker is calculated automatically based on the pointer's position.         /// </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.C1LineMarker.HorizontalPositionProperty">
+            <summary>
+            Identifies the HorizontalPosition dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.C1LineMarker.VerticalPosition">
+            <summary>         /// Gets or sets the vertical position of the LineMarker relative to the plot area.         /// Its value range is (0, 1). If set this value,then the line marker's vertical position is fixed.         /// If the value is null or undefined and interaction is set to LineMarkerInteraction.Move or LineMarkerInteraction.Drag,          /// the vertical position of the LineMarker is calculated automatically based on the pointer's position.         /// </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.C1LineMarker.VerticalPositionProperty">
+            <summary>
+            Identifies the VerticalPosition dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.C1LineMarker.VerticalLineStyle">
+            <summary>
+            Gets or set the Style of vertical line.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.C1LineMarker.VerticalLineStyleProperty">
+            <summary>
+            Identifies the Vertical line style dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.C1LineMarker.HorizontalLineStyle">
+            <summary>
+            Gets or set the Style of horizontal line.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.C1LineMarker.HorizontalLineStyleProperty">
+            <summary>
+            Identifies the Vertical line style dependency property.
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.Interaction.C1LineMarker.PositionChanged">
+            <summary>
+            Occurs after the LineMarker's position changes.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Interaction.C1LineMarker.OnPositionChanged(System.Boolean)">
+            <summary>
+            Raise the PositionChanged event.
+            </summary>
+            <param name="reset"></param>
+        </member>
+        <member name="T:C1.Android.Chart.Interaction.GestureMode">
+            <summary>
+            Specifies available values for gesture direction.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.GestureMode.None">
+            <summary>
+            Has no effect.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.GestureMode.X">
+            <summary>
+            Causes behavior along x- axis.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.GestureMode.Y">
+            <summary>
+            Causes behavior along y- axis.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.GestureMode.XY">
+            <summary>
+            Causes behavior along both x- and y- axes.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Interaction.IBehavior">
+            <summary>
+            Represents the behaviors that interact with users.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.IBehavior.Chart">
+            <summary>
+            Associated chart.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Interaction.IBehavior.OnAttach">
+            <summary>
+            Called after the behavior is attached to an associated chart.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.Interaction.IBehavior.OnDetach">
+            <summary>
+            Called after the behavior is detached to an associated chart.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Interaction.ZoomBehavior">
+            <summary>
+            Represents zoom behavior.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.ZoomBehavior.ZoomMode">
+            <summary>
+            Gets or sets the gesture direction of zoom behavior.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.ZoomBehavior.ZoomModeProperty">
+            <summary>
+            Identifies the ZoomMode dependency property.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Interaction.TranslateBehavior">
+            <summary>
+            Represents translation behavior.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.Interaction.TranslateBehavior.TranslationMode">
+            <summary>
+            Gets or sets the gesture direction of translate behavior.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Interaction.TranslateBehavior.TranslationModeProperty">
+            <summary>
+            Identifies the TranslationMode dependency property.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.C1Sunburst">
+            <summary>
+            Sunburst chart control.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.C1Sunburst.#ctor(Android.Content.Context,Android.Util.IAttributeSet)">
+            <summary>
+            Creates an instance of FlexPie from a xml definition.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.C1Sunburst.ChildItemsPath">
+            <summary>
+            Gets or sets the name of the property (or properties) used to generate child items in hierarchical data.
+            Set this property to a string to specify the name of the property that contains an item's child items (e.g. <code>Items</code>).
+            If items at different levels child items with different names, then set this property to an array containing the names of the properties.
+            that contains child items at each level.
+            (e.g. <code>"accounts,checks,earnings"</code>)
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.C1Sunburst.ChildItemsPathProperty">
+            <summary>
+            Identifies the ChildItemsPath dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.C1Sunburst.Bind">
+            <summary>
+            Bind chart.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartOptions">
+            <summary>
+            Represents chart options.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartOptions.#ctor">
+            <summary>
+            Creates an instance of ChartOptions.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartOptions.InterpolateNulls">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartOptions.InterpolateNullsProperty">
+            <summary>
+            Identifies the InterpolateNulls dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartOptions.ClusterSize">
+            <summary>
+            Gets or sets the cluster size.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartOptions.ClusterSizeProperty">
+            <summary>
+            Identifies the ClusterSize dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartOptions.BubbleMinSize">
+            <summary>
+            Gets or sets the minimal symbol size for bubble chart.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartOptions.BubbleMinSizeProperty">
+            <summary>
+            Identifies the BubbleMinSize dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartOptions.BubbleMaxSize">
+            <summary>
+            Gets or sets the maximum symbol size for bubble chart.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartOptions.BubbleMaxSizeProperty">
+            <summary>
+            Identifies the BubbleMaxSize dependency property.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartStyle">
+            <summary>
+            Represents visual style of chart element.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStyle.DefaultValueFontSize">
+            <summary>
+            Default font size.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStyle.DefaultValueFontTypeFace">
+            <summary>
+            Default font type face.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStyle.DefaultFont">
+            <summary>
+            Default font.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStyle.DefaultBrush">
+            <summary>
+            Default brush.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartStyle.FontSize">
+            <summary>
+            Gets or sets the font size.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStyle.FontSizeProperty">
+            <summary>
+            Identifies the FontSize dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartStyle.FontFamily">
+            <summary>
+            Gets or sets the font family.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStyle.FontFamilyProperty">
+            <summary>
+            Identifies the FontFamily dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartStyle.FontAttributes">
+            <summary>
+            Gets or sets the font attributes.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStyle.FontAttributesProperty">
+            <summary>
+            Identifies the FontAttributes dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartStyle.StrokeDashArray">
+            <summary>
+            Gets or sets the stroke dash array.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStyle.StrokeDashArrayProperty">
+            <summary>
+            Identifies the StrokeDashArray dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartStyle.Stroke">
+            <summary>
+            Gets or sets the stroke brush.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStyle.StrokeProperty">
+            <summary>
+            Identifies the Stroke dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartStyle.Fill">
+            <summary>
+            Gets or sets the fill brush.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStyle.FillProperty">
+            <summary>
+            Identifies the Fill dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartStyle.StrokeThickness">
+            <summary>
+            Gets or sets the stroke thickness.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStyle.StrokeThicknessProperty">
+            <summary>
+            Identifies the StrokeThickness dependency property.
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.ChartStyle.RefreshStyleProperty">
+            <summary>
+            Refresh chart style properties.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartStyle.#ctor">
+            <summary>
+            Create an instance of ChartStyle.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartType">
+            <summary>
+            Specifies the chart type.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartType.Column">
+            <summary>
+            Shows vertical bars.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartType.Bar">
+            <summary>
+            Shows horizontal bars.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartType.Line">
+            <summary>
+            Shows trends over a period of time or across categories.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartType.Scatter">
+            <summary>
+            Shows patterns within the data using X and Y coordinates.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartType.LineSymbols">
+            <summary>
+            Shows line chart with a symbol on each data point.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartType.Area">
+            <summary>
+            Shows line chart with the area below the line filled with color.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartType.Spline">
+            <summary>
+            Displays line chart that plots curves rather than angled lines through the data points.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartType.SplineSymbols">
+            <summary>
+            Displays spline chart with symbols on each data point.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartType.SplineArea">
+            <summary>
+            Displays spline chart with the area below the line filled with color.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartType.Bubble">
+            <summary>
+            Shows Scatter chart with a third data value that determines the size of the symbol.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartType.Candlestick">
+            <summary>
+            Presents items with high, low, open, and close values.
+            The size of the wick line is determined by the High and Low values, 
+            while the size of the bar is determined by the Open and Close values. 
+            The bar is displayed using different colors, depending on 
+            whether the close value is higher or lower than the open value.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartType.HighLowOpenClose">
+            <summary>
+            Displays the same information as a candlestick chart, except that opening 
+            values are displayed using lines to the left, while lines to the right
+            indicate closing values.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartStackingType">
+            <summary>
+            Specifies whether and how to stack the chart's data values.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStackingType.None">
+            <summary>
+            No stacking. Each series object is plotted independently.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStackingType.Stacked">
+            <summary>
+            Stacked charts show how each value contributes to the total.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartStackingType.Stacked100pc">
+            <summary>
+            100% stacked charts show how each value contributes to the total with the relative size of
+            each series representing its contribution to the total.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartSeriesVisibilityType">
+            <summary>
+            Specifies whether and where the ChartSeries is visible.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeriesVisibilityType.Visible">
+            <summary>
+            The series is visible on the plot and in the legend.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeriesVisibilityType.Plot">
+            <summary>
+            The series is visible only on the plot.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeriesVisibilityType.Legend">
+            <summary>
+            The series is visible only in the legend.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSeriesVisibilityType.Hidden">
+            <summary>
+            The series is hidden.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.DataType">
+            <summary>
+            Specifies chart data type
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.DataType.Number">
+            <summary>
+            Numeric data.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.DataType.Date">
+            <summary>
+            Date or time data.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartElementType">
+            <summary>
+            Specifies chart element that may be found by the HitTest method.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartElementType.PlotArea">
+            <summary>
+            The area within the axes.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartElementType.AxisX">
+            <summary>
+            X-axis.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartElementType.AxisY">
+            <summary>
+            Y-axis.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartElementType.ChartArea">
+            <summary>
+            The area within the control but outside the axes.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartElementType.Legend">
+            <summary>
+            The chart legend.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartElementType.Header">
+            <summary>
+            The chart header.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartElementType.Footer">
+            <summary>
+            The chart footer.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartElementType.Series">
+            <summary>
+            A chart series.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartElementType.SeriesSymbol">
+            <summary>
+            A chart series symbol.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartElementType.DataLabel">
+            <summary>
+            A data label.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartElementType.None">
+            <summary>
+            No chart element.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartLabelPosition">
+            <summary>
+            Specifies chart data label position.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartLabelPosition.None">
+            <summary>
+            No data labels appear.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartLabelPosition.Left">
+            <summary>
+            The labels appear to the left of the data points.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartLabelPosition.Top">
+            <summary>
+            The labels appear above the data points.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartLabelPosition.Right">
+            <summary>
+            The labels appear to the right of the data points.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartLabelPosition.Bottom">
+            <summary>
+            The labels appear below the data points.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartLabelPosition.Center">
+            <summary>
+            The labels appear centered on the data points.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.PieLabelPosition">
+            <summary>
+            Specifies the position of data labels on the pie chart.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.PieLabelPosition.None">
+            <summary>
+            No data labels.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.PieLabelPosition.Inside">
+            <summary>
+            The label appears inside the pie slice.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.PieLabelPosition.Center">
+            <summary>
+            The item appears at the center of the pie slice.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.PieLabelPosition.Outside">
+            <summary>
+            The item appears outside the pie slice.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartSelectionModeType">
+            <summary>
+            Available selection modes.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSelectionModeType.None">
+            <summary>
+            Selection is disabled.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSelectionModeType.Series">
+            <summary>
+            ChartSeries selection.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartSelectionModeType.Point">
+            <summary>
+            Point selection.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ElementSizeType">
+            <summary>
+            Specifies the size type for ElementSize object.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ElementSizeType.Percentage">
+            <summary>
+            Size specified in perecents from available space.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ElementSizeType.Absolute">
+            <summary>
+            Size specified in pixels.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartMarkerType">
+            <summary>
+            Specifies the type of marker to use for the ChartMarkerType property.
+            Applies to Scatter, LineSymbols, and SplineSymbols chart types.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartMarkerType.Dot">
+            <summary>
+            Uses a circle to mark each data point.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartMarkerType.Box">
+            <summary>
+            Uses a square to mark each data point.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ElementSize">
+            <summary>
+            Represents element size.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ElementSize.SizeType">
+            <summary>
+            Gets or sets the size type.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ElementSize.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ElementSize.op_Equality(C1.Android.Chart.ElementSize,C1.Android.Chart.ElementSize)">
+            <summary>
+            
+            </summary>
+            <param name="size1"></param>
+            <param name="size2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.ElementSize.op_Inequality(C1.Android.Chart.ElementSize,C1.Android.Chart.ElementSize)">
+            <summary>
+            
+            </summary>
+            <param name="size1"></param>
+            <param name="size2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.ElementSize.Equals(System.Object)">
+            <summary>
+            Determines whether the specified object is equal to the current object.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.ElementSize.GetHashCode">
+            <summary>
+            Returns hash code of the instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart.ChartOverlappingLabels">
+            <summary>
+            Specifies how to handle overlapping labels.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartOverlappingLabels.Auto">
+            <summary>
+            Hide overlapping labels.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartOverlappingLabels.Show">
+            <summary>
+            Show all labels, including overlapping ones.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.MeasureOption">
+            <summary>
+            Specifies measuring direction.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.MeasureOption.X">
+            <summary>
+            By X-axis.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.MeasureOption.Y">
+            <summary>
+            By Y-axis.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.MeasureOption.XY">
+            <summary>
+            Both X- and Y- axes.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.FitType">
+            <summary>
+            Specifies fit type for trend line.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FitType.Linear">
+            <summary>
+            Regression fit to the equation Y(x) = C0 + C1*x.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FitType.Polynom">
+            <summary>
+            Regression fit to the equation Y(x) = C0 + C1*x + C2*x2 + : + Cn-1*xn-1, where n - number of terms.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FitType.Exponent">
+            <summary>
+            Regression fit to the equation Y(x) = C0 * exp( C1*x)
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FitType.Logarithmic">
+            <summary>
+            Regression fit to the equation Y(x) = C0 * ln(C1*x)
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FitType.Power">
+            <summary>
+            Regression fit to the equation Y(x) = C0 * pow(x, C1)
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FitType.Fourier">
+            <summary>
+            Regression fit to the equation Y(x) = C0 + C1 * cos(x) + C2 * sin(x) + C3 * cos(2*x) + C4 * sin(2*x) + ...
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FitType.MinX">
+            <summary>
+            Minimal X-value.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FitType.MinY">
+            <summary>
+            Minimal Y-value.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FitType.MaxX">
+            <summary>
+            Maximum X-value.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FitType.MaxY">
+            <summary>
+            Maximum Y-value.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FitType.AverageX">
+            <summary>
+            Average X-value.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FitType.AverageY">
+            <summary>
+            Average Y-value.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.MovingAverageType">
+            <summary>
+            Specifies the type of MovingAverage ChartSeries. 
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.MovingAverageType.Simple">
+            <summary>
+            An average of the last n values.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.MovingAverageType.Weighted">
+            <summary>
+            Weighted average of the last n values, where the weightage decreases by 1 with each previous value.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.MovingAverageType.Exponential">
+            <summary>
+            Weighted average of the last n values, where the weightage decreases exponentially with each previous value.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.MovingAverageType.Triangular">
+            <summary>
+            Weighted average of the last n values, whose result is equivalent to a double smoothed simple moving average.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.Orientation">
+            <summary>
+            Specifies the orientation of chart element.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Orientation.Auto">
+            <summary>
+            Orientation is selected automatically.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Orientation.Horizontal">
+            <summary>
+            Horizontal orientation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Orientation.Vertical">
+            <summary>
+            Vertical orientation.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.RadarChartType">
+            <summary>
+            Specifies the chart type for FlexRadar control.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.RadarChartType.Line">
+            <summary>
+            Shows trends over a period of time or across categories.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.RadarChartType.Scatter">
+            <summary>
+            Shows patterns within the data using X and Y coordinates.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.RadarChartType.LineSymbols">
+            <summary>
+            Shows line chart with a symbol on each data point.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.RadarChartType.Area">
+            <summary>
+            Shows line chart with the area below the line filled with color.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartPositionType">
+            <summary>
+            Specifies the position of chart element on the chart.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartPositionType.Left">
+            <summary>
+            The element appears to the left.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartPositionType.Right">
+            <summary>
+            The element appears to the right.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartPositionType.Top">
+            <summary>
+            The item appears above.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartPositionType.Bottom">
+            <summary>
+            The item appears below.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartPositionType.Auto">
+            <summary>
+            The element is positioned automatically.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartPositionType.None">
+            <summary>
+            The element is not visible.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartTickMarkType">
+            <summary>
+            Specifies whether and where the axis tick marks appear.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartTickMarkType.None">
+            <summary>
+            No tick marks appear.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartTickMarkType.Outside">
+            <summary>
+            Tick marks appear outside the plot area.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartTickMarkType.Inside">
+            <summary>
+            Tick marks appear inside the plot area.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartTickMarkType.Cross">
+            <summary>
+            Tick marks cross the axis.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.AxisLabelAlignment">
+            <summary>
+            Specifies axis label position.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.AxisLabelAlignment.Center">
+            <summary>
+            At the center.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.AxisLabelAlignment.Left">
+            <summary>
+            At the left.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.AxisLabelAlignment.Right">
+            <summary>
+            At the right.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.AxisLabelAlignment.Top">
+            <summary>
+            At the top.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.AxisLabelAlignment.Bottom">
+            <summary>
+            At the bottom.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.AxisType">
+            <summary>
+            Specifies axis type. 
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.AxisType.X">
+            <summary>
+            X-axis, horizontal.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.AxisType.Y">
+            <summary>
+            Y-axis, vertical.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.IBrushConverter">
+            <summary>
+            Brush converter interface
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IBrushConverter.Convert(System.Object)">
+            <summary>
+            Converts brush to string.
+            </summary>
+            <param name="brush"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IBrushConverter.ConvertBack(System.String)">
+            <summary>
+            Converts string to brush.
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart.IChartBase">
+            <summary>
+            IChartBase interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartBase.Legend">
+            <summary>
+            Gets the chart legend.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartBase.Header">
+            <summary>
+            Gets the chart header.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartBase.Footer">
+            <summary>
+            Gets the chart footer,
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartBase.SelectedIndex">
+            <summary>
+            Gets the selected index.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartBase.SelectionMode">
+            <summary>
+            Gets the selection mode.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IChartBase.OnRendering(C1.Android.Core.IRenderEngine,System.Double,System.Double)">
+            <summary>
+            Invoked before chart starts rendering.
+            </summary>
+            <param name="engine"></param>
+            <param name="w"></param>
+            <param name="h"></param>
+        </member>
+        <member name="M:C1.Android.Chart.IChartBase.OnRendered(C1.Android.Core.IRenderEngine,System.Double,System.Double)">
+            <summary>
+            Invoked after chart finishes rendering.
+            </summary>
+            <param name="engine"></param>
+            <param name="w"></param>
+            <param name="h"></param>
+        </member>
+        <member name="M:C1.Android.Chart.IChartBase.GetMargin">
+            <summary>
+            Gets the plot margin.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart.IChart">
+            <summary>
+            IChart interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChart.ChartType">
+            <summary>
+            Gets the chart type.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChart.Stacking">
+            <summary>
+            Gets the chart stacking.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChart.AxisX">
+            <summary>
+            Gets the main x-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChart.AxisY">
+            <summary>
+            Gets the main y-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChart.DataLabel">
+            <summary>
+            Gets the chart data label.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IChart.GetAxes">
+            <summary>
+            Gets the chart axes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Android.Chart.IChart.Series">
+            <summary>
+            Gets the series list.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChart.SelectedSeries">
+            <summary>
+            Gets the selected series.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IChart.GetPlotRect">
+            <summary>
+            Gets the plot rectangle.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IChart.GetPlotMargin">
+            <summary>
+            Gets the plot margin.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IChart.IsRotated">
+            <summary>
+            Gets a value indicating whether the chart is rotated.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IChart.GetXItems">
+            <summary>
+            Gets the list of x-axis items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IChart.GetOption(System.String)">
+            <summary>
+            Gets the chart option.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IChart.OnRenderingData(C1.Android.Core.IRenderEngine)">
+            <summary>
+            Invoked before chart data starts rendering.
+            </summary>
+            <param name="engine"></param>
+        </member>
+        <member name="M:C1.Android.Chart.IChart.CreateSeries">
+            <summary>
+            Creates an instance of series.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart.ISupportCustomRenderEngine">
+            <summary>
+            Support of external render engines.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ISupportCustomRenderEngine.Attach(C1.Android.Chart.ICustomRenderEngine)">
+            <summary>
+            Attaches external render engine.
+            </summary>
+            <param name="engine"></param>
+        </member>
+        <member name="M:C1.Android.Chart.ISupportCustomRenderEngine.Render(C1.Android.Core.IRenderEngine,System.Int32,System.Int32)">
+            <summary>
+            Render the chart to external render engine.
+            </summary>
+            <param name="engine"></param>
+            <param name="w"></param>
+            <param name="h"></param>
+        </member>
+        <member name="M:C1.Android.Chart.ISupportCustomRenderEngine.Detach">
+            <summary>
+            Detaches external render engine.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ICustomRenderEngine">
+            <summary>
+            External render engine interface.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ICustomRenderEngine.Attach(C1.Android.Chart.IChart)">
+            <summary>
+            Attach render engine to the chart.
+            </summary>
+            <param name="chart"></param>
+        </member>
+        <member name="M:C1.Android.Chart.ICustomRenderEngine.Detach">
+            <summary>
+            Detach render engine from chart.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.IRadarChart">
+            <summary>
+            Radar chart interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IRadarChart.Center">
+            <summary>
+            Gets the center.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IRadarChart.Convert(C1.Android.Chart._Point)">
+            <summary>
+            Converts the point.
+            </summary>
+            <param name="pt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IRadarChart.ConvertAngle(System.Double)">
+            <summary>
+            Converts the angle.
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Android.Chart.IRadarChart.Radius">
+            <summary>
+            Gets the radius.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IRadarChart.StartAngle">
+            <summary>
+            Gets or sets the starting angle.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IRadarChart.Reversed">
+            <summary>
+            Whether the chart is reversed.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IRadarChart.IsPolar">
+            <summary>
+            Whether the chart is polar.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.IPieChart">
+            <summary>
+            Interface of pie chart.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IPieChart.GetValues">
+            <summary>
+            Gets pie slices values
+            </summary>
+            <returns>Pie slices values</returns>
+        </member>
+        <member name="M:C1.Android.Chart.IPieChart.GetNames">
+            <summary>
+            Gets pie slices names
+            </summary>
+            <returns>Pie slices names</returns>
+        </member>
+        <member name="M:C1.Android.Chart.IPieChart.GetItem(System.Int32)">
+            <summary>
+            Gets pie one slice data item.
+            </summary>
+            <param name="i">The index of the slices</param>
+            <returns>Slice data item</returns>
+        </member>
+        <member name="M:C1.Android.Chart.IPieChart.GetLegendLabels">
+            <summary>
+            Gets legend labels.
+            </summary>
+            <returns>Legend labels</returns>
+        </member>
+        <member name="P:C1.Android.Chart.IPieChart.StartAngle">
+            <summary>
+            Gets start angle.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IPieChart.InnerRadius">
+            <summary>
+            Gets inner circle radius
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IPieChart.SelectedItemPosition">
+            <summary>
+            Gets the selected item index.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IPieChart.SelectedItemOffset">
+            <summary>
+            Gets selected item offset from the original position.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IPieChart.Offset">
+            <summary>
+            Gets offset from the original position.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IPieChart.Reversed">
+            <summary>
+            Gets a bool value that indicated revered or not.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IPieChart.DataLabel">
+            <summary>
+            Gets the data label object of the pie.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ISunburst.GetSunburstItem(System.Int32)">
+            <summary>
+            Gets sunburst chart data item.
+            </summary>
+            <param name="i">index of the item</param>
+            <returns> sunburst chart data item</returns>
+        </member>
+        <member name="T:C1.Android.Chart.IStyleProvider">
+            <summary>
+            IStyle provider interface.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IStyleProvider.GetStyle(System.String)">
+            <summary>
+            Gets the style by name.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IStyleProvider.SetStyle(C1.Android.Chart._Style,System.String)">
+            <summary>
+            Sets style with specified name.
+            </summary>
+            <param name="style"></param>
+            <param name="name"></param>
+        </member>
+        <member name="T:C1.Android.Chart.IWaterfall">
+            <summary>
+            IWaterfall interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IWaterfall.ConnectorLines">
+            <summary>
+            Gets or sets a value that determines whether to show connector lines.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IWaterfall.IntermediateTotalLabels">
+            <summary>
+            Gets or sets the value of the property that contains the label of the intermediate total bar, it should be an array or a string.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IWaterfall.IntermediateTotalPositions">
+            <summary>
+            Gets or sets the value of the property that contains the index for positions of the intermediate total bar.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IWaterfall.RelativeData">
+            <summary>
+            Gets or sets a value that determines whether the given data is relative.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IWaterfall.ShowIntermediateTotal">
+            <summary>
+            Gets or sets a value that determines whether to show the intermediate total bar.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IWaterfall.ShowTotal">
+            <summary>
+            Gets or sets a value that determines whether show total bar.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IWaterfall.Start">
+            <summary>
+            Gets or sets a value that determines the value of the start bar.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IWaterfall.StartLabel">
+            <summary>
+            Identifies the Start dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IWaterfall.TotalLabel">
+            <summary>
+            Gets or sets the label of the total bar.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IWaterfall.GetYValues">
+            <summary>
+            Gets the list of y axis values.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IWaterfall.IsIntermediateTotal(System.Int32)">
+            <summary>
+            Checks whether the item is intermediate total or not.
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IWaterfall.UpdateXItems(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Updates the list of x axis items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IWaterfall.GetLegendItemsCount">
+            <summary>
+            Gets the count of legend items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IWaterfall.GetLegendItemName(System.Int32)">
+            <summary>
+            Gets the name of legend item.
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IWaterfall.GetLegendStyles(System.Int32)">
+            <summary>
+            Gets the style of legend item.
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart.LeastSquaresMethod">
+            <summary>
+            Contains routines for Least Squares Method
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.IPalette">
+            <summary>
+            IPalette interface.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.IPalette.GetColor(System.Int32)">
+            <summary>
+            Gets the palette color by index.
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.IPalette.GenerateBorderColor(System.Object)">
+            <summary>
+            Generate border color by input color.
+            </summary>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart.Palette">
+            <summary>
+            Specifies chart palette.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Standard">
+            <summary>
+            Standard.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Cocoa">
+            <summary>
+            Cocoa
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Coral">
+            <summary>
+            Coral
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Dark">
+            <summary>
+            Dark
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Highcontrast">
+            <summary>
+            Highcontrast
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Light">
+            <summary>
+            Light
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Midnight">
+            <summary>
+            Midnight
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Minimal">
+            <summary>
+            Minimal
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Modern">
+            <summary>
+            Modern
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Organic">
+            <summary>
+            Organic
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Slate">
+            <summary>
+            Slate
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Zen">
+            <summary>
+            Zen
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Cyborg">
+            <summary>
+            Cyborg
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Superhero">
+            <summary>
+            Superhero
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Flatly">
+            <summary>
+            Flatly
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Darkly">
+            <summary>
+            Darkly
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Cerulean">
+            <summary>
+            Cerulean
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.Palette.Custom">
+            <summary>
+            Custom palette.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart._Rect">
+            <summary>
+            Represents rectangle.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart._Rect.Left">
+            <summary>
+            Left coordinate.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart._Rect.Top">
+            <summary>
+            Top coordinate.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart._Rect.Width">
+            <summary>
+            Width of rectangle.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart._Rect.Height">
+            <summary>
+            Height of rectangle.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart._Rect.Right">
+            <summary>
+            Gets the right coordinate of rectangle.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart._Rect.Bottom">
+            <summary>
+            Gets the bottom coordinate of rectangle.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart._Rect.#ctor(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Create an instance of rectangle.
+            </summary>
+            <param name="l"></param>
+            <param name="t"></param>
+            <param name="w"></param>
+            <param name="h"></param>
+        </member>
+        <member name="M:C1.Android.Chart._Rect.Contains(System.Double,System.Double)">
+            <summary>
+            Returns whether the point specified by coordinates is inside rectangle.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="F:C1.Android.Chart._Rect.Empty">
+            <summary>
+            Empty rectangle.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart._Rect.op_Equality(C1.Android.Chart._Rect,C1.Android.Chart._Rect)">
+            <summary>
+            Equality operator. 
+            </summary>
+            <param name="rect1"></param>
+            <param name="rect2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart._Rect.op_Inequality(C1.Android.Chart._Rect,C1.Android.Chart._Rect)">
+            <summary>
+            Non-equality operator.
+            </summary>
+            <param name="rect1"></param>
+            <param name="rect2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart._Rect.Equals(System.Object)">
+            <summary>
+            Determines whether the specified object is equal to this instance. 
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart._Rect.GetHashCode">
+            <summary>
+            Returns the hash code of the instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart._Rect.Intersect(C1.Android.Chart._Rect)">
+            <summary>
+            Returns a value indicating whether the rectangle intersects with the specified rectangle.
+            </summary>
+            <param name="rect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart._Rect.ToString">
+            <summary>
+            Output left, top, right, bottom as string.
+            </summary>
+            <returns>[Left, Top, Right, Bottom]</returns>
+        </member>
+        <member name="T:C1.Android.Chart._Size">
+            <summary>
+            Represents size.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart._Size.Width">
+            <summary>
+            Width.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart._Size.Height">
+            <summary>
+            Height
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart._Size.#ctor(System.Double,System.Double)">
+            <summary>
+            Creates am instance of _Size.
+            </summary>
+            <param name="w"></param>
+            <param name="h"></param>
+        </member>
+        <member name="M:C1.Android.Chart._Size.ToString">
+            <summary>
+            Output width and height.
+            </summary>
+            <returns>[Width, Height]</returns>
+        </member>
+        <member name="T:C1.Android.Chart._Margin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart._Margin.Left">
+            <summary>
+            Left margin.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart._Margin.Right">
+            <summary>
+            Right margin.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart._Margin.Top">
+            <summary>
+            Top margin.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart._Margin.Bottom">
+            <summary>
+            Bottom margin.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart._Margin.Apply(C1.Android.Chart._Rect)">
+            <summary>
+            Applies margin to specified rectangle.
+            </summary>
+            <param name="rect"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Android.Chart._Point">
+            <summary>
+            Represents point.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart._Point.X">
+            <summary>
+            X-coordinate.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart._Point.Y">
+            <summary>
+            Y-coordinate.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart._Point.#ctor(System.Double,System.Double)">
+            <summary>
+            Creates an instance of _Point.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:C1.Android.Chart._Point.Clone">
+            <summary>
+            Clones the specified point.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart._Point.ToString">
+            <summary>
+            Output X, Y as string.
+            </summary>
+            <returns>[X, Y]</returns>
+        </member>
+        <member name="T:C1.Android.Chart._Style">
+            <summary>
+            Represent style.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart._Style.Stroke">
+            <summary>
+            Gets or sets the stroke object.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart._Style.StrokeThickness">
+            <summary>
+            Gets or sets the stroke thickness.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart._Style.StrokePattern">
+            <summary>
+            Gets or sets the stroke pattern.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart._Style.Fill">
+            <summary>
+            Gets or sets the fill object.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart._Style.Font">
+            <summary>
+            Gets or sets the font object.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart._Style.HAlign">
+            <summary>
+            Gets or sets horizontal alignment.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart._Style.Combine(C1.Android.Chart._Style)">
+            <summary>
+            Combines styles.
+            </summary>
+            <param name="parentStyle"></param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Android.Chart.SunburstItem.Name">
+            <summary>
+            The value of <see cref="P:C1.Android.Chart.SunburstItem.NameField"/>
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.SunburstItem.Value">
+            <summary>
+            The value of binding.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.SunburstItem.Items">
+            <summary>
+            The hierarchical items.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.SunburstItem.NameField">
+            <summary>
+            The name of property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.SunburstItem.ParentItem">
+            <summary>
+            Parent item.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.SunburstItem.RootIndex">
+            <summary>
+            The index of the first level item.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.SunburstItem.Index">
+            <summary>
+            The index of item.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.SunburstItem.IsSelected">
+            <summary>
+            Determines whether the item is selected.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.FlexChart">
+            <summary>
+            FlexChart control.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.#ctor(Android.Content.Context,Android.Util.IAttributeSet)">
+            <summary>
+            Creates an instance of FlexChart.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.#ctor(Android.Content.Context)">
+            <summary>
+            Constructor for android FlexChart
+            </summary>
+            <param name="context">context</param>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.ChartType">
+            <summary>
+            Gets or sets the chart type.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FlexChart.ChartTypeProperty">
+            <summary>
+            Identifies the ChartType dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.Stacking">
+            <summary>
+            Gets or sets the chart stacking.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FlexChart.StackingProperty">
+            <summary>
+            Identifies the ChartStackingType dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.Rotated">
+            <summary>
+            Gets or sets a value indicating whether the chart is rotated.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FlexChart.RotatedProperty">
+            <summary>
+            Identifies the Rotated dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.BindingX">
+            <summary>
+            Gets or sets the bindingX of chart.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FlexChart.BindingXProperty">
+            <summary>
+            Identifies the BindingX dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.PlotMargin">
+            <summary>
+            Gets or sets the plot area margin.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FlexChart.PlotMarginProperty">
+            <summary>
+            Identifies the PlotMargin dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.AxisX">
+            <summary>
+            Gets or sets the main chart x-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.AxisY">
+            <summary>
+            Gets or sets the main chart y-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.Options">
+            <summary>
+            Gets or sets the chart options.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FlexChart.OptionsProperty">
+            <summary>
+            Identifies the Options dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.Series">
+            <summary>
+            Gets the series collection.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.Behaviors">
+            <summary>
+            Gets the behaviors collection.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.Layers">
+            <summary>
+            Gets the chart layers collection.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.SelectedSeries">
+            <summary>
+            Gets or sets the selected series.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FlexChart.SelectedSeriesProperty">
+            <summary>
+            Identifies the SelectedSeries dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.DataLabel">
+            <summary>
+            Gets or sets the data label.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexChart.PlotRect">
+            <summary>
+            Returns plot area rectangle (rectangle inside chart axes).
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.FlexChart.SeriesVisibilityChanged">
+            <summary>
+            Fires when chart series visibility was changed.
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.FlexChart.ChartTypeChanged">
+            <summary>
+            Fires when chart type was changed.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.HitTest(C1.Android.Core.C1Point)">
+            <summary>
+            Gets a ChartHitTestInfo object with information about the specified point.
+            </summary>
+            <param name="pt">Point in control coordinates.</param>
+            <returns>A ChartHitTestInfo object with information about the point.</returns>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.PointToData(C1.Android.Core.C1Point)">
+            <summary>
+            Converts a Point from control coordinates to chart data coordinates.
+            </summary>
+            <param name="pt">Point in control coordinates.</param>
+            <returns>The point in chart data coordinates.</returns>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.DataToPoint(C1.Android.Core.C1Point)">
+            <summary>
+            Converts a Point from data coordinates to control coordinates.
+            </summary>
+            <param name="pt">Point in data coordinates.</param>
+            <returns>Point in control coordinates.</returns>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.OptionsChanged">
+            <summary>
+            Called when options changed.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.OnChartTypePropertyChanged(C1.Android.Chart.ChartType,C1.Android.Chart.ChartType)">
+            <summary>
+            Fires when chartType property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.OnStackingPropertyChanged(C1.Android.Chart.ChartStackingType,C1.Android.Chart.ChartStackingType)">
+            <summary>
+            Fires when stacking property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.OnRotatedPropertyChanged(System.Boolean,System.Boolean)">
+            <summary>
+            Fires when rotated property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.HandleSelection(C1.Android.Core.C1Point)">
+            <summary>
+            Handle selection
+            </summary>
+            <param name="pt"></param>
+            <returns>true is for the selection changed; false for not changed.</returns>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.OnItemsSourceChanged(System.Object)">
+            <summary>
+            Called on ItemsSource changed.
+            </summary>
+            <param name="oldValue"></param>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.OnPointerPressed(System.Object,C1.Android.Core.C1TappedEventArgs)">
+            <summary>
+            Called when pointer pressed the chart.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.Invalidate">
+            <summary>
+            Invalidates the chart.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.OnLayout(System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Override the android view OnLayout methed to override the layout logic.
+            </summary>
+            <param name="changed">Is layout changed</param>
+            <param name="left">Left position</param>
+            <param name="top">Top position</param>
+            <param name="right">Right position</param>
+            <param name="bottom">Bottom position</param>
+        </member>
+        <member name="M:C1.Android.Chart.FlexChart.LoadDesignTimeData">
+            <summary>
+            Loads dummy design time content visible in Storyboard and Android designer
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.RenderMode">
+            <summary>
+            Enumerates available render modes.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.RenderMode.Default">
+            <summary>
+            Xaml.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.RenderMode.Direct2D">
+            <summary>
+            Direct2D render mode.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.BaseRenderEventArgs">
+            <summary>
+            Base render event arguments.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.BaseRenderEventArgs.Engine">
+            <summary>
+            Gets the rendering engine.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.RenderEventArgs">
+            <summary>
+            Render event arguments.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.RenderEventArgs.Width">
+            <summary>
+            Gets the control width.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.RenderEventArgs.Height">
+            <summary>
+            Gets the control height.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.RenderSymbolEventArgs">
+            <summary>
+            Render symbol event arguments.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.RenderSymbolEventArgs._ser">
+            <summary>
+            Gets the series.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.RenderSymbolEventArgs.SymbolSize">
+            <summary>
+            Gets the symbol Size.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.RenderSymbolEventArgs.Point">
+            <summary>
+            Gets the symbol position in control pixel coordinates.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.RenderSymbolEventArgs.Size">
+            <summary>
+            Gets the symbol size in control pixel coordinates.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.RenderSymbolEventArgs.Index">
+            <summary>
+            Gets the data point index.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.RenderSymbolEventArgs.Item">
+            <summary>
+            Gets the data item.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.ChartBase">
+            <summary>
+            Base class for FlexChart and FlexPie controls.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase._updating">
+            <summary>
+            Update count.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase._dataChanged">
+            <summary>
+            Data changed flag.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.selectionDistance">
+            <summary>
+            Selection distance.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.#ctor(Android.Content.Context)">
+            <summary>
+            Creates an instance of ChartBase.
+            </summary>    
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.#ctor(Android.Content.Context,Android.Util.IAttributeSet)">
+            <summary>
+            Creates an instance of ChartBase with context and attrs.
+            </summary>
+            <param name="context"></param>
+            <param name="attrs"></param>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.InitTooltip">
+            <summary>
+            Add tooltip to view tree.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.OnPointerPressed(C1.Android.Core.C1TappedEventArgs)">
+            <summary>
+            Handle the point pressed event.
+            </summary>
+            <param name="e">Tapped event argument</param>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.OnSizeChanged(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Called after the size of the chart changed.
+            </summary>
+            <param name="w"></param>
+            <param name="h"></param>
+            <param name="oldw"></param>
+            <param name="oldh"></param>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.License">
+            <summary>
+            License.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.OnLayout(System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Override the android view OnLayout methed to override the layout logic.
+            </summary>
+            <param name="changed">Is layout changed</param>
+            <param name="left">Left position</param>
+            <param name="top">Top position</param>
+            <param name="right">Right position</param>
+            <param name="bottom">Bottom position</param>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.Palette">
+            <summary>
+            Gets or sets the chart palette.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.ShowTooltip">
+            <summary>
+            Gets or sets the ShowTooltip.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.PaletteProperty">
+            <summary>
+            Identifies the Palette dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.ShowTooltipProperty">
+            <summary>
+            Identifies the ShowTooltip dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.SelectionMode">
+            <summary>
+            Gets or sets the chart selection mode.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.SelectionModeProperty">
+            <summary>
+            Identifies the SelectionMode dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.SelectedIndex">
+            <summary>
+            Gets or sets the index of selected element.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.SelectedIndexProperty">
+            <summary>
+            Identifies the SelectedIndex dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.SelectionStyle">
+            <summary>
+            Gets or sets the style of selected element.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.SelectionStyleProperty">
+            <summary>
+            Identifies the SelectionStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.Binding">
+            <summary>
+            Gets or sets the name of the property that contains Y values for the series.
+            </summary>
+            <remarks>
+            For complex chart types it may contain several names separated by commas.
+            </remarks>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.BindingProperty">
+            <summary>
+            Identifies the Binding dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.ItemsSource">
+            <summary>
+            Gets or sets the collection of objects that contains the series data.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.ItemsSourceProperty">
+            <summary>
+            Identifies the ItemsSource dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.LegendToggle">
+            <summary>
+            Gets or sets a value indicating whether clicking legend items toggles
+            the series visibility in the chart.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.LegendToggleProperty">
+            <summary>
+            Identifies the LegendToggle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.Header">
+            <summary>
+            Gets or sets the chart header text.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.HeaderProperty">
+            <summary>
+            Identifies the Header dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.Footer">
+            <summary>
+            Gets or sets the chart footer text.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.FooterProperty">
+            <summary>
+            Identifies the Footer dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.HeaderStyle">
+            <summary>
+            Gets or sets chart header style.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.HeaderStyleProperty">
+            <summary>
+            Identifies the HeaderStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.PlotStyle">
+            <summary>
+            Gets or sets chart plot area style.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.PlotStyleProperty">
+            <summary>
+            Identifies the PlotStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.HeaderAlignment">
+            <summary>
+            Gets or sets chart header alignment.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.HeaderAlignmentProperty">
+            <summary>
+            Identifies the HeaderAlignment dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.FooterStyle">
+            <summary>
+            Gets or sets chart footer style.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.FooterStyleProperty">
+            <summary>
+            Identifies the FooterStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.FooterAlignment">
+            <summary>
+            Gets or sets chart footer alignment.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.FooterAlignmentProperty">
+            <summary>
+            Identifies the FooterAlignment dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.LegendPosition">
+            <summary>
+            Gets or sets the chart legend position.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.LegendPositionProperty">
+            <summary>
+            Identifies the LegendPosition dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.LegendStyle">
+            <summary>
+            Gets or sets the legend style.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.LegendStyleProperty">
+            <summary>
+            Identifies the LegendStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.LegendItemStyle">
+            <summary>
+            Gets or sets the legend item style.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.LegendItemStyleProperty">
+            <summary>
+            Identifies the LegendItemStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.LegendTitle">
+            <summary>
+            Gets or sets the legend title.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.LegendTitleProperty">
+            <summary>
+            Identifies the LegendTitle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.LegendTitleStyle">
+            <summary>
+            Gets or sets the legend title style.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.LegendTitleStyleProperty">
+            <summary>
+            Identifies the LegendTitleStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.LegendOrientation">
+            <summary>
+            Gets or sets the legend orientation.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.LegendOrientationProperty">
+            <summary>
+            Identifies the LegendOrientation dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.ToolTipContent">
+            <summary>
+            Gets or sets the chart tooltip content.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.ToolTipContentProperty">
+            <summary>
+            Identifies the ToolTipContent dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.ToolTip">
+            <summary>
+            Gets or sets the chart tooltip.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.ToolTipProperty">
+            <summary>
+            Identifies the ToolTip dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.CustomPalette">
+            <summary>
+            Gets or sets the custom chart palette.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.CustomPaletteProperty">
+            <summary>
+            Identifies the CustomPalette dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.BackgroundColor">
+            <summary>
+            Gets or sets the BackgroundColor.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.ChartBase.BackgroundColorProperty">
+            <summary>
+            Identifies the BackgroundColor dependency property.
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.ChartBase.Rendering">
+            <summary>
+            Fires before chart starts rendering.
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.ChartBase.Rendered">
+            <summary>
+            Fires after chart finishes rendering.
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.ChartBase.SelectionChanged">
+            <summary>
+            Fires after selected element was changed.
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.ChartBase.Tapped">
+            <summary>
+            Occurs for every touch event.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.BeginUpdate">
+            <summary>
+            Suspends notifications until the next call to EndUpdate.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.EndUpdate">
+            <summary>
+            Resumes notifications suspended by calls to BeginUpdate.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.PropertyChanged">
+            <summary>
+            Fires when property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.OnSelectionModePropertyChanged(C1.Android.Chart.ChartSelectionModeType,C1.Android.Chart.ChartSelectionModeType)">
+            <summary>
+            Fires when SelectionMode property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.TooltipChanged">
+            <summary>
+            Fires when tooltip changes.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.OnSelectionChanged">
+            <summary>
+            Fires when selection changes.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.Refresh">
+            <summary>
+            Refresh the chart.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.DataPropertyChanged(System.Object)">
+            <summary>
+            Fires when data property changes.
+            </summary>
+            <param name="oldValue"></param>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.HitTest(C1.Android.Core.C1Point)">
+            <summary>
+            Gets a ChartHitTestInfo object with information about the specified point.
+            </summary>
+            <param name="pt">Point in control coordinates.</param>
+            <returns>A ChartHitTestInfo object with information about the point.</returns>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.GetTappedPoint(C1.Android.Core.C1TappedEventArgs)">
+            <summary>
+            Get tapped point.
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.OnItemsSourceChanged(System.Object)">
+            <summary>
+            Called when ItemsSource changes.
+            </summary>
+            <param name="oldValue"></param>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.OnSelectionChanged(System.EventArgs)">
+            <summary>
+            Called when selection was changed.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="E:C1.Android.Chart.ChartBase.ToolTipLoading">
+            <summary>
+            Fires when chart toolTip is loading.
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.ChartBase.XFToolTipLoading">
+            <summary>
+            Fires when xf chart toolTip is loading.
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.ChartBase.DataLabelsLoading">
+            <summary>
+            Fires when chart data labels are loading.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.ChartBase.HandleTooltip(C1.Android.Core.C1Point)">
+            <summary>
+            Handle tooltip.
+            </summary>
+            <param name="pt"></param>
+        </member>
+        <member name="P:C1.Android.Chart.ChartBase.Site">
+            <summary>
+            IComponent Site
+            </summary>
+        </member>
+        <member name="E:C1.Android.Chart.ChartBase.Disposed">
+            <summary>
+            IComponent Disposed event
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.FlexPie">
+            <summary>
+            The FlexPie control.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexPie.#ctor(Android.Content.Context)">
+            <summary>
+            Creates an instance of FlexPie.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexPie.#ctor(Android.Content.Context,Android.Util.IAttributeSet)">
+            <summary>
+            Creates an instance of FlexPie from a xml definition.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexPie.OnLayout(System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Override the android view OnLayout methed to override the layout logic.
+            </summary>
+            <param name="changed">Is layout changed</param>
+            <param name="left">Left position</param>
+            <param name="top">Top position</param>
+            <param name="right">Right position</param>
+            <param name="bottom">Bottom position</param>
+        </member>
+        <member name="P:C1.Android.Chart.FlexPie.BindingName">
+            <summary>
+            Gets or sets the name of the property that contains the name of the data item.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FlexPie.BindingNameProperty">
+            <summary>
+            Identifies the BindingName dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexPie.Reversed">
+            <summary>
+            Gets or sets a value that determines whether angles are reversed (counter-clockwise).
+            </summary>
+            <remarks>
+            The default value is false, which causes angles to be measured in the clockwise direction.
+            </remarks>
+        </member>
+        <member name="F:C1.Android.Chart.FlexPie.ReversedProperty">
+            <summary>
+            Identifies the Reversed dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexPie.Offset">
+            <summary>
+            Gets or sets the offset of the slices from the pie center.
+            </summary>
+            <remarks>
+            The offset is measured as a fraction of the pie radius.
+            </remarks>
+        </member>
+        <member name="F:C1.Android.Chart.FlexPie.OffsetProperty">
+            <summary>
+            Identifies the Offset dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexPie.InnerRadius">
+            <summary>
+            Gets or sets the size of the pie's inner radius.
+            </summary>
+            <remarks>
+            The inner radius is measured as a fraction of the pie radius.
+            The default value for this property is zero, which creates
+            a pie. Setting this property to values greater than zero
+            creates pies with a hole in the middle, also known as 
+            doughnut charts.
+            </remarks>
+        </member>
+        <member name="F:C1.Android.Chart.FlexPie.InnerRadiusProperty">
+            <summary>
+            Identifies the InnerRadius dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexPie.StartAngle">
+            <summary>
+            Gets or sets the starting angle for the pie slices, in degrees.
+            </summary>
+            <remarks>
+            Angles are measured clockwise, starting at the 9 o'clock position.
+            </remarks>
+        </member>
+        <member name="F:C1.Android.Chart.FlexPie.StartAngleProperty">
+            <summary>
+            Identifies the StartAngle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexPie.SliceBorderWidth">
+            <summary>
+            Gets or sets the border width for the pie slices.
+            </summary>
+        </member>
+        <member name="F:C1.Android.Chart.FlexPie.SliceBorderWidthProperty">
+            <summary>
+            Identifies the SliceBorderWidth dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexPie.SelectedItemOffset">
+            <summary>
+            Gets or sets the offset of the selected slice from the pie center.
+            </summary>
+            <remarks>
+            Offsets are measured as a fraction of the pie radius.
+            </remarks>
+        </member>
+        <member name="F:C1.Android.Chart.FlexPie.SelectedItemOffsetProperty">
+            <summary>
+            Identifies the SelectedItemOffset dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexPie.SelectedItemPosition">
+            <summary>
+            Gets or sets the position of the selected slice.
+            </summary>
+            <remarks>
+            Setting this property to a value other than 'None' causes the pie to rotate when an item is selected.               
+            Note that in order to select slices by clicking the chart, you must set the SelectionMode property to "Point".  
+            </remarks>
+        </member>
+        <member name="F:C1.Android.Chart.FlexPie.SelectedItemPositionProperty">
+            <summary>
+            Identifies the SelectedItemPosition dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.FlexPie.DataLabel">
+            <summary>
+            Gets or sets the data label.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexPie.HitTest(C1.Android.Core.C1Point)">
+            <summary>
+            Gets a ChartHitTestInfo object with information about the specified point.
+            </summary>
+            <param name="pt">Point in control coordinates.</param>
+            <returns>A ChartHitTestInfo object with information about the point.</returns>
+        </member>
+        <member name="M:C1.Android.Chart.FlexPie.OnReversedPropertyChanged(System.Boolean,System.Boolean)">
+            <summary>
+            Fires when reversed property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexPie.OnStartAnglePropertyChanged(System.Double,System.Double)">
+            <summary>
+            Fires when start angle property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexPie.Invalidate">
+            <summary>
+            Invalidates the chart.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexPie.OnItemsSourceChanged(System.Object)">
+            <summary>
+            Called when ItemsSource changes.
+            </summary>
+            <param name="oldValue"></param>
+        </member>
+        <member name="M:C1.Android.Chart.FlexPie.OnPointerPressed(System.Object,C1.Android.Core.C1TappedEventArgs)">
+            <summary>
+            Called when pointe presses the pie.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:C1.Android.Chart.FlexPie.Bind">
+            <summary>
+            Bind pie.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.FlexPie.LoadDesignTimeData">
+            <summary>
+            Loads dummy design time content visible in Storyboard and Android designer
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.PieSlice">
+            <summary>
+            This class is used in design-time.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.PieSlice.#ctor">
+            <summary>
+            Creates an instance of pie slice.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.PieSlice.#ctor(System.Double,System.String)">
+            <summary>
+            Creates an instance of pie slice with value and name.
+            </summary>
+            <param name="value"></param>
+            <param name="name"></param>
+        </member>
+        <member name="P:C1.Android.Chart.PieSlice.Name">
+            <summary>
+            Gets or sets the value of Name property.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.PieSlice.Value">
+            <summary>
+            Gets or sets the value of Value property.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.PieSliceCollection">
+            <summary>
+            Provides access to an ordered, strongly typed collection of FlexPieSlice objects.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.IChartLayer">
+            <summary>
+            Defines chart layer interface.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.IChartLayer.Chart">
+            <summary>
+            Gets or sets the parent chart.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.RenderCanvas">
+            <summary>
+            Chart rendering canvas.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.RenderCanvas.#ctor(Android.Content.Context)">
+            <summary>
+            Creates an instance of RenderCanvas.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.RenderCanvas.#ctor(Android.Content.Context,Android.Util.IAttributeSet)">
+            <summary>
+            Creates an instance of RenderCanvas from xml definition.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.RenderCanvas.OnMeasure(System.Int32,System.Int32)">
+            <summary>
+            Override android view OnMeasure to overide the mearsure logic.
+            </summary>
+            <param name="widthMeasureSpec"></param>
+            <param name="heightMeasureSpec"></param>
+        </member>
+        <member name="M:C1.Android.Chart.RenderCanvas.OnLayout(System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Override the android view OnLayout methed to override the layout logic.
+            </summary>
+            <param name="changed">Is layout changed</param>
+            <param name="left">Left position</param>
+            <param name="top">Top position</param>
+            <param name="right">Right position</param>
+            <param name="bottom">Bottom position</param>
+        </member>
+        <member name="M:C1.Android.Chart.RenderCanvas.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            Draw the chart.
+            </summary>
+            <param name="canvas">android canvas</param>
+        </member>
+        <member name="T:C1.Android.Chart.PieCanvas">
+            <summary>
+            Pie chart canvas.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.PieCanvas.#ctor(Android.Content.Context)">
+            <summary>
+            Creates an instance of PieCanvas.
+            </summary>
+        </member>
+        <member name="T:C1.Android.Chart.TestSeries">
+            <summary>
+            Represent TestSeries.
+            </summary>
+        </member>
+        <member name="M:C1.Android.Chart.TestSeries.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Create an instance of TestSeries.
+            </summary>
+            <param name="npts"></param>
+            <param name="hasNaNs"></param>
+        </member>
+        <member name="M:C1.Android.Chart.TestSeries.#ctor(System.Double[],System.Double[])">
+            <summary>
+            Create an instance of TestSeries.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:C1.Android.Chart.TestSeries.GetValues(System.Int32)">
+            <summary>
+            Get values.
+            </summary>
+            <param name="dim"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Android.Chart.XmlAttribueParser.parseFlexChartAxisY(C1.Android.Chart.FlexChart,Android.Content.Res.TypedArray)">
+                    Don't modify this method. 
+                    But modify parseFlexChartAxisX method and copy it to this method, then replace "AxisX" to "AxisY" and "axisX" to "axisY".
+                        Then, change the default value to: AxisLine = false, MajorGrid = true, MajorTickMarks = ChartTickMarkType.None
+        </member>
+        <member name="P:C1.Android.Chart.DataLabelLoadingEventArgs.DataPoint">
+            <summary>
+            Gets the data point.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.DataLabelLoadingEventArgs.View">
+            <summary>
+            Gets or sets the custom view.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.DataLabelLoadingEventArgs.Position">
+            <summary>
+            Gets or sets the custom view.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.DataLabelLoadingEventArgs.PieLabelPosition">
+            <summary>
+            Gets or sets the custom view.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.DataLabelLoadingEventArgs.HorizontalAlign">
+            <summary>
+            Gets or sets the data labels' horizontal alignment.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.DataLabelLoadingEventArgs.VerticalAlign">
+            <summary>
+            Gets or sets the data labels' vertical alignment.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.DataLabelLoadingEventArgs.Engine">
+            <summary>
+            Gets the render engine.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartTooltipLoadingEventArgs.HitTestInfo">
+            <summary>
+            Gets the hit test info.
+            </summary>
+        </member>
+        <member name="P:C1.Android.Chart.ChartTooltipLoadingEventArgs.Text">
+            <summary>
+            Gets the text.
+            </summary>
+        </member>
+    </members>
+</doc>

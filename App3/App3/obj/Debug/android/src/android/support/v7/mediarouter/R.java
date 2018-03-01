@@ -443,6 +443,1604 @@ containing a value of this type.
 </table>
          */
         public static int buttonTintMode=0x7f0100bc;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_format=0x7f0101a0;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>CENTER</code></td><td>0</td><td></td></tr>
+<tr><td><code>LEFT</code></td><td>1</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>2</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>3</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>4</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisX_labelAlignment=0x7f0101a1;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_labelAngle=0x7f0101a2;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisX_labelsVisible=0x7f0101a6;
+        /** <attr name="c1_zoomMode" format="enum">
+      <enum name="DISABLED" value="0" />
+      <enum name="X" value="1" />
+      <enum name="Y" value="2" />
+      <enum name="XY" value="3" />
+    </attr>
+<attr name="c1_loadAnimation_loadAnimationMode" format="enum">
+      <enum name="ALL" value="0" />
+      <enum name="POINT" value="1" />
+      <enum name="SERIES" value="2" />
+    </attr>
+    <attr name="c1_loadAnimation_duration" format="integer" />
+    <attr name="c1_loadAnimation_startDelay" format="integer" />
+    <attr name="c1_updateAnimation_duration" format="integer" />
+    <attr name="c1_updateAnimation_startDelay" format="integer" />
+<attr name="c1_labelFontColor" format="color" />
+    <attr name="c1_labelFontSize" format="float" />
+    <attr name="c1_labelFontTypeface" format="string" />
+    <attr name="c1_labelFontWeight" format="enum">
+      <enum name="NORMAL" value="0" />
+      <enum name="BOLD" value="1" />
+      <enum name="ITALIC" value="2" />
+      <enum name="BOLD_ITALIC" value="3" />
+    </attr>
+    <attr name="c1_labelAngle" format="float" />
+    <attr name="c1_labelsVisible" format="enum">
+        <enum name="FALSE" value="0" />
+        <enum name="TRUE" value="1" />
+    </attr>
+    <attr name="c1_titleFontColor" format="color" />
+    <attr name="c1_titleFontSize" format="float" />
+    <attr name="c1_titleFontTypeface" format="string" />
+    <attr name="c1_titleFontWeight" format="enum">
+      <enum name="NORMAL" value="0" />
+      <enum name="BOLD" value="1" />
+      <enum name="ITALIC" value="2" />
+      <enum name="BOLD_ITALIC" value="3" />
+    </attr>
+    <attr name="c1_lineColor" format="color" />
+    <attr name="c1_lineWidth" format="float" />
+    <attr name="c1_majorGridColor" format="color" />
+    <attr name="c1_majorGridWidth" format="float" />
+    <attr name="c1_majorTickColor" format="color" />
+    <attr name="c1_majorTickWidth" format="float" />
+    <attr name="c1_majorTickOverlap" />
+    <attr name="c1_majorGridVisible" format="enum">
+        <enum name="FALSE" value="0" />
+        <enum name="TRUE" value="1" />
+    </attr>
+        <attr name="c1_majorTickOverlap" format="enum">
+        <enum name="NONE" value="0" />
+        <enum name="OUTSIDE" value="1" />
+        <enum name="INSIDE" value="2" />
+    </attr>
+    <attr name="c1_majorGridFill" format="color" />
+    <attr name="c1_minorGridColor" format="color" />
+    <attr name="c1_minorGridWidth" format="float" />
+    <attr name="c1_minorTickColor" format="color" />
+    <attr name="c1_minorTickWidth" format="float" />
+    <attr name="c1_minorGridVisible" format="enum">
+      <enum name="FALSE" value="0" />
+      <enum name="TRUE" value="1" />
+    </attr>
+    <attr name="c1_minorTickOverlap" format="enum">
+      <enum name="NONE" value="0" />
+      <enum name="OUTSIDE" value="1" />
+      <enum name="INSIDE" value="2" />
+    </attr>
+    <attr name="c1_minorGridFill" format="color" />
+    <attr name="c1_format" format="string" />
+    <attr name="c1_origin" format="float" />
+    <attr name="c1_majorUnit" format="float" />
+    <attr name="c1_minorUnit" format="float" />
+    <attr name="c1_title" format="string" />
+axisX
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisX_line=0x7f01019e;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_logBase=0x7f0101a3;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_majorGridStyleStroke=0x7f0101aa;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_majorGridStyleStrokeThickness=0x7f0101ab;
+        /** major grid
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisX_majorGridVisible=0x7f0101a7;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>OUTSIDE</code></td><td>1</td><td></td></tr>
+<tr><td><code>INSIDE</code></td><td>2</td><td></td></tr>
+<tr><td><code>Cross</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisX_majorTickMark=0x7f0101a8;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_majorUnit=0x7f0101a9;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_max=0x7f0101a4;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_min=0x7f0101a5;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_minorGridStyleStroke=0x7f0101af;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_minorGridStyleStrokeThickness=0x7f0101b0;
+        /** minor grid
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisX_minorGridVisible=0x7f0101ac;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>OUTSIDE</code></td><td>1</td><td></td></tr>
+<tr><td><code>INSIDE</code></td><td>2</td><td></td></tr>
+<tr><td><code>Cross</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisX_minorTickMark=0x7f0101ad;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_minorUnit=0x7f0101ae;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_origin=0x7f0101b1;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>AUTO</code></td><td>0</td><td></td></tr>
+<tr><td><code>SHOW</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisX_overlappingLabels=0x7f0101b2;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>LEFT</code></td><td>0</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>1</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>3</td><td></td></tr>
+<tr><td><code>AUTO</code></td><td>4</td><td></td></tr>
+<tr><td><code>NONE</code></td><td>5</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisX_position=0x7f0101b3;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TURE</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisX_reversed=0x7f0101b4;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_styleFill=0x7f0101bf;
+        /** axisX style
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_styleFontSize=0x7f0101bc;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_styleStroke=0x7f0101c0;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_styleStrokeThickness=0x7f0101c1;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_styleTypeface=0x7f0101bd;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisX_styleTypefaceStyle=0x7f0101be;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_title=0x7f0101b5;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_titleStyleFill=0x7f0101b9;
+        /** axisX title style
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_titleStyleFontSize=0x7f0101b6;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_titleStyleStroke=0x7f0101ba;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_titleStyleStrokeThickness=0x7f0101bb;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisX_titleStyleTypeface=0x7f0101b7;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisX_titleStyleTypefaceStyle=0x7f0101b8;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>X</code></td><td>0</td><td></td></tr>
+<tr><td><code>Y</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisX_type=0x7f01019f;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_format=0x7f0101c4;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>CENTER</code></td><td>0</td><td></td></tr>
+<tr><td><code>LEFT</code></td><td>1</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>2</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>3</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>4</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisY_labelAlignment=0x7f0101c5;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_labelAngle=0x7f0101c6;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisY_labelsVisible=0x7f0101ca;
+        /** axisY
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisY_line=0x7f0101c2;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_logBase=0x7f0101c7;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_majorGridStyleStroke=0x7f0101ce;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_majorGridStyleStrokeThickness=0x7f0101cf;
+        /** major grid
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisY_majorGridVisible=0x7f0101cb;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>OUTSIDE</code></td><td>1</td><td></td></tr>
+<tr><td><code>INSIDE</code></td><td>2</td><td></td></tr>
+<tr><td><code>Cross</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisY_majorTickMark=0x7f0101cc;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_majorUnit=0x7f0101cd;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_max=0x7f0101c8;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_min=0x7f0101c9;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_minorGridStyleStroke=0x7f0101d3;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_minorGridStyleStrokeThickness=0x7f0101d4;
+        /** minor grid
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisY_minorGridVisible=0x7f0101d0;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>OUTSIDE</code></td><td>1</td><td></td></tr>
+<tr><td><code>INSIDE</code></td><td>2</td><td></td></tr>
+<tr><td><code>Cross</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisY_minorTickMark=0x7f0101d1;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_minorUnit=0x7f0101d2;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_origin=0x7f0101d5;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>AUTO</code></td><td>0</td><td></td></tr>
+<tr><td><code>SHOW</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisY_overlappingLabels=0x7f0101d6;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>LEFT</code></td><td>0</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>1</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>3</td><td></td></tr>
+<tr><td><code>AUTO</code></td><td>4</td><td></td></tr>
+<tr><td><code>NONE</code></td><td>5</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisY_position=0x7f0101d7;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TURE</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisY_reversed=0x7f0101d8;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_styleFill=0x7f0101e3;
+        /** axisY style
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_styleFontSize=0x7f0101e0;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_styleStroke=0x7f0101e4;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_styleStrokeThickness=0x7f0101e5;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_styleTypeface=0x7f0101e1;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisY_styleTypefaceStyle=0x7f0101e2;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_title=0x7f0101d9;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_titleStyleFill=0x7f0101dd;
+        /** axisY title style
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_titleStyleFontSize=0x7f0101da;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_titleStyleStroke=0x7f0101de;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_titleStyleStrokeThickness=0x7f0101df;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_axisY_titleStyleTypeface=0x7f0101db;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisY_titleStyleTypefaceStyle=0x7f0101dc;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>X</code></td><td>0</td><td></td></tr>
+<tr><td><code>Y</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_axisY_type=0x7f0101c3;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static int c1_backgroundColor=0x7f010152;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_binding=0x7f01015e;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_bindingName=0x7f0101e6;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_bindingX=0x7f010190;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static int c1_borderColor=0x7f010158;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>COLUMN</code></td><td>0</td><td></td></tr>
+<tr><td><code>BAR</code></td><td>1</td><td></td></tr>
+<tr><td><code>LINE</code></td><td>2</td><td></td></tr>
+<tr><td><code>SCATTER</code></td><td>3</td><td></td></tr>
+<tr><td><code>LINESYMBOLS</code></td><td>4</td><td></td></tr>
+<tr><td><code>AREA</code></td><td>5</td><td></td></tr>
+<tr><td><code>SPLINE</code></td><td>6</td><td></td></tr>
+<tr><td><code>SPLINESYMBOLS</code></td><td>7</td><td></td></tr>
+<tr><td><code>SPLINEAREA</code></td><td>8</td><td></td></tr>
+<tr><td><code>BUBBLE</code></td><td>9</td><td></td></tr>
+<tr><td><code>CANDLE</code></td><td>10</td><td></td></tr>
+<tr><td><code>HLOC</code></td><td>11</td><td></td></tr>
+</table>
+         */
+        public static int c1_chartType=0x7f01018b;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_childItemsPath=0x7f0101ed;
+        /** datalabel
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_datalabel_border=0x7f010192;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_datalabel_borderColor=0x7f010194;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_datalabel_borderThickness=0x7f010193;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_datalabel_connectingLine=0x7f010195;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_datalabel_offset=0x7f010196;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>CENTER</code></td><td>1</td><td></td></tr>
+<tr><td><code>LEFT</code></td><td>2</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>3</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>4</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>5</td><td></td></tr>
+</table>
+         */
+        public static int c1_datalabel_position=0x7f010197;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_datalabel_styleFill=0x7f01019b;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_datalabel_styleFontSize=0x7f010198;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_datalabel_styleStroke=0x7f01019c;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_datalabel_styleStrokeThickness=0x7f01019d;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_datalabel_styleTypeface=0x7f010199;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_datalabel_styleTypefaceStyle=0x7f01019a;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_fontFamily=0x7f010156;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_footer=0x7f01016e;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>LEFT</code></td><td>3</td><td></td></tr>
+<tr><td><code>CENTER_HORIZONTAL</code></td><td>1</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>5</td><td></td></tr>
+</table>
+         */
+        public static int c1_footerFontGravity=0x7f01016f;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_footerStyleFill=0x7f010173;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_footerStyleFontSize=0x7f010170;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_footerStyleStroke=0x7f010174;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_footerStyleStrokeThickness=0x7f010175;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_footerStyleTypeface=0x7f010171;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_footerStyleTypefaceStyle=0x7f010172;
+        /** footer
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_header=0x7f010166;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>LEFT</code></td><td>3</td><td></td></tr>
+<tr><td><code>CENTER_HORIZONTAL</code></td><td>1</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>5</td><td></td></tr>
+</table>
+         */
+        public static int c1_headerFontGravity=0x7f010167;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_headerStyleFill=0x7f01016b;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_headerStyleFontSize=0x7f010168;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_headerStyleStroke=0x7f01016c;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_headerStyleStrokeThickness=0x7f01016d;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_headerStyleTypeface=0x7f010169;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_headerStyleTypefaceStyle=0x7f01016a;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_innerRadius=0x7f0101e9;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>ALL</code></td><td>0</td><td></td></tr>
+<tr><td><code>HORIZONTAL</code></td><td>1</td><td></td></tr>
+<tr><td><code>VERTICAL</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static int c1_legendOrientation=0x7f010184;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>LEFT</code></td><td>1</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>2</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>3</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>4</td><td></td></tr>
+<tr><td><code>AUTO</code></td><td>5</td><td></td></tr>
+</table>
+         */
+        public static int c1_legendPosition=0x7f010183;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_legendStyleFill=0x7f010180;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_legendStyleFontSize=0x7f01017d;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_legendStyleStroke=0x7f010181;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_legendStyleStrokeThickness=0x7f010182;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_legendStyleTypeface=0x7f01017e;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_legendStyleTypefaceStyle=0x7f01017f;
+        /** legend
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_legendTitle=0x7f010176;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_legendTitleStyleFill=0x7f01017a;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_legendTitleStyleFontSize=0x7f010177;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_legendTitleStyleStroke=0x7f01017b;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_legendTitleStyleStrokeThickness=0x7f01017c;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_legendTitleStyleTypeface=0x7f010178;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_legendTitleStyleTypefaceStyle=0x7f010179;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_legendToggle=0x7f01015f;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_offset=0x7f0101e8;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_options_bubbleMaxSize=0x7f01018e;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_options_bubbleMinSize=0x7f01018d;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_options_groupWidth=0x7f01018f;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>Standard</code></td><td>0</td><td></td></tr>
+<tr><td><code>Cocoa</code></td><td>1</td><td></td></tr>
+<tr><td><code>Coral</code></td><td>2</td><td></td></tr>
+<tr><td><code>Highcontrast</code></td><td>3</td><td></td></tr>
+<tr><td><code>Light</code></td><td>4</td><td></td></tr>
+<tr><td><code>Midnight</code></td><td>5</td><td></td></tr>
+<tr><td><code>Minimal</code></td><td>6</td><td></td></tr>
+<tr><td><code>Modern</code></td><td>7</td><td></td></tr>
+<tr><td><code>Organic</code></td><td>8</td><td></td></tr>
+<tr><td><code>Slate</code></td><td>9</td><td></td></tr>
+<tr><td><code>Zen</code></td><td>10</td><td></td></tr>
+<tr><td><code>Cyborg</code></td><td>11</td><td></td></tr>
+<tr><td><code>Superhero</code></td><td>12</td><td></td></tr>
+<tr><td><code>Flatly</code></td><td>13</td><td></td></tr>
+<tr><td><code>Darkly</code></td><td>14</td><td></td></tr>
+<tr><td><code>Cerulean</code></td><td>15</td><td></td></tr>
+<tr><td><code>Custom</code></td><td>16</td><td></td></tr>
+</table>
+         */
+        public static int c1_palette=0x7f01015c;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_plotStyleFill=0x7f010188;
+        /** plot style
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_plotStyleFontSize=0x7f010185;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_plotStyleStroke=0x7f010189;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_plotStyleStrokeThickness=0x7f01018a;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_plotStyleTypeface=0x7f010186;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_plotStyleTypefaceStyle=0x7f010187;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TURE</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static int c1_reversed=0x7f0101e7;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_rotated=0x7f010191;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_selectedIndex=0x7f01015b;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_selectedItemOffset=0x7f0101eb;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>LEFT</code></td><td>0</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>1</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>3</td><td></td></tr>
+<tr><td><code>AUTO</code></td><td>4</td><td></td></tr>
+<tr><td><code>NONE</code></td><td>5</td><td></td></tr>
+</table>
+         */
+        public static int c1_selectedItemPosition=0x7f0101ec;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static int c1_selectionBackgroundColor=0x7f010159;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>None</code></td><td>0</td><td></td></tr>
+<tr><td><code>Series</code></td><td>1</td><td></td></tr>
+<tr><td><code>Point</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static int c1_selectionMode=0x7f01015d;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_selectionStyleFill=0x7f010163;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_selectionStyleFontSize=0x7f010160;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_selectionStyleStroke=0x7f010164;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_selectionStyleStrokeThickness=0x7f010165;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_selectionStyleTypeface=0x7f010161;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_selectionStyleTypefaceStyle=0x7f010162;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static int c1_selectionTextColor=0x7f01015a;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>STACKED</code></td><td>1</td><td></td></tr>
+<tr><td><code>STACKED100pc</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static int c1_stackingType=0x7f01018c;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_startAngle=0x7f0101ea;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>May be an integer value, such as "<code>100</code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>May be a floating point value, such as "<code>1.2</code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+         */
+        public static int c1_textColor=0x7f010153;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int c1_textSize=0x7f010154;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>bold</code></td><td>1</td><td></td></tr>
+<tr><td><code>italic</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static int c1_textStyle=0x7f010155;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>sans</code></td><td>1</td><td></td></tr>
+<tr><td><code>serif</code></td><td>2</td><td></td></tr>
+<tr><td><code>monospace</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static int c1_typeface=0x7f010157;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -2998,210 +4596,270 @@ containing a value of this type.
         public static int xls=0x7f02010d;
     }
     public static final class id {
-        public static int ChooseLanguageTextView=0x7f0b00c1;
-        public static int Unlock=0x7f0b00c7;
-        public static int about=0x7f0b00a2;
-        public static int action0=0x7f0b00a8;
-        public static int action_bar=0x7f0b0064;
+        public static int ALL=0x7f0b0065;
+        public static int AREA=0x7f0b0068;
+        public static int AUTO=0x7f0b0061;
+        public static int BAR=0x7f0b0069;
+        public static int BOLD=0x7f0b005a;
+        public static int BOLD_ITALIC=0x7f0b005b;
+        public static int BOTTOM=0x7f0b0062;
+        public static int BUBBLE=0x7f0b006a;
+        public static int CANDLE=0x7f0b006b;
+        public static int CENTER=0x7f0b0078;
+        public static int CENTER_HORIZONTAL=0x7f0b005e;
+        public static int COLUMN=0x7f0b006c;
+        public static int Cerulean=0x7f0b0046;
+        public static int ChooseLanguageTextView=0x7f0b00fd;
+        public static int Cocoa=0x7f0b0047;
+        public static int Coral=0x7f0b0048;
+        public static int Cross=0x7f0b007b;
+        public static int Custom=0x7f0b0049;
+        public static int Cyborg=0x7f0b004a;
+        public static int Darkly=0x7f0b004b;
+        public static int FALSE=0x7f0b0076;
+        public static int Flatly=0x7f0b004c;
+        public static int HLOC=0x7f0b006d;
+        public static int HORIZONTAL=0x7f0b0066;
+        public static int Highcontrast=0x7f0b004d;
+        public static int INSIDE=0x7f0b007c;
+        public static int ITALIC=0x7f0b005c;
+        public static int LEFT=0x7f0b005f;
+        public static int LINE=0x7f0b006e;
+        public static int LINESYMBOLS=0x7f0b006f;
+        public static int Light=0x7f0b004e;
+        public static int Midnight=0x7f0b004f;
+        public static int Minimal=0x7f0b0050;
+        public static int Modern=0x7f0b0051;
+        public static int NONE=0x7f0b0063;
+        public static int NORMAL=0x7f0b005d;
+        public static int None=0x7f0b0057;
+        public static int OUTSIDE=0x7f0b007d;
+        public static int Organic=0x7f0b0052;
+        public static int Point=0x7f0b0058;
+        public static int RIGHT=0x7f0b0060;
+        public static int SCATTER=0x7f0b0070;
+        public static int SHOW=0x7f0b007e;
+        public static int SPLINE=0x7f0b0071;
+        public static int SPLINEAREA=0x7f0b0072;
+        public static int SPLINESYMBOLS=0x7f0b0073;
+        public static int STACKED=0x7f0b0074;
+        public static int STACKED100pc=0x7f0b0075;
+        public static int Series=0x7f0b0059;
+        public static int Slate=0x7f0b0053;
+        public static int Standard=0x7f0b0054;
+        public static int Superhero=0x7f0b0055;
+        public static int TOP=0x7f0b0064;
+        public static int TRUE=0x7f0b0077;
+        public static int TURE=0x7f0b007f;
+        public static int Unlock=0x7f0b0103;
+        public static int VERTICAL=0x7f0b0067;
+        public static int X=0x7f0b0079;
+        public static int Y=0x7f0b007a;
+        public static int Zen=0x7f0b0056;
+        public static int about=0x7f0b00de;
+        public static int action0=0x7f0b00e4;
+        public static int action_bar=0x7f0b00a3;
         public static int action_bar_activity_content=0x7f0b0001;
-        public static int action_bar_container=0x7f0b0063;
-        public static int action_bar_root=0x7f0b005f;
+        public static int action_bar_container=0x7f0b00a2;
+        public static int action_bar_root=0x7f0b009e;
         public static int action_bar_spinner=0x7f0b0002;
-        public static int action_bar_subtitle=0x7f0b0042;
-        public static int action_bar_title=0x7f0b0041;
-        public static int action_container=0x7f0b00a5;
-        public static int action_context_bar=0x7f0b0065;
-        public static int action_divider=0x7f0b00ac;
-        public static int action_image=0x7f0b00a6;
+        public static int action_bar_subtitle=0x7f0b0081;
+        public static int action_bar_title=0x7f0b0080;
+        public static int action_container=0x7f0b00e1;
+        public static int action_context_bar=0x7f0b00a4;
+        public static int action_divider=0x7f0b00e8;
+        public static int action_image=0x7f0b00e2;
         public static int action_menu_divider=0x7f0b0003;
         public static int action_menu_presenter=0x7f0b0004;
-        public static int action_mode_bar=0x7f0b0061;
-        public static int action_mode_bar_stub=0x7f0b0060;
-        public static int action_mode_close_button=0x7f0b0043;
-        public static int action_text=0x7f0b00a7;
-        public static int actions=0x7f0b00b5;
-        public static int activity_chooser_view_content=0x7f0b0044;
+        public static int action_mode_bar=0x7f0b00a0;
+        public static int action_mode_bar_stub=0x7f0b009f;
+        public static int action_mode_close_button=0x7f0b0082;
+        public static int action_text=0x7f0b00e3;
+        public static int actions=0x7f0b00f1;
+        public static int activity_chooser_view_content=0x7f0b0083;
         public static int add=0x7f0b0019;
-        public static int alertTitle=0x7f0b0058;
+        public static int alertTitle=0x7f0b0097;
         public static int all=0x7f0b003d;
         public static int always=0x7f0b0023;
         public static int auto=0x7f0b002f;
-        public static int beforeUseText=0x7f0b0083;
+        public static int beforeUseText=0x7f0b00bf;
         public static int beginning=0x7f0b0020;
+        public static int bold=0x7f0b0041;
         public static int bottom=0x7f0b0028;
-        public static int buttonPanel=0x7f0b004b;
-        public static int cancel_action=0x7f0b00a9;
+        public static int buttonPanel=0x7f0b008a;
+        public static int cancel_action=0x7f0b00e5;
         public static int center=0x7f0b0030;
         public static int center_horizontal=0x7f0b0031;
         public static int center_vertical=0x7f0b0032;
-        public static int checkbox=0x7f0b005b;
-        public static int chooseFileBtn=0x7f0b00c0;
-        public static int chronometer=0x7f0b00b1;
+        public static int checkbox=0x7f0b009a;
+        public static int chooseFileBtn=0x7f0b00fc;
+        public static int chronometer=0x7f0b00ed;
         public static int clip_horizontal=0x7f0b0039;
         public static int clip_vertical=0x7f0b003a;
         public static int collapseActionView=0x7f0b0024;
-        public static int contentPanel=0x7f0b004e;
-        public static int csvText=0x7f0b0084;
-        public static int csvView=0x7f0b0085;
-        public static int custom=0x7f0b0055;
-        public static int customPanel=0x7f0b0054;
-        public static int decor_content_parent=0x7f0b0062;
-        public static int default_activity_button=0x7f0b0047;
-        public static int design_bottom_sheet=0x7f0b0076;
-        public static int design_menu_item_action_area=0x7f0b007d;
-        public static int design_menu_item_action_area_stub=0x7f0b007c;
-        public static int design_menu_item_text=0x7f0b007b;
-        public static int design_navigation_view=0x7f0b007a;
-        public static int dict=0x7f0b00a4;
+        public static int contentPanel=0x7f0b008d;
+        public static int csvText=0x7f0b00c0;
+        public static int csvView=0x7f0b00c1;
+        public static int custom=0x7f0b0094;
+        public static int customPanel=0x7f0b0093;
+        public static int decor_content_parent=0x7f0b00a1;
+        public static int default_activity_button=0x7f0b0086;
+        public static int design_bottom_sheet=0x7f0b00b5;
+        public static int design_menu_item_action_area=0x7f0b00bc;
+        public static int design_menu_item_action_area_stub=0x7f0b00bb;
+        public static int design_menu_item_text=0x7f0b00ba;
+        public static int design_navigation_view=0x7f0b00b9;
+        public static int dict=0x7f0b00e0;
         public static int disableHome=0x7f0b0012;
-        public static int edit_query=0x7f0b0066;
-        public static int emptyDict=0x7f0b00c5;
+        public static int edit_query=0x7f0b00a5;
+        public static int emptyDict=0x7f0b0101;
         public static int end=0x7f0b0021;
-        public static int end_padder=0x7f0b00bb;
+        public static int end_padder=0x7f0b00f7;
         public static int enterAlways=0x7f0b002a;
         public static int enterAlwaysCollapsed=0x7f0b002b;
-        public static int excView=0x7f0b0087;
+        public static int excView=0x7f0b00c3;
         public static int exitUntilCollapsed=0x7f0b002c;
-        public static int expand_activities_button=0x7f0b0045;
-        public static int expanded_menu=0x7f0b005a;
+        public static int expand_activities_button=0x7f0b0084;
+        public static int expanded_menu=0x7f0b0099;
         public static int fill=0x7f0b003b;
         public static int fill_horizontal=0x7f0b003c;
         public static int fill_vertical=0x7f0b0033;
         public static int fixed=0x7f0b003f;
-        public static int hard2Btn=0x7f0b00c8;
-        public static int hard3Btn=0x7f0b00c9;
+        public static int hard2Btn=0x7f0b0104;
+        public static int hard3Btn=0x7f0b0105;
         public static int home=0x7f0b0005;
         public static int homeAsUp=0x7f0b0013;
-        public static int icon=0x7f0b0049;
-        public static int icon_group=0x7f0b00b6;
+        public static int icon=0x7f0b0088;
+        public static int icon_group=0x7f0b00f2;
         public static int ifRoom=0x7f0b0025;
-        public static int image=0x7f0b0046;
-        public static int info=0x7f0b00b2;
-        public static int infotextView=0x7f0b0081;
+        public static int image=0x7f0b0085;
+        public static int info=0x7f0b00ee;
+        public static int italic=0x7f0b0042;
         public static int item_touch_helper_previous_elevation=0x7f0b0000;
-        public static int largeLabel=0x7f0b0074;
+        public static int largeLabel=0x7f0b00b3;
         public static int left=0x7f0b0034;
-        public static int line1=0x7f0b00b7;
-        public static int line3=0x7f0b00b9;
+        public static int line1=0x7f0b00f3;
+        public static int line3=0x7f0b00f5;
         public static int listMode=0x7f0b000f;
-        public static int listView1=0x7f0b00c6;
-        public static int list_item=0x7f0b0048;
-        public static int masked=0x7f0b00cb;
-        public static int media_actions=0x7f0b00ab;
+        public static int listView1=0x7f0b0102;
+        public static int list_item=0x7f0b0087;
+        public static int masked=0x7f0b0107;
+        public static int media_actions=0x7f0b00e7;
         public static int middle=0x7f0b0022;
         public static int mini=0x7f0b003e;
-        public static int mr_art=0x7f0b0094;
-        public static int mr_chooser_list=0x7f0b0089;
-        public static int mr_chooser_route_desc=0x7f0b008c;
-        public static int mr_chooser_route_icon=0x7f0b008a;
-        public static int mr_chooser_route_name=0x7f0b008b;
-        public static int mr_chooser_title=0x7f0b0088;
-        public static int mr_close=0x7f0b0091;
-        public static int mr_control_divider=0x7f0b0097;
-        public static int mr_control_playback_ctrl=0x7f0b009d;
-        public static int mr_control_subtitle=0x7f0b00a0;
-        public static int mr_control_title=0x7f0b009f;
-        public static int mr_control_title_container=0x7f0b009e;
-        public static int mr_custom_control=0x7f0b0092;
-        public static int mr_default_control=0x7f0b0093;
-        public static int mr_dialog_area=0x7f0b008e;
-        public static int mr_expandable_area=0x7f0b008d;
-        public static int mr_group_expand_collapse=0x7f0b00a1;
-        public static int mr_media_main_control=0x7f0b0095;
-        public static int mr_name=0x7f0b0090;
-        public static int mr_playback_control=0x7f0b0096;
-        public static int mr_title_bar=0x7f0b008f;
-        public static int mr_volume_control=0x7f0b0098;
-        public static int mr_volume_group_list=0x7f0b0099;
-        public static int mr_volume_item_icon=0x7f0b009b;
-        public static int mr_volume_slider=0x7f0b009c;
+        public static int monospace=0x7f0b0043;
+        public static int mr_art=0x7f0b00d0;
+        public static int mr_chooser_list=0x7f0b00c5;
+        public static int mr_chooser_route_desc=0x7f0b00c8;
+        public static int mr_chooser_route_icon=0x7f0b00c6;
+        public static int mr_chooser_route_name=0x7f0b00c7;
+        public static int mr_chooser_title=0x7f0b00c4;
+        public static int mr_close=0x7f0b00cd;
+        public static int mr_control_divider=0x7f0b00d3;
+        public static int mr_control_playback_ctrl=0x7f0b00d9;
+        public static int mr_control_subtitle=0x7f0b00dc;
+        public static int mr_control_title=0x7f0b00db;
+        public static int mr_control_title_container=0x7f0b00da;
+        public static int mr_custom_control=0x7f0b00ce;
+        public static int mr_default_control=0x7f0b00cf;
+        public static int mr_dialog_area=0x7f0b00ca;
+        public static int mr_expandable_area=0x7f0b00c9;
+        public static int mr_group_expand_collapse=0x7f0b00dd;
+        public static int mr_media_main_control=0x7f0b00d1;
+        public static int mr_name=0x7f0b00cc;
+        public static int mr_playback_control=0x7f0b00d2;
+        public static int mr_title_bar=0x7f0b00cb;
+        public static int mr_volume_control=0x7f0b00d4;
+        public static int mr_volume_group_list=0x7f0b00d5;
+        public static int mr_volume_item_icon=0x7f0b00d7;
+        public static int mr_volume_slider=0x7f0b00d8;
         public static int multiply=0x7f0b001a;
-        public static int navigation_header_container=0x7f0b0079;
+        public static int navigation_header_container=0x7f0b00b8;
         public static int never=0x7f0b0026;
         public static int none=0x7f0b0014;
         public static int normal=0x7f0b0010;
-        public static int notification_background=0x7f0b00b4;
-        public static int notification_main_column=0x7f0b00ae;
-        public static int notification_main_column_container=0x7f0b00ad;
+        public static int notification_background=0x7f0b00f0;
+        public static int notification_main_column=0x7f0b00ea;
+        public static int notification_main_column_container=0x7f0b00e9;
         public static int parallax=0x7f0b0037;
-        public static int parentPanel=0x7f0b004d;
+        public static int parentPanel=0x7f0b008c;
         public static int pin=0x7f0b0038;
-        public static int progressBar1=0x7f0b00c4;
+        public static int progressBar1=0x7f0b0100;
         public static int progress_circular=0x7f0b0006;
         public static int progress_horizontal=0x7f0b0007;
-        public static int radio=0x7f0b005d;
-        public static int radio_extern=0x7f0b00be;
-        public static int radio_file=0x7f0b00bf;
+        public static int radio=0x7f0b009c;
+        public static int radio_extern=0x7f0b00fa;
+        public static int radio_file=0x7f0b00fb;
         public static int right=0x7f0b0035;
-        public static int right_icon=0x7f0b00b3;
-        public static int right_side=0x7f0b00af;
+        public static int right_icon=0x7f0b00ef;
+        public static int right_side=0x7f0b00eb;
+        public static int sans=0x7f0b0044;
         public static int screen=0x7f0b001b;
         public static int scroll=0x7f0b002d;
-        public static int scrollIndicatorDown=0x7f0b0053;
-        public static int scrollIndicatorUp=0x7f0b004f;
-        public static int scrollView=0x7f0b0050;
+        public static int scrollIndicatorDown=0x7f0b0092;
+        public static int scrollIndicatorUp=0x7f0b008e;
+        public static int scrollView=0x7f0b008f;
         public static int scrollable=0x7f0b0040;
-        public static int search_badge=0x7f0b0068;
-        public static int search_bar=0x7f0b0067;
-        public static int search_button=0x7f0b0069;
-        public static int search_close_btn=0x7f0b006e;
-        public static int search_edit_frame=0x7f0b006a;
-        public static int search_go_btn=0x7f0b0070;
-        public static int search_mag_icon=0x7f0b006b;
-        public static int search_plate=0x7f0b006c;
-        public static int search_src_text=0x7f0b006d;
-        public static int search_voice_btn=0x7f0b0071;
-        public static int select_dialog_listview=0x7f0b0072;
-        public static int sett=0x7f0b00a3;
-        public static int settingstextView=0x7f0b0080;
-        public static int shortcut=0x7f0b005c;
+        public static int search_badge=0x7f0b00a7;
+        public static int search_bar=0x7f0b00a6;
+        public static int search_button=0x7f0b00a8;
+        public static int search_close_btn=0x7f0b00ad;
+        public static int search_edit_frame=0x7f0b00a9;
+        public static int search_go_btn=0x7f0b00af;
+        public static int search_mag_icon=0x7f0b00aa;
+        public static int search_plate=0x7f0b00ab;
+        public static int search_src_text=0x7f0b00ac;
+        public static int search_voice_btn=0x7f0b00b0;
+        public static int select_dialog_listview=0x7f0b00b1;
+        public static int serif=0x7f0b0045;
+        public static int sett=0x7f0b00df;
+        public static int shortcut=0x7f0b009b;
         public static int showCustom=0x7f0b0015;
         public static int showHome=0x7f0b0016;
         public static int showTitle=0x7f0b0017;
-        public static int smallLabel=0x7f0b0073;
-        public static int snackbar_action=0x7f0b0078;
-        public static int snackbar_text=0x7f0b0077;
+        public static int smallLabel=0x7f0b00b2;
+        public static int snackbar_action=0x7f0b00b7;
+        public static int snackbar_text=0x7f0b00b6;
         public static int snap=0x7f0b002e;
-        public static int spacer=0x7f0b004c;
-        public static int spinner=0x7f0b00c3;
-        public static int spinnerLanguage=0x7f0b00c2;
+        public static int spacer=0x7f0b008b;
+        public static int spinner=0x7f0b00ff;
+        public static int spinnerLanguage=0x7f0b00fe;
         public static int split_action_bar=0x7f0b0008;
         public static int src_atop=0x7f0b001c;
         public static int src_in=0x7f0b001d;
         public static int src_over=0x7f0b001e;
         public static int start=0x7f0b0036;
-        public static int statistictextView=0x7f0b0082;
-        public static int status_bar_latest_event_content=0x7f0b00aa;
-        public static int submenuarrow=0x7f0b005e;
-        public static int submit_area=0x7f0b006f;
-        public static int switchButton=0x7f0b00bd;
+        public static int status_bar_latest_event_content=0x7f0b00e6;
+        public static int submenuarrow=0x7f0b009d;
+        public static int submit_area=0x7f0b00ae;
+        public static int switchButton=0x7f0b00f9;
         public static int tabMode=0x7f0b0011;
-        public static int text=0x7f0b00ba;
-        public static int text2=0x7f0b00b8;
-        public static int textSpacerNoButtons=0x7f0b0052;
-        public static int textSpacerNoTitle=0x7f0b0051;
-        public static int textView1=0x7f0b007f;
-        public static int textView2=0x7f0b00bc;
-        public static int text_input_password_toggle=0x7f0b007e;
+        public static int text=0x7f0b00f6;
+        public static int text2=0x7f0b00f4;
+        public static int textSpacerNoButtons=0x7f0b0091;
+        public static int textSpacerNoTitle=0x7f0b0090;
+        public static int textView1=0x7f0b00be;
+        public static int textView2=0x7f0b00f8;
+        public static int text_input_password_toggle=0x7f0b00bd;
         public static int textinput_counter=0x7f0b000c;
         public static int textinput_error=0x7f0b000d;
-        public static int time=0x7f0b00b0;
-        public static int title=0x7f0b004a;
-        public static int titleDividerNoCustom=0x7f0b0059;
-        public static int title_template=0x7f0b0057;
+        public static int time=0x7f0b00ec;
+        public static int title=0x7f0b0089;
+        public static int titleDividerNoCustom=0x7f0b0098;
+        public static int title_template=0x7f0b0096;
         public static int top=0x7f0b0029;
-        public static int topPanel=0x7f0b0056;
-        public static int touch_outside=0x7f0b0075;
+        public static int topPanel=0x7f0b0095;
+        public static int touch_outside=0x7f0b00b4;
         public static int transition_current_scene=0x7f0b000a;
         public static int transition_scene_layoutid_cache=0x7f0b000b;
         public static int up=0x7f0b0009;
         public static int useLogo=0x7f0b0018;
         public static int view_offset_helper=0x7f0b000e;
-        public static int visible=0x7f0b00ca;
-        public static int volume_item_container=0x7f0b009a;
+        public static int visible=0x7f0b0106;
+        public static int volume_item_container=0x7f0b00d6;
         public static int withText=0x7f0b0027;
         public static int wrap_content=0x7f0b001f;
-        public static int xlsText=0x7f0b0086;
+        public static int xlsText=0x7f0b00c2;
     }
     public static final class integer {
         public static int abc_config_activityDefaultDur=0x7f0d0003;
@@ -7698,6 +9356,2851 @@ containing a value of this type.
           @attr name android.support.v7.mediarouter:thickness
         */
         public static int DrawerArrowToggle_thickness = 7;
+        /**  END duplicate fields for FlexChartBase 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_format android.support.v7.mediarouter:c1_axisX_format}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_labelAlignment android.support.v7.mediarouter:c1_axisX_labelAlignment}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_labelAngle android.support.v7.mediarouter:c1_axisX_labelAngle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_labelsVisible android.support.v7.mediarouter:c1_axisX_labelsVisible}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_line android.support.v7.mediarouter:c1_axisX_line}</code></td><td><attr name="c1_zoomMode" format="enum">
+      <enum name="DISABLED" value="0" />
+      <enum name="X" value="1" />
+      <enum name="Y" value="2" />
+      <enum name="XY" value="3" />
+    </attr>
+<attr name="c1_loadAnimation_loadAnimationMode" format="enum">
+      <enum name="ALL" value="0" />
+      <enum name="POINT" value="1" />
+      <enum name="SERIES" value="2" />
+    </attr>
+    <attr name="c1_loadAnimation_duration" format="integer" />
+    <attr name="c1_loadAnimation_startDelay" format="integer" />
+    <attr name="c1_updateAnimation_duration" format="integer" />
+    <attr name="c1_updateAnimation_startDelay" format="integer" />
+<attr name="c1_labelFontColor" format="color" />
+    <attr name="c1_labelFontSize" format="float" />
+    <attr name="c1_labelFontTypeface" format="string" />
+    <attr name="c1_labelFontWeight" format="enum">
+      <enum name="NORMAL" value="0" />
+      <enum name="BOLD" value="1" />
+      <enum name="ITALIC" value="2" />
+      <enum name="BOLD_ITALIC" value="3" />
+    </attr>
+    <attr name="c1_labelAngle" format="float" />
+    <attr name="c1_labelsVisible" format="enum">
+        <enum name="FALSE" value="0" />
+        <enum name="TRUE" value="1" />
+    </attr>
+    <attr name="c1_titleFontColor" format="color" />
+    <attr name="c1_titleFontSize" format="float" />
+    <attr name="c1_titleFontTypeface" format="string" />
+    <attr name="c1_titleFontWeight" format="enum">
+      <enum name="NORMAL" value="0" />
+      <enum name="BOLD" value="1" />
+      <enum name="ITALIC" value="2" />
+      <enum name="BOLD_ITALIC" value="3" />
+    </attr>
+    <attr name="c1_lineColor" format="color" />
+    <attr name="c1_lineWidth" format="float" />
+    <attr name="c1_majorGridColor" format="color" />
+    <attr name="c1_majorGridWidth" format="float" />
+    <attr name="c1_majorTickColor" format="color" />
+    <attr name="c1_majorTickWidth" format="float" />
+    <attr name="c1_majorTickOverlap" />
+    <attr name="c1_majorGridVisible" format="enum">
+        <enum name="FALSE" value="0" />
+        <enum name="TRUE" value="1" />
+    </attr>
+        <attr name="c1_majorTickOverlap" format="enum">
+        <enum name="NONE" value="0" />
+        <enum name="OUTSIDE" value="1" />
+        <enum name="INSIDE" value="2" />
+    </attr>
+    <attr name="c1_majorGridFill" format="color" />
+    <attr name="c1_minorGridColor" format="color" />
+    <attr name="c1_minorGridWidth" format="float" />
+    <attr name="c1_minorTickColor" format="color" />
+    <attr name="c1_minorTickWidth" format="float" />
+    <attr name="c1_minorGridVisible" format="enum">
+      <enum name="FALSE" value="0" />
+      <enum name="TRUE" value="1" />
+    </attr>
+    <attr name="c1_minorTickOverlap" format="enum">
+      <enum name="NONE" value="0" />
+      <enum name="OUTSIDE" value="1" />
+      <enum name="INSIDE" value="2" />
+    </attr>
+    <attr name="c1_minorGridFill" format="color" />
+    <attr name="c1_format" format="string" />
+    <attr name="c1_origin" format="float" />
+    <attr name="c1_majorUnit" format="float" />
+    <attr name="c1_minorUnit" format="float" />
+    <attr name="c1_title" format="string" />
+axisX</td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_logBase android.support.v7.mediarouter:c1_axisX_logBase}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_majorGridStyleStroke android.support.v7.mediarouter:c1_axisX_majorGridStyleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_majorGridStyleStrokeThickness android.support.v7.mediarouter:c1_axisX_majorGridStyleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_majorGridVisible android.support.v7.mediarouter:c1_axisX_majorGridVisible}</code></td><td>major grid</td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_majorTickMark android.support.v7.mediarouter:c1_axisX_majorTickMark}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_majorUnit android.support.v7.mediarouter:c1_axisX_majorUnit}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_max android.support.v7.mediarouter:c1_axisX_max}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_min android.support.v7.mediarouter:c1_axisX_min}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_minorGridStyleStroke android.support.v7.mediarouter:c1_axisX_minorGridStyleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_minorGridStyleStrokeThickness android.support.v7.mediarouter:c1_axisX_minorGridStyleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_minorGridVisible android.support.v7.mediarouter:c1_axisX_minorGridVisible}</code></td><td>minor grid</td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_minorTickMark android.support.v7.mediarouter:c1_axisX_minorTickMark}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_minorUnit android.support.v7.mediarouter:c1_axisX_minorUnit}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_origin android.support.v7.mediarouter:c1_axisX_origin}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_overlappingLabels android.support.v7.mediarouter:c1_axisX_overlappingLabels}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_position android.support.v7.mediarouter:c1_axisX_position}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_reversed android.support.v7.mediarouter:c1_axisX_reversed}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_styleFill android.support.v7.mediarouter:c1_axisX_styleFill}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_styleFontSize android.support.v7.mediarouter:c1_axisX_styleFontSize}</code></td><td>axisX style</td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_styleStroke android.support.v7.mediarouter:c1_axisX_styleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_styleStrokeThickness android.support.v7.mediarouter:c1_axisX_styleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_styleTypeface android.support.v7.mediarouter:c1_axisX_styleTypeface}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_styleTypefaceStyle android.support.v7.mediarouter:c1_axisX_styleTypefaceStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_title android.support.v7.mediarouter:c1_axisX_title}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_titleStyleFill android.support.v7.mediarouter:c1_axisX_titleStyleFill}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_titleStyleFontSize android.support.v7.mediarouter:c1_axisX_titleStyleFontSize}</code></td><td>axisX title style</td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_titleStyleStroke android.support.v7.mediarouter:c1_axisX_titleStyleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_titleStyleStrokeThickness android.support.v7.mediarouter:c1_axisX_titleStyleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_titleStyleTypeface android.support.v7.mediarouter:c1_axisX_titleStyleTypeface}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_titleStyleTypefaceStyle android.support.v7.mediarouter:c1_axisX_titleStyleTypefaceStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisX_type android.support.v7.mediarouter:c1_axisX_type}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_format android.support.v7.mediarouter:c1_axisY_format}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_labelAlignment android.support.v7.mediarouter:c1_axisY_labelAlignment}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_labelAngle android.support.v7.mediarouter:c1_axisY_labelAngle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_labelsVisible android.support.v7.mediarouter:c1_axisY_labelsVisible}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_line android.support.v7.mediarouter:c1_axisY_line}</code></td><td>axisY</td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_logBase android.support.v7.mediarouter:c1_axisY_logBase}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_majorGridStyleStroke android.support.v7.mediarouter:c1_axisY_majorGridStyleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_majorGridStyleStrokeThickness android.support.v7.mediarouter:c1_axisY_majorGridStyleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_majorGridVisible android.support.v7.mediarouter:c1_axisY_majorGridVisible}</code></td><td>major grid</td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_majorTickMark android.support.v7.mediarouter:c1_axisY_majorTickMark}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_majorUnit android.support.v7.mediarouter:c1_axisY_majorUnit}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_max android.support.v7.mediarouter:c1_axisY_max}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_min android.support.v7.mediarouter:c1_axisY_min}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_minorGridStyleStroke android.support.v7.mediarouter:c1_axisY_minorGridStyleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_minorGridStyleStrokeThickness android.support.v7.mediarouter:c1_axisY_minorGridStyleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_minorGridVisible android.support.v7.mediarouter:c1_axisY_minorGridVisible}</code></td><td>minor grid</td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_minorTickMark android.support.v7.mediarouter:c1_axisY_minorTickMark}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_minorUnit android.support.v7.mediarouter:c1_axisY_minorUnit}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_origin android.support.v7.mediarouter:c1_axisY_origin}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_overlappingLabels android.support.v7.mediarouter:c1_axisY_overlappingLabels}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_position android.support.v7.mediarouter:c1_axisY_position}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_reversed android.support.v7.mediarouter:c1_axisY_reversed}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_styleFill android.support.v7.mediarouter:c1_axisY_styleFill}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_styleFontSize android.support.v7.mediarouter:c1_axisY_styleFontSize}</code></td><td>axisY style</td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_styleStroke android.support.v7.mediarouter:c1_axisY_styleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_styleStrokeThickness android.support.v7.mediarouter:c1_axisY_styleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_styleTypeface android.support.v7.mediarouter:c1_axisY_styleTypeface}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_styleTypefaceStyle android.support.v7.mediarouter:c1_axisY_styleTypefaceStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_title android.support.v7.mediarouter:c1_axisY_title}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_titleStyleFill android.support.v7.mediarouter:c1_axisY_titleStyleFill}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_titleStyleFontSize android.support.v7.mediarouter:c1_axisY_titleStyleFontSize}</code></td><td>axisY title style</td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_titleStyleStroke android.support.v7.mediarouter:c1_axisY_titleStyleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_titleStyleStrokeThickness android.support.v7.mediarouter:c1_axisY_titleStyleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_titleStyleTypeface android.support.v7.mediarouter:c1_axisY_titleStyleTypeface}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_titleStyleTypefaceStyle android.support.v7.mediarouter:c1_axisY_titleStyleTypefaceStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_axisY_type android.support.v7.mediarouter:c1_axisY_type}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_bindingX android.support.v7.mediarouter:c1_bindingX}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_chartType android.support.v7.mediarouter:c1_chartType}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_datalabel_border android.support.v7.mediarouter:c1_datalabel_border}</code></td><td>datalabel</td></tr>
+           <tr><td><code>{@link #FlexChart_c1_datalabel_borderColor android.support.v7.mediarouter:c1_datalabel_borderColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_datalabel_borderThickness android.support.v7.mediarouter:c1_datalabel_borderThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_datalabel_connectingLine android.support.v7.mediarouter:c1_datalabel_connectingLine}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_datalabel_offset android.support.v7.mediarouter:c1_datalabel_offset}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_datalabel_position android.support.v7.mediarouter:c1_datalabel_position}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_datalabel_styleFill android.support.v7.mediarouter:c1_datalabel_styleFill}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_datalabel_styleFontSize android.support.v7.mediarouter:c1_datalabel_styleFontSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_datalabel_styleStroke android.support.v7.mediarouter:c1_datalabel_styleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_datalabel_styleStrokeThickness android.support.v7.mediarouter:c1_datalabel_styleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_datalabel_styleTypeface android.support.v7.mediarouter:c1_datalabel_styleTypeface}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_datalabel_styleTypefaceStyle android.support.v7.mediarouter:c1_datalabel_styleTypefaceStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_options_bubbleMaxSize android.support.v7.mediarouter:c1_options_bubbleMaxSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_options_bubbleMinSize android.support.v7.mediarouter:c1_options_bubbleMinSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_options_groupWidth android.support.v7.mediarouter:c1_options_groupWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_rotated android.support.v7.mediarouter:c1_rotated}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChart_c1_stackingType android.support.v7.mediarouter:c1_stackingType}</code></td><td></td></tr>
+           </table>
+           @see #FlexChart_c1_axisX_format
+           @see #FlexChart_c1_axisX_labelAlignment
+           @see #FlexChart_c1_axisX_labelAngle
+           @see #FlexChart_c1_axisX_labelsVisible
+           @see #FlexChart_c1_axisX_line
+           @see #FlexChart_c1_axisX_logBase
+           @see #FlexChart_c1_axisX_majorGridStyleStroke
+           @see #FlexChart_c1_axisX_majorGridStyleStrokeThickness
+           @see #FlexChart_c1_axisX_majorGridVisible
+           @see #FlexChart_c1_axisX_majorTickMark
+           @see #FlexChart_c1_axisX_majorUnit
+           @see #FlexChart_c1_axisX_max
+           @see #FlexChart_c1_axisX_min
+           @see #FlexChart_c1_axisX_minorGridStyleStroke
+           @see #FlexChart_c1_axisX_minorGridStyleStrokeThickness
+           @see #FlexChart_c1_axisX_minorGridVisible
+           @see #FlexChart_c1_axisX_minorTickMark
+           @see #FlexChart_c1_axisX_minorUnit
+           @see #FlexChart_c1_axisX_origin
+           @see #FlexChart_c1_axisX_overlappingLabels
+           @see #FlexChart_c1_axisX_position
+           @see #FlexChart_c1_axisX_reversed
+           @see #FlexChart_c1_axisX_styleFill
+           @see #FlexChart_c1_axisX_styleFontSize
+           @see #FlexChart_c1_axisX_styleStroke
+           @see #FlexChart_c1_axisX_styleStrokeThickness
+           @see #FlexChart_c1_axisX_styleTypeface
+           @see #FlexChart_c1_axisX_styleTypefaceStyle
+           @see #FlexChart_c1_axisX_title
+           @see #FlexChart_c1_axisX_titleStyleFill
+           @see #FlexChart_c1_axisX_titleStyleFontSize
+           @see #FlexChart_c1_axisX_titleStyleStroke
+           @see #FlexChart_c1_axisX_titleStyleStrokeThickness
+           @see #FlexChart_c1_axisX_titleStyleTypeface
+           @see #FlexChart_c1_axisX_titleStyleTypefaceStyle
+           @see #FlexChart_c1_axisX_type
+           @see #FlexChart_c1_axisY_format
+           @see #FlexChart_c1_axisY_labelAlignment
+           @see #FlexChart_c1_axisY_labelAngle
+           @see #FlexChart_c1_axisY_labelsVisible
+           @see #FlexChart_c1_axisY_line
+           @see #FlexChart_c1_axisY_logBase
+           @see #FlexChart_c1_axisY_majorGridStyleStroke
+           @see #FlexChart_c1_axisY_majorGridStyleStrokeThickness
+           @see #FlexChart_c1_axisY_majorGridVisible
+           @see #FlexChart_c1_axisY_majorTickMark
+           @see #FlexChart_c1_axisY_majorUnit
+           @see #FlexChart_c1_axisY_max
+           @see #FlexChart_c1_axisY_min
+           @see #FlexChart_c1_axisY_minorGridStyleStroke
+           @see #FlexChart_c1_axisY_minorGridStyleStrokeThickness
+           @see #FlexChart_c1_axisY_minorGridVisible
+           @see #FlexChart_c1_axisY_minorTickMark
+           @see #FlexChart_c1_axisY_minorUnit
+           @see #FlexChart_c1_axisY_origin
+           @see #FlexChart_c1_axisY_overlappingLabels
+           @see #FlexChart_c1_axisY_position
+           @see #FlexChart_c1_axisY_reversed
+           @see #FlexChart_c1_axisY_styleFill
+           @see #FlexChart_c1_axisY_styleFontSize
+           @see #FlexChart_c1_axisY_styleStroke
+           @see #FlexChart_c1_axisY_styleStrokeThickness
+           @see #FlexChart_c1_axisY_styleTypeface
+           @see #FlexChart_c1_axisY_styleTypefaceStyle
+           @see #FlexChart_c1_axisY_title
+           @see #FlexChart_c1_axisY_titleStyleFill
+           @see #FlexChart_c1_axisY_titleStyleFontSize
+           @see #FlexChart_c1_axisY_titleStyleStroke
+           @see #FlexChart_c1_axisY_titleStyleStrokeThickness
+           @see #FlexChart_c1_axisY_titleStyleTypeface
+           @see #FlexChart_c1_axisY_titleStyleTypefaceStyle
+           @see #FlexChart_c1_axisY_type
+           @see #FlexChart_c1_bindingX
+           @see #FlexChart_c1_chartType
+           @see #FlexChart_c1_datalabel_border
+           @see #FlexChart_c1_datalabel_borderColor
+           @see #FlexChart_c1_datalabel_borderThickness
+           @see #FlexChart_c1_datalabel_connectingLine
+           @see #FlexChart_c1_datalabel_offset
+           @see #FlexChart_c1_datalabel_position
+           @see #FlexChart_c1_datalabel_styleFill
+           @see #FlexChart_c1_datalabel_styleFontSize
+           @see #FlexChart_c1_datalabel_styleStroke
+           @see #FlexChart_c1_datalabel_styleStrokeThickness
+           @see #FlexChart_c1_datalabel_styleTypeface
+           @see #FlexChart_c1_datalabel_styleTypefaceStyle
+           @see #FlexChart_c1_options_bubbleMaxSize
+           @see #FlexChart_c1_options_bubbleMinSize
+           @see #FlexChart_c1_options_groupWidth
+           @see #FlexChart_c1_rotated
+           @see #FlexChart_c1_stackingType
+         */
+        public static final int[] FlexChart = {
+            0x7f01018b, 0x7f01018c, 0x7f01018d, 0x7f01018e,
+            0x7f01018f, 0x7f010190, 0x7f010191, 0x7f010192,
+            0x7f010193, 0x7f010194, 0x7f010195, 0x7f010196,
+            0x7f010197, 0x7f010198, 0x7f010199, 0x7f01019a,
+            0x7f01019b, 0x7f01019c, 0x7f01019d, 0x7f01019e,
+            0x7f01019f, 0x7f0101a0, 0x7f0101a1, 0x7f0101a2,
+            0x7f0101a3, 0x7f0101a4, 0x7f0101a5, 0x7f0101a6,
+            0x7f0101a7, 0x7f0101a8, 0x7f0101a9, 0x7f0101aa,
+            0x7f0101ab, 0x7f0101ac, 0x7f0101ad, 0x7f0101ae,
+            0x7f0101af, 0x7f0101b0, 0x7f0101b1, 0x7f0101b2,
+            0x7f0101b3, 0x7f0101b4, 0x7f0101b5, 0x7f0101b6,
+            0x7f0101b7, 0x7f0101b8, 0x7f0101b9, 0x7f0101ba,
+            0x7f0101bb, 0x7f0101bc, 0x7f0101bd, 0x7f0101be,
+            0x7f0101bf, 0x7f0101c0, 0x7f0101c1, 0x7f0101c2,
+            0x7f0101c3, 0x7f0101c4, 0x7f0101c5, 0x7f0101c6,
+            0x7f0101c7, 0x7f0101c8, 0x7f0101c9, 0x7f0101ca,
+            0x7f0101cb, 0x7f0101cc, 0x7f0101cd, 0x7f0101ce,
+            0x7f0101cf, 0x7f0101d0, 0x7f0101d1, 0x7f0101d2,
+            0x7f0101d3, 0x7f0101d4, 0x7f0101d5, 0x7f0101d6,
+            0x7f0101d7, 0x7f0101d8, 0x7f0101d9, 0x7f0101da,
+            0x7f0101db, 0x7f0101dc, 0x7f0101dd, 0x7f0101de,
+            0x7f0101df, 0x7f0101e0, 0x7f0101e1, 0x7f0101e2,
+            0x7f0101e3, 0x7f0101e4, 0x7f0101e5
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_format}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_format
+        */
+        public static int FlexChart_c1_axisX_format = 21;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_labelAlignment}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>CENTER</code></td><td>0</td><td></td></tr>
+<tr><td><code>LEFT</code></td><td>1</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>2</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>3</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>4</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisX_labelAlignment
+        */
+        public static int FlexChart_c1_axisX_labelAlignment = 22;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_labelAngle}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_labelAngle
+        */
+        public static int FlexChart_c1_axisX_labelAngle = 23;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_labelsVisible}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisX_labelsVisible
+        */
+        public static int FlexChart_c1_axisX_labelsVisible = 27;
+        /**
+          <p>
+          @attr description
+          <attr name="c1_zoomMode" format="enum">
+      <enum name="DISABLED" value="0" />
+      <enum name="X" value="1" />
+      <enum name="Y" value="2" />
+      <enum name="XY" value="3" />
+    </attr>
+<attr name="c1_loadAnimation_loadAnimationMode" format="enum">
+      <enum name="ALL" value="0" />
+      <enum name="POINT" value="1" />
+      <enum name="SERIES" value="2" />
+    </attr>
+    <attr name="c1_loadAnimation_duration" format="integer" />
+    <attr name="c1_loadAnimation_startDelay" format="integer" />
+    <attr name="c1_updateAnimation_duration" format="integer" />
+    <attr name="c1_updateAnimation_startDelay" format="integer" />
+<attr name="c1_labelFontColor" format="color" />
+    <attr name="c1_labelFontSize" format="float" />
+    <attr name="c1_labelFontTypeface" format="string" />
+    <attr name="c1_labelFontWeight" format="enum">
+      <enum name="NORMAL" value="0" />
+      <enum name="BOLD" value="1" />
+      <enum name="ITALIC" value="2" />
+      <enum name="BOLD_ITALIC" value="3" />
+    </attr>
+    <attr name="c1_labelAngle" format="float" />
+    <attr name="c1_labelsVisible" format="enum">
+        <enum name="FALSE" value="0" />
+        <enum name="TRUE" value="1" />
+    </attr>
+    <attr name="c1_titleFontColor" format="color" />
+    <attr name="c1_titleFontSize" format="float" />
+    <attr name="c1_titleFontTypeface" format="string" />
+    <attr name="c1_titleFontWeight" format="enum">
+      <enum name="NORMAL" value="0" />
+      <enum name="BOLD" value="1" />
+      <enum name="ITALIC" value="2" />
+      <enum name="BOLD_ITALIC" value="3" />
+    </attr>
+    <attr name="c1_lineColor" format="color" />
+    <attr name="c1_lineWidth" format="float" />
+    <attr name="c1_majorGridColor" format="color" />
+    <attr name="c1_majorGridWidth" format="float" />
+    <attr name="c1_majorTickColor" format="color" />
+    <attr name="c1_majorTickWidth" format="float" />
+    <attr name="c1_majorTickOverlap" />
+    <attr name="c1_majorGridVisible" format="enum">
+        <enum name="FALSE" value="0" />
+        <enum name="TRUE" value="1" />
+    </attr>
+        <attr name="c1_majorTickOverlap" format="enum">
+        <enum name="NONE" value="0" />
+        <enum name="OUTSIDE" value="1" />
+        <enum name="INSIDE" value="2" />
+    </attr>
+    <attr name="c1_majorGridFill" format="color" />
+    <attr name="c1_minorGridColor" format="color" />
+    <attr name="c1_minorGridWidth" format="float" />
+    <attr name="c1_minorTickColor" format="color" />
+    <attr name="c1_minorTickWidth" format="float" />
+    <attr name="c1_minorGridVisible" format="enum">
+      <enum name="FALSE" value="0" />
+      <enum name="TRUE" value="1" />
+    </attr>
+    <attr name="c1_minorTickOverlap" format="enum">
+      <enum name="NONE" value="0" />
+      <enum name="OUTSIDE" value="1" />
+      <enum name="INSIDE" value="2" />
+    </attr>
+    <attr name="c1_minorGridFill" format="color" />
+    <attr name="c1_format" format="string" />
+    <attr name="c1_origin" format="float" />
+    <attr name="c1_majorUnit" format="float" />
+    <attr name="c1_minorUnit" format="float" />
+    <attr name="c1_title" format="string" />
+axisX
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_axisX_line
+        */
+        public static int FlexChart_c1_axisX_line = 19;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_logBase}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_logBase
+        */
+        public static int FlexChart_c1_axisX_logBase = 24;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_majorGridStyleStroke}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_majorGridStyleStroke
+        */
+        public static int FlexChart_c1_axisX_majorGridStyleStroke = 31;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_majorGridStyleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_majorGridStyleStrokeThickness
+        */
+        public static int FlexChart_c1_axisX_majorGridStyleStrokeThickness = 32;
+        /**
+          <p>
+          @attr description
+          major grid
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_axisX_majorGridVisible
+        */
+        public static int FlexChart_c1_axisX_majorGridVisible = 28;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_majorTickMark}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>OUTSIDE</code></td><td>1</td><td></td></tr>
+<tr><td><code>INSIDE</code></td><td>2</td><td></td></tr>
+<tr><td><code>Cross</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisX_majorTickMark
+        */
+        public static int FlexChart_c1_axisX_majorTickMark = 29;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_majorUnit}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_majorUnit
+        */
+        public static int FlexChart_c1_axisX_majorUnit = 30;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_max}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_max
+        */
+        public static int FlexChart_c1_axisX_max = 25;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_min}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_min
+        */
+        public static int FlexChart_c1_axisX_min = 26;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_minorGridStyleStroke}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_minorGridStyleStroke
+        */
+        public static int FlexChart_c1_axisX_minorGridStyleStroke = 36;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_minorGridStyleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_minorGridStyleStrokeThickness
+        */
+        public static int FlexChart_c1_axisX_minorGridStyleStrokeThickness = 37;
+        /**
+          <p>
+          @attr description
+          minor grid
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_axisX_minorGridVisible
+        */
+        public static int FlexChart_c1_axisX_minorGridVisible = 33;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_minorTickMark}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>OUTSIDE</code></td><td>1</td><td></td></tr>
+<tr><td><code>INSIDE</code></td><td>2</td><td></td></tr>
+<tr><td><code>Cross</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisX_minorTickMark
+        */
+        public static int FlexChart_c1_axisX_minorTickMark = 34;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_minorUnit}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_minorUnit
+        */
+        public static int FlexChart_c1_axisX_minorUnit = 35;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_origin}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_origin
+        */
+        public static int FlexChart_c1_axisX_origin = 38;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_overlappingLabels}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>AUTO</code></td><td>0</td><td></td></tr>
+<tr><td><code>SHOW</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisX_overlappingLabels
+        */
+        public static int FlexChart_c1_axisX_overlappingLabels = 39;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_position}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>LEFT</code></td><td>0</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>1</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>3</td><td></td></tr>
+<tr><td><code>AUTO</code></td><td>4</td><td></td></tr>
+<tr><td><code>NONE</code></td><td>5</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisX_position
+        */
+        public static int FlexChart_c1_axisX_position = 40;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_reversed}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TURE</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisX_reversed
+        */
+        public static int FlexChart_c1_axisX_reversed = 41;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_styleFill}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_styleFill
+        */
+        public static int FlexChart_c1_axisX_styleFill = 52;
+        /**
+          <p>
+          @attr description
+          axisX style
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_axisX_styleFontSize
+        */
+        public static int FlexChart_c1_axisX_styleFontSize = 49;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_styleStroke}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_styleStroke
+        */
+        public static int FlexChart_c1_axisX_styleStroke = 53;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_styleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_styleStrokeThickness
+        */
+        public static int FlexChart_c1_axisX_styleStrokeThickness = 54;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_styleTypeface}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_styleTypeface
+        */
+        public static int FlexChart_c1_axisX_styleTypeface = 50;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_styleTypefaceStyle}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisX_styleTypefaceStyle
+        */
+        public static int FlexChart_c1_axisX_styleTypefaceStyle = 51;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_title}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_title
+        */
+        public static int FlexChart_c1_axisX_title = 42;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_titleStyleFill}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_titleStyleFill
+        */
+        public static int FlexChart_c1_axisX_titleStyleFill = 46;
+        /**
+          <p>
+          @attr description
+          axisX title style
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_axisX_titleStyleFontSize
+        */
+        public static int FlexChart_c1_axisX_titleStyleFontSize = 43;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_titleStyleStroke}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_titleStyleStroke
+        */
+        public static int FlexChart_c1_axisX_titleStyleStroke = 47;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_titleStyleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_titleStyleStrokeThickness
+        */
+        public static int FlexChart_c1_axisX_titleStyleStrokeThickness = 48;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_titleStyleTypeface}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisX_titleStyleTypeface
+        */
+        public static int FlexChart_c1_axisX_titleStyleTypeface = 44;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_titleStyleTypefaceStyle}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisX_titleStyleTypefaceStyle
+        */
+        public static int FlexChart_c1_axisX_titleStyleTypefaceStyle = 45;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisX_type}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>X</code></td><td>0</td><td></td></tr>
+<tr><td><code>Y</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisX_type
+        */
+        public static int FlexChart_c1_axisX_type = 20;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_format}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_format
+        */
+        public static int FlexChart_c1_axisY_format = 57;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_labelAlignment}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>CENTER</code></td><td>0</td><td></td></tr>
+<tr><td><code>LEFT</code></td><td>1</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>2</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>3</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>4</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisY_labelAlignment
+        */
+        public static int FlexChart_c1_axisY_labelAlignment = 58;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_labelAngle}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_labelAngle
+        */
+        public static int FlexChart_c1_axisY_labelAngle = 59;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_labelsVisible}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisY_labelsVisible
+        */
+        public static int FlexChart_c1_axisY_labelsVisible = 63;
+        /**
+          <p>
+          @attr description
+          axisY
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_axisY_line
+        */
+        public static int FlexChart_c1_axisY_line = 55;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_logBase}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_logBase
+        */
+        public static int FlexChart_c1_axisY_logBase = 60;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_majorGridStyleStroke}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_majorGridStyleStroke
+        */
+        public static int FlexChart_c1_axisY_majorGridStyleStroke = 67;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_majorGridStyleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_majorGridStyleStrokeThickness
+        */
+        public static int FlexChart_c1_axisY_majorGridStyleStrokeThickness = 68;
+        /**
+          <p>
+          @attr description
+          major grid
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_axisY_majorGridVisible
+        */
+        public static int FlexChart_c1_axisY_majorGridVisible = 64;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_majorTickMark}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>OUTSIDE</code></td><td>1</td><td></td></tr>
+<tr><td><code>INSIDE</code></td><td>2</td><td></td></tr>
+<tr><td><code>Cross</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisY_majorTickMark
+        */
+        public static int FlexChart_c1_axisY_majorTickMark = 65;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_majorUnit}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_majorUnit
+        */
+        public static int FlexChart_c1_axisY_majorUnit = 66;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_max}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_max
+        */
+        public static int FlexChart_c1_axisY_max = 61;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_min}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_min
+        */
+        public static int FlexChart_c1_axisY_min = 62;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_minorGridStyleStroke}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_minorGridStyleStroke
+        */
+        public static int FlexChart_c1_axisY_minorGridStyleStroke = 72;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_minorGridStyleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_minorGridStyleStrokeThickness
+        */
+        public static int FlexChart_c1_axisY_minorGridStyleStrokeThickness = 73;
+        /**
+          <p>
+          @attr description
+          minor grid
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_axisY_minorGridVisible
+        */
+        public static int FlexChart_c1_axisY_minorGridVisible = 69;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_minorTickMark}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>OUTSIDE</code></td><td>1</td><td></td></tr>
+<tr><td><code>INSIDE</code></td><td>2</td><td></td></tr>
+<tr><td><code>Cross</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisY_minorTickMark
+        */
+        public static int FlexChart_c1_axisY_minorTickMark = 70;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_minorUnit}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_minorUnit
+        */
+        public static int FlexChart_c1_axisY_minorUnit = 71;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_origin}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_origin
+        */
+        public static int FlexChart_c1_axisY_origin = 74;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_overlappingLabels}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>AUTO</code></td><td>0</td><td></td></tr>
+<tr><td><code>SHOW</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisY_overlappingLabels
+        */
+        public static int FlexChart_c1_axisY_overlappingLabels = 75;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_position}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>LEFT</code></td><td>0</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>1</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>3</td><td></td></tr>
+<tr><td><code>AUTO</code></td><td>4</td><td></td></tr>
+<tr><td><code>NONE</code></td><td>5</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisY_position
+        */
+        public static int FlexChart_c1_axisY_position = 76;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_reversed}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TURE</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisY_reversed
+        */
+        public static int FlexChart_c1_axisY_reversed = 77;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_styleFill}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_styleFill
+        */
+        public static int FlexChart_c1_axisY_styleFill = 88;
+        /**
+          <p>
+          @attr description
+          axisY style
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_axisY_styleFontSize
+        */
+        public static int FlexChart_c1_axisY_styleFontSize = 85;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_styleStroke}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_styleStroke
+        */
+        public static int FlexChart_c1_axisY_styleStroke = 89;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_styleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_styleStrokeThickness
+        */
+        public static int FlexChart_c1_axisY_styleStrokeThickness = 90;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_styleTypeface}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_styleTypeface
+        */
+        public static int FlexChart_c1_axisY_styleTypeface = 86;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_styleTypefaceStyle}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisY_styleTypefaceStyle
+        */
+        public static int FlexChart_c1_axisY_styleTypefaceStyle = 87;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_title}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_title
+        */
+        public static int FlexChart_c1_axisY_title = 78;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_titleStyleFill}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_titleStyleFill
+        */
+        public static int FlexChart_c1_axisY_titleStyleFill = 82;
+        /**
+          <p>
+          @attr description
+          axisY title style
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_axisY_titleStyleFontSize
+        */
+        public static int FlexChart_c1_axisY_titleStyleFontSize = 79;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_titleStyleStroke}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_titleStyleStroke
+        */
+        public static int FlexChart_c1_axisY_titleStyleStroke = 83;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_titleStyleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_titleStyleStrokeThickness
+        */
+        public static int FlexChart_c1_axisY_titleStyleStrokeThickness = 84;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_titleStyleTypeface}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_axisY_titleStyleTypeface
+        */
+        public static int FlexChart_c1_axisY_titleStyleTypeface = 80;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_titleStyleTypefaceStyle}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisY_titleStyleTypefaceStyle
+        */
+        public static int FlexChart_c1_axisY_titleStyleTypefaceStyle = 81;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_axisY_type}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>X</code></td><td>0</td><td></td></tr>
+<tr><td><code>Y</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_axisY_type
+        */
+        public static int FlexChart_c1_axisY_type = 56;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_bindingX}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_bindingX
+        */
+        public static int FlexChart_c1_bindingX = 5;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_chartType}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>COLUMN</code></td><td>0</td><td></td></tr>
+<tr><td><code>BAR</code></td><td>1</td><td></td></tr>
+<tr><td><code>LINE</code></td><td>2</td><td></td></tr>
+<tr><td><code>SCATTER</code></td><td>3</td><td></td></tr>
+<tr><td><code>LINESYMBOLS</code></td><td>4</td><td></td></tr>
+<tr><td><code>AREA</code></td><td>5</td><td></td></tr>
+<tr><td><code>SPLINE</code></td><td>6</td><td></td></tr>
+<tr><td><code>SPLINESYMBOLS</code></td><td>7</td><td></td></tr>
+<tr><td><code>SPLINEAREA</code></td><td>8</td><td></td></tr>
+<tr><td><code>BUBBLE</code></td><td>9</td><td></td></tr>
+<tr><td><code>CANDLE</code></td><td>10</td><td></td></tr>
+<tr><td><code>HLOC</code></td><td>11</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_chartType
+        */
+        public static int FlexChart_c1_chartType = 0;
+        /**
+          <p>
+          @attr description
+          datalabel
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_datalabel_border
+        */
+        public static int FlexChart_c1_datalabel_border = 7;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_datalabel_borderColor}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_datalabel_borderColor
+        */
+        public static int FlexChart_c1_datalabel_borderColor = 9;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_datalabel_borderThickness}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_datalabel_borderThickness
+        */
+        public static int FlexChart_c1_datalabel_borderThickness = 8;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_datalabel_connectingLine}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TRUE</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_datalabel_connectingLine
+        */
+        public static int FlexChart_c1_datalabel_connectingLine = 10;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_datalabel_offset}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_datalabel_offset
+        */
+        public static int FlexChart_c1_datalabel_offset = 11;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_datalabel_position}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>CENTER</code></td><td>1</td><td></td></tr>
+<tr><td><code>LEFT</code></td><td>2</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>3</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>4</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>5</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_datalabel_position
+        */
+        public static int FlexChart_c1_datalabel_position = 12;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_datalabel_styleFill}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_datalabel_styleFill
+        */
+        public static int FlexChart_c1_datalabel_styleFill = 16;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_datalabel_styleFontSize}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_datalabel_styleFontSize
+        */
+        public static int FlexChart_c1_datalabel_styleFontSize = 13;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_datalabel_styleStroke}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_datalabel_styleStroke
+        */
+        public static int FlexChart_c1_datalabel_styleStroke = 17;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_datalabel_styleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_datalabel_styleStrokeThickness
+        */
+        public static int FlexChart_c1_datalabel_styleStrokeThickness = 18;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_datalabel_styleTypeface}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_datalabel_styleTypeface
+        */
+        public static int FlexChart_c1_datalabel_styleTypeface = 14;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_datalabel_styleTypefaceStyle}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_datalabel_styleTypefaceStyle
+        */
+        public static int FlexChart_c1_datalabel_styleTypefaceStyle = 15;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_options_bubbleMaxSize}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_options_bubbleMaxSize
+        */
+        public static int FlexChart_c1_options_bubbleMaxSize = 3;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_options_bubbleMinSize}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_options_bubbleMinSize
+        */
+        public static int FlexChart_c1_options_bubbleMinSize = 2;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_options_groupWidth}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_options_groupWidth
+        */
+        public static int FlexChart_c1_options_groupWidth = 4;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_rotated}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_rotated
+        */
+        public static int FlexChart_c1_rotated = 6;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_stackingType}
+          attribute's value can be found in the {@link #FlexChart} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>STACKED</code></td><td>1</td><td></td></tr>
+<tr><td><code>STACKED100pc</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_stackingType
+        */
+        public static int FlexChart_c1_stackingType = 1;
+        /**  BEGIN duplicate fields for FlexChartBase 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_backgroundColor android.support.v7.mediarouter:c1_backgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_binding android.support.v7.mediarouter:c1_binding}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_footer android.support.v7.mediarouter:c1_footer}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_footerFontGravity android.support.v7.mediarouter:c1_footerFontGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_footerStyleFill android.support.v7.mediarouter:c1_footerStyleFill}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_footerStyleFontSize android.support.v7.mediarouter:c1_footerStyleFontSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_footerStyleStroke android.support.v7.mediarouter:c1_footerStyleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_footerStyleStrokeThickness android.support.v7.mediarouter:c1_footerStyleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_footerStyleTypeface android.support.v7.mediarouter:c1_footerStyleTypeface}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_footerStyleTypefaceStyle android.support.v7.mediarouter:c1_footerStyleTypefaceStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_header android.support.v7.mediarouter:c1_header}</code></td><td>footer</td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_headerFontGravity android.support.v7.mediarouter:c1_headerFontGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_headerStyleFill android.support.v7.mediarouter:c1_headerStyleFill}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_headerStyleFontSize android.support.v7.mediarouter:c1_headerStyleFontSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_headerStyleStroke android.support.v7.mediarouter:c1_headerStyleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_headerStyleStrokeThickness android.support.v7.mediarouter:c1_headerStyleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_headerStyleTypeface android.support.v7.mediarouter:c1_headerStyleTypeface}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_headerStyleTypefaceStyle android.support.v7.mediarouter:c1_headerStyleTypefaceStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendOrientation android.support.v7.mediarouter:c1_legendOrientation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendPosition android.support.v7.mediarouter:c1_legendPosition}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendStyleFill android.support.v7.mediarouter:c1_legendStyleFill}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendStyleFontSize android.support.v7.mediarouter:c1_legendStyleFontSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendStyleStroke android.support.v7.mediarouter:c1_legendStyleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendStyleStrokeThickness android.support.v7.mediarouter:c1_legendStyleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendStyleTypeface android.support.v7.mediarouter:c1_legendStyleTypeface}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendStyleTypefaceStyle android.support.v7.mediarouter:c1_legendStyleTypefaceStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendTitle android.support.v7.mediarouter:c1_legendTitle}</code></td><td>legend</td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendTitleStyleFill android.support.v7.mediarouter:c1_legendTitleStyleFill}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendTitleStyleFontSize android.support.v7.mediarouter:c1_legendTitleStyleFontSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendTitleStyleStroke android.support.v7.mediarouter:c1_legendTitleStyleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendTitleStyleStrokeThickness android.support.v7.mediarouter:c1_legendTitleStyleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendTitleStyleTypeface android.support.v7.mediarouter:c1_legendTitleStyleTypeface}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendTitleStyleTypefaceStyle android.support.v7.mediarouter:c1_legendTitleStyleTypefaceStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_legendToggle android.support.v7.mediarouter:c1_legendToggle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_palette android.support.v7.mediarouter:c1_palette}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_plotStyleFill android.support.v7.mediarouter:c1_plotStyleFill}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_plotStyleFontSize android.support.v7.mediarouter:c1_plotStyleFontSize}</code></td><td>plot style</td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_plotStyleStroke android.support.v7.mediarouter:c1_plotStyleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_plotStyleStrokeThickness android.support.v7.mediarouter:c1_plotStyleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_plotStyleTypeface android.support.v7.mediarouter:c1_plotStyleTypeface}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_plotStyleTypefaceStyle android.support.v7.mediarouter:c1_plotStyleTypefaceStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_selectedIndex android.support.v7.mediarouter:c1_selectedIndex}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_selectionMode android.support.v7.mediarouter:c1_selectionMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_selectionStyleFill android.support.v7.mediarouter:c1_selectionStyleFill}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_selectionStyleFontSize android.support.v7.mediarouter:c1_selectionStyleFontSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_selectionStyleStroke android.support.v7.mediarouter:c1_selectionStyleStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_selectionStyleStrokeThickness android.support.v7.mediarouter:c1_selectionStyleStrokeThickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_selectionStyleTypeface android.support.v7.mediarouter:c1_selectionStyleTypeface}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexChartBase_c1_selectionStyleTypefaceStyle android.support.v7.mediarouter:c1_selectionStyleTypefaceStyle}</code></td><td></td></tr>
+           </table>
+           @see #FlexChartBase_c1_backgroundColor
+           @see #FlexChartBase_c1_binding
+           @see #FlexChartBase_c1_footer
+           @see #FlexChartBase_c1_footerFontGravity
+           @see #FlexChartBase_c1_footerStyleFill
+           @see #FlexChartBase_c1_footerStyleFontSize
+           @see #FlexChartBase_c1_footerStyleStroke
+           @see #FlexChartBase_c1_footerStyleStrokeThickness
+           @see #FlexChartBase_c1_footerStyleTypeface
+           @see #FlexChartBase_c1_footerStyleTypefaceStyle
+           @see #FlexChartBase_c1_header
+           @see #FlexChartBase_c1_headerFontGravity
+           @see #FlexChartBase_c1_headerStyleFill
+           @see #FlexChartBase_c1_headerStyleFontSize
+           @see #FlexChartBase_c1_headerStyleStroke
+           @see #FlexChartBase_c1_headerStyleStrokeThickness
+           @see #FlexChartBase_c1_headerStyleTypeface
+           @see #FlexChartBase_c1_headerStyleTypefaceStyle
+           @see #FlexChartBase_c1_legendOrientation
+           @see #FlexChartBase_c1_legendPosition
+           @see #FlexChartBase_c1_legendStyleFill
+           @see #FlexChartBase_c1_legendStyleFontSize
+           @see #FlexChartBase_c1_legendStyleStroke
+           @see #FlexChartBase_c1_legendStyleStrokeThickness
+           @see #FlexChartBase_c1_legendStyleTypeface
+           @see #FlexChartBase_c1_legendStyleTypefaceStyle
+           @see #FlexChartBase_c1_legendTitle
+           @see #FlexChartBase_c1_legendTitleStyleFill
+           @see #FlexChartBase_c1_legendTitleStyleFontSize
+           @see #FlexChartBase_c1_legendTitleStyleStroke
+           @see #FlexChartBase_c1_legendTitleStyleStrokeThickness
+           @see #FlexChartBase_c1_legendTitleStyleTypeface
+           @see #FlexChartBase_c1_legendTitleStyleTypefaceStyle
+           @see #FlexChartBase_c1_legendToggle
+           @see #FlexChartBase_c1_palette
+           @see #FlexChartBase_c1_plotStyleFill
+           @see #FlexChartBase_c1_plotStyleFontSize
+           @see #FlexChartBase_c1_plotStyleStroke
+           @see #FlexChartBase_c1_plotStyleStrokeThickness
+           @see #FlexChartBase_c1_plotStyleTypeface
+           @see #FlexChartBase_c1_plotStyleTypefaceStyle
+           @see #FlexChartBase_c1_selectedIndex
+           @see #FlexChartBase_c1_selectionMode
+           @see #FlexChartBase_c1_selectionStyleFill
+           @see #FlexChartBase_c1_selectionStyleFontSize
+           @see #FlexChartBase_c1_selectionStyleStroke
+           @see #FlexChartBase_c1_selectionStyleStrokeThickness
+           @see #FlexChartBase_c1_selectionStyleTypeface
+           @see #FlexChartBase_c1_selectionStyleTypefaceStyle
+         */
+        public static final int[] FlexChartBase = {
+            0x7f010152, 0x7f01015b, 0x7f01015c, 0x7f01015d,
+            0x7f01015e, 0x7f01015f, 0x7f010160, 0x7f010161,
+            0x7f010162, 0x7f010163, 0x7f010164, 0x7f010165,
+            0x7f010166, 0x7f010167, 0x7f010168, 0x7f010169,
+            0x7f01016a, 0x7f01016b, 0x7f01016c, 0x7f01016d,
+            0x7f01016e, 0x7f01016f, 0x7f010170, 0x7f010171,
+            0x7f010172, 0x7f010173, 0x7f010174, 0x7f010175,
+            0x7f010176, 0x7f010177, 0x7f010178, 0x7f010179,
+            0x7f01017a, 0x7f01017b, 0x7f01017c, 0x7f01017d,
+            0x7f01017e, 0x7f01017f, 0x7f010180, 0x7f010181,
+            0x7f010182, 0x7f010183, 0x7f010184, 0x7f010185,
+            0x7f010186, 0x7f010187, 0x7f010188, 0x7f010189,
+            0x7f01018a
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_backgroundColor}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name android.support.v7.mediarouter:c1_backgroundColor
+        */
+        public static int FlexChartBase_c1_backgroundColor = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_binding}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_binding
+        */
+        public static int FlexChartBase_c1_binding = 4;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_footer}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_footer
+        */
+        public static int FlexChartBase_c1_footer = 20;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_footerFontGravity}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>LEFT</code></td><td>3</td><td></td></tr>
+<tr><td><code>CENTER_HORIZONTAL</code></td><td>1</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>5</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_footerFontGravity
+        */
+        public static int FlexChartBase_c1_footerFontGravity = 21;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_footerStyleFill}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_footerStyleFill
+        */
+        public static int FlexChartBase_c1_footerStyleFill = 25;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_footerStyleFontSize}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_footerStyleFontSize
+        */
+        public static int FlexChartBase_c1_footerStyleFontSize = 22;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_footerStyleStroke}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_footerStyleStroke
+        */
+        public static int FlexChartBase_c1_footerStyleStroke = 26;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_footerStyleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_footerStyleStrokeThickness
+        */
+        public static int FlexChartBase_c1_footerStyleStrokeThickness = 27;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_footerStyleTypeface}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_footerStyleTypeface
+        */
+        public static int FlexChartBase_c1_footerStyleTypeface = 23;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_footerStyleTypefaceStyle}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_footerStyleTypefaceStyle
+        */
+        public static int FlexChartBase_c1_footerStyleTypefaceStyle = 24;
+        /**
+          <p>
+          @attr description
+          footer
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_header
+        */
+        public static int FlexChartBase_c1_header = 12;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_headerFontGravity}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>LEFT</code></td><td>3</td><td></td></tr>
+<tr><td><code>CENTER_HORIZONTAL</code></td><td>1</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>5</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_headerFontGravity
+        */
+        public static int FlexChartBase_c1_headerFontGravity = 13;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_headerStyleFill}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_headerStyleFill
+        */
+        public static int FlexChartBase_c1_headerStyleFill = 17;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_headerStyleFontSize}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_headerStyleFontSize
+        */
+        public static int FlexChartBase_c1_headerStyleFontSize = 14;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_headerStyleStroke}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_headerStyleStroke
+        */
+        public static int FlexChartBase_c1_headerStyleStroke = 18;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_headerStyleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_headerStyleStrokeThickness
+        */
+        public static int FlexChartBase_c1_headerStyleStrokeThickness = 19;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_headerStyleTypeface}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_headerStyleTypeface
+        */
+        public static int FlexChartBase_c1_headerStyleTypeface = 15;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_headerStyleTypefaceStyle}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_headerStyleTypefaceStyle
+        */
+        public static int FlexChartBase_c1_headerStyleTypefaceStyle = 16;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendOrientation}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>ALL</code></td><td>0</td><td></td></tr>
+<tr><td><code>HORIZONTAL</code></td><td>1</td><td></td></tr>
+<tr><td><code>VERTICAL</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_legendOrientation
+        */
+        public static int FlexChartBase_c1_legendOrientation = 42;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendPosition}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NONE</code></td><td>0</td><td></td></tr>
+<tr><td><code>LEFT</code></td><td>1</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>2</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>3</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>4</td><td></td></tr>
+<tr><td><code>AUTO</code></td><td>5</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_legendPosition
+        */
+        public static int FlexChartBase_c1_legendPosition = 41;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendStyleFill}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_legendStyleFill
+        */
+        public static int FlexChartBase_c1_legendStyleFill = 38;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendStyleFontSize}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_legendStyleFontSize
+        */
+        public static int FlexChartBase_c1_legendStyleFontSize = 35;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendStyleStroke}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_legendStyleStroke
+        */
+        public static int FlexChartBase_c1_legendStyleStroke = 39;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendStyleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_legendStyleStrokeThickness
+        */
+        public static int FlexChartBase_c1_legendStyleStrokeThickness = 40;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendStyleTypeface}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_legendStyleTypeface
+        */
+        public static int FlexChartBase_c1_legendStyleTypeface = 36;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendStyleTypefaceStyle}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_legendStyleTypefaceStyle
+        */
+        public static int FlexChartBase_c1_legendStyleTypefaceStyle = 37;
+        /**
+          <p>
+          @attr description
+          legend
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_legendTitle
+        */
+        public static int FlexChartBase_c1_legendTitle = 28;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendTitleStyleFill}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_legendTitleStyleFill
+        */
+        public static int FlexChartBase_c1_legendTitleStyleFill = 32;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendTitleStyleFontSize}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_legendTitleStyleFontSize
+        */
+        public static int FlexChartBase_c1_legendTitleStyleFontSize = 29;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendTitleStyleStroke}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_legendTitleStyleStroke
+        */
+        public static int FlexChartBase_c1_legendTitleStyleStroke = 33;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendTitleStyleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_legendTitleStyleStrokeThickness
+        */
+        public static int FlexChartBase_c1_legendTitleStyleStrokeThickness = 34;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendTitleStyleTypeface}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_legendTitleStyleTypeface
+        */
+        public static int FlexChartBase_c1_legendTitleStyleTypeface = 30;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendTitleStyleTypefaceStyle}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_legendTitleStyleTypefaceStyle
+        */
+        public static int FlexChartBase_c1_legendTitleStyleTypefaceStyle = 31;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_legendToggle}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_legendToggle
+        */
+        public static int FlexChartBase_c1_legendToggle = 5;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_palette}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>Standard</code></td><td>0</td><td></td></tr>
+<tr><td><code>Cocoa</code></td><td>1</td><td></td></tr>
+<tr><td><code>Coral</code></td><td>2</td><td></td></tr>
+<tr><td><code>Highcontrast</code></td><td>3</td><td></td></tr>
+<tr><td><code>Light</code></td><td>4</td><td></td></tr>
+<tr><td><code>Midnight</code></td><td>5</td><td></td></tr>
+<tr><td><code>Minimal</code></td><td>6</td><td></td></tr>
+<tr><td><code>Modern</code></td><td>7</td><td></td></tr>
+<tr><td><code>Organic</code></td><td>8</td><td></td></tr>
+<tr><td><code>Slate</code></td><td>9</td><td></td></tr>
+<tr><td><code>Zen</code></td><td>10</td><td></td></tr>
+<tr><td><code>Cyborg</code></td><td>11</td><td></td></tr>
+<tr><td><code>Superhero</code></td><td>12</td><td></td></tr>
+<tr><td><code>Flatly</code></td><td>13</td><td></td></tr>
+<tr><td><code>Darkly</code></td><td>14</td><td></td></tr>
+<tr><td><code>Cerulean</code></td><td>15</td><td></td></tr>
+<tr><td><code>Custom</code></td><td>16</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_palette
+        */
+        public static int FlexChartBase_c1_palette = 2;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_plotStyleFill}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_plotStyleFill
+        */
+        public static int FlexChartBase_c1_plotStyleFill = 46;
+        /**
+          <p>
+          @attr description
+          plot style
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android.support.v7.mediarouter:c1_plotStyleFontSize
+        */
+        public static int FlexChartBase_c1_plotStyleFontSize = 43;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_plotStyleStroke}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_plotStyleStroke
+        */
+        public static int FlexChartBase_c1_plotStyleStroke = 47;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_plotStyleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_plotStyleStrokeThickness
+        */
+        public static int FlexChartBase_c1_plotStyleStrokeThickness = 48;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_plotStyleTypeface}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_plotStyleTypeface
+        */
+        public static int FlexChartBase_c1_plotStyleTypeface = 44;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_plotStyleTypefaceStyle}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_plotStyleTypefaceStyle
+        */
+        public static int FlexChartBase_c1_plotStyleTypefaceStyle = 45;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_selectedIndex}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_selectedIndex
+        */
+        public static int FlexChartBase_c1_selectedIndex = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_selectionMode}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>None</code></td><td>0</td><td></td></tr>
+<tr><td><code>Series</code></td><td>1</td><td></td></tr>
+<tr><td><code>Point</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_selectionMode
+        */
+        public static int FlexChartBase_c1_selectionMode = 3;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_selectionStyleFill}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_selectionStyleFill
+        */
+        public static int FlexChartBase_c1_selectionStyleFill = 9;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_selectionStyleFontSize}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_selectionStyleFontSize
+        */
+        public static int FlexChartBase_c1_selectionStyleFontSize = 6;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_selectionStyleStroke}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_selectionStyleStroke
+        */
+        public static int FlexChartBase_c1_selectionStyleStroke = 10;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_selectionStyleStrokeThickness}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_selectionStyleStrokeThickness
+        */
+        public static int FlexChartBase_c1_selectionStyleStrokeThickness = 11;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_selectionStyleTypeface}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_selectionStyleTypeface
+        */
+        public static int FlexChartBase_c1_selectionStyleTypeface = 7;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_selectionStyleTypefaceStyle}
+          attribute's value can be found in the {@link #FlexChartBase} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>NORMAL</code></td><td>0</td><td></td></tr>
+<tr><td><code>BOLD</code></td><td>1</td><td></td></tr>
+<tr><td><code>ITALIC</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOLD_ITALIC</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_selectionStyleTypefaceStyle
+        */
+        public static int FlexChartBase_c1_selectionStyleTypefaceStyle = 8;
+        /**  BEGIN duplicate fields for FlexPie 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #FlexPie_c1_bindingName android.support.v7.mediarouter:c1_bindingName}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexPie_c1_innerRadius android.support.v7.mediarouter:c1_innerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexPie_c1_offset android.support.v7.mediarouter:c1_offset}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexPie_c1_reversed android.support.v7.mediarouter:c1_reversed}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexPie_c1_selectedItemOffset android.support.v7.mediarouter:c1_selectedItemOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexPie_c1_selectedItemPosition android.support.v7.mediarouter:c1_selectedItemPosition}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlexPie_c1_startAngle android.support.v7.mediarouter:c1_startAngle}</code></td><td></td></tr>
+           </table>
+           @see #FlexPie_c1_bindingName
+           @see #FlexPie_c1_innerRadius
+           @see #FlexPie_c1_offset
+           @see #FlexPie_c1_reversed
+           @see #FlexPie_c1_selectedItemOffset
+           @see #FlexPie_c1_selectedItemPosition
+           @see #FlexPie_c1_startAngle
+         */
+        public static final int[] FlexPie = {
+            0x7f0101e6, 0x7f0101e7, 0x7f0101e8, 0x7f0101e9,
+            0x7f0101ea, 0x7f0101eb, 0x7f0101ec
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_bindingName}
+          attribute's value can be found in the {@link #FlexPie} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_bindingName
+        */
+        public static int FlexPie_c1_bindingName = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_innerRadius}
+          attribute's value can be found in the {@link #FlexPie} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_innerRadius
+        */
+        public static int FlexPie_c1_innerRadius = 3;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_offset}
+          attribute's value can be found in the {@link #FlexPie} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_offset
+        */
+        public static int FlexPie_c1_offset = 2;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_reversed}
+          attribute's value can be found in the {@link #FlexPie} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>FALSE</code></td><td>0</td><td></td></tr>
+<tr><td><code>TURE</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_reversed
+        */
+        public static int FlexPie_c1_reversed = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_selectedItemOffset}
+          attribute's value can be found in the {@link #FlexPie} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_selectedItemOffset
+        */
+        public static int FlexPie_c1_selectedItemOffset = 5;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_selectedItemPosition}
+          attribute's value can be found in the {@link #FlexPie} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>LEFT</code></td><td>0</td><td></td></tr>
+<tr><td><code>RIGHT</code></td><td>1</td><td></td></tr>
+<tr><td><code>TOP</code></td><td>2</td><td></td></tr>
+<tr><td><code>BOTTOM</code></td><td>3</td><td></td></tr>
+<tr><td><code>AUTO</code></td><td>4</td><td></td></tr>
+<tr><td><code>NONE</code></td><td>5</td><td></td></tr>
+</table>
+          @attr name android.support.v7.mediarouter:c1_selectedItemPosition
+        */
+        public static int FlexPie_c1_selectedItemPosition = 6;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_startAngle}
+          attribute's value can be found in the {@link #FlexPie} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_startAngle
+        */
+        public static int FlexPie_c1_startAngle = 4;
         /** Attributes that can be used with a FloatingActionButton.
            <p>Includes the following attributes:</p>
            <table>
@@ -9240,6 +13743,34 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name android.support.v7.mediarouter:popupTheme
         */
         public static int Spinner_popupTheme = 4;
+        /**  END duplicate fields for FlexPie 
+ BEGIN fields for Sunburst 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Sunburst_c1_childItemsPath android.support.v7.mediarouter:c1_childItemsPath}</code></td><td></td></tr>
+           </table>
+           @see #Sunburst_c1_childItemsPath
+         */
+        public static final int[] Sunburst = {
+            0x7f0101ed
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.mediarouter.R.attr#c1_childItemsPath}
+          attribute's value can be found in the {@link #Sunburst} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.mediarouter:c1_childItemsPath
+        */
+        public static int Sunburst_c1_childItemsPath = 0;
         /** Attributes that can be used with a SwitchCompat.
            <p>Includes the following attributes:</p>
            <table>

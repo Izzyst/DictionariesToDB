@@ -29,20 +29,29 @@ namespace App3
             if (db.CheckIfDatabaseEmpty() == false)
             {
                 List<WordTable> words = new List<WordTable>();
+                List<WordTable> sortedList = new List<WordTable>();
                 List<string> defs = new List<string>();
                 words = db.SelectTableWord();
                 int x = 0;
                 if (Int32.TryParse(text, out x))
                 {
-                    int id = words[x].IdWordJson;
-                    foreach (var item in words)
+                    for (int i = 0; i < words.Count - 1; i++)
+                    {
+                        if (words[i].W != words[i + 1].W)// tutaj powinno być spr czy w całej liście instnieje taki element -- group by
+                        {
+                            sortedList.Add(words[i]);
+                        }
+                    }
+                    var alphabeticaList = sortedList.OrderBy(s => s.W).ToList();
+                    int id = alphabeticaList[x].IdWordJson;
+                    foreach (var item in alphabeticaList)
                     {
                         if (item.IdWordJson == id)
                         {
                             defs.Add(item.Def);
                         }
                     }
-                    wordText.Text = words[x].W;
+                    wordText.Text = alphabeticaList[x].W;
 
                     string d = "";
 

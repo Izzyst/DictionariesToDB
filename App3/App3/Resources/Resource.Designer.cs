@@ -26,10 +26,399 @@ namespace App3
 		
 		public static void UpdateIdValues()
 		{
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_format = global::App3.Resource.Attribute.c1_axisX_format;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_labelAlignment = global::App3.Resource.Attribute.c1_axisX_labelAlignment;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_labelAngle = global::App3.Resource.Attribute.c1_axisX_labelAngle;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_labelsVisible = global::App3.Resource.Attribute.c1_axisX_labelsVisible;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_line = global::App3.Resource.Attribute.c1_axisX_line;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_logBase = global::App3.Resource.Attribute.c1_axisX_logBase;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_majorGridStyleStroke = global::App3.Resource.Attribute.c1_axisX_majorGridStyleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_majorGridStyleStrokeThickness = global::App3.Resource.Attribute.c1_axisX_majorGridStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_majorGridVisible = global::App3.Resource.Attribute.c1_axisX_majorGridVisible;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_majorTickMark = global::App3.Resource.Attribute.c1_axisX_majorTickMark;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_majorUnit = global::App3.Resource.Attribute.c1_axisX_majorUnit;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_max = global::App3.Resource.Attribute.c1_axisX_max;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_min = global::App3.Resource.Attribute.c1_axisX_min;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_minorGridStyleStroke = global::App3.Resource.Attribute.c1_axisX_minorGridStyleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_minorGridStyleStrokeThickness = global::App3.Resource.Attribute.c1_axisX_minorGridStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_minorGridVisible = global::App3.Resource.Attribute.c1_axisX_minorGridVisible;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_minorTickMark = global::App3.Resource.Attribute.c1_axisX_minorTickMark;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_minorUnit = global::App3.Resource.Attribute.c1_axisX_minorUnit;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_origin = global::App3.Resource.Attribute.c1_axisX_origin;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_overlappingLabels = global::App3.Resource.Attribute.c1_axisX_overlappingLabels;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_position = global::App3.Resource.Attribute.c1_axisX_position;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_reversed = global::App3.Resource.Attribute.c1_axisX_reversed;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_styleFill = global::App3.Resource.Attribute.c1_axisX_styleFill;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_styleFontSize = global::App3.Resource.Attribute.c1_axisX_styleFontSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_styleStroke = global::App3.Resource.Attribute.c1_axisX_styleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_styleStrokeThickness = global::App3.Resource.Attribute.c1_axisX_styleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_styleTypeface = global::App3.Resource.Attribute.c1_axisX_styleTypeface;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_styleTypefaceStyle = global::App3.Resource.Attribute.c1_axisX_styleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_title = global::App3.Resource.Attribute.c1_axisX_title;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_titleStyleFill = global::App3.Resource.Attribute.c1_axisX_titleStyleFill;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_titleStyleFontSize = global::App3.Resource.Attribute.c1_axisX_titleStyleFontSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_titleStyleStroke = global::App3.Resource.Attribute.c1_axisX_titleStyleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_titleStyleStrokeThickness = global::App3.Resource.Attribute.c1_axisX_titleStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_titleStyleTypeface = global::App3.Resource.Attribute.c1_axisX_titleStyleTypeface;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_titleStyleTypefaceStyle = global::App3.Resource.Attribute.c1_axisX_titleStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisX_type = global::App3.Resource.Attribute.c1_axisX_type;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_format = global::App3.Resource.Attribute.c1_axisY_format;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_labelAlignment = global::App3.Resource.Attribute.c1_axisY_labelAlignment;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_labelAngle = global::App3.Resource.Attribute.c1_axisY_labelAngle;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_labelsVisible = global::App3.Resource.Attribute.c1_axisY_labelsVisible;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_line = global::App3.Resource.Attribute.c1_axisY_line;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_logBase = global::App3.Resource.Attribute.c1_axisY_logBase;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_majorGridStyleStroke = global::App3.Resource.Attribute.c1_axisY_majorGridStyleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_majorGridStyleStrokeThickness = global::App3.Resource.Attribute.c1_axisY_majorGridStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_majorGridVisible = global::App3.Resource.Attribute.c1_axisY_majorGridVisible;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_majorTickMark = global::App3.Resource.Attribute.c1_axisY_majorTickMark;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_majorUnit = global::App3.Resource.Attribute.c1_axisY_majorUnit;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_max = global::App3.Resource.Attribute.c1_axisY_max;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_min = global::App3.Resource.Attribute.c1_axisY_min;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_minorGridStyleStroke = global::App3.Resource.Attribute.c1_axisY_minorGridStyleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_minorGridStyleStrokeThickness = global::App3.Resource.Attribute.c1_axisY_minorGridStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_minorGridVisible = global::App3.Resource.Attribute.c1_axisY_minorGridVisible;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_minorTickMark = global::App3.Resource.Attribute.c1_axisY_minorTickMark;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_minorUnit = global::App3.Resource.Attribute.c1_axisY_minorUnit;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_origin = global::App3.Resource.Attribute.c1_axisY_origin;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_overlappingLabels = global::App3.Resource.Attribute.c1_axisY_overlappingLabels;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_position = global::App3.Resource.Attribute.c1_axisY_position;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_reversed = global::App3.Resource.Attribute.c1_axisY_reversed;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_styleFill = global::App3.Resource.Attribute.c1_axisY_styleFill;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_styleFontSize = global::App3.Resource.Attribute.c1_axisY_styleFontSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_styleStroke = global::App3.Resource.Attribute.c1_axisY_styleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_styleStrokeThickness = global::App3.Resource.Attribute.c1_axisY_styleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_styleTypeface = global::App3.Resource.Attribute.c1_axisY_styleTypeface;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_styleTypefaceStyle = global::App3.Resource.Attribute.c1_axisY_styleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_title = global::App3.Resource.Attribute.c1_axisY_title;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_titleStyleFill = global::App3.Resource.Attribute.c1_axisY_titleStyleFill;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_titleStyleFontSize = global::App3.Resource.Attribute.c1_axisY_titleStyleFontSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_titleStyleStroke = global::App3.Resource.Attribute.c1_axisY_titleStyleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_titleStyleStrokeThickness = global::App3.Resource.Attribute.c1_axisY_titleStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_titleStyleTypeface = global::App3.Resource.Attribute.c1_axisY_titleStyleTypeface;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_titleStyleTypefaceStyle = global::App3.Resource.Attribute.c1_axisY_titleStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Attribute.c1_axisY_type = global::App3.Resource.Attribute.c1_axisY_type;
+			global::C1.Android.Chart.Resource.Attribute.c1_backgroundColor = global::App3.Resource.Attribute.c1_backgroundColor;
+			global::C1.Android.Chart.Resource.Attribute.c1_binding = global::App3.Resource.Attribute.c1_binding;
+			global::C1.Android.Chart.Resource.Attribute.c1_bindingName = global::App3.Resource.Attribute.c1_bindingName;
+			global::C1.Android.Chart.Resource.Attribute.c1_bindingX = global::App3.Resource.Attribute.c1_bindingX;
+			global::C1.Android.Chart.Resource.Attribute.c1_borderColor = global::App3.Resource.Attribute.c1_borderColor;
+			global::C1.Android.Chart.Resource.Attribute.c1_chartType = global::App3.Resource.Attribute.c1_chartType;
+			global::C1.Android.Chart.Resource.Attribute.c1_childItemsPath = global::App3.Resource.Attribute.c1_childItemsPath;
+			global::C1.Android.Chart.Resource.Attribute.c1_datalabel_border = global::App3.Resource.Attribute.c1_datalabel_border;
+			global::C1.Android.Chart.Resource.Attribute.c1_datalabel_borderColor = global::App3.Resource.Attribute.c1_datalabel_borderColor;
+			global::C1.Android.Chart.Resource.Attribute.c1_datalabel_borderThickness = global::App3.Resource.Attribute.c1_datalabel_borderThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_datalabel_connectingLine = global::App3.Resource.Attribute.c1_datalabel_connectingLine;
+			global::C1.Android.Chart.Resource.Attribute.c1_datalabel_offset = global::App3.Resource.Attribute.c1_datalabel_offset;
+			global::C1.Android.Chart.Resource.Attribute.c1_datalabel_position = global::App3.Resource.Attribute.c1_datalabel_position;
+			global::C1.Android.Chart.Resource.Attribute.c1_datalabel_styleFill = global::App3.Resource.Attribute.c1_datalabel_styleFill;
+			global::C1.Android.Chart.Resource.Attribute.c1_datalabel_styleFontSize = global::App3.Resource.Attribute.c1_datalabel_styleFontSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_datalabel_styleStroke = global::App3.Resource.Attribute.c1_datalabel_styleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_datalabel_styleStrokeThickness = global::App3.Resource.Attribute.c1_datalabel_styleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_datalabel_styleTypeface = global::App3.Resource.Attribute.c1_datalabel_styleTypeface;
+			global::C1.Android.Chart.Resource.Attribute.c1_datalabel_styleTypefaceStyle = global::App3.Resource.Attribute.c1_datalabel_styleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Attribute.c1_fontFamily = global::App3.Resource.Attribute.c1_fontFamily;
+			global::C1.Android.Chart.Resource.Attribute.c1_footer = global::App3.Resource.Attribute.c1_footer;
+			global::C1.Android.Chart.Resource.Attribute.c1_footerFontGravity = global::App3.Resource.Attribute.c1_footerFontGravity;
+			global::C1.Android.Chart.Resource.Attribute.c1_footerStyleFill = global::App3.Resource.Attribute.c1_footerStyleFill;
+			global::C1.Android.Chart.Resource.Attribute.c1_footerStyleFontSize = global::App3.Resource.Attribute.c1_footerStyleFontSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_footerStyleStroke = global::App3.Resource.Attribute.c1_footerStyleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_footerStyleStrokeThickness = global::App3.Resource.Attribute.c1_footerStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_footerStyleTypeface = global::App3.Resource.Attribute.c1_footerStyleTypeface;
+			global::C1.Android.Chart.Resource.Attribute.c1_footerStyleTypefaceStyle = global::App3.Resource.Attribute.c1_footerStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Attribute.c1_header = global::App3.Resource.Attribute.c1_header;
+			global::C1.Android.Chart.Resource.Attribute.c1_headerFontGravity = global::App3.Resource.Attribute.c1_headerFontGravity;
+			global::C1.Android.Chart.Resource.Attribute.c1_headerStyleFill = global::App3.Resource.Attribute.c1_headerStyleFill;
+			global::C1.Android.Chart.Resource.Attribute.c1_headerStyleFontSize = global::App3.Resource.Attribute.c1_headerStyleFontSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_headerStyleStroke = global::App3.Resource.Attribute.c1_headerStyleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_headerStyleStrokeThickness = global::App3.Resource.Attribute.c1_headerStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_headerStyleTypeface = global::App3.Resource.Attribute.c1_headerStyleTypeface;
+			global::C1.Android.Chart.Resource.Attribute.c1_headerStyleTypefaceStyle = global::App3.Resource.Attribute.c1_headerStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Attribute.c1_innerRadius = global::App3.Resource.Attribute.c1_innerRadius;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendOrientation = global::App3.Resource.Attribute.c1_legendOrientation;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendPosition = global::App3.Resource.Attribute.c1_legendPosition;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendStyleFill = global::App3.Resource.Attribute.c1_legendStyleFill;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendStyleFontSize = global::App3.Resource.Attribute.c1_legendStyleFontSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendStyleStroke = global::App3.Resource.Attribute.c1_legendStyleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendStyleStrokeThickness = global::App3.Resource.Attribute.c1_legendStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendStyleTypeface = global::App3.Resource.Attribute.c1_legendStyleTypeface;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendStyleTypefaceStyle = global::App3.Resource.Attribute.c1_legendStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendTitle = global::App3.Resource.Attribute.c1_legendTitle;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendTitleStyleFill = global::App3.Resource.Attribute.c1_legendTitleStyleFill;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendTitleStyleFontSize = global::App3.Resource.Attribute.c1_legendTitleStyleFontSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendTitleStyleStroke = global::App3.Resource.Attribute.c1_legendTitleStyleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendTitleStyleStrokeThickness = global::App3.Resource.Attribute.c1_legendTitleStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendTitleStyleTypeface = global::App3.Resource.Attribute.c1_legendTitleStyleTypeface;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendTitleStyleTypefaceStyle = global::App3.Resource.Attribute.c1_legendTitleStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Attribute.c1_legendToggle = global::App3.Resource.Attribute.c1_legendToggle;
+			global::C1.Android.Chart.Resource.Attribute.c1_offset = global::App3.Resource.Attribute.c1_offset;
+			global::C1.Android.Chart.Resource.Attribute.c1_options_bubbleMaxSize = global::App3.Resource.Attribute.c1_options_bubbleMaxSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_options_bubbleMinSize = global::App3.Resource.Attribute.c1_options_bubbleMinSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_options_groupWidth = global::App3.Resource.Attribute.c1_options_groupWidth;
+			global::C1.Android.Chart.Resource.Attribute.c1_palette = global::App3.Resource.Attribute.c1_palette;
+			global::C1.Android.Chart.Resource.Attribute.c1_plotStyleFill = global::App3.Resource.Attribute.c1_plotStyleFill;
+			global::C1.Android.Chart.Resource.Attribute.c1_plotStyleFontSize = global::App3.Resource.Attribute.c1_plotStyleFontSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_plotStyleStroke = global::App3.Resource.Attribute.c1_plotStyleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_plotStyleStrokeThickness = global::App3.Resource.Attribute.c1_plotStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_plotStyleTypeface = global::App3.Resource.Attribute.c1_plotStyleTypeface;
+			global::C1.Android.Chart.Resource.Attribute.c1_plotStyleTypefaceStyle = global::App3.Resource.Attribute.c1_plotStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Attribute.c1_reversed = global::App3.Resource.Attribute.c1_reversed;
+			global::C1.Android.Chart.Resource.Attribute.c1_rotated = global::App3.Resource.Attribute.c1_rotated;
+			global::C1.Android.Chart.Resource.Attribute.c1_selectedIndex = global::App3.Resource.Attribute.c1_selectedIndex;
+			global::C1.Android.Chart.Resource.Attribute.c1_selectedItemOffset = global::App3.Resource.Attribute.c1_selectedItemOffset;
+			global::C1.Android.Chart.Resource.Attribute.c1_selectedItemPosition = global::App3.Resource.Attribute.c1_selectedItemPosition;
+			global::C1.Android.Chart.Resource.Attribute.c1_selectionBackgroundColor = global::App3.Resource.Attribute.c1_selectionBackgroundColor;
+			global::C1.Android.Chart.Resource.Attribute.c1_selectionMode = global::App3.Resource.Attribute.c1_selectionMode;
+			global::C1.Android.Chart.Resource.Attribute.c1_selectionStyleFill = global::App3.Resource.Attribute.c1_selectionStyleFill;
+			global::C1.Android.Chart.Resource.Attribute.c1_selectionStyleFontSize = global::App3.Resource.Attribute.c1_selectionStyleFontSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_selectionStyleStroke = global::App3.Resource.Attribute.c1_selectionStyleStroke;
+			global::C1.Android.Chart.Resource.Attribute.c1_selectionStyleStrokeThickness = global::App3.Resource.Attribute.c1_selectionStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Attribute.c1_selectionStyleTypeface = global::App3.Resource.Attribute.c1_selectionStyleTypeface;
+			global::C1.Android.Chart.Resource.Attribute.c1_selectionStyleTypefaceStyle = global::App3.Resource.Attribute.c1_selectionStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Attribute.c1_selectionTextColor = global::App3.Resource.Attribute.c1_selectionTextColor;
+			global::C1.Android.Chart.Resource.Attribute.c1_stackingType = global::App3.Resource.Attribute.c1_stackingType;
+			global::C1.Android.Chart.Resource.Attribute.c1_startAngle = global::App3.Resource.Attribute.c1_startAngle;
+			global::C1.Android.Chart.Resource.Attribute.c1_textColor = global::App3.Resource.Attribute.c1_textColor;
+			global::C1.Android.Chart.Resource.Attribute.c1_textSize = global::App3.Resource.Attribute.c1_textSize;
+			global::C1.Android.Chart.Resource.Attribute.c1_textStyle = global::App3.Resource.Attribute.c1_textStyle;
+			global::C1.Android.Chart.Resource.Attribute.c1_typeface = global::App3.Resource.Attribute.c1_typeface;
+			global::C1.Android.Chart.Resource.Id.ALL = global::App3.Resource.Id.ALL;
+			global::C1.Android.Chart.Resource.Id.AREA = global::App3.Resource.Id.AREA;
+			global::C1.Android.Chart.Resource.Id.AUTO = global::App3.Resource.Id.AUTO;
+			global::C1.Android.Chart.Resource.Id.BAR = global::App3.Resource.Id.BAR;
+			global::C1.Android.Chart.Resource.Id.BOLD = global::App3.Resource.Id.BOLD;
+			global::C1.Android.Chart.Resource.Id.BOLD_ITALIC = global::App3.Resource.Id.BOLD_ITALIC;
+			global::C1.Android.Chart.Resource.Id.BOTTOM = global::App3.Resource.Id.BOTTOM;
+			global::C1.Android.Chart.Resource.Id.BUBBLE = global::App3.Resource.Id.BUBBLE;
+			global::C1.Android.Chart.Resource.Id.CANDLE = global::App3.Resource.Id.CANDLE;
+			global::C1.Android.Chart.Resource.Id.CENTER = global::App3.Resource.Id.CENTER;
+			global::C1.Android.Chart.Resource.Id.CENTER_HORIZONTAL = global::App3.Resource.Id.CENTER_HORIZONTAL;
+			global::C1.Android.Chart.Resource.Id.COLUMN = global::App3.Resource.Id.COLUMN;
+			global::C1.Android.Chart.Resource.Id.Cerulean = global::App3.Resource.Id.Cerulean;
+			global::C1.Android.Chart.Resource.Id.Cocoa = global::App3.Resource.Id.Cocoa;
+			global::C1.Android.Chart.Resource.Id.Coral = global::App3.Resource.Id.Coral;
+			global::C1.Android.Chart.Resource.Id.Cross = global::App3.Resource.Id.Cross;
+			global::C1.Android.Chart.Resource.Id.Custom = global::App3.Resource.Id.Custom;
+			global::C1.Android.Chart.Resource.Id.Cyborg = global::App3.Resource.Id.Cyborg;
+			global::C1.Android.Chart.Resource.Id.Darkly = global::App3.Resource.Id.Darkly;
+			global::C1.Android.Chart.Resource.Id.FALSE = global::App3.Resource.Id.FALSE;
+			global::C1.Android.Chart.Resource.Id.Flatly = global::App3.Resource.Id.Flatly;
+			global::C1.Android.Chart.Resource.Id.HLOC = global::App3.Resource.Id.HLOC;
+			global::C1.Android.Chart.Resource.Id.HORIZONTAL = global::App3.Resource.Id.HORIZONTAL;
+			global::C1.Android.Chart.Resource.Id.Highcontrast = global::App3.Resource.Id.Highcontrast;
+			global::C1.Android.Chart.Resource.Id.INSIDE = global::App3.Resource.Id.INSIDE;
+			global::C1.Android.Chart.Resource.Id.ITALIC = global::App3.Resource.Id.ITALIC;
+			global::C1.Android.Chart.Resource.Id.LEFT = global::App3.Resource.Id.LEFT;
+			global::C1.Android.Chart.Resource.Id.LINE = global::App3.Resource.Id.LINE;
+			global::C1.Android.Chart.Resource.Id.LINESYMBOLS = global::App3.Resource.Id.LINESYMBOLS;
+			global::C1.Android.Chart.Resource.Id.Light = global::App3.Resource.Id.Light;
+			global::C1.Android.Chart.Resource.Id.Midnight = global::App3.Resource.Id.Midnight;
+			global::C1.Android.Chart.Resource.Id.Minimal = global::App3.Resource.Id.Minimal;
+			global::C1.Android.Chart.Resource.Id.Modern = global::App3.Resource.Id.Modern;
+			global::C1.Android.Chart.Resource.Id.NONE = global::App3.Resource.Id.NONE;
+			global::C1.Android.Chart.Resource.Id.NORMAL = global::App3.Resource.Id.NORMAL;
+			global::C1.Android.Chart.Resource.Id.None = global::App3.Resource.Id.None;
+			global::C1.Android.Chart.Resource.Id.OUTSIDE = global::App3.Resource.Id.OUTSIDE;
+			global::C1.Android.Chart.Resource.Id.Organic = global::App3.Resource.Id.Organic;
+			global::C1.Android.Chart.Resource.Id.Point = global::App3.Resource.Id.Point;
+			global::C1.Android.Chart.Resource.Id.RIGHT = global::App3.Resource.Id.RIGHT;
+			global::C1.Android.Chart.Resource.Id.SCATTER = global::App3.Resource.Id.SCATTER;
+			global::C1.Android.Chart.Resource.Id.SHOW = global::App3.Resource.Id.SHOW;
+			global::C1.Android.Chart.Resource.Id.SPLINE = global::App3.Resource.Id.SPLINE;
+			global::C1.Android.Chart.Resource.Id.SPLINEAREA = global::App3.Resource.Id.SPLINEAREA;
+			global::C1.Android.Chart.Resource.Id.SPLINESYMBOLS = global::App3.Resource.Id.SPLINESYMBOLS;
+			global::C1.Android.Chart.Resource.Id.STACKED = global::App3.Resource.Id.STACKED;
+			global::C1.Android.Chart.Resource.Id.STACKED100pc = global::App3.Resource.Id.STACKED100pc;
+			global::C1.Android.Chart.Resource.Id.Series = global::App3.Resource.Id.Series;
+			global::C1.Android.Chart.Resource.Id.Slate = global::App3.Resource.Id.Slate;
+			global::C1.Android.Chart.Resource.Id.Standard = global::App3.Resource.Id.Standard;
+			global::C1.Android.Chart.Resource.Id.Superhero = global::App3.Resource.Id.Superhero;
+			global::C1.Android.Chart.Resource.Id.TOP = global::App3.Resource.Id.TOP;
+			global::C1.Android.Chart.Resource.Id.TRUE = global::App3.Resource.Id.TRUE;
+			global::C1.Android.Chart.Resource.Id.TURE = global::App3.Resource.Id.TURE;
+			global::C1.Android.Chart.Resource.Id.VERTICAL = global::App3.Resource.Id.VERTICAL;
+			global::C1.Android.Chart.Resource.Id.X = global::App3.Resource.Id.X;
+			global::C1.Android.Chart.Resource.Id.Y = global::App3.Resource.Id.Y;
+			global::C1.Android.Chart.Resource.Id.Zen = global::App3.Resource.Id.Zen;
+			global::C1.Android.Chart.Resource.Id.bold = global::App3.Resource.Id.bold;
+			global::C1.Android.Chart.Resource.Id.italic = global::App3.Resource.Id.italic;
+			global::C1.Android.Chart.Resource.Id.monospace = global::App3.Resource.Id.monospace;
+			global::C1.Android.Chart.Resource.Id.normal = global::App3.Resource.Id.normal;
+			global::C1.Android.Chart.Resource.Id.sans = global::App3.Resource.Id.sans;
+			global::C1.Android.Chart.Resource.Id.serif = global::App3.Resource.Id.serif;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart = global::App3.Resource.Styleable.FlexChart;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_format = global::App3.Resource.Styleable.FlexChart_c1_axisX_format;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_labelAlignment = global::App3.Resource.Styleable.FlexChart_c1_axisX_labelAlignment;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_labelAngle = global::App3.Resource.Styleable.FlexChart_c1_axisX_labelAngle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_labelsVisible = global::App3.Resource.Styleable.FlexChart_c1_axisX_labelsVisible;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_line = global::App3.Resource.Styleable.FlexChart_c1_axisX_line;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_logBase = global::App3.Resource.Styleable.FlexChart_c1_axisX_logBase;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_majorGridStyleStroke = global::App3.Resource.Styleable.FlexChart_c1_axisX_majorGridStyleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_majorGridStyleStrokeThickness = global::App3.Resource.Styleable.FlexChart_c1_axisX_majorGridStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_majorGridVisible = global::App3.Resource.Styleable.FlexChart_c1_axisX_majorGridVisible;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_majorTickMark = global::App3.Resource.Styleable.FlexChart_c1_axisX_majorTickMark;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_majorUnit = global::App3.Resource.Styleable.FlexChart_c1_axisX_majorUnit;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_max = global::App3.Resource.Styleable.FlexChart_c1_axisX_max;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_min = global::App3.Resource.Styleable.FlexChart_c1_axisX_min;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_minorGridStyleStroke = global::App3.Resource.Styleable.FlexChart_c1_axisX_minorGridStyleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_minorGridStyleStrokeThickness = global::App3.Resource.Styleable.FlexChart_c1_axisX_minorGridStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_minorGridVisible = global::App3.Resource.Styleable.FlexChart_c1_axisX_minorGridVisible;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_minorTickMark = global::App3.Resource.Styleable.FlexChart_c1_axisX_minorTickMark;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_minorUnit = global::App3.Resource.Styleable.FlexChart_c1_axisX_minorUnit;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_origin = global::App3.Resource.Styleable.FlexChart_c1_axisX_origin;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_overlappingLabels = global::App3.Resource.Styleable.FlexChart_c1_axisX_overlappingLabels;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_position = global::App3.Resource.Styleable.FlexChart_c1_axisX_position;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_reversed = global::App3.Resource.Styleable.FlexChart_c1_axisX_reversed;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_styleFill = global::App3.Resource.Styleable.FlexChart_c1_axisX_styleFill;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_styleFontSize = global::App3.Resource.Styleable.FlexChart_c1_axisX_styleFontSize;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_styleStroke = global::App3.Resource.Styleable.FlexChart_c1_axisX_styleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_styleStrokeThickness = global::App3.Resource.Styleable.FlexChart_c1_axisX_styleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_styleTypeface = global::App3.Resource.Styleable.FlexChart_c1_axisX_styleTypeface;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_styleTypefaceStyle = global::App3.Resource.Styleable.FlexChart_c1_axisX_styleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_title = global::App3.Resource.Styleable.FlexChart_c1_axisX_title;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_titleStyleFill = global::App3.Resource.Styleable.FlexChart_c1_axisX_titleStyleFill;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_titleStyleFontSize = global::App3.Resource.Styleable.FlexChart_c1_axisX_titleStyleFontSize;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_titleStyleStroke = global::App3.Resource.Styleable.FlexChart_c1_axisX_titleStyleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_titleStyleStrokeThickness = global::App3.Resource.Styleable.FlexChart_c1_axisX_titleStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_titleStyleTypeface = global::App3.Resource.Styleable.FlexChart_c1_axisX_titleStyleTypeface;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_titleStyleTypefaceStyle = global::App3.Resource.Styleable.FlexChart_c1_axisX_titleStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisX_type = global::App3.Resource.Styleable.FlexChart_c1_axisX_type;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_format = global::App3.Resource.Styleable.FlexChart_c1_axisY_format;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_labelAlignment = global::App3.Resource.Styleable.FlexChart_c1_axisY_labelAlignment;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_labelAngle = global::App3.Resource.Styleable.FlexChart_c1_axisY_labelAngle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_labelsVisible = global::App3.Resource.Styleable.FlexChart_c1_axisY_labelsVisible;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_line = global::App3.Resource.Styleable.FlexChart_c1_axisY_line;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_logBase = global::App3.Resource.Styleable.FlexChart_c1_axisY_logBase;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_majorGridStyleStroke = global::App3.Resource.Styleable.FlexChart_c1_axisY_majorGridStyleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_majorGridStyleStrokeThickness = global::App3.Resource.Styleable.FlexChart_c1_axisY_majorGridStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_majorGridVisible = global::App3.Resource.Styleable.FlexChart_c1_axisY_majorGridVisible;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_majorTickMark = global::App3.Resource.Styleable.FlexChart_c1_axisY_majorTickMark;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_majorUnit = global::App3.Resource.Styleable.FlexChart_c1_axisY_majorUnit;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_max = global::App3.Resource.Styleable.FlexChart_c1_axisY_max;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_min = global::App3.Resource.Styleable.FlexChart_c1_axisY_min;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_minorGridStyleStroke = global::App3.Resource.Styleable.FlexChart_c1_axisY_minorGridStyleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_minorGridStyleStrokeThickness = global::App3.Resource.Styleable.FlexChart_c1_axisY_minorGridStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_minorGridVisible = global::App3.Resource.Styleable.FlexChart_c1_axisY_minorGridVisible;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_minorTickMark = global::App3.Resource.Styleable.FlexChart_c1_axisY_minorTickMark;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_minorUnit = global::App3.Resource.Styleable.FlexChart_c1_axisY_minorUnit;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_origin = global::App3.Resource.Styleable.FlexChart_c1_axisY_origin;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_overlappingLabels = global::App3.Resource.Styleable.FlexChart_c1_axisY_overlappingLabels;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_position = global::App3.Resource.Styleable.FlexChart_c1_axisY_position;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_reversed = global::App3.Resource.Styleable.FlexChart_c1_axisY_reversed;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_styleFill = global::App3.Resource.Styleable.FlexChart_c1_axisY_styleFill;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_styleFontSize = global::App3.Resource.Styleable.FlexChart_c1_axisY_styleFontSize;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_styleStroke = global::App3.Resource.Styleable.FlexChart_c1_axisY_styleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_styleStrokeThickness = global::App3.Resource.Styleable.FlexChart_c1_axisY_styleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_styleTypeface = global::App3.Resource.Styleable.FlexChart_c1_axisY_styleTypeface;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_styleTypefaceStyle = global::App3.Resource.Styleable.FlexChart_c1_axisY_styleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_title = global::App3.Resource.Styleable.FlexChart_c1_axisY_title;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_titleStyleFill = global::App3.Resource.Styleable.FlexChart_c1_axisY_titleStyleFill;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_titleStyleFontSize = global::App3.Resource.Styleable.FlexChart_c1_axisY_titleStyleFontSize;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_titleStyleStroke = global::App3.Resource.Styleable.FlexChart_c1_axisY_titleStyleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_titleStyleStrokeThickness = global::App3.Resource.Styleable.FlexChart_c1_axisY_titleStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_titleStyleTypeface = global::App3.Resource.Styleable.FlexChart_c1_axisY_titleStyleTypeface;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_titleStyleTypefaceStyle = global::App3.Resource.Styleable.FlexChart_c1_axisY_titleStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_axisY_type = global::App3.Resource.Styleable.FlexChart_c1_axisY_type;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_bindingX = global::App3.Resource.Styleable.FlexChart_c1_bindingX;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_chartType = global::App3.Resource.Styleable.FlexChart_c1_chartType;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_datalabel_border = global::App3.Resource.Styleable.FlexChart_c1_datalabel_border;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_datalabel_borderColor = global::App3.Resource.Styleable.FlexChart_c1_datalabel_borderColor;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_datalabel_borderThickness = global::App3.Resource.Styleable.FlexChart_c1_datalabel_borderThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_datalabel_connectingLine = global::App3.Resource.Styleable.FlexChart_c1_datalabel_connectingLine;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_datalabel_offset = global::App3.Resource.Styleable.FlexChart_c1_datalabel_offset;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_datalabel_position = global::App3.Resource.Styleable.FlexChart_c1_datalabel_position;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_datalabel_styleFill = global::App3.Resource.Styleable.FlexChart_c1_datalabel_styleFill;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_datalabel_styleFontSize = global::App3.Resource.Styleable.FlexChart_c1_datalabel_styleFontSize;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_datalabel_styleStroke = global::App3.Resource.Styleable.FlexChart_c1_datalabel_styleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_datalabel_styleStrokeThickness = global::App3.Resource.Styleable.FlexChart_c1_datalabel_styleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_datalabel_styleTypeface = global::App3.Resource.Styleable.FlexChart_c1_datalabel_styleTypeface;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_datalabel_styleTypefaceStyle = global::App3.Resource.Styleable.FlexChart_c1_datalabel_styleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_options_bubbleMaxSize = global::App3.Resource.Styleable.FlexChart_c1_options_bubbleMaxSize;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_options_bubbleMinSize = global::App3.Resource.Styleable.FlexChart_c1_options_bubbleMinSize;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_options_groupWidth = global::App3.Resource.Styleable.FlexChart_c1_options_groupWidth;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_rotated = global::App3.Resource.Styleable.FlexChart_c1_rotated;
+			global::C1.Android.Chart.Resource.Styleable.FlexChart_c1_stackingType = global::App3.Resource.Styleable.FlexChart_c1_stackingType;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase = global::App3.Resource.Styleable.FlexChartBase;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_backgroundColor = global::App3.Resource.Styleable.FlexChartBase_c1_backgroundColor;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_binding = global::App3.Resource.Styleable.FlexChartBase_c1_binding;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_footer = global::App3.Resource.Styleable.FlexChartBase_c1_footer;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_footerFontGravity = global::App3.Resource.Styleable.FlexChartBase_c1_footerFontGravity;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_footerStyleFill = global::App3.Resource.Styleable.FlexChartBase_c1_footerStyleFill;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_footerStyleFontSize = global::App3.Resource.Styleable.FlexChartBase_c1_footerStyleFontSize;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_footerStyleStroke = global::App3.Resource.Styleable.FlexChartBase_c1_footerStyleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_footerStyleStrokeThickness = global::App3.Resource.Styleable.FlexChartBase_c1_footerStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_footerStyleTypeface = global::App3.Resource.Styleable.FlexChartBase_c1_footerStyleTypeface;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_footerStyleTypefaceStyle = global::App3.Resource.Styleable.FlexChartBase_c1_footerStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_header = global::App3.Resource.Styleable.FlexChartBase_c1_header;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_headerFontGravity = global::App3.Resource.Styleable.FlexChartBase_c1_headerFontGravity;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_headerStyleFill = global::App3.Resource.Styleable.FlexChartBase_c1_headerStyleFill;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_headerStyleFontSize = global::App3.Resource.Styleable.FlexChartBase_c1_headerStyleFontSize;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_headerStyleStroke = global::App3.Resource.Styleable.FlexChartBase_c1_headerStyleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_headerStyleStrokeThickness = global::App3.Resource.Styleable.FlexChartBase_c1_headerStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_headerStyleTypeface = global::App3.Resource.Styleable.FlexChartBase_c1_headerStyleTypeface;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_headerStyleTypefaceStyle = global::App3.Resource.Styleable.FlexChartBase_c1_headerStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendOrientation = global::App3.Resource.Styleable.FlexChartBase_c1_legendOrientation;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendPosition = global::App3.Resource.Styleable.FlexChartBase_c1_legendPosition;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendStyleFill = global::App3.Resource.Styleable.FlexChartBase_c1_legendStyleFill;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendStyleFontSize = global::App3.Resource.Styleable.FlexChartBase_c1_legendStyleFontSize;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendStyleStroke = global::App3.Resource.Styleable.FlexChartBase_c1_legendStyleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendStyleStrokeThickness = global::App3.Resource.Styleable.FlexChartBase_c1_legendStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendStyleTypeface = global::App3.Resource.Styleable.FlexChartBase_c1_legendStyleTypeface;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendStyleTypefaceStyle = global::App3.Resource.Styleable.FlexChartBase_c1_legendStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendTitle = global::App3.Resource.Styleable.FlexChartBase_c1_legendTitle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendTitleStyleFill = global::App3.Resource.Styleable.FlexChartBase_c1_legendTitleStyleFill;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendTitleStyleFontSize = global::App3.Resource.Styleable.FlexChartBase_c1_legendTitleStyleFontSize;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendTitleStyleStroke = global::App3.Resource.Styleable.FlexChartBase_c1_legendTitleStyleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendTitleStyleStrokeThickness = global::App3.Resource.Styleable.FlexChartBase_c1_legendTitleStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendTitleStyleTypeface = global::App3.Resource.Styleable.FlexChartBase_c1_legendTitleStyleTypeface;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendTitleStyleTypefaceStyle = global::App3.Resource.Styleable.FlexChartBase_c1_legendTitleStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_legendToggle = global::App3.Resource.Styleable.FlexChartBase_c1_legendToggle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_palette = global::App3.Resource.Styleable.FlexChartBase_c1_palette;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_plotStyleFill = global::App3.Resource.Styleable.FlexChartBase_c1_plotStyleFill;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_plotStyleFontSize = global::App3.Resource.Styleable.FlexChartBase_c1_plotStyleFontSize;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_plotStyleStroke = global::App3.Resource.Styleable.FlexChartBase_c1_plotStyleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_plotStyleStrokeThickness = global::App3.Resource.Styleable.FlexChartBase_c1_plotStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_plotStyleTypeface = global::App3.Resource.Styleable.FlexChartBase_c1_plotStyleTypeface;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_plotStyleTypefaceStyle = global::App3.Resource.Styleable.FlexChartBase_c1_plotStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_selectedIndex = global::App3.Resource.Styleable.FlexChartBase_c1_selectedIndex;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_selectionMode = global::App3.Resource.Styleable.FlexChartBase_c1_selectionMode;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_selectionStyleFill = global::App3.Resource.Styleable.FlexChartBase_c1_selectionStyleFill;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_selectionStyleFontSize = global::App3.Resource.Styleable.FlexChartBase_c1_selectionStyleFontSize;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_selectionStyleStroke = global::App3.Resource.Styleable.FlexChartBase_c1_selectionStyleStroke;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_selectionStyleStrokeThickness = global::App3.Resource.Styleable.FlexChartBase_c1_selectionStyleStrokeThickness;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_selectionStyleTypeface = global::App3.Resource.Styleable.FlexChartBase_c1_selectionStyleTypeface;
+			global::C1.Android.Chart.Resource.Styleable.FlexChartBase_c1_selectionStyleTypefaceStyle = global::App3.Resource.Styleable.FlexChartBase_c1_selectionStyleTypefaceStyle;
+			global::C1.Android.Chart.Resource.Styleable.FlexPie = global::App3.Resource.Styleable.FlexPie;
+			global::C1.Android.Chart.Resource.Styleable.FlexPie_c1_bindingName = global::App3.Resource.Styleable.FlexPie_c1_bindingName;
+			global::C1.Android.Chart.Resource.Styleable.FlexPie_c1_innerRadius = global::App3.Resource.Styleable.FlexPie_c1_innerRadius;
+			global::C1.Android.Chart.Resource.Styleable.FlexPie_c1_offset = global::App3.Resource.Styleable.FlexPie_c1_offset;
+			global::C1.Android.Chart.Resource.Styleable.FlexPie_c1_reversed = global::App3.Resource.Styleable.FlexPie_c1_reversed;
+			global::C1.Android.Chart.Resource.Styleable.FlexPie_c1_selectedItemOffset = global::App3.Resource.Styleable.FlexPie_c1_selectedItemOffset;
+			global::C1.Android.Chart.Resource.Styleable.FlexPie_c1_selectedItemPosition = global::App3.Resource.Styleable.FlexPie_c1_selectedItemPosition;
+			global::C1.Android.Chart.Resource.Styleable.FlexPie_c1_startAngle = global::App3.Resource.Styleable.FlexPie_c1_startAngle;
+			global::C1.Android.Chart.Resource.Styleable.Sunburst = global::App3.Resource.Styleable.Sunburst;
+			global::C1.Android.Chart.Resource.Styleable.Sunburst_c1_childItemsPath = global::App3.Resource.Styleable.Sunburst_c1_childItemsPath;
+			global::C1.Android.Core.Resource.Attribute.c1_backgroundColor = global::App3.Resource.Attribute.c1_backgroundColor;
+			global::C1.Android.Core.Resource.Attribute.c1_borderColor = global::App3.Resource.Attribute.c1_borderColor;
+			global::C1.Android.Core.Resource.Attribute.c1_fontFamily = global::App3.Resource.Attribute.c1_fontFamily;
+			global::C1.Android.Core.Resource.Attribute.c1_selectedIndex = global::App3.Resource.Attribute.c1_selectedIndex;
+			global::C1.Android.Core.Resource.Attribute.c1_selectionBackgroundColor = global::App3.Resource.Attribute.c1_selectionBackgroundColor;
+			global::C1.Android.Core.Resource.Attribute.c1_selectionTextColor = global::App3.Resource.Attribute.c1_selectionTextColor;
+			global::C1.Android.Core.Resource.Attribute.c1_textColor = global::App3.Resource.Attribute.c1_textColor;
+			global::C1.Android.Core.Resource.Attribute.c1_textSize = global::App3.Resource.Attribute.c1_textSize;
+			global::C1.Android.Core.Resource.Attribute.c1_textStyle = global::App3.Resource.Attribute.c1_textStyle;
+			global::C1.Android.Core.Resource.Attribute.c1_typeface = global::App3.Resource.Attribute.c1_typeface;
+			global::C1.Android.Core.Resource.Id.bold = global::App3.Resource.Id.bold;
+			global::C1.Android.Core.Resource.Id.italic = global::App3.Resource.Id.italic;
+			global::C1.Android.Core.Resource.Id.monospace = global::App3.Resource.Id.monospace;
+			global::C1.Android.Core.Resource.Id.normal = global::App3.Resource.Id.normal;
+			global::C1.Android.Core.Resource.Id.sans = global::App3.Resource.Id.sans;
+			global::C1.Android.Core.Resource.Id.serif = global::App3.Resource.Id.serif;
 			global::PCLCrypto.Resource.String.ApplicationName = global::App3.Resource.String.ApplicationName;
 			global::PCLCrypto.Resource.String.Hello = global::App3.Resource.String.Hello;
 			global::PCLStorage.Resource.String.ApplicationName = global::App3.Resource.String.ApplicationName;
 			global::PCLStorage.Resource.String.Hello = global::App3.Resource.String.Hello;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::App3.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation
@@ -337,6 +726,474 @@ namespace App3
 			
 			// aapt resource value: 0x7f0100b1
 			public const int buttonTintMode = 2130772145;
+			
+			// aapt resource value: 0x7f010195
+			public const int c1_axisX_format = 2130772373;
+			
+			// aapt resource value: 0x7f010196
+			public const int c1_axisX_labelAlignment = 2130772374;
+			
+			// aapt resource value: 0x7f010197
+			public const int c1_axisX_labelAngle = 2130772375;
+			
+			// aapt resource value: 0x7f01019b
+			public const int c1_axisX_labelsVisible = 2130772379;
+			
+			// aapt resource value: 0x7f010193
+			public const int c1_axisX_line = 2130772371;
+			
+			// aapt resource value: 0x7f010198
+			public const int c1_axisX_logBase = 2130772376;
+			
+			// aapt resource value: 0x7f01019f
+			public const int c1_axisX_majorGridStyleStroke = 2130772383;
+			
+			// aapt resource value: 0x7f0101a0
+			public const int c1_axisX_majorGridStyleStrokeThickness = 2130772384;
+			
+			// aapt resource value: 0x7f01019c
+			public const int c1_axisX_majorGridVisible = 2130772380;
+			
+			// aapt resource value: 0x7f01019d
+			public const int c1_axisX_majorTickMark = 2130772381;
+			
+			// aapt resource value: 0x7f01019e
+			public const int c1_axisX_majorUnit = 2130772382;
+			
+			// aapt resource value: 0x7f010199
+			public const int c1_axisX_max = 2130772377;
+			
+			// aapt resource value: 0x7f01019a
+			public const int c1_axisX_min = 2130772378;
+			
+			// aapt resource value: 0x7f0101a4
+			public const int c1_axisX_minorGridStyleStroke = 2130772388;
+			
+			// aapt resource value: 0x7f0101a5
+			public const int c1_axisX_minorGridStyleStrokeThickness = 2130772389;
+			
+			// aapt resource value: 0x7f0101a1
+			public const int c1_axisX_minorGridVisible = 2130772385;
+			
+			// aapt resource value: 0x7f0101a2
+			public const int c1_axisX_minorTickMark = 2130772386;
+			
+			// aapt resource value: 0x7f0101a3
+			public const int c1_axisX_minorUnit = 2130772387;
+			
+			// aapt resource value: 0x7f0101a6
+			public const int c1_axisX_origin = 2130772390;
+			
+			// aapt resource value: 0x7f0101a7
+			public const int c1_axisX_overlappingLabels = 2130772391;
+			
+			// aapt resource value: 0x7f0101a8
+			public const int c1_axisX_position = 2130772392;
+			
+			// aapt resource value: 0x7f0101a9
+			public const int c1_axisX_reversed = 2130772393;
+			
+			// aapt resource value: 0x7f0101b4
+			public const int c1_axisX_styleFill = 2130772404;
+			
+			// aapt resource value: 0x7f0101b1
+			public const int c1_axisX_styleFontSize = 2130772401;
+			
+			// aapt resource value: 0x7f0101b5
+			public const int c1_axisX_styleStroke = 2130772405;
+			
+			// aapt resource value: 0x7f0101b6
+			public const int c1_axisX_styleStrokeThickness = 2130772406;
+			
+			// aapt resource value: 0x7f0101b2
+			public const int c1_axisX_styleTypeface = 2130772402;
+			
+			// aapt resource value: 0x7f0101b3
+			public const int c1_axisX_styleTypefaceStyle = 2130772403;
+			
+			// aapt resource value: 0x7f0101aa
+			public const int c1_axisX_title = 2130772394;
+			
+			// aapt resource value: 0x7f0101ae
+			public const int c1_axisX_titleStyleFill = 2130772398;
+			
+			// aapt resource value: 0x7f0101ab
+			public const int c1_axisX_titleStyleFontSize = 2130772395;
+			
+			// aapt resource value: 0x7f0101af
+			public const int c1_axisX_titleStyleStroke = 2130772399;
+			
+			// aapt resource value: 0x7f0101b0
+			public const int c1_axisX_titleStyleStrokeThickness = 2130772400;
+			
+			// aapt resource value: 0x7f0101ac
+			public const int c1_axisX_titleStyleTypeface = 2130772396;
+			
+			// aapt resource value: 0x7f0101ad
+			public const int c1_axisX_titleStyleTypefaceStyle = 2130772397;
+			
+			// aapt resource value: 0x7f010194
+			public const int c1_axisX_type = 2130772372;
+			
+			// aapt resource value: 0x7f0101b9
+			public const int c1_axisY_format = 2130772409;
+			
+			// aapt resource value: 0x7f0101ba
+			public const int c1_axisY_labelAlignment = 2130772410;
+			
+			// aapt resource value: 0x7f0101bb
+			public const int c1_axisY_labelAngle = 2130772411;
+			
+			// aapt resource value: 0x7f0101bf
+			public const int c1_axisY_labelsVisible = 2130772415;
+			
+			// aapt resource value: 0x7f0101b7
+			public const int c1_axisY_line = 2130772407;
+			
+			// aapt resource value: 0x7f0101bc
+			public const int c1_axisY_logBase = 2130772412;
+			
+			// aapt resource value: 0x7f0101c3
+			public const int c1_axisY_majorGridStyleStroke = 2130772419;
+			
+			// aapt resource value: 0x7f0101c4
+			public const int c1_axisY_majorGridStyleStrokeThickness = 2130772420;
+			
+			// aapt resource value: 0x7f0101c0
+			public const int c1_axisY_majorGridVisible = 2130772416;
+			
+			// aapt resource value: 0x7f0101c1
+			public const int c1_axisY_majorTickMark = 2130772417;
+			
+			// aapt resource value: 0x7f0101c2
+			public const int c1_axisY_majorUnit = 2130772418;
+			
+			// aapt resource value: 0x7f0101bd
+			public const int c1_axisY_max = 2130772413;
+			
+			// aapt resource value: 0x7f0101be
+			public const int c1_axisY_min = 2130772414;
+			
+			// aapt resource value: 0x7f0101c8
+			public const int c1_axisY_minorGridStyleStroke = 2130772424;
+			
+			// aapt resource value: 0x7f0101c9
+			public const int c1_axisY_minorGridStyleStrokeThickness = 2130772425;
+			
+			// aapt resource value: 0x7f0101c5
+			public const int c1_axisY_minorGridVisible = 2130772421;
+			
+			// aapt resource value: 0x7f0101c6
+			public const int c1_axisY_minorTickMark = 2130772422;
+			
+			// aapt resource value: 0x7f0101c7
+			public const int c1_axisY_minorUnit = 2130772423;
+			
+			// aapt resource value: 0x7f0101ca
+			public const int c1_axisY_origin = 2130772426;
+			
+			// aapt resource value: 0x7f0101cb
+			public const int c1_axisY_overlappingLabels = 2130772427;
+			
+			// aapt resource value: 0x7f0101cc
+			public const int c1_axisY_position = 2130772428;
+			
+			// aapt resource value: 0x7f0101cd
+			public const int c1_axisY_reversed = 2130772429;
+			
+			// aapt resource value: 0x7f0101d8
+			public const int c1_axisY_styleFill = 2130772440;
+			
+			// aapt resource value: 0x7f0101d5
+			public const int c1_axisY_styleFontSize = 2130772437;
+			
+			// aapt resource value: 0x7f0101d9
+			public const int c1_axisY_styleStroke = 2130772441;
+			
+			// aapt resource value: 0x7f0101da
+			public const int c1_axisY_styleStrokeThickness = 2130772442;
+			
+			// aapt resource value: 0x7f0101d6
+			public const int c1_axisY_styleTypeface = 2130772438;
+			
+			// aapt resource value: 0x7f0101d7
+			public const int c1_axisY_styleTypefaceStyle = 2130772439;
+			
+			// aapt resource value: 0x7f0101ce
+			public const int c1_axisY_title = 2130772430;
+			
+			// aapt resource value: 0x7f0101d2
+			public const int c1_axisY_titleStyleFill = 2130772434;
+			
+			// aapt resource value: 0x7f0101cf
+			public const int c1_axisY_titleStyleFontSize = 2130772431;
+			
+			// aapt resource value: 0x7f0101d3
+			public const int c1_axisY_titleStyleStroke = 2130772435;
+			
+			// aapt resource value: 0x7f0101d4
+			public const int c1_axisY_titleStyleStrokeThickness = 2130772436;
+			
+			// aapt resource value: 0x7f0101d0
+			public const int c1_axisY_titleStyleTypeface = 2130772432;
+			
+			// aapt resource value: 0x7f0101d1
+			public const int c1_axisY_titleStyleTypefaceStyle = 2130772433;
+			
+			// aapt resource value: 0x7f0101b8
+			public const int c1_axisY_type = 2130772408;
+			
+			// aapt resource value: 0x7f010147
+			public const int c1_backgroundColor = 2130772295;
+			
+			// aapt resource value: 0x7f010153
+			public const int c1_binding = 2130772307;
+			
+			// aapt resource value: 0x7f0101db
+			public const int c1_bindingName = 2130772443;
+			
+			// aapt resource value: 0x7f010185
+			public const int c1_bindingX = 2130772357;
+			
+			// aapt resource value: 0x7f01014d
+			public const int c1_borderColor = 2130772301;
+			
+			// aapt resource value: 0x7f010180
+			public const int c1_chartType = 2130772352;
+			
+			// aapt resource value: 0x7f0101e2
+			public const int c1_childItemsPath = 2130772450;
+			
+			// aapt resource value: 0x7f010187
+			public const int c1_datalabel_border = 2130772359;
+			
+			// aapt resource value: 0x7f010189
+			public const int c1_datalabel_borderColor = 2130772361;
+			
+			// aapt resource value: 0x7f010188
+			public const int c1_datalabel_borderThickness = 2130772360;
+			
+			// aapt resource value: 0x7f01018a
+			public const int c1_datalabel_connectingLine = 2130772362;
+			
+			// aapt resource value: 0x7f01018b
+			public const int c1_datalabel_offset = 2130772363;
+			
+			// aapt resource value: 0x7f01018c
+			public const int c1_datalabel_position = 2130772364;
+			
+			// aapt resource value: 0x7f010190
+			public const int c1_datalabel_styleFill = 2130772368;
+			
+			// aapt resource value: 0x7f01018d
+			public const int c1_datalabel_styleFontSize = 2130772365;
+			
+			// aapt resource value: 0x7f010191
+			public const int c1_datalabel_styleStroke = 2130772369;
+			
+			// aapt resource value: 0x7f010192
+			public const int c1_datalabel_styleStrokeThickness = 2130772370;
+			
+			// aapt resource value: 0x7f01018e
+			public const int c1_datalabel_styleTypeface = 2130772366;
+			
+			// aapt resource value: 0x7f01018f
+			public const int c1_datalabel_styleTypefaceStyle = 2130772367;
+			
+			// aapt resource value: 0x7f01014b
+			public const int c1_fontFamily = 2130772299;
+			
+			// aapt resource value: 0x7f010163
+			public const int c1_footer = 2130772323;
+			
+			// aapt resource value: 0x7f010164
+			public const int c1_footerFontGravity = 2130772324;
+			
+			// aapt resource value: 0x7f010168
+			public const int c1_footerStyleFill = 2130772328;
+			
+			// aapt resource value: 0x7f010165
+			public const int c1_footerStyleFontSize = 2130772325;
+			
+			// aapt resource value: 0x7f010169
+			public const int c1_footerStyleStroke = 2130772329;
+			
+			// aapt resource value: 0x7f01016a
+			public const int c1_footerStyleStrokeThickness = 2130772330;
+			
+			// aapt resource value: 0x7f010166
+			public const int c1_footerStyleTypeface = 2130772326;
+			
+			// aapt resource value: 0x7f010167
+			public const int c1_footerStyleTypefaceStyle = 2130772327;
+			
+			// aapt resource value: 0x7f01015b
+			public const int c1_header = 2130772315;
+			
+			// aapt resource value: 0x7f01015c
+			public const int c1_headerFontGravity = 2130772316;
+			
+			// aapt resource value: 0x7f010160
+			public const int c1_headerStyleFill = 2130772320;
+			
+			// aapt resource value: 0x7f01015d
+			public const int c1_headerStyleFontSize = 2130772317;
+			
+			// aapt resource value: 0x7f010161
+			public const int c1_headerStyleStroke = 2130772321;
+			
+			// aapt resource value: 0x7f010162
+			public const int c1_headerStyleStrokeThickness = 2130772322;
+			
+			// aapt resource value: 0x7f01015e
+			public const int c1_headerStyleTypeface = 2130772318;
+			
+			// aapt resource value: 0x7f01015f
+			public const int c1_headerStyleTypefaceStyle = 2130772319;
+			
+			// aapt resource value: 0x7f0101de
+			public const int c1_innerRadius = 2130772446;
+			
+			// aapt resource value: 0x7f010179
+			public const int c1_legendOrientation = 2130772345;
+			
+			// aapt resource value: 0x7f010178
+			public const int c1_legendPosition = 2130772344;
+			
+			// aapt resource value: 0x7f010175
+			public const int c1_legendStyleFill = 2130772341;
+			
+			// aapt resource value: 0x7f010172
+			public const int c1_legendStyleFontSize = 2130772338;
+			
+			// aapt resource value: 0x7f010176
+			public const int c1_legendStyleStroke = 2130772342;
+			
+			// aapt resource value: 0x7f010177
+			public const int c1_legendStyleStrokeThickness = 2130772343;
+			
+			// aapt resource value: 0x7f010173
+			public const int c1_legendStyleTypeface = 2130772339;
+			
+			// aapt resource value: 0x7f010174
+			public const int c1_legendStyleTypefaceStyle = 2130772340;
+			
+			// aapt resource value: 0x7f01016b
+			public const int c1_legendTitle = 2130772331;
+			
+			// aapt resource value: 0x7f01016f
+			public const int c1_legendTitleStyleFill = 2130772335;
+			
+			// aapt resource value: 0x7f01016c
+			public const int c1_legendTitleStyleFontSize = 2130772332;
+			
+			// aapt resource value: 0x7f010170
+			public const int c1_legendTitleStyleStroke = 2130772336;
+			
+			// aapt resource value: 0x7f010171
+			public const int c1_legendTitleStyleStrokeThickness = 2130772337;
+			
+			// aapt resource value: 0x7f01016d
+			public const int c1_legendTitleStyleTypeface = 2130772333;
+			
+			// aapt resource value: 0x7f01016e
+			public const int c1_legendTitleStyleTypefaceStyle = 2130772334;
+			
+			// aapt resource value: 0x7f010154
+			public const int c1_legendToggle = 2130772308;
+			
+			// aapt resource value: 0x7f0101dd
+			public const int c1_offset = 2130772445;
+			
+			// aapt resource value: 0x7f010183
+			public const int c1_options_bubbleMaxSize = 2130772355;
+			
+			// aapt resource value: 0x7f010182
+			public const int c1_options_bubbleMinSize = 2130772354;
+			
+			// aapt resource value: 0x7f010184
+			public const int c1_options_groupWidth = 2130772356;
+			
+			// aapt resource value: 0x7f010151
+			public const int c1_palette = 2130772305;
+			
+			// aapt resource value: 0x7f01017d
+			public const int c1_plotStyleFill = 2130772349;
+			
+			// aapt resource value: 0x7f01017a
+			public const int c1_plotStyleFontSize = 2130772346;
+			
+			// aapt resource value: 0x7f01017e
+			public const int c1_plotStyleStroke = 2130772350;
+			
+			// aapt resource value: 0x7f01017f
+			public const int c1_plotStyleStrokeThickness = 2130772351;
+			
+			// aapt resource value: 0x7f01017b
+			public const int c1_plotStyleTypeface = 2130772347;
+			
+			// aapt resource value: 0x7f01017c
+			public const int c1_plotStyleTypefaceStyle = 2130772348;
+			
+			// aapt resource value: 0x7f0101dc
+			public const int c1_reversed = 2130772444;
+			
+			// aapt resource value: 0x7f010186
+			public const int c1_rotated = 2130772358;
+			
+			// aapt resource value: 0x7f010150
+			public const int c1_selectedIndex = 2130772304;
+			
+			// aapt resource value: 0x7f0101e0
+			public const int c1_selectedItemOffset = 2130772448;
+			
+			// aapt resource value: 0x7f0101e1
+			public const int c1_selectedItemPosition = 2130772449;
+			
+			// aapt resource value: 0x7f01014e
+			public const int c1_selectionBackgroundColor = 2130772302;
+			
+			// aapt resource value: 0x7f010152
+			public const int c1_selectionMode = 2130772306;
+			
+			// aapt resource value: 0x7f010158
+			public const int c1_selectionStyleFill = 2130772312;
+			
+			// aapt resource value: 0x7f010155
+			public const int c1_selectionStyleFontSize = 2130772309;
+			
+			// aapt resource value: 0x7f010159
+			public const int c1_selectionStyleStroke = 2130772313;
+			
+			// aapt resource value: 0x7f01015a
+			public const int c1_selectionStyleStrokeThickness = 2130772314;
+			
+			// aapt resource value: 0x7f010156
+			public const int c1_selectionStyleTypeface = 2130772310;
+			
+			// aapt resource value: 0x7f010157
+			public const int c1_selectionStyleTypefaceStyle = 2130772311;
+			
+			// aapt resource value: 0x7f01014f
+			public const int c1_selectionTextColor = 2130772303;
+			
+			// aapt resource value: 0x7f010181
+			public const int c1_stackingType = 2130772353;
+			
+			// aapt resource value: 0x7f0101df
+			public const int c1_startAngle = 2130772447;
+			
+			// aapt resource value: 0x7f010148
+			public const int c1_textColor = 2130772296;
+			
+			// aapt resource value: 0x7f010149
+			public const int c1_textSize = 2130772297;
+			
+			// aapt resource value: 0x7f01014a
+			public const int c1_textStyle = 2130772298;
+			
+			// aapt resource value: 0x7f01014c
+			public const int c1_typeface = 2130772300;
 			
 			// aapt resource value: 0x7f0100a3
 			public const int checkboxStyle = 2130772131;
@@ -2746,50 +3603,224 @@ namespace App3
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0900be
-			public const int ChooseLanguageTextView = 2131296446;
+			// aapt resource value: 0x7f090065
+			public const int ALL = 2131296357;
 			
-			// aapt resource value: 0x7f0900c4
-			public const int Unlock = 2131296452;
+			// aapt resource value: 0x7f090068
+			public const int AREA = 2131296360;
 			
-			// aapt resource value: 0x7f09009f
-			public const int about = 2131296415;
+			// aapt resource value: 0x7f090061
+			public const int AUTO = 2131296353;
 			
-			// aapt resource value: 0x7f0900a5
-			public const int action0 = 2131296421;
+			// aapt resource value: 0x7f090069
+			public const int BAR = 2131296361;
+			
+			// aapt resource value: 0x7f09005a
+			public const int BOLD = 2131296346;
+			
+			// aapt resource value: 0x7f09005b
+			public const int BOLD_ITALIC = 2131296347;
+			
+			// aapt resource value: 0x7f090062
+			public const int BOTTOM = 2131296354;
+			
+			// aapt resource value: 0x7f09006a
+			public const int BUBBLE = 2131296362;
+			
+			// aapt resource value: 0x7f09006b
+			public const int CANDLE = 2131296363;
+			
+			// aapt resource value: 0x7f090078
+			public const int CENTER = 2131296376;
+			
+			// aapt resource value: 0x7f09005e
+			public const int CENTER_HORIZONTAL = 2131296350;
+			
+			// aapt resource value: 0x7f09006c
+			public const int COLUMN = 2131296364;
+			
+			// aapt resource value: 0x7f090046
+			public const int Cerulean = 2131296326;
+			
+			// aapt resource value: 0x7f0900fd
+			public const int ChooseLanguageTextView = 2131296509;
+			
+			// aapt resource value: 0x7f090047
+			public const int Cocoa = 2131296327;
+			
+			// aapt resource value: 0x7f090048
+			public const int Coral = 2131296328;
+			
+			// aapt resource value: 0x7f09007b
+			public const int Cross = 2131296379;
+			
+			// aapt resource value: 0x7f090049
+			public const int Custom = 2131296329;
+			
+			// aapt resource value: 0x7f09004a
+			public const int Cyborg = 2131296330;
+			
+			// aapt resource value: 0x7f09004b
+			public const int Darkly = 2131296331;
+			
+			// aapt resource value: 0x7f090076
+			public const int FALSE = 2131296374;
+			
+			// aapt resource value: 0x7f09004c
+			public const int Flatly = 2131296332;
+			
+			// aapt resource value: 0x7f09006d
+			public const int HLOC = 2131296365;
+			
+			// aapt resource value: 0x7f090066
+			public const int HORIZONTAL = 2131296358;
+			
+			// aapt resource value: 0x7f09004d
+			public const int Highcontrast = 2131296333;
+			
+			// aapt resource value: 0x7f09007c
+			public const int INSIDE = 2131296380;
+			
+			// aapt resource value: 0x7f09005c
+			public const int ITALIC = 2131296348;
+			
+			// aapt resource value: 0x7f09005f
+			public const int LEFT = 2131296351;
+			
+			// aapt resource value: 0x7f09006e
+			public const int LINE = 2131296366;
+			
+			// aapt resource value: 0x7f09006f
+			public const int LINESYMBOLS = 2131296367;
+			
+			// aapt resource value: 0x7f09004e
+			public const int Light = 2131296334;
+			
+			// aapt resource value: 0x7f09004f
+			public const int Midnight = 2131296335;
+			
+			// aapt resource value: 0x7f090050
+			public const int Minimal = 2131296336;
+			
+			// aapt resource value: 0x7f090051
+			public const int Modern = 2131296337;
+			
+			// aapt resource value: 0x7f090063
+			public const int NONE = 2131296355;
+			
+			// aapt resource value: 0x7f09005d
+			public const int NORMAL = 2131296349;
+			
+			// aapt resource value: 0x7f090057
+			public const int None = 2131296343;
+			
+			// aapt resource value: 0x7f09007d
+			public const int OUTSIDE = 2131296381;
+			
+			// aapt resource value: 0x7f090052
+			public const int Organic = 2131296338;
+			
+			// aapt resource value: 0x7f090058
+			public const int Point = 2131296344;
+			
+			// aapt resource value: 0x7f090060
+			public const int RIGHT = 2131296352;
+			
+			// aapt resource value: 0x7f090070
+			public const int SCATTER = 2131296368;
+			
+			// aapt resource value: 0x7f09007e
+			public const int SHOW = 2131296382;
+			
+			// aapt resource value: 0x7f090071
+			public const int SPLINE = 2131296369;
+			
+			// aapt resource value: 0x7f090072
+			public const int SPLINEAREA = 2131296370;
+			
+			// aapt resource value: 0x7f090073
+			public const int SPLINESYMBOLS = 2131296371;
+			
+			// aapt resource value: 0x7f090074
+			public const int STACKED = 2131296372;
+			
+			// aapt resource value: 0x7f090075
+			public const int STACKED100pc = 2131296373;
+			
+			// aapt resource value: 0x7f090059
+			public const int Series = 2131296345;
+			
+			// aapt resource value: 0x7f090053
+			public const int Slate = 2131296339;
+			
+			// aapt resource value: 0x7f090054
+			public const int Standard = 2131296340;
+			
+			// aapt resource value: 0x7f090055
+			public const int Superhero = 2131296341;
 			
 			// aapt resource value: 0x7f090064
-			public const int action_bar = 2131296356;
+			public const int TOP = 2131296356;
+			
+			// aapt resource value: 0x7f090077
+			public const int TRUE = 2131296375;
+			
+			// aapt resource value: 0x7f09007f
+			public const int TURE = 2131296383;
+			
+			// aapt resource value: 0x7f090103
+			public const int Unlock = 2131296515;
+			
+			// aapt resource value: 0x7f090067
+			public const int VERTICAL = 2131296359;
+			
+			// aapt resource value: 0x7f090079
+			public const int X = 2131296377;
+			
+			// aapt resource value: 0x7f09007a
+			public const int Y = 2131296378;
+			
+			// aapt resource value: 0x7f090056
+			public const int Zen = 2131296342;
+			
+			// aapt resource value: 0x7f0900de
+			public const int about = 2131296478;
+			
+			// aapt resource value: 0x7f0900e4
+			public const int action0 = 2131296484;
+			
+			// aapt resource value: 0x7f0900a3
+			public const int action_bar = 2131296419;
 			
 			// aapt resource value: 0x7f090001
 			public const int action_bar_activity_content = 2131296257;
 			
-			// aapt resource value: 0x7f090063
-			public const int action_bar_container = 2131296355;
+			// aapt resource value: 0x7f0900a2
+			public const int action_bar_container = 2131296418;
 			
-			// aapt resource value: 0x7f09005f
-			public const int action_bar_root = 2131296351;
+			// aapt resource value: 0x7f09009e
+			public const int action_bar_root = 2131296414;
 			
 			// aapt resource value: 0x7f090002
 			public const int action_bar_spinner = 2131296258;
 			
-			// aapt resource value: 0x7f090042
-			public const int action_bar_subtitle = 2131296322;
+			// aapt resource value: 0x7f090081
+			public const int action_bar_subtitle = 2131296385;
 			
-			// aapt resource value: 0x7f090041
-			public const int action_bar_title = 2131296321;
+			// aapt resource value: 0x7f090080
+			public const int action_bar_title = 2131296384;
 			
-			// aapt resource value: 0x7f0900a2
-			public const int action_container = 2131296418;
+			// aapt resource value: 0x7f0900e1
+			public const int action_container = 2131296481;
 			
-			// aapt resource value: 0x7f090065
-			public const int action_context_bar = 2131296357;
+			// aapt resource value: 0x7f0900a4
+			public const int action_context_bar = 2131296420;
 			
-			// aapt resource value: 0x7f0900a9
-			public const int action_divider = 2131296425;
+			// aapt resource value: 0x7f0900e8
+			public const int action_divider = 2131296488;
 			
-			// aapt resource value: 0x7f0900a3
-			public const int action_image = 2131296419;
+			// aapt resource value: 0x7f0900e2
+			public const int action_image = 2131296482;
 			
 			// aapt resource value: 0x7f090003
 			public const int action_menu_divider = 2131296259;
@@ -2797,29 +3828,29 @@ namespace App3
 			// aapt resource value: 0x7f090004
 			public const int action_menu_presenter = 2131296260;
 			
-			// aapt resource value: 0x7f090061
-			public const int action_mode_bar = 2131296353;
+			// aapt resource value: 0x7f0900a0
+			public const int action_mode_bar = 2131296416;
 			
-			// aapt resource value: 0x7f090060
-			public const int action_mode_bar_stub = 2131296352;
+			// aapt resource value: 0x7f09009f
+			public const int action_mode_bar_stub = 2131296415;
 			
-			// aapt resource value: 0x7f090043
-			public const int action_mode_close_button = 2131296323;
+			// aapt resource value: 0x7f090082
+			public const int action_mode_close_button = 2131296386;
 			
-			// aapt resource value: 0x7f0900a4
-			public const int action_text = 2131296420;
+			// aapt resource value: 0x7f0900e3
+			public const int action_text = 2131296483;
 			
-			// aapt resource value: 0x7f0900b2
-			public const int actions = 2131296434;
+			// aapt resource value: 0x7f0900f1
+			public const int actions = 2131296497;
 			
-			// aapt resource value: 0x7f090044
-			public const int activity_chooser_view_content = 2131296324;
+			// aapt resource value: 0x7f090083
+			public const int activity_chooser_view_content = 2131296387;
 			
 			// aapt resource value: 0x7f090019
 			public const int add = 2131296281;
 			
-			// aapt resource value: 0x7f090058
-			public const int alertTitle = 2131296344;
+			// aapt resource value: 0x7f090097
+			public const int alertTitle = 2131296407;
 			
 			// aapt resource value: 0x7f09003d
 			public const int all = 2131296317;
@@ -2830,20 +3861,23 @@ namespace App3
 			// aapt resource value: 0x7f09002f
 			public const int auto = 2131296303;
 			
-			// aapt resource value: 0x7f090080
-			public const int beforeUseText = 2131296384;
+			// aapt resource value: 0x7f0900bf
+			public const int beforeUseText = 2131296447;
 			
 			// aapt resource value: 0x7f090020
 			public const int beginning = 2131296288;
 			
+			// aapt resource value: 0x7f090041
+			public const int bold = 2131296321;
+			
 			// aapt resource value: 0x7f090028
 			public const int bottom = 2131296296;
 			
-			// aapt resource value: 0x7f09004b
-			public const int buttonPanel = 2131296331;
+			// aapt resource value: 0x7f09008a
+			public const int buttonPanel = 2131296394;
 			
-			// aapt resource value: 0x7f0900a6
-			public const int cancel_action = 2131296422;
+			// aapt resource value: 0x7f0900e5
+			public const int cancel_action = 2131296485;
 			
 			// aapt resource value: 0x7f090030
 			public const int center = 2131296304;
@@ -2854,14 +3888,14 @@ namespace App3
 			// aapt resource value: 0x7f090032
 			public const int center_vertical = 2131296306;
 			
-			// aapt resource value: 0x7f09005b
-			public const int checkbox = 2131296347;
+			// aapt resource value: 0x7f09009a
+			public const int checkbox = 2131296410;
 			
-			// aapt resource value: 0x7f0900bd
-			public const int chooseFileBtn = 2131296445;
+			// aapt resource value: 0x7f0900fc
+			public const int chooseFileBtn = 2131296508;
 			
-			// aapt resource value: 0x7f0900ae
-			public const int chronometer = 2131296430;
+			// aapt resource value: 0x7f0900ed
+			public const int chronometer = 2131296493;
 			
 			// aapt resource value: 0x7f090039
 			public const int clip_horizontal = 2131296313;
@@ -2872,59 +3906,59 @@ namespace App3
 			// aapt resource value: 0x7f090024
 			public const int collapseActionView = 2131296292;
 			
-			// aapt resource value: 0x7f09004e
-			public const int contentPanel = 2131296334;
+			// aapt resource value: 0x7f09008d
+			public const int contentPanel = 2131296397;
 			
-			// aapt resource value: 0x7f090081
-			public const int csvText = 2131296385;
+			// aapt resource value: 0x7f0900c0
+			public const int csvText = 2131296448;
 			
-			// aapt resource value: 0x7f090082
-			public const int csvView = 2131296386;
+			// aapt resource value: 0x7f0900c1
+			public const int csvView = 2131296449;
 			
-			// aapt resource value: 0x7f090055
-			public const int custom = 2131296341;
+			// aapt resource value: 0x7f090094
+			public const int custom = 2131296404;
 			
-			// aapt resource value: 0x7f090054
-			public const int customPanel = 2131296340;
-			
-			// aapt resource value: 0x7f090062
-			public const int decor_content_parent = 2131296354;
-			
-			// aapt resource value: 0x7f090047
-			public const int default_activity_button = 2131296327;
-			
-			// aapt resource value: 0x7f090076
-			public const int design_bottom_sheet = 2131296374;
-			
-			// aapt resource value: 0x7f09007d
-			public const int design_menu_item_action_area = 2131296381;
-			
-			// aapt resource value: 0x7f09007c
-			public const int design_menu_item_action_area_stub = 2131296380;
-			
-			// aapt resource value: 0x7f09007b
-			public const int design_menu_item_text = 2131296379;
-			
-			// aapt resource value: 0x7f09007a
-			public const int design_navigation_view = 2131296378;
+			// aapt resource value: 0x7f090093
+			public const int customPanel = 2131296403;
 			
 			// aapt resource value: 0x7f0900a1
-			public const int dict = 2131296417;
+			public const int decor_content_parent = 2131296417;
+			
+			// aapt resource value: 0x7f090086
+			public const int default_activity_button = 2131296390;
+			
+			// aapt resource value: 0x7f0900b5
+			public const int design_bottom_sheet = 2131296437;
+			
+			// aapt resource value: 0x7f0900bc
+			public const int design_menu_item_action_area = 2131296444;
+			
+			// aapt resource value: 0x7f0900bb
+			public const int design_menu_item_action_area_stub = 2131296443;
+			
+			// aapt resource value: 0x7f0900ba
+			public const int design_menu_item_text = 2131296442;
+			
+			// aapt resource value: 0x7f0900b9
+			public const int design_navigation_view = 2131296441;
+			
+			// aapt resource value: 0x7f0900e0
+			public const int dict = 2131296480;
 			
 			// aapt resource value: 0x7f090012
 			public const int disableHome = 2131296274;
 			
-			// aapt resource value: 0x7f090066
-			public const int edit_query = 2131296358;
+			// aapt resource value: 0x7f0900a5
+			public const int edit_query = 2131296421;
 			
-			// aapt resource value: 0x7f0900c2
-			public const int emptyDict = 2131296450;
+			// aapt resource value: 0x7f090101
+			public const int emptyDict = 2131296513;
 			
 			// aapt resource value: 0x7f090021
 			public const int end = 2131296289;
 			
-			// aapt resource value: 0x7f0900b8
-			public const int end_padder = 2131296440;
+			// aapt resource value: 0x7f0900f7
+			public const int end_padder = 2131296503;
 			
 			// aapt resource value: 0x7f09002a
 			public const int enterAlways = 2131296298;
@@ -2932,17 +3966,17 @@ namespace App3
 			// aapt resource value: 0x7f09002b
 			public const int enterAlwaysCollapsed = 2131296299;
 			
-			// aapt resource value: 0x7f090084
-			public const int excView = 2131296388;
+			// aapt resource value: 0x7f0900c3
+			public const int excView = 2131296451;
 			
 			// aapt resource value: 0x7f09002c
 			public const int exitUntilCollapsed = 2131296300;
 			
-			// aapt resource value: 0x7f090045
-			public const int expand_activities_button = 2131296325;
+			// aapt resource value: 0x7f090084
+			public const int expand_activities_button = 2131296388;
 			
-			// aapt resource value: 0x7f09005a
-			public const int expanded_menu = 2131296346;
+			// aapt resource value: 0x7f090099
+			public const int expanded_menu = 2131296409;
 			
 			// aapt resource value: 0x7f09003b
 			public const int fill = 2131296315;
@@ -2956,11 +3990,11 @@ namespace App3
 			// aapt resource value: 0x7f09003f
 			public const int @fixed = 2131296319;
 			
-			// aapt resource value: 0x7f0900c5
-			public const int hard2Btn = 2131296453;
+			// aapt resource value: 0x7f090104
+			public const int hard2Btn = 2131296516;
 			
-			// aapt resource value: 0x7f0900c6
-			public const int hard3Btn = 2131296454;
+			// aapt resource value: 0x7f090105
+			public const int hard3Btn = 2131296517;
 			
 			// aapt resource value: 0x7f090005
 			public const int home = 2131296261;
@@ -2968,50 +4002,53 @@ namespace App3
 			// aapt resource value: 0x7f090013
 			public const int homeAsUp = 2131296275;
 			
-			// aapt resource value: 0x7f090049
-			public const int icon = 2131296329;
+			// aapt resource value: 0x7f090088
+			public const int icon = 2131296392;
 			
-			// aapt resource value: 0x7f0900b3
-			public const int icon_group = 2131296435;
+			// aapt resource value: 0x7f0900f2
+			public const int icon_group = 2131296498;
 			
 			// aapt resource value: 0x7f090025
 			public const int ifRoom = 2131296293;
 			
-			// aapt resource value: 0x7f090046
-			public const int image = 2131296326;
+			// aapt resource value: 0x7f090085
+			public const int image = 2131296389;
 			
-			// aapt resource value: 0x7f0900af
-			public const int info = 2131296431;
+			// aapt resource value: 0x7f0900ee
+			public const int info = 2131296494;
+			
+			// aapt resource value: 0x7f090042
+			public const int italic = 2131296322;
 			
 			// aapt resource value: 0x7f090000
 			public const int item_touch_helper_previous_elevation = 2131296256;
 			
-			// aapt resource value: 0x7f090074
-			public const int largeLabel = 2131296372;
+			// aapt resource value: 0x7f0900b3
+			public const int largeLabel = 2131296435;
 			
 			// aapt resource value: 0x7f090034
 			public const int left = 2131296308;
 			
-			// aapt resource value: 0x7f0900b4
-			public const int line1 = 2131296436;
+			// aapt resource value: 0x7f0900f3
+			public const int line1 = 2131296499;
 			
-			// aapt resource value: 0x7f0900b6
-			public const int line3 = 2131296438;
+			// aapt resource value: 0x7f0900f5
+			public const int line3 = 2131296501;
 			
 			// aapt resource value: 0x7f09000f
 			public const int listMode = 2131296271;
 			
-			// aapt resource value: 0x7f0900c3
-			public const int listView1 = 2131296451;
+			// aapt resource value: 0x7f090102
+			public const int listView1 = 2131296514;
 			
-			// aapt resource value: 0x7f090048
-			public const int list_item = 2131296328;
+			// aapt resource value: 0x7f090087
+			public const int list_item = 2131296391;
 			
-			// aapt resource value: 0x7f0900c8
-			public const int masked = 2131296456;
+			// aapt resource value: 0x7f090107
+			public const int masked = 2131296519;
 			
-			// aapt resource value: 0x7f0900a8
-			public const int media_actions = 2131296424;
+			// aapt resource value: 0x7f0900e7
+			public const int media_actions = 2131296487;
 			
 			// aapt resource value: 0x7f090022
 			public const int middle = 2131296290;
@@ -3019,86 +4056,89 @@ namespace App3
 			// aapt resource value: 0x7f09003e
 			public const int mini = 2131296318;
 			
-			// aapt resource value: 0x7f090091
-			public const int mr_art = 2131296401;
+			// aapt resource value: 0x7f090043
+			public const int monospace = 2131296323;
 			
-			// aapt resource value: 0x7f090086
-			public const int mr_chooser_list = 2131296390;
+			// aapt resource value: 0x7f0900d0
+			public const int mr_art = 2131296464;
 			
-			// aapt resource value: 0x7f090089
-			public const int mr_chooser_route_desc = 2131296393;
+			// aapt resource value: 0x7f0900c5
+			public const int mr_chooser_list = 2131296453;
 			
-			// aapt resource value: 0x7f090087
-			public const int mr_chooser_route_icon = 2131296391;
+			// aapt resource value: 0x7f0900c8
+			public const int mr_chooser_route_desc = 2131296456;
 			
-			// aapt resource value: 0x7f090088
-			public const int mr_chooser_route_name = 2131296392;
+			// aapt resource value: 0x7f0900c6
+			public const int mr_chooser_route_icon = 2131296454;
 			
-			// aapt resource value: 0x7f090085
-			public const int mr_chooser_title = 2131296389;
+			// aapt resource value: 0x7f0900c7
+			public const int mr_chooser_route_name = 2131296455;
 			
-			// aapt resource value: 0x7f09008e
-			public const int mr_close = 2131296398;
+			// aapt resource value: 0x7f0900c4
+			public const int mr_chooser_title = 2131296452;
 			
-			// aapt resource value: 0x7f090094
-			public const int mr_control_divider = 2131296404;
+			// aapt resource value: 0x7f0900cd
+			public const int mr_close = 2131296461;
 			
-			// aapt resource value: 0x7f09009a
-			public const int mr_control_playback_ctrl = 2131296410;
+			// aapt resource value: 0x7f0900d3
+			public const int mr_control_divider = 2131296467;
 			
-			// aapt resource value: 0x7f09009d
-			public const int mr_control_subtitle = 2131296413;
+			// aapt resource value: 0x7f0900d9
+			public const int mr_control_playback_ctrl = 2131296473;
 			
-			// aapt resource value: 0x7f09009c
-			public const int mr_control_title = 2131296412;
+			// aapt resource value: 0x7f0900dc
+			public const int mr_control_subtitle = 2131296476;
 			
-			// aapt resource value: 0x7f09009b
-			public const int mr_control_title_container = 2131296411;
+			// aapt resource value: 0x7f0900db
+			public const int mr_control_title = 2131296475;
 			
-			// aapt resource value: 0x7f09008f
-			public const int mr_custom_control = 2131296399;
+			// aapt resource value: 0x7f0900da
+			public const int mr_control_title_container = 2131296474;
 			
-			// aapt resource value: 0x7f090090
-			public const int mr_default_control = 2131296400;
+			// aapt resource value: 0x7f0900ce
+			public const int mr_custom_control = 2131296462;
 			
-			// aapt resource value: 0x7f09008b
-			public const int mr_dialog_area = 2131296395;
+			// aapt resource value: 0x7f0900cf
+			public const int mr_default_control = 2131296463;
 			
-			// aapt resource value: 0x7f09008a
-			public const int mr_expandable_area = 2131296394;
+			// aapt resource value: 0x7f0900ca
+			public const int mr_dialog_area = 2131296458;
 			
-			// aapt resource value: 0x7f09009e
-			public const int mr_group_expand_collapse = 2131296414;
+			// aapt resource value: 0x7f0900c9
+			public const int mr_expandable_area = 2131296457;
 			
-			// aapt resource value: 0x7f090092
-			public const int mr_media_main_control = 2131296402;
+			// aapt resource value: 0x7f0900dd
+			public const int mr_group_expand_collapse = 2131296477;
 			
-			// aapt resource value: 0x7f09008d
-			public const int mr_name = 2131296397;
+			// aapt resource value: 0x7f0900d1
+			public const int mr_media_main_control = 2131296465;
 			
-			// aapt resource value: 0x7f090093
-			public const int mr_playback_control = 2131296403;
+			// aapt resource value: 0x7f0900cc
+			public const int mr_name = 2131296460;
 			
-			// aapt resource value: 0x7f09008c
-			public const int mr_title_bar = 2131296396;
+			// aapt resource value: 0x7f0900d2
+			public const int mr_playback_control = 2131296466;
 			
-			// aapt resource value: 0x7f090095
-			public const int mr_volume_control = 2131296405;
+			// aapt resource value: 0x7f0900cb
+			public const int mr_title_bar = 2131296459;
 			
-			// aapt resource value: 0x7f090096
-			public const int mr_volume_group_list = 2131296406;
+			// aapt resource value: 0x7f0900d4
+			public const int mr_volume_control = 2131296468;
 			
-			// aapt resource value: 0x7f090098
-			public const int mr_volume_item_icon = 2131296408;
+			// aapt resource value: 0x7f0900d5
+			public const int mr_volume_group_list = 2131296469;
 			
-			// aapt resource value: 0x7f090099
-			public const int mr_volume_slider = 2131296409;
+			// aapt resource value: 0x7f0900d7
+			public const int mr_volume_item_icon = 2131296471;
+			
+			// aapt resource value: 0x7f0900d8
+			public const int mr_volume_slider = 2131296472;
 			
 			// aapt resource value: 0x7f09001a
 			public const int multiply = 2131296282;
 			
-			// aapt resource value: 0x7f090079
-			public const int navigation_header_container = 2131296377;
+			// aapt resource value: 0x7f0900b8
+			public const int navigation_header_container = 2131296440;
 			
 			// aapt resource value: 0x7f090026
 			public const int never = 2131296294;
@@ -3109,26 +4149,26 @@ namespace App3
 			// aapt resource value: 0x7f090010
 			public const int normal = 2131296272;
 			
-			// aapt resource value: 0x7f0900b1
-			public const int notification_background = 2131296433;
+			// aapt resource value: 0x7f0900f0
+			public const int notification_background = 2131296496;
 			
-			// aapt resource value: 0x7f0900ab
-			public const int notification_main_column = 2131296427;
+			// aapt resource value: 0x7f0900ea
+			public const int notification_main_column = 2131296490;
 			
-			// aapt resource value: 0x7f0900aa
-			public const int notification_main_column_container = 2131296426;
+			// aapt resource value: 0x7f0900e9
+			public const int notification_main_column_container = 2131296489;
 			
 			// aapt resource value: 0x7f090037
 			public const int parallax = 2131296311;
 			
-			// aapt resource value: 0x7f09004d
-			public const int parentPanel = 2131296333;
+			// aapt resource value: 0x7f09008c
+			public const int parentPanel = 2131296396;
 			
 			// aapt resource value: 0x7f090038
 			public const int pin = 2131296312;
 			
-			// aapt resource value: 0x7f0900c1
-			public const int progressBar1 = 2131296449;
+			// aapt resource value: 0x7f090100
+			public const int progressBar1 = 2131296512;
 			
 			// aapt resource value: 0x7f090006
 			public const int progress_circular = 2131296262;
@@ -3136,23 +4176,26 @@ namespace App3
 			// aapt resource value: 0x7f090007
 			public const int progress_horizontal = 2131296263;
 			
-			// aapt resource value: 0x7f09005d
-			public const int radio = 2131296349;
+			// aapt resource value: 0x7f09009c
+			public const int radio = 2131296412;
 			
-			// aapt resource value: 0x7f0900bb
-			public const int radio_extern = 2131296443;
+			// aapt resource value: 0x7f0900fa
+			public const int radio_extern = 2131296506;
 			
-			// aapt resource value: 0x7f0900bc
-			public const int radio_file = 2131296444;
+			// aapt resource value: 0x7f0900fb
+			public const int radio_file = 2131296507;
 			
 			// aapt resource value: 0x7f090035
 			public const int right = 2131296309;
 			
-			// aapt resource value: 0x7f0900b0
-			public const int right_icon = 2131296432;
+			// aapt resource value: 0x7f0900ef
+			public const int right_icon = 2131296495;
 			
-			// aapt resource value: 0x7f0900ac
-			public const int right_side = 2131296428;
+			// aapt resource value: 0x7f0900eb
+			public const int right_side = 2131296491;
+			
+			// aapt resource value: 0x7f090044
+			public const int sans = 2131296324;
 			
 			// aapt resource value: 0x7f09001b
 			public const int screen = 2131296283;
@@ -3160,56 +4203,59 @@ namespace App3
 			// aapt resource value: 0x7f09002d
 			public const int scroll = 2131296301;
 			
-			// aapt resource value: 0x7f090053
-			public const int scrollIndicatorDown = 2131296339;
+			// aapt resource value: 0x7f090092
+			public const int scrollIndicatorDown = 2131296402;
 			
-			// aapt resource value: 0x7f09004f
-			public const int scrollIndicatorUp = 2131296335;
+			// aapt resource value: 0x7f09008e
+			public const int scrollIndicatorUp = 2131296398;
 			
-			// aapt resource value: 0x7f090050
-			public const int scrollView = 2131296336;
+			// aapt resource value: 0x7f09008f
+			public const int scrollView = 2131296399;
 			
 			// aapt resource value: 0x7f090040
 			public const int scrollable = 2131296320;
 			
-			// aapt resource value: 0x7f090068
-			public const int search_badge = 2131296360;
+			// aapt resource value: 0x7f0900a7
+			public const int search_badge = 2131296423;
 			
-			// aapt resource value: 0x7f090067
-			public const int search_bar = 2131296359;
+			// aapt resource value: 0x7f0900a6
+			public const int search_bar = 2131296422;
 			
-			// aapt resource value: 0x7f090069
-			public const int search_button = 2131296361;
+			// aapt resource value: 0x7f0900a8
+			public const int search_button = 2131296424;
 			
-			// aapt resource value: 0x7f09006e
-			public const int search_close_btn = 2131296366;
+			// aapt resource value: 0x7f0900ad
+			public const int search_close_btn = 2131296429;
 			
-			// aapt resource value: 0x7f09006a
-			public const int search_edit_frame = 2131296362;
+			// aapt resource value: 0x7f0900a9
+			public const int search_edit_frame = 2131296425;
 			
-			// aapt resource value: 0x7f090070
-			public const int search_go_btn = 2131296368;
+			// aapt resource value: 0x7f0900af
+			public const int search_go_btn = 2131296431;
 			
-			// aapt resource value: 0x7f09006b
-			public const int search_mag_icon = 2131296363;
+			// aapt resource value: 0x7f0900aa
+			public const int search_mag_icon = 2131296426;
 			
-			// aapt resource value: 0x7f09006c
-			public const int search_plate = 2131296364;
+			// aapt resource value: 0x7f0900ab
+			public const int search_plate = 2131296427;
 			
-			// aapt resource value: 0x7f09006d
-			public const int search_src_text = 2131296365;
+			// aapt resource value: 0x7f0900ac
+			public const int search_src_text = 2131296428;
 			
-			// aapt resource value: 0x7f090071
-			public const int search_voice_btn = 2131296369;
+			// aapt resource value: 0x7f0900b0
+			public const int search_voice_btn = 2131296432;
 			
-			// aapt resource value: 0x7f090072
-			public const int select_dialog_listview = 2131296370;
+			// aapt resource value: 0x7f0900b1
+			public const int select_dialog_listview = 2131296433;
 			
-			// aapt resource value: 0x7f0900a0
-			public const int sett = 2131296416;
+			// aapt resource value: 0x7f090045
+			public const int serif = 2131296325;
 			
-			// aapt resource value: 0x7f09005c
-			public const int shortcut = 2131296348;
+			// aapt resource value: 0x7f0900df
+			public const int sett = 2131296479;
+			
+			// aapt resource value: 0x7f09009b
+			public const int shortcut = 2131296411;
 			
 			// aapt resource value: 0x7f090015
 			public const int showCustom = 2131296277;
@@ -3220,26 +4266,26 @@ namespace App3
 			// aapt resource value: 0x7f090017
 			public const int showTitle = 2131296279;
 			
-			// aapt resource value: 0x7f090073
-			public const int smallLabel = 2131296371;
+			// aapt resource value: 0x7f0900b2
+			public const int smallLabel = 2131296434;
 			
-			// aapt resource value: 0x7f090078
-			public const int snackbar_action = 2131296376;
+			// aapt resource value: 0x7f0900b7
+			public const int snackbar_action = 2131296439;
 			
-			// aapt resource value: 0x7f090077
-			public const int snackbar_text = 2131296375;
+			// aapt resource value: 0x7f0900b6
+			public const int snackbar_text = 2131296438;
 			
 			// aapt resource value: 0x7f09002e
 			public const int snap = 2131296302;
 			
-			// aapt resource value: 0x7f09004c
-			public const int spacer = 2131296332;
+			// aapt resource value: 0x7f09008b
+			public const int spacer = 2131296395;
 			
-			// aapt resource value: 0x7f0900c0
-			public const int spinner = 2131296448;
+			// aapt resource value: 0x7f0900ff
+			public const int spinner = 2131296511;
 			
-			// aapt resource value: 0x7f0900bf
-			public const int spinnerLanguage = 2131296447;
+			// aapt resource value: 0x7f0900fe
+			public const int spinnerLanguage = 2131296510;
 			
 			// aapt resource value: 0x7f090008
 			public const int split_action_bar = 2131296264;
@@ -3256,41 +4302,41 @@ namespace App3
 			// aapt resource value: 0x7f090036
 			public const int start = 2131296310;
 			
-			// aapt resource value: 0x7f0900a7
-			public const int status_bar_latest_event_content = 2131296423;
+			// aapt resource value: 0x7f0900e6
+			public const int status_bar_latest_event_content = 2131296486;
 			
-			// aapt resource value: 0x7f09005e
-			public const int submenuarrow = 2131296350;
+			// aapt resource value: 0x7f09009d
+			public const int submenuarrow = 2131296413;
 			
-			// aapt resource value: 0x7f09006f
-			public const int submit_area = 2131296367;
+			// aapt resource value: 0x7f0900ae
+			public const int submit_area = 2131296430;
 			
-			// aapt resource value: 0x7f0900ba
-			public const int switchButton = 2131296442;
+			// aapt resource value: 0x7f0900f9
+			public const int switchButton = 2131296505;
 			
 			// aapt resource value: 0x7f090011
 			public const int tabMode = 2131296273;
 			
-			// aapt resource value: 0x7f0900b7
-			public const int text = 2131296439;
+			// aapt resource value: 0x7f0900f6
+			public const int text = 2131296502;
 			
-			// aapt resource value: 0x7f0900b5
-			public const int text2 = 2131296437;
+			// aapt resource value: 0x7f0900f4
+			public const int text2 = 2131296500;
 			
-			// aapt resource value: 0x7f090052
-			public const int textSpacerNoButtons = 2131296338;
+			// aapt resource value: 0x7f090091
+			public const int textSpacerNoButtons = 2131296401;
 			
-			// aapt resource value: 0x7f090051
-			public const int textSpacerNoTitle = 2131296337;
+			// aapt resource value: 0x7f090090
+			public const int textSpacerNoTitle = 2131296400;
 			
-			// aapt resource value: 0x7f09007f
-			public const int textView1 = 2131296383;
+			// aapt resource value: 0x7f0900be
+			public const int textView1 = 2131296446;
 			
-			// aapt resource value: 0x7f0900b9
-			public const int textView2 = 2131296441;
+			// aapt resource value: 0x7f0900f8
+			public const int textView2 = 2131296504;
 			
-			// aapt resource value: 0x7f09007e
-			public const int text_input_password_toggle = 2131296382;
+			// aapt resource value: 0x7f0900bd
+			public const int text_input_password_toggle = 2131296445;
 			
 			// aapt resource value: 0x7f09000c
 			public const int textinput_counter = 2131296268;
@@ -3298,26 +4344,26 @@ namespace App3
 			// aapt resource value: 0x7f09000d
 			public const int textinput_error = 2131296269;
 			
-			// aapt resource value: 0x7f0900ad
-			public const int time = 2131296429;
+			// aapt resource value: 0x7f0900ec
+			public const int time = 2131296492;
 			
-			// aapt resource value: 0x7f09004a
-			public const int title = 2131296330;
+			// aapt resource value: 0x7f090089
+			public const int title = 2131296393;
 			
-			// aapt resource value: 0x7f090059
-			public const int titleDividerNoCustom = 2131296345;
+			// aapt resource value: 0x7f090098
+			public const int titleDividerNoCustom = 2131296408;
 			
-			// aapt resource value: 0x7f090057
-			public const int title_template = 2131296343;
+			// aapt resource value: 0x7f090096
+			public const int title_template = 2131296406;
 			
 			// aapt resource value: 0x7f090029
 			public const int top = 2131296297;
 			
-			// aapt resource value: 0x7f090056
-			public const int topPanel = 2131296342;
+			// aapt resource value: 0x7f090095
+			public const int topPanel = 2131296405;
 			
-			// aapt resource value: 0x7f090075
-			public const int touch_outside = 2131296373;
+			// aapt resource value: 0x7f0900b4
+			public const int touch_outside = 2131296436;
 			
 			// aapt resource value: 0x7f09000a
 			public const int transition_current_scene = 2131296266;
@@ -3334,11 +4380,11 @@ namespace App3
 			// aapt resource value: 0x7f09000e
 			public const int view_offset_helper = 2131296270;
 			
-			// aapt resource value: 0x7f0900c7
-			public const int visible = 2131296455;
+			// aapt resource value: 0x7f090106
+			public const int visible = 2131296518;
 			
-			// aapt resource value: 0x7f090097
-			public const int volume_item_container = 2131296407;
+			// aapt resource value: 0x7f0900d6
+			public const int volume_item_container = 2131296470;
 			
 			// aapt resource value: 0x7f090027
 			public const int withText = 2131296295;
@@ -3346,8 +4392,8 @@ namespace App3
 			// aapt resource value: 0x7f09001f
 			public const int wrap_content = 2131296287;
 			
-			// aapt resource value: 0x7f090083
-			public const int xlsText = 2131296387;
+			// aapt resource value: 0x7f0900c2
+			public const int xlsText = 2131296450;
 			
 			static Id()
 			{
@@ -6146,6 +7192,600 @@ namespace App3
 			// aapt resource value: 7
 			public const int DrawerArrowToggle_thickness = 7;
 			
+			public static int[] FlexChart = new int[] {
+					2130772352,
+					2130772353,
+					2130772354,
+					2130772355,
+					2130772356,
+					2130772357,
+					2130772358,
+					2130772359,
+					2130772360,
+					2130772361,
+					2130772362,
+					2130772363,
+					2130772364,
+					2130772365,
+					2130772366,
+					2130772367,
+					2130772368,
+					2130772369,
+					2130772370,
+					2130772371,
+					2130772372,
+					2130772373,
+					2130772374,
+					2130772375,
+					2130772376,
+					2130772377,
+					2130772378,
+					2130772379,
+					2130772380,
+					2130772381,
+					2130772382,
+					2130772383,
+					2130772384,
+					2130772385,
+					2130772386,
+					2130772387,
+					2130772388,
+					2130772389,
+					2130772390,
+					2130772391,
+					2130772392,
+					2130772393,
+					2130772394,
+					2130772395,
+					2130772396,
+					2130772397,
+					2130772398,
+					2130772399,
+					2130772400,
+					2130772401,
+					2130772402,
+					2130772403,
+					2130772404,
+					2130772405,
+					2130772406,
+					2130772407,
+					2130772408,
+					2130772409,
+					2130772410,
+					2130772411,
+					2130772412,
+					2130772413,
+					2130772414,
+					2130772415,
+					2130772416,
+					2130772417,
+					2130772418,
+					2130772419,
+					2130772420,
+					2130772421,
+					2130772422,
+					2130772423,
+					2130772424,
+					2130772425,
+					2130772426,
+					2130772427,
+					2130772428,
+					2130772429,
+					2130772430,
+					2130772431,
+					2130772432,
+					2130772433,
+					2130772434,
+					2130772435,
+					2130772436,
+					2130772437,
+					2130772438,
+					2130772439,
+					2130772440,
+					2130772441,
+					2130772442};
+			
+			// aapt resource value: 21
+			public const int FlexChart_c1_axisX_format = 21;
+			
+			// aapt resource value: 22
+			public const int FlexChart_c1_axisX_labelAlignment = 22;
+			
+			// aapt resource value: 23
+			public const int FlexChart_c1_axisX_labelAngle = 23;
+			
+			// aapt resource value: 27
+			public const int FlexChart_c1_axisX_labelsVisible = 27;
+			
+			// aapt resource value: 19
+			public const int FlexChart_c1_axisX_line = 19;
+			
+			// aapt resource value: 24
+			public const int FlexChart_c1_axisX_logBase = 24;
+			
+			// aapt resource value: 31
+			public const int FlexChart_c1_axisX_majorGridStyleStroke = 31;
+			
+			// aapt resource value: 32
+			public const int FlexChart_c1_axisX_majorGridStyleStrokeThickness = 32;
+			
+			// aapt resource value: 28
+			public const int FlexChart_c1_axisX_majorGridVisible = 28;
+			
+			// aapt resource value: 29
+			public const int FlexChart_c1_axisX_majorTickMark = 29;
+			
+			// aapt resource value: 30
+			public const int FlexChart_c1_axisX_majorUnit = 30;
+			
+			// aapt resource value: 25
+			public const int FlexChart_c1_axisX_max = 25;
+			
+			// aapt resource value: 26
+			public const int FlexChart_c1_axisX_min = 26;
+			
+			// aapt resource value: 36
+			public const int FlexChart_c1_axisX_minorGridStyleStroke = 36;
+			
+			// aapt resource value: 37
+			public const int FlexChart_c1_axisX_minorGridStyleStrokeThickness = 37;
+			
+			// aapt resource value: 33
+			public const int FlexChart_c1_axisX_minorGridVisible = 33;
+			
+			// aapt resource value: 34
+			public const int FlexChart_c1_axisX_minorTickMark = 34;
+			
+			// aapt resource value: 35
+			public const int FlexChart_c1_axisX_minorUnit = 35;
+			
+			// aapt resource value: 38
+			public const int FlexChart_c1_axisX_origin = 38;
+			
+			// aapt resource value: 39
+			public const int FlexChart_c1_axisX_overlappingLabels = 39;
+			
+			// aapt resource value: 40
+			public const int FlexChart_c1_axisX_position = 40;
+			
+			// aapt resource value: 41
+			public const int FlexChart_c1_axisX_reversed = 41;
+			
+			// aapt resource value: 52
+			public const int FlexChart_c1_axisX_styleFill = 52;
+			
+			// aapt resource value: 49
+			public const int FlexChart_c1_axisX_styleFontSize = 49;
+			
+			// aapt resource value: 53
+			public const int FlexChart_c1_axisX_styleStroke = 53;
+			
+			// aapt resource value: 54
+			public const int FlexChart_c1_axisX_styleStrokeThickness = 54;
+			
+			// aapt resource value: 50
+			public const int FlexChart_c1_axisX_styleTypeface = 50;
+			
+			// aapt resource value: 51
+			public const int FlexChart_c1_axisX_styleTypefaceStyle = 51;
+			
+			// aapt resource value: 42
+			public const int FlexChart_c1_axisX_title = 42;
+			
+			// aapt resource value: 46
+			public const int FlexChart_c1_axisX_titleStyleFill = 46;
+			
+			// aapt resource value: 43
+			public const int FlexChart_c1_axisX_titleStyleFontSize = 43;
+			
+			// aapt resource value: 47
+			public const int FlexChart_c1_axisX_titleStyleStroke = 47;
+			
+			// aapt resource value: 48
+			public const int FlexChart_c1_axisX_titleStyleStrokeThickness = 48;
+			
+			// aapt resource value: 44
+			public const int FlexChart_c1_axisX_titleStyleTypeface = 44;
+			
+			// aapt resource value: 45
+			public const int FlexChart_c1_axisX_titleStyleTypefaceStyle = 45;
+			
+			// aapt resource value: 20
+			public const int FlexChart_c1_axisX_type = 20;
+			
+			// aapt resource value: 57
+			public const int FlexChart_c1_axisY_format = 57;
+			
+			// aapt resource value: 58
+			public const int FlexChart_c1_axisY_labelAlignment = 58;
+			
+			// aapt resource value: 59
+			public const int FlexChart_c1_axisY_labelAngle = 59;
+			
+			// aapt resource value: 63
+			public const int FlexChart_c1_axisY_labelsVisible = 63;
+			
+			// aapt resource value: 55
+			public const int FlexChart_c1_axisY_line = 55;
+			
+			// aapt resource value: 60
+			public const int FlexChart_c1_axisY_logBase = 60;
+			
+			// aapt resource value: 67
+			public const int FlexChart_c1_axisY_majorGridStyleStroke = 67;
+			
+			// aapt resource value: 68
+			public const int FlexChart_c1_axisY_majorGridStyleStrokeThickness = 68;
+			
+			// aapt resource value: 64
+			public const int FlexChart_c1_axisY_majorGridVisible = 64;
+			
+			// aapt resource value: 65
+			public const int FlexChart_c1_axisY_majorTickMark = 65;
+			
+			// aapt resource value: 66
+			public const int FlexChart_c1_axisY_majorUnit = 66;
+			
+			// aapt resource value: 61
+			public const int FlexChart_c1_axisY_max = 61;
+			
+			// aapt resource value: 62
+			public const int FlexChart_c1_axisY_min = 62;
+			
+			// aapt resource value: 72
+			public const int FlexChart_c1_axisY_minorGridStyleStroke = 72;
+			
+			// aapt resource value: 73
+			public const int FlexChart_c1_axisY_minorGridStyleStrokeThickness = 73;
+			
+			// aapt resource value: 69
+			public const int FlexChart_c1_axisY_minorGridVisible = 69;
+			
+			// aapt resource value: 70
+			public const int FlexChart_c1_axisY_minorTickMark = 70;
+			
+			// aapt resource value: 71
+			public const int FlexChart_c1_axisY_minorUnit = 71;
+			
+			// aapt resource value: 74
+			public const int FlexChart_c1_axisY_origin = 74;
+			
+			// aapt resource value: 75
+			public const int FlexChart_c1_axisY_overlappingLabels = 75;
+			
+			// aapt resource value: 76
+			public const int FlexChart_c1_axisY_position = 76;
+			
+			// aapt resource value: 77
+			public const int FlexChart_c1_axisY_reversed = 77;
+			
+			// aapt resource value: 88
+			public const int FlexChart_c1_axisY_styleFill = 88;
+			
+			// aapt resource value: 85
+			public const int FlexChart_c1_axisY_styleFontSize = 85;
+			
+			// aapt resource value: 89
+			public const int FlexChart_c1_axisY_styleStroke = 89;
+			
+			// aapt resource value: 90
+			public const int FlexChart_c1_axisY_styleStrokeThickness = 90;
+			
+			// aapt resource value: 86
+			public const int FlexChart_c1_axisY_styleTypeface = 86;
+			
+			// aapt resource value: 87
+			public const int FlexChart_c1_axisY_styleTypefaceStyle = 87;
+			
+			// aapt resource value: 78
+			public const int FlexChart_c1_axisY_title = 78;
+			
+			// aapt resource value: 82
+			public const int FlexChart_c1_axisY_titleStyleFill = 82;
+			
+			// aapt resource value: 79
+			public const int FlexChart_c1_axisY_titleStyleFontSize = 79;
+			
+			// aapt resource value: 83
+			public const int FlexChart_c1_axisY_titleStyleStroke = 83;
+			
+			// aapt resource value: 84
+			public const int FlexChart_c1_axisY_titleStyleStrokeThickness = 84;
+			
+			// aapt resource value: 80
+			public const int FlexChart_c1_axisY_titleStyleTypeface = 80;
+			
+			// aapt resource value: 81
+			public const int FlexChart_c1_axisY_titleStyleTypefaceStyle = 81;
+			
+			// aapt resource value: 56
+			public const int FlexChart_c1_axisY_type = 56;
+			
+			// aapt resource value: 5
+			public const int FlexChart_c1_bindingX = 5;
+			
+			// aapt resource value: 0
+			public const int FlexChart_c1_chartType = 0;
+			
+			// aapt resource value: 7
+			public const int FlexChart_c1_datalabel_border = 7;
+			
+			// aapt resource value: 9
+			public const int FlexChart_c1_datalabel_borderColor = 9;
+			
+			// aapt resource value: 8
+			public const int FlexChart_c1_datalabel_borderThickness = 8;
+			
+			// aapt resource value: 10
+			public const int FlexChart_c1_datalabel_connectingLine = 10;
+			
+			// aapt resource value: 11
+			public const int FlexChart_c1_datalabel_offset = 11;
+			
+			// aapt resource value: 12
+			public const int FlexChart_c1_datalabel_position = 12;
+			
+			// aapt resource value: 16
+			public const int FlexChart_c1_datalabel_styleFill = 16;
+			
+			// aapt resource value: 13
+			public const int FlexChart_c1_datalabel_styleFontSize = 13;
+			
+			// aapt resource value: 17
+			public const int FlexChart_c1_datalabel_styleStroke = 17;
+			
+			// aapt resource value: 18
+			public const int FlexChart_c1_datalabel_styleStrokeThickness = 18;
+			
+			// aapt resource value: 14
+			public const int FlexChart_c1_datalabel_styleTypeface = 14;
+			
+			// aapt resource value: 15
+			public const int FlexChart_c1_datalabel_styleTypefaceStyle = 15;
+			
+			// aapt resource value: 3
+			public const int FlexChart_c1_options_bubbleMaxSize = 3;
+			
+			// aapt resource value: 2
+			public const int FlexChart_c1_options_bubbleMinSize = 2;
+			
+			// aapt resource value: 4
+			public const int FlexChart_c1_options_groupWidth = 4;
+			
+			// aapt resource value: 6
+			public const int FlexChart_c1_rotated = 6;
+			
+			// aapt resource value: 1
+			public const int FlexChart_c1_stackingType = 1;
+			
+			public static int[] FlexChartBase = new int[] {
+					2130772295,
+					2130772304,
+					2130772305,
+					2130772306,
+					2130772307,
+					2130772308,
+					2130772309,
+					2130772310,
+					2130772311,
+					2130772312,
+					2130772313,
+					2130772314,
+					2130772315,
+					2130772316,
+					2130772317,
+					2130772318,
+					2130772319,
+					2130772320,
+					2130772321,
+					2130772322,
+					2130772323,
+					2130772324,
+					2130772325,
+					2130772326,
+					2130772327,
+					2130772328,
+					2130772329,
+					2130772330,
+					2130772331,
+					2130772332,
+					2130772333,
+					2130772334,
+					2130772335,
+					2130772336,
+					2130772337,
+					2130772338,
+					2130772339,
+					2130772340,
+					2130772341,
+					2130772342,
+					2130772343,
+					2130772344,
+					2130772345,
+					2130772346,
+					2130772347,
+					2130772348,
+					2130772349,
+					2130772350,
+					2130772351};
+			
+			// aapt resource value: 0
+			public const int FlexChartBase_c1_backgroundColor = 0;
+			
+			// aapt resource value: 4
+			public const int FlexChartBase_c1_binding = 4;
+			
+			// aapt resource value: 20
+			public const int FlexChartBase_c1_footer = 20;
+			
+			// aapt resource value: 21
+			public const int FlexChartBase_c1_footerFontGravity = 21;
+			
+			// aapt resource value: 25
+			public const int FlexChartBase_c1_footerStyleFill = 25;
+			
+			// aapt resource value: 22
+			public const int FlexChartBase_c1_footerStyleFontSize = 22;
+			
+			// aapt resource value: 26
+			public const int FlexChartBase_c1_footerStyleStroke = 26;
+			
+			// aapt resource value: 27
+			public const int FlexChartBase_c1_footerStyleStrokeThickness = 27;
+			
+			// aapt resource value: 23
+			public const int FlexChartBase_c1_footerStyleTypeface = 23;
+			
+			// aapt resource value: 24
+			public const int FlexChartBase_c1_footerStyleTypefaceStyle = 24;
+			
+			// aapt resource value: 12
+			public const int FlexChartBase_c1_header = 12;
+			
+			// aapt resource value: 13
+			public const int FlexChartBase_c1_headerFontGravity = 13;
+			
+			// aapt resource value: 17
+			public const int FlexChartBase_c1_headerStyleFill = 17;
+			
+			// aapt resource value: 14
+			public const int FlexChartBase_c1_headerStyleFontSize = 14;
+			
+			// aapt resource value: 18
+			public const int FlexChartBase_c1_headerStyleStroke = 18;
+			
+			// aapt resource value: 19
+			public const int FlexChartBase_c1_headerStyleStrokeThickness = 19;
+			
+			// aapt resource value: 15
+			public const int FlexChartBase_c1_headerStyleTypeface = 15;
+			
+			// aapt resource value: 16
+			public const int FlexChartBase_c1_headerStyleTypefaceStyle = 16;
+			
+			// aapt resource value: 42
+			public const int FlexChartBase_c1_legendOrientation = 42;
+			
+			// aapt resource value: 41
+			public const int FlexChartBase_c1_legendPosition = 41;
+			
+			// aapt resource value: 38
+			public const int FlexChartBase_c1_legendStyleFill = 38;
+			
+			// aapt resource value: 35
+			public const int FlexChartBase_c1_legendStyleFontSize = 35;
+			
+			// aapt resource value: 39
+			public const int FlexChartBase_c1_legendStyleStroke = 39;
+			
+			// aapt resource value: 40
+			public const int FlexChartBase_c1_legendStyleStrokeThickness = 40;
+			
+			// aapt resource value: 36
+			public const int FlexChartBase_c1_legendStyleTypeface = 36;
+			
+			// aapt resource value: 37
+			public const int FlexChartBase_c1_legendStyleTypefaceStyle = 37;
+			
+			// aapt resource value: 28
+			public const int FlexChartBase_c1_legendTitle = 28;
+			
+			// aapt resource value: 32
+			public const int FlexChartBase_c1_legendTitleStyleFill = 32;
+			
+			// aapt resource value: 29
+			public const int FlexChartBase_c1_legendTitleStyleFontSize = 29;
+			
+			// aapt resource value: 33
+			public const int FlexChartBase_c1_legendTitleStyleStroke = 33;
+			
+			// aapt resource value: 34
+			public const int FlexChartBase_c1_legendTitleStyleStrokeThickness = 34;
+			
+			// aapt resource value: 30
+			public const int FlexChartBase_c1_legendTitleStyleTypeface = 30;
+			
+			// aapt resource value: 31
+			public const int FlexChartBase_c1_legendTitleStyleTypefaceStyle = 31;
+			
+			// aapt resource value: 5
+			public const int FlexChartBase_c1_legendToggle = 5;
+			
+			// aapt resource value: 2
+			public const int FlexChartBase_c1_palette = 2;
+			
+			// aapt resource value: 46
+			public const int FlexChartBase_c1_plotStyleFill = 46;
+			
+			// aapt resource value: 43
+			public const int FlexChartBase_c1_plotStyleFontSize = 43;
+			
+			// aapt resource value: 47
+			public const int FlexChartBase_c1_plotStyleStroke = 47;
+			
+			// aapt resource value: 48
+			public const int FlexChartBase_c1_plotStyleStrokeThickness = 48;
+			
+			// aapt resource value: 44
+			public const int FlexChartBase_c1_plotStyleTypeface = 44;
+			
+			// aapt resource value: 45
+			public const int FlexChartBase_c1_plotStyleTypefaceStyle = 45;
+			
+			// aapt resource value: 1
+			public const int FlexChartBase_c1_selectedIndex = 1;
+			
+			// aapt resource value: 3
+			public const int FlexChartBase_c1_selectionMode = 3;
+			
+			// aapt resource value: 9
+			public const int FlexChartBase_c1_selectionStyleFill = 9;
+			
+			// aapt resource value: 6
+			public const int FlexChartBase_c1_selectionStyleFontSize = 6;
+			
+			// aapt resource value: 10
+			public const int FlexChartBase_c1_selectionStyleStroke = 10;
+			
+			// aapt resource value: 11
+			public const int FlexChartBase_c1_selectionStyleStrokeThickness = 11;
+			
+			// aapt resource value: 7
+			public const int FlexChartBase_c1_selectionStyleTypeface = 7;
+			
+			// aapt resource value: 8
+			public const int FlexChartBase_c1_selectionStyleTypefaceStyle = 8;
+			
+			public static int[] FlexPie = new int[] {
+					2130772443,
+					2130772444,
+					2130772445,
+					2130772446,
+					2130772447,
+					2130772448,
+					2130772449};
+			
+			// aapt resource value: 0
+			public const int FlexPie_c1_bindingName = 0;
+			
+			// aapt resource value: 3
+			public const int FlexPie_c1_innerRadius = 3;
+			
+			// aapt resource value: 2
+			public const int FlexPie_c1_offset = 2;
+			
+			// aapt resource value: 1
+			public const int FlexPie_c1_reversed = 1;
+			
+			// aapt resource value: 5
+			public const int FlexPie_c1_selectedItemOffset = 5;
+			
+			// aapt resource value: 6
+			public const int FlexPie_c1_selectedItemPosition = 6;
+			
+			// aapt resource value: 4
+			public const int FlexPie_c1_startAngle = 4;
+			
 			public static int[] FloatingActionButton = new int[] {
 					2130772013,
 					2130772211,
@@ -6633,6 +8273,12 @@ namespace App3
 			
 			// aapt resource value: 4
 			public const int Spinner_popupTheme = 4;
+			
+			public static int[] Sunburst = new int[] {
+					2130772450};
+			
+			// aapt resource value: 0
+			public const int Sunburst_c1_childItemsPath = 0;
 			
 			public static int[] SwitchCompat = new int[] {
 					16843044,
