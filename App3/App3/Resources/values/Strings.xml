@@ -6,8 +6,7 @@
   
   <string name="Level">Choose level</string>
   <string-array name="levels_array">
-    <item name="easy">Easy</item>
-    <item name="medium">Medium</item>
+    <item name="medium">Basic</item>
     <item name="advanced">Advanced</item>
   </string-array>
 

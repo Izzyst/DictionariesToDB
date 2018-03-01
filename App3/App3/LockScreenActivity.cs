@@ -70,7 +70,7 @@ namespace App3
 
 
             }
-            else if (lev == "Medium" || lev == "Sredni" || lev == "Średni")
+            else if (lev == "Medium" || lev == "Sredni" || lev == "Średni" || lev == "Podstawowy" || lev == "Basic")
             {
                 MediumLevel level = new MediumLevel();
                 DataToLevel data = level.GetWords();

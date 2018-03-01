@@ -6,8 +6,7 @@
 
   <string name="Level">Wybierz poziom trudności</string>
   <string-array name="levels_array">
-    <item name="Easy">Łatwy</item>
-    <item name="Medium">Średni</item>
+    <item name="Medium">Podstawowy</item>
     <item name="Hard">Zaawansowany</item>
   </string-array>
 

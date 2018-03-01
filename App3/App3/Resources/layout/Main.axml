@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp">
+  <forms:ChartView/>
     <TextView
         android:text="@string/YourScoreBeginning"
         android:paddingTop="20dp"
@@ -12,4 +14,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1" />
-</LinearLayout>
+
+</LinearLayout>-->
+<ContentPage>
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+  xmlns:local="clr-namespace:Microcharts.Samples.Forms"
+  x:Class="Microcharts.Samples.Forms.MainPage">
+  <microcharts:ChartView x:Name="chartView" />
+</ContentPage>

@@ -19,7 +19,8 @@ namespace App3.Resources.DataHelper
             {
                 using (var connection = new SQLiteConnection(path))
                 {
-                    connection.CreateTable<WordTable>();               
+                    connection.CreateTable<WordTable>();
+                    connection.CreateTable<ScoreRecordsTable>();
                     return true;
                 }
             }
@@ -108,7 +109,28 @@ namespace App3.Resources.DataHelper
                     var result = connection.Query<ScoreTable>("select Score as Scores, NumberOfAnswers as Answers from WordTable");
                     int scores = result.Sum(i => i.Scores);
                     int answers = result.Sum(i => i.Answers);
+                    ScoreRecordsTable ob = new ScoreRecordsTable();
+                    ob.Scores = scores;
+                    ob.Answers = answers;
+                    var result2 = connection.Insert(ob);
                     return Application.Context.GetString(Resource.String.yourScore) + scores.ToString() + Application.Context.GetString(Resource.String.points) + answers.ToString() + Application.Context.GetString(Resource.String.answers);
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEX", ex.Message);
+                return null;
+            }
+        }
+
+        public List<ScoreRecordsTable> GetScoreResults()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(path)))
+                {
+                    return connection.Table<ScoreRecordsTable>().ToList();
+
                 }
             }
             catch (SQLiteException ex)

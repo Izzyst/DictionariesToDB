@@ -5,6 +5,7 @@ using Android.Content;
 using Android.Preferences;
 using App3.LevelStrategy;
 using Android.Views;
+using App3.Resources.DataHelper;
 
 namespace App3
 {
@@ -35,10 +36,14 @@ namespace App3
             bool firstRun = prefs.GetBoolean("firstRun", true);
             if(firstRun)
             {
+                firstRun = prefs.GetBoolean("firstRun", false);
                 Intent intent = new Intent(Application.Context, typeof(InfoActivity));
                 intent.SetFlags(ActivityFlags.NewTask);
-                Application.Context.StartActivity(intent);
+                Application.Context.StartActivity(intent);             
             }
+
+            Database ob = new Database();
+            var scoresResults = ob.GetScoreResults();
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
