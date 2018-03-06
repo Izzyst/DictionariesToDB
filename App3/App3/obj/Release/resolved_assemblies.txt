@@ -1,4 +1,7 @@
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\android\assets\App3.dll
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\android\assets\C1.Android.Chart.dll
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\android\assets\C1.Android.Core.dll
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\android\assets\C1.CollectionView.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\android\assets\ComponentTrakCrypto.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\android\assets\ComponentTrakMVVM.dll
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\android\assets\ExcelDataReader.DataSet.dll

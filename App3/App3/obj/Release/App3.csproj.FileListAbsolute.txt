@@ -131,6 +131,16 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\android
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Release\C1.Android.Chart.dll
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Release\C1.Android.Core.dll
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Release\C1.CollectionView.dll
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Release\C1.Android.Chart.xml
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Release\C1.Android.Core.xml
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Release\C1.CollectionView.xml
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\App3.csprojResolveAssemblyReference.cache
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\res\layout\rowlayout.xml
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\res\layout\settingspagelayout.xml
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Release\res\layout\mymenu.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Release\App3.dll
 bin\Release\Microsoft.CSharp.pdb
 bin\Release\Mono.Android.pdb

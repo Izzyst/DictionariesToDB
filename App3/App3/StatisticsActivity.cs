@@ -38,12 +38,22 @@ namespace App3
                 textView.Visibility = Android.Views.ViewStates.Gone;
                 List<WordTable> words = new List<WordTable>();
                 words = db.SelectTableWord();
-                for (int i = 0; i < words.Count-1; i++)
+                //for (int i = 0; i < words.Count-1; i++)
+                //{
+                //    if(words[i].IdWordJson != words[i+1].IdWordJson)
+                //    {
+                //        list.Add(words[i].W + " - " + words[i].Score.ToString() + "ptk");
+                //    }                   
+                //}
+                var groupedList = words.GroupBy(i => i.W).Select(i => i).ToList();
+                foreach(var item in groupedList)
                 {
-                    if(words[i].IdWordJson != words[i+1].IdWordJson)
+                    int score=0;
+                    foreach(var item2 in item)
                     {
-                        list.Add(words[i].W + " - " + words[i].Score.ToString() + "ptk");
-                    }                   
+                        score += item2.Score;
+                    }
+                    list.Add(item.Last().W + " - " + score.ToString() + "ptk");
                 }
                 alphabeticaList = list.OrderBy(s => s).ToList();
             }

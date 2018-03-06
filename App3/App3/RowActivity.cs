@@ -35,18 +35,26 @@ namespace App3
                 int x = 0;
                 if (Int32.TryParse(text, out x))
                 {
-                    for (int i = 0; i < words.Count - 1; i++)
+                    //for (int i = 0; i < words.Count - 1; i++)
+                    //{
+                    //    if (words[i].W != words[i + 1].W)// tutaj powinno być spr czy w całej liście instnieje taki element -- group by
+                    //    {
+                    //        sortedList.Add(words[i]);
+                    //    }
+                    //}
+                    List<WordTable> list = new List<WordTable>();
+                    var groupedList = words.GroupBy(i => i.W).Select(i => i).ToList();
+                    foreach (var item in groupedList)
                     {
-                        if (words[i].W != words[i + 1].W)// tutaj powinno być spr czy w całej liście instnieje taki element -- group by
-                        {
-                            sortedList.Add(words[i]);
-                        }
+                        list.Add(item.Last());
                     }
-                    var alphabeticaList = sortedList.OrderBy(s => s.W).ToList();
-                    int id = alphabeticaList[x].IdWordJson;
-                    foreach (var item in alphabeticaList)
+
+                    List<WordTable> alphabeticaList = list.OrderBy(s => s.W).ToList();
+                    //int id = alphabeticaList[x].IdWordJson;
+                    string word = alphabeticaList[x].W;
+                    foreach (var item in words)
                     {
-                        if (item.IdWordJson == id)
+                        if (item.W == word)
                         {
                             defs.Add(item.Def);
                         }
