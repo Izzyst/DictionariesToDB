@@ -139,6 +139,54 @@ namespace App3.Resources.DataHelper
             }
         }
 
+        public int GetAmountOfCorrectAnswers()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(path)))
+                {
+                    // var result = connection.Query<ScoreTable>("select 'Score' as 'Scores', 'NumberOfAnswers' as 'Answers' from WordTable");
+                    var result = connection.Query<ScoreTable>("select Score as Scores, NumberOfAnswers as Answers from WordTable");
+                    int scores = result.Sum(i => i.Scores);
+                    int answers = result.Sum(i => i.Answers);
+                    ScoreRecordsTable ob = new ScoreRecordsTable();
+                    ob.Scores = scores;
+                    ob.Answers = answers;
+                    var result2 = connection.Insert(ob);
+                    return  scores;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEX", ex.Message);
+                return 0;
+            }
+        }
+        public int GetAmountOfWrongAnswers()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(path)))
+                {
+                    // var result = connection.Query<ScoreTable>("select 'Score' as 'Scores', 'NumberOfAnswers' as 'Answers' from WordTable");
+                    var result = connection.Query<ScoreTable>("select Score as Scores, NumberOfAnswers as Answers from WordTable");
+                    int scores = result.Sum(i => i.Scores);
+                    int answers = result.Sum(i => i.Answers);
+                    ScoreRecordsTable ob = new ScoreRecordsTable();
+                    ob.Scores = scores;
+                    ob.Answers = answers;
+                    var result2 = connection.Insert(ob);
+                    return answers-scores;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLiteEX", ex.Message);
+                return 0;
+            }
+        }
+
+
         public List<ScoreRecordsTable> GetScoreResults()
         {
             try

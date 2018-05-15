@@ -19,21 +19,15 @@ namespace ConsoleApp1.Factories
             links.ForEach( item =>
             {
                 var temp = gettingNodesFromURLPL(item);
-                if (temp != null)
+                if (temp != null && temp.Count!=0)
                 {
-                    lock (words)
-                    {
+                    //lock (words)
+                    //{
                         words.AddRange(temp);// w tym przypadku dopisuje całą listę
-                    }
+                    //}
                 }
             });
-            /*foreach (var item in words)
-            {
-                if (item != null)
-                {
-                    Console.WriteLine("{0}, {1}\t", item.Word, item.Defs[0]);
-                }
-            }*/
+
             return words;
         }
 
@@ -51,27 +45,31 @@ namespace ConsoleApp1.Factories
               HtmlNodeCollection node = doc.DocumentNode.SelectNodes("//td/b/font[@class='10ptGeorgia']"); // słowa
 
               HtmlNodeCollection nodes = doc.DocumentNode.SelectNodes("//td/font[@class='10ptGeorgia']"); // definicje dla danego słowa
-              if (nodes.Count >=node.Count)
-              {
-                  for (int i = 0; i < node.Count; i++)
-                  {
+            if (nodes.Count >= node.Count)
+            {
+                for (int i = 0; i < node.Count; i++)
+                {
 
-                      Console.WriteLine("-> {0} - {1}", node[i].InnerText, nodes[i].InnerText);
-                      if (node[i] != null && nodes[i] != null && nodes[i].InnerText.Length > 10)
-                      {
-                          List<String> d = new List<String>();
+                    Console.WriteLine("-> {0} - {1}", node[i].InnerText, nodes[i].InnerText);
+                    if (node[i] != null && nodes[i] != null && nodes[i].InnerText.Length > 10)
+                    {
+                        List<String> d = new List<String>();
 
-                          defs.Add(Strip(node[i].InnerText));
-                          definitions.Add(Strip(nodes[i].InnerText));
-                          d.Add(definitions.Last());
-                          Console.WriteLine(d + " - " + definitions.Last());
-                          Words n = new Words(defs.Last(), d, "pl");
-                          w.Add(n);
-                      }
-                  }
+                        defs.Add(Strip(node[i].InnerText));
+                        definitions.Add(Strip(nodes[i].InnerText));
+                        if (definitions.Last() != null)
+                        {
+                            d.Add(definitions.Last());
+                            Console.WriteLine(d + " - " + definitions.Last());
+                            Words n = new Words(defs.Last(), d, "pl");
+                            w.Add(n);
+                        }
+                    }
+                }
 
-                    return w;
+                return w;
             }
+            else return null;
             throw new Exception("No matching nodes found!");
 
         }

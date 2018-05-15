@@ -130,7 +130,8 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\C1.Collec
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\C1.Android.Chart.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\C1.Android.Core.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\C1.CollectionView.xml
-C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\App3.csprojResolveAssemblyReference.cache
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\Syncfusion.SfChart.Android.dll
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\Syncfusion.SfChart.Android.xml
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\App3.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\App3.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\FormsViewGroup.dll.mdb
@@ -141,6 +142,7 @@ C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\a
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\obj\Debug\App3.csprojResolveAssemblyReference.cache
 C:\Users\Izabela\Documents\GitHub\DictionariesToDB\App3\App3\bin\Debug\App3.dll
 bin\Debug\Microsoft.CSharp.pdb
 bin\Debug\Mono.Android.pdb

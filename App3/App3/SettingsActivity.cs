@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using App3.LevelStrategy;
 using Android.Net;
 using System.Threading.Tasks;
+using Android.Views;
 
 namespace App3
 {
@@ -38,6 +39,7 @@ namespace App3
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.settingsPagelayout);
 
+            this.Title = this.Resources.GetString(Resource.String.settings);
             spinner = FindViewById<Spinner>(Resource.Id.spinner);
             spinnerLang = FindViewById<Spinner>(Resource.Id.spinnerLanguage);
             switchBtn = FindViewById<Switch>(Resource.Id.switchButton);
@@ -52,7 +54,7 @@ namespace App3
 
             if (GetSharedPreferences("isDbCreated", isDbCreated) == 1)
                 if (GettingItemsFromDatabase.CheckIfDbEmpty() == false)
-                    scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
+                    //scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
             LockScreen.GetInstance().Init(this, true);
 
             fileRadioBtn.Click += delegate
@@ -64,6 +66,7 @@ namespace App3
             {
                 ChangeToFileView(false);
             };
+            
 
 
             //    // =================spinner for choosing level==========================================
@@ -133,14 +136,27 @@ namespace App3
             editor = prefs.Edit();
             editor.PutInt("isShown", isShown);
             editor.Apply();
+
+            prefs = PreferenceManager.GetDefaultSharedPreferences(this.ApplicationContext);
+            int l = -1;
+            int isOn = prefs.GetInt("isOn", l);
+            if (isOn == 1)
+            {
+                switchBtn.SetOnCheckedChangeListener(null);
+                switchBtn.Click += delegate {
+                    switchBtn.Checked = true;
+                };
+                // switchBtn.SetOnCheckedChangeListener();
+            }
         }
         protected override void OnResume()
         {
             base.OnResume();
-            if (GetSharedPreferences("isDbCreated", isDbCreated) == 1)
-                scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
+           // if (GetSharedPreferences("isDbCreated", isDbCreated) == 1)
+                //scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
         }
 
+        
         private void SpinnerItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;
@@ -151,6 +167,10 @@ namespace App3
             editor.PutString("level_data", toast);
             editor.Apply();
             LockScreen.GetInstance().Deactivate();
+            int isOn = 0;
+            editor = prefs.Edit();
+            editor.PutInt("isOn", isOn);
+            editor.Apply();
             switchBtn.Checked = false;
         }
 
@@ -164,6 +184,10 @@ namespace App3
             editor.PutString("language_data", toast);
             editor.Apply();
             LockScreen.GetInstance().Deactivate();
+            int isOn = 0;
+            editor = prefs.Edit();
+            editor.PutInt("isOn", isOn);
+            editor.Apply();
             switchBtn.Checked = false;
 
             // spr czy baza jest pusta, jeśli nie to spr czy ten sam język, jeśli tak, to nie wykonuje pobierania danych
@@ -215,6 +239,10 @@ namespace App3
                     Toast.MakeText(this, this.GetString(Resource.String.finishDownload), ToastLength.Long).Show();
                     progressBar.Visibility = Android.Views.ViewStates.Gone;
                     LockScreen.GetInstance().Deactivate();
+                    int isOn = 0;
+                    editor = prefs.Edit();
+                    editor.PutInt("isOn", isOn);
+                    editor.Apply();
                     switchBtn.Checked = false;
                 }
                 else
@@ -229,12 +257,17 @@ namespace App3
                 progressBar.Visibility = Android.Views.ViewStates.Gone;
                 Toast.MakeText(this, this.GetString(Resource.String.noInternetConnection), ToastLength.Long).Show();
                 LockScreen.GetInstance().Deactivate();
+                int isOn = 0;
+                editor = prefs.Edit();
+                editor.PutInt("isOn", isOn);
+                editor.Apply();
                 switchBtn.Checked = false;
             }
         }
 
         private async void ValidationForSwitchButton(string language)
         {
+            int isOn = 0;
             if (switchBtn.Checked)
             {
                 LockScreen.GetInstance().Init(this);
@@ -242,6 +275,10 @@ namespace App3
                 {
                     switchBtn.Checked = false;
                     LockScreen.GetInstance().Deactivate();
+                    isOn = 0;
+                    editor = prefs.Edit();
+                    editor.PutInt("isOn", isOn);
+                    editor.Apply();
                     Toast.MakeText(this, this.GetString(Resource.String.WaitDownloading), ToastLength.Long).Show();
                 }
 
@@ -251,6 +288,10 @@ namespace App3
                     {
                         await DownloadDictionaryAsync();
                         LockScreen.GetInstance().Active();
+                        isOn = 1;
+                        editor = prefs.Edit();
+                        editor.PutInt("isOn", isOn);
+                        editor.Apply();
                     }
                     else
                     {
@@ -275,11 +316,26 @@ namespace App3
                     {
                         await DownloadDictionaryAsync();
                         LockScreen.GetInstance().Active();
+                        isOn = 1;
+                        editor = prefs.Edit();
+                        editor.PutInt("isOn", isOn);
+                        editor.Apply();
                     }
                     LockScreen.GetInstance().Active();
+                    isOn = 1;
+                    editor = prefs.Edit();
+                    editor.PutInt("isOn", isOn);
+                    editor.Apply();
                 }
             }
-            else LockScreen.GetInstance().Deactivate();
+            else
+            {
+                prefs = PreferenceManager.GetDefaultSharedPreferences(this.ApplicationContext);
+                int l = -1;
+                isOn = prefs.GetInt("isOn", l);
+                if (isOn != 1)
+                    LockScreen.GetInstance().Deactivate();
+            }
         }
 
         private void ChangeToFileView(bool change)
@@ -299,5 +355,37 @@ namespace App3
                 spinnerLang.Visibility = Android.Views.ViewStates.Visible;
             }
         }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Layout.myMenu, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.about:
+                    Intent intent1 = new Intent(Application.Context, typeof(InfoActivity));
+                    intent1.SetFlags(ActivityFlags.NewTask);
+                    Application.Context.StartActivity(intent1);
+                    return true;
+                case Resource.Id.sett:
+                    Intent intent2 = new Intent(Application.Context, typeof(SettingsActivity));
+                    intent2.SetFlags(ActivityFlags.NewTask);
+                    Application.Context.StartActivity(intent2);
+                    return true;
+                case Resource.Id.dict:
+                    Intent intent3 = new Intent(Application.Context, typeof(StatisticsActivity));
+                    intent3.SetFlags(ActivityFlags.NewTask);
+                    Application.Context.StartActivity(intent3);
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);
+        }
+
+
     }
+
 }

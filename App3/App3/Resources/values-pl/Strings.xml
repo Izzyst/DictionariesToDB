@@ -38,4 +38,7 @@
   <string name="beforeUse">Przy pierwszym włączeniu aplikacji pojawi się okno "Ułatwienia dostępu". Aby aplikacja mogła działać poprawnie, znajdź LinguisticLockScreen i włącz ułatwienia.</string>
   <string name="empty">Twój słownik jest pusty :/</string>
   <string name="settings">Ustawienia</string>
+  <string name="correctAnsw">Poprawnie</string>
+  <string name="wrongAnsw">Niepoprawnie</string>
+  <string name="choosenDictionary">Słownik</string>
 </resources>

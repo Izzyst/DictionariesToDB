@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>25.02.2018 00:50:41</xs:documentation>
+    <xs:documentation>09.05.2018 00:48:46</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -39,6 +39,9 @@
             <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
             <xs:enumeration value="@layout/abc_search_view" />
             <xs:enumeration value="@layout/abc_select_dialog_material" />
+            <xs:enumeration value="@layout/chart_layout" />
+            <xs:enumeration value="@layout/chart_legend" />
+            <xs:enumeration value="@layout/chart_legend_item" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -61,6 +64,7 @@
             <xs:enumeration value="@layout/mr_controller_volume_item" />
             <xs:enumeration value="@layout/mr_playback_control" />
             <xs:enumeration value="@layout/mr_volume_control" />
+            <xs:enumeration value="@layout/mymenu" />
             <xs:enumeration value="@layout/notification_action" />
             <xs:enumeration value="@layout/notification_action_tombstone" />
             <xs:enumeration value="@layout/notification_media_action" />
@@ -76,6 +80,7 @@
             <xs:enumeration value="@layout/notification_template_media_custom" />
             <xs:enumeration value="@layout/notification_template_part_chronometer" />
             <xs:enumeration value="@layout/notification_template_part_time" />
+            <xs:enumeration value="@layout/range_navigator_layout" />
             <xs:enumeration value="@layout/rowlayout" />
             <xs:enumeration value="@layout/select_dialog_item_material" />
             <xs:enumeration value="@layout/select_dialog_multichoice_material" />
@@ -159,6 +164,9 @@
             <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
             <xs:enumeration value="@layout/abc_search_view" />
             <xs:enumeration value="@layout/abc_select_dialog_material" />
+            <xs:enumeration value="@layout/chart_layout" />
+            <xs:enumeration value="@layout/chart_legend" />
+            <xs:enumeration value="@layout/chart_legend_item" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -181,6 +189,7 @@
             <xs:enumeration value="@layout/mr_controller_volume_item" />
             <xs:enumeration value="@layout/mr_playback_control" />
             <xs:enumeration value="@layout/mr_volume_control" />
+            <xs:enumeration value="@layout/mymenu" />
             <xs:enumeration value="@layout/notification_action" />
             <xs:enumeration value="@layout/notification_action_tombstone" />
             <xs:enumeration value="@layout/notification_media_action" />
@@ -196,6 +205,7 @@
             <xs:enumeration value="@layout/notification_template_media_custom" />
             <xs:enumeration value="@layout/notification_template_part_chronometer" />
             <xs:enumeration value="@layout/notification_template_part_time" />
+            <xs:enumeration value="@layout/range_navigator_layout" />
             <xs:enumeration value="@layout/rowlayout" />
             <xs:enumeration value="@layout/select_dialog_item_material" />
             <xs:enumeration value="@layout/select_dialog_multichoice_material" />
@@ -279,6 +289,9 @@
             <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
             <xs:enumeration value="@layout/abc_search_view" />
             <xs:enumeration value="@layout/abc_select_dialog_material" />
+            <xs:enumeration value="@layout/chart_layout" />
+            <xs:enumeration value="@layout/chart_legend" />
+            <xs:enumeration value="@layout/chart_legend_item" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -301,6 +314,7 @@
             <xs:enumeration value="@layout/mr_controller_volume_item" />
             <xs:enumeration value="@layout/mr_playback_control" />
             <xs:enumeration value="@layout/mr_volume_control" />
+            <xs:enumeration value="@layout/mymenu" />
             <xs:enumeration value="@layout/notification_action" />
             <xs:enumeration value="@layout/notification_action_tombstone" />
             <xs:enumeration value="@layout/notification_media_action" />
@@ -316,6 +330,7 @@
             <xs:enumeration value="@layout/notification_template_media_custom" />
             <xs:enumeration value="@layout/notification_template_part_chronometer" />
             <xs:enumeration value="@layout/notification_template_part_time" />
+            <xs:enumeration value="@layout/range_navigator_layout" />
             <xs:enumeration value="@layout/rowlayout" />
             <xs:enumeration value="@layout/select_dialog_item_material" />
             <xs:enumeration value="@layout/select_dialog_multichoice_material" />
@@ -399,6 +414,9 @@
             <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
             <xs:enumeration value="@layout/abc_search_view" />
             <xs:enumeration value="@layout/abc_select_dialog_material" />
+            <xs:enumeration value="@layout/chart_layout" />
+            <xs:enumeration value="@layout/chart_legend" />
+            <xs:enumeration value="@layout/chart_legend_item" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -421,6 +439,7 @@
             <xs:enumeration value="@layout/mr_controller_volume_item" />
             <xs:enumeration value="@layout/mr_playback_control" />
             <xs:enumeration value="@layout/mr_volume_control" />
+            <xs:enumeration value="@layout/mymenu" />
             <xs:enumeration value="@layout/notification_action" />
             <xs:enumeration value="@layout/notification_action_tombstone" />
             <xs:enumeration value="@layout/notification_media_action" />
@@ -436,6 +455,7 @@
             <xs:enumeration value="@layout/notification_template_media_custom" />
             <xs:enumeration value="@layout/notification_template_part_chronometer" />
             <xs:enumeration value="@layout/notification_template_part_time" />
+            <xs:enumeration value="@layout/range_navigator_layout" />
             <xs:enumeration value="@layout/rowlayout" />
             <xs:enumeration value="@layout/select_dialog_item_material" />
             <xs:enumeration value="@layout/select_dialog_multichoice_material" />
@@ -550,6 +570,8 @@
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/chooseFile" />
+            <xs:enumeration value="@string/choosenDictionary" />
+            <xs:enumeration value="@string/correctAnsw" />
             <xs:enumeration value="@string/developersError" />
             <xs:enumeration value="@string/empty" />
             <xs:enumeration value="@string/externalDictionary" />
@@ -559,6 +581,7 @@
             <xs:enumeration value="@string/info_name" />
             <xs:enumeration value="@string/Language" />
             <xs:enumeration value="@string/Level" />
+            <xs:enumeration value="@string/main" />
             <xs:enumeration value="@string/mr_button_content_description" />
             <xs:enumeration value="@string/mr_cast_button_connected" />
             <xs:enumeration value="@string/mr_cast_button_connecting" />
@@ -589,15 +612,24 @@
             <xs:enumeration value="@string/path_password_strike_through" />
             <xs:enumeration value="@string/permission_accessibility_setting_description" />
             <xs:enumeration value="@string/points" />
+            <xs:enumeration value="@string/q" />
+            <xs:enumeration value="@string/quarter" />
             <xs:enumeration value="@string/radioButtonFile" />
             <xs:enumeration value="@string/radioButtonsDescription" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/serviceStopped" />
             <xs:enumeration value="@string/settings" />
+            <xs:enumeration value="@string/sfchart_close_label" />
+            <xs:enumeration value="@string/sfchart_high_label" />
+            <xs:enumeration value="@string/sfchart_low_label" />
+            <xs:enumeration value="@string/sfchart_open_label" />
             <xs:enumeration value="@string/stat" />
             <xs:enumeration value="@string/statistics_name" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/w" />
             <xs:enumeration value="@string/WaitDownloading" />
+            <xs:enumeration value="@string/week" />
+            <xs:enumeration value="@string/wrongAnsw" />
             <xs:enumeration value="@string/wrongFileExtension" />
             <xs:enumeration value="@string/yourScore" />
             <xs:enumeration value="@string/YourScoreBeginning" />

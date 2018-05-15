@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using ConsoleApp1.Domain;
 using ConsoleApp1.Factories;
-
+using System.Web.Script.Serialization;
+using System.IO;
 
 namespace ConsoleApp1
 {
@@ -11,16 +12,16 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             List<Words> list = new List<Words>();
-            // list.AddRange(collection: Program.GetWordsFromFactory("English"));
-            //  NHibernateHelper.InsertWordToDatabase(list);
+            list.AddRange(collection: Program.GetWordsFromFactory("EnglishW"));
 
-            //string url = @"http://api.wunderground.com/api/02e5dd8c34e3e657/geolookup/conditions/forecast/q/Dhaka,Bangladesh.json";
+            var json = new JavaScriptSerializer().Serialize(list);
+            Console.WriteLine(json);
 
-            //using (var client = new HttpClient())
-            //{
-            //    var result = await client.GetStringAsync(url);
-            //    return JsonConvert.DeserializeObject<YourModelForTheResponse>(result);
-            //}
+            using (StreamWriter writetext = new StreamWriter("write.txt"))
+            {
+                writetext.Write(json);
+            }
+
             Console.ReadKey();
         }
 
@@ -39,8 +40,14 @@ namespace ConsoleApp1
                 case "Polish":
                     factory = new PolishEWordsFactory();
                     return factory.GetWords();
+                case "PolishK":
+                    factory = new PolishWordsFactory();
+                    return factory.GetWords();
                 case "English":
                     factory = new EnglishWordsFactory();
+                    return factory.GetWords();
+                case "EnglishW":
+                    factory = new EnglishWikiFactory();
                     return factory.GetWords();
                 default: throw new NotImplementedException();
             }

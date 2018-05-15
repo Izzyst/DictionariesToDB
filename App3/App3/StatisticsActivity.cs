@@ -38,13 +38,8 @@ namespace App3
                 textView.Visibility = Android.Views.ViewStates.Gone;
                 List<WordTable> words = new List<WordTable>();
                 words = db.SelectTableWord();
-                //for (int i = 0; i < words.Count-1; i++)
-                //{
-                //    if(words[i].IdWordJson != words[i+1].IdWordJson)
-                //    {
-                //        list.Add(words[i].W + " - " + words[i].Score.ToString() + "ptk");
-                //    }                   
-                //}
+
+
                 var groupedList = words.GroupBy(i => i.W).Select(i => i).ToList();
                 foreach(var item in groupedList)
                 {
@@ -53,7 +48,7 @@ namespace App3
                     {
                         score += item2.Score;
                     }
-                    list.Add(item.Last().W + " - " + score.ToString() + "ptk");
+                    list.Add(item.Last().W); //+ " - " + score.ToString() + "ptk");
                 }
                 alphabeticaList = list.OrderBy(s => s).ToList();
             }
@@ -72,6 +67,34 @@ namespace App3
                 intent.PutExtra("MyData", e.Position.ToString());
                 Application.Context.StartActivity(intent);
             };
+        }
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Layout.myMenu, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.about:
+                    Intent intent1 = new Intent(Application.Context, typeof(InfoActivity));
+                    intent1.SetFlags(ActivityFlags.NewTask);
+                    Application.Context.StartActivity(intent1);
+                    return true;
+                case Resource.Id.sett:
+                    Intent intent2 = new Intent(Application.Context, typeof(SettingsActivity));
+                    intent2.SetFlags(ActivityFlags.NewTask);
+                    Application.Context.StartActivity(intent2);
+                    return true;
+                case Resource.Id.dict:
+                    Intent intent3 = new Intent(Application.Context, typeof(StatisticsActivity));
+                    intent3.SetFlags(ActivityFlags.NewTask);
+                    Application.Context.StartActivity(intent3);
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);
         }
     }
 }

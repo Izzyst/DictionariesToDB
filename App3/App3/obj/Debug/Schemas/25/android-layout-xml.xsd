@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>25.02.2018 00:50:41</xs:documentation>
+    <xs:documentation>09.05.2018 00:48:46</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -82,6 +82,30 @@
       <xs:element ref="RadioGroup" />
       <xs:element ref="TextSwitcher" />
       <xs:element ref="fragment" />
+      <xs:element ref="Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator" />
+      <xs:element ref="Com.Syncfusion.Rangenavigator.LabelsRenderer" />
+      <xs:element ref="Com.Syncfusion.Charts.ChartBase" />
+      <xs:element ref="Com.Syncfusion.Charts.ChartLegendTitleView" />
+      <xs:element ref="Com.Syncfusion.Charts.DataMarkerRenderer" />
+      <xs:element ref="Com.Syncfusion.Charts.TooltipView" />
+      <xs:element ref="Com.Syncfusion.Charts.ChartTitle" />
+      <xs:element ref="Com.Syncfusion.Charts.GridLinesRenderer" />
+      <xs:element ref="Com.Syncfusion.Charts.ChartStripLinesRenderer" />
+      <xs:element ref="Com.Syncfusion.Charts.SfChart" />
+      <xs:element ref="Com.Syncfusion.Charts.ChartRootLayout" />
+      <xs:element ref="Com.Syncfusion.Charts.ChartLegendLayout" />
+      <xs:element ref="Com.Syncfusion.Charts.ChartLegendItem" />
+      <xs:element ref="Com.Syncfusion.Charts.ChartLegendIconView" />
+      <xs:element ref="C1.Android.Chart.Interaction.C1LineMarker" />
+      <xs:element ref="C1.Android.Chart.Annotation.AnnotationLayer" />
+      <xs:element ref="C1.Android.Chart.RenderCanvas" />
+      <xs:element ref="C1.Android.Chart.FlexPie" />
+      <xs:element ref="C1.Android.Chart.ChartBase" />
+      <xs:element ref="C1.Android.Chart.FlexChart" />
+      <xs:element ref="C1.Android.Chart.C1Sunburst" />
+      <xs:element ref="C1.Android.Chart.ChartTooltip" />
+      <xs:element ref="C1.Android.Core.C1ToggleButton" />
+      <xs:element ref="C1.Android.Core.C1Border" />
       <xs:element ref="android.support.design.widget.TextInputEditText" />
       <xs:element ref="android.support.design.widget.TabItem" />
       <xs:element ref="android.support.design.widget.NavigationView" />
@@ -1463,6 +1487,346 @@
     <xs:attribute ref="android:layout_marginStart" />
     <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator" type="Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Rangenavigator.SfDateTimeRangeNavigator">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Rangenavigator.LabelsRenderer" type="Com.Syncfusion.Rangenavigator.LabelsRenderer">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Rangenavigator.LabelsRenderer</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Rangenavigator.LabelsRenderer">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Charts.ChartBase" type="Com.Syncfusion.Charts.ChartBase">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Charts.ChartBase</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Charts.ChartBase">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Charts.ChartLegendTitleView" type="Com.Syncfusion.Charts.ChartLegendTitleView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Charts.ChartLegendTitleView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Charts.ChartLegendTitleView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TextView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Charts.DataMarkerRenderer" type="Com.Syncfusion.Charts.DataMarkerRenderer">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Charts.DataMarkerRenderer</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Charts.DataMarkerRenderer">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Charts.TooltipView" type="Com.Syncfusion.Charts.TooltipView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Charts.TooltipView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Charts.TooltipView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Charts.ChartTitle" type="Com.Syncfusion.Charts.ChartTitle">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Charts.ChartTitle</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Charts.ChartTitle">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TextView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Charts.GridLinesRenderer" type="Com.Syncfusion.Charts.GridLinesRenderer">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Charts.GridLinesRenderer</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Charts.GridLinesRenderer">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Charts.ChartStripLinesRenderer" type="Com.Syncfusion.Charts.ChartStripLinesRenderer">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Charts.ChartStripLinesRenderer</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Charts.ChartStripLinesRenderer">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Charts.SfChart" type="Com.Syncfusion.Charts.SfChart">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Charts.SfChart</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Charts.SfChart">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Charts.ChartRootLayout" type="Com.Syncfusion.Charts.ChartRootLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Charts.ChartRootLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Charts.ChartRootLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Charts.ChartLegendLayout" type="Com.Syncfusion.Charts.ChartLegendLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Charts.ChartLegendLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Charts.ChartLegendLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Charts.ChartLegendItem" type="Com.Syncfusion.Charts.ChartLegendItem">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Charts.ChartLegendItem</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Charts.ChartLegendItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Com.Syncfusion.Charts.ChartLegendIconView" type="Com.Syncfusion.Charts.ChartLegendIconView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Com.Syncfusion.Charts.ChartLegendIconView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Com.Syncfusion.Charts.ChartLegendIconView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="C1.Android.Chart.Interaction.C1LineMarker" type="C1.Android.Chart.Interaction.C1LineMarker">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: C1.Android.Chart.Interaction.C1LineMarker</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="C1.Android.Chart.Interaction.C1LineMarker">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="C1.Android.Chart.Annotation.AnnotationLayer" type="C1.Android.Chart.Annotation.AnnotationLayer">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: C1.Android.Chart.Annotation.AnnotationLayer</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="C1.Android.Chart.Annotation.AnnotationLayer">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="C1.Android.Chart.RenderCanvas" type="C1.Android.Chart.RenderCanvas">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: C1.Android.Chart.RenderCanvas</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="C1.Android.Chart.RenderCanvas">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="C1.Android.Chart.FlexPie" type="C1.Android.Chart.FlexPie">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: C1.Android.Chart.FlexPie</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="C1.Android.Chart.FlexPie">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout">
+        <xs:attribute ref="app:c1_bindingName" />
+        <xs:attribute ref="app:c1_reversed" />
+        <xs:attribute ref="app:c1_offset" />
+        <xs:attribute ref="app:c1_innerRadius" />
+        <xs:attribute ref="app:c1_startAngle" />
+        <xs:attribute ref="app:c1_selectedItemOffset" />
+        <xs:attribute ref="app:c1_selectedItemPosition" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="C1.Android.Chart.ChartBase" type="C1.Android.Chart.ChartBase">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: C1.Android.Chart.ChartBase</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="C1.Android.Chart.ChartBase">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="C1.Android.Chart.FlexChart" type="C1.Android.Chart.FlexChart">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: C1.Android.Chart.FlexChart</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="C1.Android.Chart.FlexChart">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout">
+        <xs:attribute ref="app:c1_chartType" />
+        <xs:attribute ref="app:c1_stackingType" />
+        <xs:attribute ref="app:c1_options_bubbleMinSize" />
+        <xs:attribute ref="app:c1_options_bubbleMaxSize" />
+        <xs:attribute ref="app:c1_options_groupWidth" />
+        <xs:attribute ref="app:c1_bindingX" />
+        <xs:attribute ref="app:c1_rotated" />
+        <xs:attribute ref="app:c1_datalabel_border" />
+        <xs:attribute ref="app:c1_datalabel_borderThickness" />
+        <xs:attribute ref="app:c1_datalabel_borderColor" />
+        <xs:attribute ref="app:c1_datalabel_connectingLine" />
+        <xs:attribute ref="app:c1_datalabel_offset" />
+        <xs:attribute ref="app:c1_datalabel_position" />
+        <xs:attribute ref="app:c1_datalabel_styleFontSize" />
+        <xs:attribute ref="app:c1_datalabel_styleTypeface" />
+        <xs:attribute ref="app:c1_datalabel_styleTypefaceStyle" />
+        <xs:attribute ref="app:c1_datalabel_styleFill" />
+        <xs:attribute ref="app:c1_datalabel_styleStroke" />
+        <xs:attribute ref="app:c1_datalabel_styleStrokeThickness" />
+        <xs:attribute ref="app:c1_axisX_line" />
+        <xs:attribute ref="app:c1_axisX_type" />
+        <xs:attribute ref="app:c1_axisX_format" />
+        <xs:attribute ref="app:c1_axisX_labelAlignment" />
+        <xs:attribute ref="app:c1_axisX_labelAngle" />
+        <xs:attribute ref="app:c1_axisX_logBase" />
+        <xs:attribute ref="app:c1_axisX_max" />
+        <xs:attribute ref="app:c1_axisX_min" />
+        <xs:attribute ref="app:c1_axisX_labelsVisible" />
+        <xs:attribute ref="app:c1_axisX_majorGridVisible" />
+        <xs:attribute ref="app:c1_axisX_majorTickMark" />
+        <xs:attribute ref="app:c1_axisX_majorUnit" />
+        <xs:attribute ref="app:c1_axisX_majorGridStyleStroke" />
+        <xs:attribute ref="app:c1_axisX_majorGridStyleStrokeThickness" />
+        <xs:attribute ref="app:c1_axisX_minorGridVisible" />
+        <xs:attribute ref="app:c1_axisX_minorTickMark" />
+        <xs:attribute ref="app:c1_axisX_minorUnit" />
+        <xs:attribute ref="app:c1_axisX_minorGridStyleStroke" />
+        <xs:attribute ref="app:c1_axisX_minorGridStyleStrokeThickness" />
+        <xs:attribute ref="app:c1_axisX_origin" />
+        <xs:attribute ref="app:c1_axisX_overlappingLabels" />
+        <xs:attribute ref="app:c1_axisX_position" />
+        <xs:attribute ref="app:c1_axisX_reversed" />
+        <xs:attribute ref="app:c1_axisX_title" />
+        <xs:attribute ref="app:c1_axisX_titleStyleFontSize" />
+        <xs:attribute ref="app:c1_axisX_titleStyleTypeface" />
+        <xs:attribute ref="app:c1_axisX_titleStyleTypefaceStyle" />
+        <xs:attribute ref="app:c1_axisX_titleStyleFill" />
+        <xs:attribute ref="app:c1_axisX_titleStyleStroke" />
+        <xs:attribute ref="app:c1_axisX_titleStyleStrokeThickness" />
+        <xs:attribute ref="app:c1_axisX_styleFontSize" />
+        <xs:attribute ref="app:c1_axisX_styleTypeface" />
+        <xs:attribute ref="app:c1_axisX_styleTypefaceStyle" />
+        <xs:attribute ref="app:c1_axisX_styleFill" />
+        <xs:attribute ref="app:c1_axisX_styleStroke" />
+        <xs:attribute ref="app:c1_axisX_styleStrokeThickness" />
+        <xs:attribute ref="app:c1_axisY_line" />
+        <xs:attribute ref="app:c1_axisY_type" />
+        <xs:attribute ref="app:c1_axisY_format" />
+        <xs:attribute ref="app:c1_axisY_labelAlignment" />
+        <xs:attribute ref="app:c1_axisY_labelAngle" />
+        <xs:attribute ref="app:c1_axisY_logBase" />
+        <xs:attribute ref="app:c1_axisY_max" />
+        <xs:attribute ref="app:c1_axisY_min" />
+        <xs:attribute ref="app:c1_axisY_labelsVisible" />
+        <xs:attribute ref="app:c1_axisY_majorGridVisible" />
+        <xs:attribute ref="app:c1_axisY_majorTickMark" />
+        <xs:attribute ref="app:c1_axisY_majorUnit" />
+        <xs:attribute ref="app:c1_axisY_majorGridStyleStroke" />
+        <xs:attribute ref="app:c1_axisY_majorGridStyleStrokeThickness" />
+        <xs:attribute ref="app:c1_axisY_minorGridVisible" />
+        <xs:attribute ref="app:c1_axisY_minorTickMark" />
+        <xs:attribute ref="app:c1_axisY_minorUnit" />
+        <xs:attribute ref="app:c1_axisY_minorGridStyleStroke" />
+        <xs:attribute ref="app:c1_axisY_minorGridStyleStrokeThickness" />
+        <xs:attribute ref="app:c1_axisY_origin" />
+        <xs:attribute ref="app:c1_axisY_overlappingLabels" />
+        <xs:attribute ref="app:c1_axisY_position" />
+        <xs:attribute ref="app:c1_axisY_reversed" />
+        <xs:attribute ref="app:c1_axisY_title" />
+        <xs:attribute ref="app:c1_axisY_titleStyleFontSize" />
+        <xs:attribute ref="app:c1_axisY_titleStyleTypeface" />
+        <xs:attribute ref="app:c1_axisY_titleStyleTypefaceStyle" />
+        <xs:attribute ref="app:c1_axisY_titleStyleFill" />
+        <xs:attribute ref="app:c1_axisY_titleStyleStroke" />
+        <xs:attribute ref="app:c1_axisY_titleStyleStrokeThickness" />
+        <xs:attribute ref="app:c1_axisY_styleFontSize" />
+        <xs:attribute ref="app:c1_axisY_styleTypeface" />
+        <xs:attribute ref="app:c1_axisY_styleTypefaceStyle" />
+        <xs:attribute ref="app:c1_axisY_styleFill" />
+        <xs:attribute ref="app:c1_axisY_styleStroke" />
+        <xs:attribute ref="app:c1_axisY_styleStrokeThickness" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="C1.Android.Chart.C1Sunburst" type="C1.Android.Chart.C1Sunburst">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: C1.Android.Chart.C1Sunburst</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="C1.Android.Chart.C1Sunburst">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="C1.Android.Chart.ChartTooltip" type="C1.Android.Chart.ChartTooltip">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: C1.Android.Chart.ChartTooltip</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="C1.Android.Chart.ChartTooltip">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="C1.Android.Core.C1ToggleButton" type="C1.Android.Core.C1ToggleButton">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: C1.Android.Core.C1ToggleButton</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="C1.Android.Core.C1ToggleButton">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="C1.Android.Core.C1Border" type="C1.Android.Core.C1Border">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: C1.Android.Core.C1Border</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="C1.Android.Core.C1Border">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.design.widget.TextInputEditText" type="android.support.design.widget.TextInputEditText">
     <xs:annotation>

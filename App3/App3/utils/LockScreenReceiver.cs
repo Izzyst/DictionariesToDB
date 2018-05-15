@@ -13,7 +13,7 @@ namespace App3.utils
             if (intent.Action.Equals(Intent.ActionScreenOff) || intent.Action.Equals(Intent.ActionBootCompleted))
             {
                 Intent startLockScreenActIntent = new Intent(Application.Context, typeof(LockScreenActivity));
-                startLockScreenActIntent.SetFlags(ActivityFlags.ClearTop | ActivityFlags.NewTask);
+                startLockScreenActIntent.SetFlags(ActivityFlags.NewTask);
                 Application.Context.StartActivity(startLockScreenActIntent);
             }
         }

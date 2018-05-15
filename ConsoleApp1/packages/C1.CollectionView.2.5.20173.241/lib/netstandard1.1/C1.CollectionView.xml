@@ -1,0 +1,2028 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.CollectionView</name>
+    </assembly>
+    <members>
+        <member name="T:C1.CollectionView.C1CollectionViewBase`1">
+            <summary>
+            Base class for collection views.
+            </summary>
+            <typeparam name="T">The type of the items in the collection.</typeparam>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.C1CollectionViewBase`1"/> class.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.GetItemType">
+            <summary>
+            Gets the type of the item.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.C1CollectionViewBase`1.InternalList">
+            <summary>
+            Gets or sets the list that hold the items to be returned in the public api.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.C1CollectionViewBase`1.Item(System.Int32)">
+            <summary>
+            Gets the element at the specified index in the read-only list.
+            </summary>
+            <param name="index">The index.</param>
+            <returns>The item at the specified position.</returns>
+        </member>
+        <member name="P:C1.CollectionView.C1CollectionViewBase`1.Count">
+            <summary>
+            Gets the number of elements in the collection.
+            </summary>
+        </member>
+        <member name="E:C1.CollectionView.C1CollectionViewBase`1.CollectionChanged">
+            <summary>
+            Occurs after the collection changed.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.IndexOf(`0)">
+            <summary>
+            Gets the index of the specified item.
+            </summary>
+            <param name="item">The item to look for.</param>
+            <returns>The index of the item.</returns>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Raises the <see cref="E:C1.CollectionView.C1CollectionViewBase`1.CollectionChanged"/> event.
+            </summary>
+            <param name="e">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="E:C1.CollectionView.C1CollectionViewBase`1.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.OnPropertyChanged(System.String)">
+            <summary>
+            Raises the <see cref="E:PropertyChanged"/> event.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1CollectionViewBase`1.CurrentPosition">
+            <summary>
+            Gets the current position.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.C1CollectionViewBase`1.CurrentItem">
+            <summary>
+            Gets or sets the current item in the view.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.MoveCurrentToPosition(System.Int32)">
+            <summary>
+            Sets the item at the specified index in the view as the current item.
+            </summary>
+            <param name="position">The position of the current item.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.MoveCurrentTo(`0)">
+            <summary>
+            Sets the specified item in the view as the current item.
+            </summary>
+            <param name="item">The item to be the current item.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.MoveCurrentToFirst">
+            <summary>
+            Sets the first item in the view as the current item.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.MoveCurrentToLast">
+            <summary>
+            Sets the last item in the view as the current item.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.MoveCurrentToPrevious">
+            <summary>
+            Sets the item before the <see cref="P:C1.CollectionView.C1CollectionViewBase`1.CurrentItem"/> in the view as the <see cref="P:C1.CollectionView.C1CollectionViewBase`1.CurrentItem"/>.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.MoveCurrentToNext">
+            <summary>
+            Sets the item after the <see cref="P:C1.CollectionView.C1CollectionViewBase`1.CurrentItem"/> in the view as the <see cref="P:C1.CollectionView.C1CollectionViewBase`1.CurrentItem"/>.
+            </summary>
+        </member>
+        <member name="E:C1.CollectionView.C1CollectionViewBase`1.CurrentChanging">
+            <summary>
+            Occurs when the current item is changing.
+            </summary>
+        </member>
+        <member name="E:C1.CollectionView.C1CollectionViewBase`1.CurrentChanged">
+            <summary>
+            Occurs after the current item changed.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.OnCurrentChanging(C1.CollectionView.CancelEventArgs)">
+            <summary>
+            Raises the <see cref="E:CurrentChanging" /> event.
+            </summary>
+            <param name="e">The <see cref="T:C1.CollectionView.CancelEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewBase`1.OnCurrentChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:CurrentChanged" /> event.
+            </summary>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="T:C1.CollectionView.C1FilterCollectionView`1">
+            <summary>
+            Collection which supports filtering.
+            </summary>
+            <typeparam name="T">The type of the items in the collection view.</typeparam>
+        </member>
+        <member name="M:C1.CollectionView.C1FilterCollectionView`1.#ctor(System.Collections.IEnumerable)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.C1FilterCollectionView`1"/> class.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1FilterCollectionView`1.UseCPUsInParallel">
+            <summary>
+            Gets or sets a value indicating whether the operations will be performed using parallels CPU's.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.C1FilterCollectionView`1.IsThreadSafe">
+            <summary>
+            Gets or sets a value indicating whether the filter predicate will be executed in the same thread as the call.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.C1FilterCollectionView`1.InternalList">
+            <summary>
+            Gets or sets the list that hold the items to be returned in the public api.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1FilterCollectionView`1.CanFilter(C1.CollectionView.FilterExpression)">
+            <summary>
+            Returns whether the collection view is able to filter the specified expression.
+            </summary>
+            <param name="filterExpression">The filter expression that determine how the data would be filtered.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1FilterCollectionView`1.FilterExpression">
+            <summary>
+            Gets the filter expression applied to the data.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1FilterCollectionView`1.FilterAsync(C1.CollectionView.FilterExpression)">
+            <summary>
+            Filters the data using specified filter expression.
+            </summary>
+            <param name="filterExpression">The filter expression applied to the data.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1FilterCollectionView`1.OnSourceCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Called when the source collection changed.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1FilterCollectionView`1.InsertAsync(System.Int32,System.Object)">
+            <summary>
+            Inserts the specified item at the specified index in the collection.
+            </summary>
+            <param name="index">The index where the item will be inserted.</param>
+            <param name="item">The item to be inserted.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1FilterCollectionView`1.RemoveAsync(System.Int32)">
+            <summary>
+            Removes the item at the specified index from the collection.
+            </summary>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1FilterCollectionView`1.ReplaceAsync(System.Int32,System.Object)">
+            <summary>
+            Replaces the item at the specified index by the new specified item.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="item">The item.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1FilterCollectionView`1.MoveAsync(System.Int32,System.Int32)">
+            <summary>
+            Moves an item from the specified position to the new one.
+            </summary>
+            <param name="fromIndex">From index.</param>
+            <param name="toIndex">To index.</param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.CollectionView.C1GroupCollectionView`1">
+            <summary>
+            Collection which supports grouping
+            </summary>
+            <typeparam name="S"></typeparam>
+        </member>
+        <member name="M:C1.CollectionView.C1GroupCollectionView`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.C1GroupCollectionView`1"/> class.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="isPlain">if set to <c>true</c> the groups will be inline with the items, otherwise the first level will contain groups and the items will be inside each group.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1GroupCollectionView`1.UseCPUsInParallel">
+            <summary>
+            Gets or sets a value indicating whether the operations will be performed using parallels CPU's.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.C1GroupCollectionView`1.InternalList">
+            <summary>
+            Gets or sets the list that hold the items to be returned in the public api.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.C1GroupCollectionView`1.IsPlain">
+            <summary>
+            Gets whether the group items will be inline with the data items or the items will be the first level of group items.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1GroupCollectionView`1.CanGroup(C1.CollectionView.GroupDescription[])">
+            <summary>
+            Returns whether the collection view is able to group the specified group descriptions.
+            </summary>
+            <param name="groupDescriptions">The group descriptions that determine how the data would be grouped.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1GroupCollectionView`1.GroupDescriptions">
+            <summary>
+            Gets the group descriptions applied to the data.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1GroupCollectionView`1.GroupAsync(C1.CollectionView.GroupDescription[])">
+            <summary>
+            Groups the collection view according to the specified group descriptions.
+            </summary>
+            <param name="groupDescriptions">The group descriptions that determine how the data will be grouped.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1GroupCollectionView`1.CreateInternalList(System.Collections.Generic.IReadOnlyList{`0})">
+            <summary>
+            Creates the internal list from the source.
+            </summary>
+            <param name="source">The source.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1GroupCollectionView`1.OnSourceCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Called when the source collection changed.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1GroupCollectionView`1.InsertAsync(System.Int32,System.Object)">
+            <summary>
+            Inserts the specified item at the specified index in the collection.
+            </summary>
+            <param name="index">The index where the item will be inserted.</param>
+            <param name="addedItem">The item to be inserted.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1GroupCollectionView`1.CanRemove(System.Int32)">
+            <summary>
+            Determines whether the item at the specified index can be removed from the collection.
+            </summary>
+            <param name="index">The index of the item that would be removed.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1GroupCollectionView`1.RemoveAsync(System.Int32)">
+            <summary>
+            Removes the item at the specified index from the collection.
+            </summary>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1GroupCollectionView`1.CanReplace(System.Int32)">
+            <summary>
+            Determines whether the item at the specified index can be replaced in the collection.
+            </summary>
+            <param name="index">The index of the item that would be replaced.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1GroupCollectionView`1.ReplaceAsync(System.Int32,System.Object)">
+            <summary>
+            Replaces the item at the specified index by the new specified item.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="item">The item.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1GroupCollectionView`1.CanMove(System.Int32,System.Int32)">
+            <summary>
+            Determines whether the item at fromIndex can be moved to toIndex.
+            </summary>
+            <param name="fromIndex">The original index.</param>
+            <param name="toIndex">The destination index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1GroupCollectionView`1.MoveAsync(System.Int32,System.Int32)">
+            <summary>
+            Moves an item from the specified position to the new one.
+            </summary>
+            <param name="fromIndex">From index.</param>
+            <param name="toIndex">To index.</param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.CollectionView.GroupItem`2">
+            <summary>
+            Represent an item that is a group.
+            </summary>
+            <typeparam name="K">The type of the key</typeparam>
+            <typeparam name="S">The type of the items of the collection view to which this group belongs to.</typeparam>
+        </member>
+        <member name="M:C1.CollectionView.GroupItem`2.#ctor(C1.CollectionView.ICollectionView{System.Object},`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.GroupItem`2"/> class.
+            </summary>
+            <param name="parent">The parent collection which this group belongs to.</param>
+            <param name="key">The key.</param>
+        </member>
+        <member name="P:C1.CollectionView.GroupItem`2.Group">
+            <summary>
+            Gets the key of the group.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.GroupItem`2.Level">
+            <summary>
+            Gets the nesting level of this group.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.GroupItem`2.GetItemType">
+            <summary>
+            Gets the type of the items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.GroupItem`2.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:C1.CollectionView.C1SortCollectionView`1">
+            <summary>
+            Collection which supports sorting.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:C1.CollectionView.C1SortCollectionView`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.C1SortCollectionView`1"/> class.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1SortCollectionView`1.UseCPUsInParallel">
+            <summary>
+            Gets or sets a value indicating whether the operations will be performed using parallels CPU's.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.C1SortCollectionView`1.InternalList">
+            <summary>
+            Gets or sets the list that hold the items to be returned in the public api.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1SortCollectionView`1.CanSort(C1.CollectionView.SortDescription[])">
+            <summary>
+            Returns whether the collection view is able to sort the specified sort descriptions.
+            </summary>
+            <param name="sortDescriptions">The sort descriptions to be checked whether the collection view can be sorted.</param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.CollectionView.C1SortCollectionView`1.SortDescriptions">
+            <summary>
+            Gets the sort descriptions applied to the data.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1SortCollectionView`1.SortAsync(C1.CollectionView.SortDescription[])">
+            <summary>
+            Sorts the collection view according to the specified sort descriptions.
+            </summary>
+            <param name="sortDescriptions">The sort descriptions that determine how the data will be sort.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1SortCollectionView`1.OnSourceCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Called when the source collection changed.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1SortCollectionView`1.InsertAsync(System.Int32,System.Object)">
+            <summary>
+            Inserts the specified item at the specified index in the collection.
+            </summary>
+            <param name="index">The index where the item will be inserted.</param>
+            <param name="addedItem">The item to be inserted.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1SortCollectionView`1.RemoveAsync(System.Int32)">
+            <summary>
+            Removes the item at the specified index from the collection.
+            </summary>
+            <param name="index">The index.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1SortCollectionView`1.ReplaceAsync(System.Int32,System.Object)">
+            <summary>
+            Replaces the item at the specified index by the new specified item.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="item">The item.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1SortCollectionView`1.CanMove(System.Int32,System.Int32)">
+            <summary>
+            Determines whether the item at fromIndex can be moved to toIndex.
+            </summary>
+            <param name="fromIndex">The original index.</param>
+            <param name="toIndex">The destination index.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1SortCollectionView`1.MoveAsync(System.Int32,System.Int32)">
+            <summary>
+            Moves an item from the specified position to the new one.
+            </summary>
+            <param name="fromIndex">From index.</param>
+            <param name="toIndex">To index.</param>
+        </member>
+        <member name="T:C1.CollectionView.C1WrapCollectionView`2">
+            <summary>
+            Collection view which takes another collection as source.
+            </summary>
+            <typeparam name="S">The type of the items in the source collection.</typeparam>
+            <typeparam name="T">The type of the items in the collection view.</typeparam>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.C1WrapCollectionView`2"/> class.
+            </summary>
+            <remarks>Use <see cref="P:C1.CollectionView.C1WrapCollectionView`2.Source"/> property to set the collection source.</remarks>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.#ctor(System.Collections.IEnumerable)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.C1WrapCollectionView`2"/> class.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1WrapCollectionView`2.Source">
+            <summary>
+            Gets or sets the original source collection.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.C1WrapCollectionView`2.SourceIsList">
+            <summary>
+            Gets a value indicating whether the source collection is a list.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.C1WrapCollectionView`2.SourceNotifiesChanges">
+            <summary>
+            Gets a value indicating whether the source collection notifies changes.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.CreateInternalList(System.Collections.Generic.IReadOnlyList{`0})">
+            <summary>
+            Creates the internal list from the source.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.GetItemType">
+            <summary>
+            Get the type of the items in the collection.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.CanSort(C1.CollectionView.SortDescription[])">
+            <summary>
+            Returns whether the collection view is able to sort the specified sort descriptions.
+            </summary>
+            <param name="sortDescriptions">The sort descriptions to be checked whether the collection view can be sorted.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1WrapCollectionView`2.SortDescriptions">
+            <summary>
+            Gets the sort descriptions applied to the data.
+            </summary>
+        </member>
+        <member name="E:C1.CollectionView.C1WrapCollectionView`2.SortChanged">
+            <summary>
+            Raised after a sort operation was performed.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.OnSortChanged">
+            <summary>
+            Called after the sort changed.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.SortAsync(C1.CollectionView.SortDescription[])">
+            <summary>
+            Sorts the collection view according to the specified sort descriptions.
+            </summary>
+            <param name="sortDescriptions">The sort descriptions that determine how the data will be sort.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.CanFilter(C1.CollectionView.FilterExpression)">
+            <summary>
+            Returns whether the collection view is able to filter the specified expression.
+            </summary>
+            <param name="filterExpression">The filter expression that determine how the data would be filtered.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1WrapCollectionView`2.FilterExpression">
+            <summary>
+            Gets the filter expression applied to the data.
+            </summary>
+        </member>
+        <member name="E:C1.CollectionView.C1WrapCollectionView`2.FilterChanged">
+            <summary>
+            Raised after a filter operation was performed.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.OnFilterChanged">
+            <summary>
+            Called after the filter changed.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.FilterAsync(C1.CollectionView.FilterExpression)">
+            <summary>
+            Filters the data using specified filter expression.
+            </summary>
+            <param name="filterExpression">The filter expression applied to the data.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.CanGroup(C1.CollectionView.GroupDescription[])">
+            <summary>
+            Returns whether the collection view is able to group the specified group descriptions.
+            </summary>
+            <param name="groupDescriptions">The group descriptions that determine how the data would be grouped.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1WrapCollectionView`2.GroupDescriptions">
+            <summary>
+            Gets the group descriptions applied to the data.
+            </summary>
+        </member>
+        <member name="E:C1.CollectionView.C1WrapCollectionView`2.GroupChanged">
+            <summary>
+            Raised after a grouping operation was performed.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.OnGroupChanged">
+            <summary>
+            Called after the groups changed.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.GroupAsync(C1.CollectionView.GroupDescription[])">
+            <summary>
+            Groups the collection view according to the specified group descriptions.
+            </summary>
+            <param name="groupDescriptions">The group descriptions that determine how the data will be grouped.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1WrapCollectionView`2.IsUpdating">
+            <summary>
+            Gets a value indicating whether the collection view is being updated.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.CanRefresh">
+            <summary>
+            Determines whether the collection can be refreshed.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.RefreshAsync(System.Threading.CancellationToken)">
+            <summary>
+            Refreshes the collection data.
+            </summary>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.CollectionView.C1WrapCollectionView`2.HasMoreItems">
+            <summary>
+            Gets a value indicating whether this collection can load more items.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.LoadMoreItemsAsync(System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <summary>
+            Loads more items asynchronously.
+            </summary>
+            <param name="count">The desired count of items to be loaded.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.CanInsert(System.Int32)">
+            <summary>
+            Determines whether a new item can be inserted in the collection at the specified index.
+            </summary>
+            <param name="index">The index where the items would be inserted.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.CanRemove(System.Int32)">
+            <summary>
+            Determines whether the item at the specified index can be removed from the collection.
+            </summary>
+            <param name="index">The index of the item that would be removed.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.CanReplace(System.Int32)">
+            <summary>
+            Determines whether the item at the specified index can be replaced in the collection.
+            </summary>
+            <param name="index">The index of the item that would be replaced.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.CanMove(System.Int32,System.Int32)">
+            <summary>
+            Determines whether the item at fromIndex can be moved to toIndex.
+            </summary>
+            <param name="fromIndex">The original index.</param>
+            <param name="toIndex">The destination index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.InsertAsync(System.Int32,System.Object)">
+            <summary>
+            Inserts the specified item at the specified index in the collection.
+            </summary>
+            <param name="index">The index where the item will be inserted.</param>
+            <param name="item">The item to be inserted.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.RemoveAsync(System.Int32)">
+            <summary>
+            Removes the item at the specified index from the collection.
+            </summary>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.ReplaceAsync(System.Int32,System.Object)">
+            <summary>
+            Replaces the item at the specified index by the new specified item.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="item">The item.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.MoveAsync(System.Int32,System.Int32)">
+            <summary>
+            Moves an item from the specified position to the new one.
+            </summary>
+            <param name="fromIndex">From index.</param>
+            <param name="toIndex">To index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`2.OnSourceCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Called when the source collection changed.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="T:C1.CollectionView.C1WrapCollectionView`1">
+            <summary>
+            Collection view which takes another collection as source.
+            </summary>
+            <typeparam name="T">The type of the items in the collection view.</typeparam>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.C1WrapCollectionView`1"/> class.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`1.#ctor(System.Collections.IEnumerable)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.C1WrapCollectionView`1"/> class.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1WrapCollectionView`1.CreateInternalList(System.Collections.Generic.IReadOnlyList{`0})">
+            <summary>
+            Creates the internal list from the source.
+            </summary>
+            <param name="source">The source.</param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.CollectionView.C1CollectionView`1">
+            <summary>
+            Implements an in-memory collection view which takes a data source and applies the sort and filter operations.
+            </summary>
+            <typeparam name="T">The type of the items in the collection.</typeparam>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionView`1.#ctor(System.Collections.IEnumerable)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.C1CollectionView`1"/> class.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1CollectionView`1.UseCPUsInParallel">
+            <summary>
+            Gets or sets whether the operations will be performed using CPU's in parallel.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionView`1.AsPlain">
+            <summary>
+            Returns a <see cref="T:C1.CollectionView.ICollectionView`1"/> whose group items are inline with the data items. Otherwise the collection return the first level of groups and its items must be get from each of the group items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.CollectionView.C1CursorCollectionView`2">
+            <summary>
+            Base class for cursor-like collection views.
+            </summary>
+            <remarks>
+            This class is appropriate for wrapping data services that return the data in pages and give a token to get the next page, like Facebook, Twitter, YouTube, etc.
+            </remarks>
+            <typeparam name="T">The type of the items in the collection.</typeparam>
+            <typeparam name="K">The type of the token.</typeparam>
+        </member>
+        <member name="P:C1.CollectionView.C1CursorCollectionView`2.InternalList">
+            <summary>
+            Gets or sets the list that hold the items to be returned in the public api.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CursorCollectionView`2.GetPageAsync(System.Int32,`1,System.Nullable{System.Int32},System.Collections.Generic.IReadOnlyList{C1.CollectionView.SortDescription},C1.CollectionView.FilterExpression,System.Threading.CancellationToken)">
+            <summary>
+            When overriden in an inherited class it returns the items in the page as well as a token to the next page.
+            </summary>
+            <param name="startingIndex">The index where the returned items will be inserted.</param>
+            <param name="pageToken">The token of the requesting page, pass null if no pages had been requested so far.</param>
+            <param name="count">The desired number of items to be returned.</param>
+            <param name="sortDescriptions">The sort descriptions.</param>
+            <param name="filterExpression">The filter expression.</param>
+            <param name="cancellationToken">Cancellation token.</param>
+            <returns>A tuple containing the items and a token to the next page.</returns>
+        </member>
+        <member name="P:C1.CollectionView.C1CursorCollectionView`2.HasMoreItems">
+            <summary>
+            Gets a value that indicates whether more items can be loaded.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CursorCollectionView`2.LoadMoreItemsAsync(System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <summary>
+            Loads more items.
+            </summary>
+            <param name="count">Specifies the desired number of items to be loaded.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1CursorCollectionView`2.CanRefresh">
+            <summary>
+            Determines whether the collection can be refreshed.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1CursorCollectionView`2.RefreshAsync(System.Threading.CancellationToken)">
+            <summary>
+            Removes the cached data and loads the whole collection from scratch.
+            </summary>
+            <param name="cancellationToken">The cancellation token.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1CursorCollectionView`2.SortDescriptions">
+            <summary>
+            Gets the sort descriptions applied to the data.
+            </summary>
+        </member>
+        <member name="E:C1.CollectionView.C1CursorCollectionView`2.SortChanged">
+            <summary>
+            Raised after a sort operation was performed.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CursorCollectionView`2.OnSortChanged">
+            <summary>
+            Called after the sort changed.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CursorCollectionView`2.CanSort(C1.CollectionView.SortDescription[])">
+            <summary>
+            Returns whether the collection view is able to sort the specified sort descriptions.
+            </summary>
+            <param name="sortDescriptions">The sort descriptions to be checked whether the collection view can be sorted.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1CursorCollectionView`2.SortAsync(C1.CollectionView.SortDescription[])">
+            <summary>
+            Sorts the collection view according to the specified sort descriptions.
+            </summary>
+            <param name="sortDescriptions">The sort descriptions that determine how the data will be sort.</param>
+        </member>
+        <member name="P:C1.CollectionView.C1CursorCollectionView`2.FilterExpression">
+            <summary>
+            Gets the filter expression applied to the data.
+            </summary>
+        </member>
+        <member name="E:C1.CollectionView.C1CursorCollectionView`2.FilterChanged">
+            <summary>
+            Raised after a filter operation was performed.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CursorCollectionView`2.OnFilterChanged">
+            <summary>
+            Called after the filter changed.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CursorCollectionView`2.CanFilter(C1.CollectionView.FilterExpression)">
+            <summary>
+            Returns whether the collection view is able to filter the specified expression.
+            </summary>
+            <param name="filterExpression">The filter expression that determine how the data would be filtered.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1CursorCollectionView`2.FilterAsync(C1.CollectionView.FilterExpression)">
+            <summary>
+            Filters the data using specified filter expression.
+            </summary>
+            <param name="filterExpression">The filter expression applied to the data.</param>
+        </member>
+        <member name="T:C1.CollectionView.C1CursorCollectionView`1">
+            <summary>
+            Base class for cursor-like collection views.
+            </summary>
+            <remarks>
+            This class is appropriate for wrapping data services that return the data in pages and give a token to get the next page, like Facebook, Twitter, YouTube, etc.
+            </remarks>
+            <typeparam name="T">The type of the items in the collection.</typeparam>
+        </member>
+        <member name="T:C1.CollectionView.CancelEventArgs">
+            <summary>
+            Event data for cancellable events.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.CancelEventArgs.Cancel">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:C1.CollectionView.CancelEventArgs"/> is cancelled.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs">
+            <summary>
+            Provides event data for collection events as well as support for asynchronously waiting for the event handlers.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs.Create(System.Collections.Specialized.NotifyCollectionChangedAction)">
+            <summary>
+            Initializes a new instance of the System.Collections.Specialized.NotifyCollectionChangedEventArgs
+            class that describes a System.Collections.Specialized.NotifyCollectionChangedAction.Reset change.
+            </summary>
+            <param name="action">The action that caused the event. This must be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />.</param>
+        </member>
+        <member name="M:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs.Create(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList)">
+            <summary>
+            Initializes a new instance of the System.Collections.Specialized.NotifyCollectionChangedEventArgs class that describes a multi-item change.
+            </summary>
+            <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />, <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />, or <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />.</param>
+            <param name="changedItems">The items that are affected by the change.</param>
+        </member>
+        <member name="M:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs.Create(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs"/> class.
+            </summary>
+            <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />, <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />, or <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />.</param>
+            <param name="changedItem">The item that is affected by the change.</param>
+        </member>
+        <member name="M:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs.Create(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Collections.IList)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs"/> class.
+            </summary>
+            <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />.</param>
+            <param name="newItems">The new items that are replacing the original items.</param>
+            <param name="oldItems">The original items that are replaced.</param>
+        </member>
+        <member name="M:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs.Create(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs"/> class.
+            </summary>
+            <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />, <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />, or <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />.</param>
+            <param name="changedItems">The items affected by the change.</param>
+            <param name="startingIndex">The index where the change occurred.</param>
+        </member>
+        <member name="M:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs.Create(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs"/> class.
+            </summary>
+            <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />, <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />, or <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />.</param>
+            <param name="changedItem">The item that is affected by the change.</param>
+            <param name="index">The index where the change occurred.</param>
+        </member>
+        <member name="M:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs.Create(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs"/> class.
+            </summary>
+            <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />.</param>
+            <param name="newItem">The new item that is replacing the original item.</param>
+            <param name="oldItem">The original item that is replaced.</param>
+        </member>
+        <member name="M:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs.Create(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Collections.IList,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs"/> class.
+            </summary>
+            <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />.</param>
+            <param name="newItems">The new items that are replacing the original items.</param>
+            <param name="oldItems">The original items that are replaced.</param>
+            <param name="startingIndex">The index of the first item of the items that are being replaced.</param>
+        </member>
+        <member name="M:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs.Create(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs"/> class.
+            </summary>
+            <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Move" />.</param>
+            <param name="changedItems">The items affected by the change.</param>
+            <param name="index">The new index for the changed items.</param>
+            <param name="oldIndex">The old index for the changed items.</param>
+        </member>
+        <member name="M:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs.Create(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs"/> class.
+            </summary>
+            <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Move" />.</param>
+            <param name="changedItem">The item affected by the change.</param>
+            <param name="index">The new index for the changed item.</param>
+            <param name="oldIndex">The old index for the changed item.</param>
+        </member>
+        <member name="M:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs.Create(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Object,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs"/> class.
+            </summary>
+            <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />.</param>
+            <param name="newItem">The new item that is replacing the original item.</param>
+            <param name="oldItem">The original item that is replaced.</param>
+            <param name="index">The index of the item being replaced.</param>
+        </member>
+        <member name="M:C1.CollectionView.NotifyCollectionChangedAsyncEventArgs.GetDeferral">
+            <summary>
+            Gets the deferral.
+            </summary>
+            <remarks>
+            The event won't finish until all the deferrals call the comlete method.
+            </remarks>
+        </member>
+        <member name="T:C1.CollectionView.NotifyCollectionChangedDeferralsAwaiter">
+            <summary>
+            Event awaiter which provides the event arguments.
+            </summary>
+            <seealso cref="T:C1.Core.AsyncEventArgsDeferralsAwaiter" />
+        </member>
+        <member name="P:C1.CollectionView.NotifyCollectionChangedDeferralsAwaiter.EventArgs">
+            <summary>
+            Gets the event arguments.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.C1CollectionViewEx">
+            <summary>
+            Extension methods for <see cref="T:C1.CollectionView.C1CollectionView`1"/>.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewEx.SortAsync``1(C1.CollectionView.C1CollectionView{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},C1.CollectionView.SortDirection)">
+            <summary>
+            Sorts the collection view according to the specified sort path and direction.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="sortPath">The filter path.</param>
+            <param name="sortDirection">The sort direction.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewEx.FilterAsync``1(C1.CollectionView.C1CollectionView{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},C1.CollectionView.FilterOperation,System.Object)">
+            <summary>
+            Filters the data using specified filter parameters.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="filterPath">The path of the data item to which the filter will be applied.</param>
+            <param name="filterOperation">The filter operation.</param>
+            <param name="value">The value used in the expression.</param>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewEx.GroupAsync``1(C1.CollectionView.C1CollectionView{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">
+            <summary>
+            Groups the collection view according to the specified group path.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="groupPath">The group path.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.C1CollectionViewEx.IsOneOf(System.Object[],System.Object)">
+            <summary>
+            Determines whether the specified elemen is one of the items in the array.
+            </summary>
+            <param name="array">The array.</param>
+            <param name="elem">The elem.</param>
+        </member>
+        <member name="T:C1.CollectionView.ICollectionViewEx">
+            <summary>
+            Extension methods for <see cref="T:C1.CollectionView.ICollectionView`1"/>.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.CanSort``1(C1.CollectionView.ICollectionView{``0},System.String)">
+            <summary>
+            Returns true if the collection view supports sorting.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="sortPath">The path of the data item to which the sort would be applied.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.CanSort``1(C1.CollectionView.ICollectionView{``0},System.String,C1.CollectionView.SortDirection)">
+            <summary>
+            Returns true if the collection view supports sorting.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="sortPath">The path of the data item to which the sort would be applied.</param>
+            <param name="direction">Whether the sort is ascending or descending.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.CanSort``1(C1.CollectionView.ICollectionView{``0},C1.CollectionView.SortDescription[])">
+            <summary>
+            Returns true if the collection view supports sorting.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="sortDescriptions">The sort descriptions that determine how the data would be sort.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.GetSortDescriptions``1(C1.CollectionView.ICollectionView{``0})">
+            <summary>
+            Returns a list of the current sort descriptions.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.SortAsync``1(C1.CollectionView.ICollectionView{``0},System.String,C1.CollectionView.SortDirection)">
+            <summary>
+            Sorts the collection view according to the specified sort parameters.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="sortPath">The path of the data item to which the sort description will be applied.</param>
+            <param name="sortDirection">The direction of the sort operation.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.SortAsync``1(C1.CollectionView.ICollectionView{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},C1.CollectionView.SortDirection)">
+            <summary>
+            Sorts the collection view according to the specified sort path and direction.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="sortPath">The filter path.</param>
+            <param name="sortDirection">The sort direction.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.SortAsync``1(C1.CollectionView.ICollectionView{``0},C1.CollectionView.SortDescription[])">
+            <summary>
+            Sorts the collection view according to the specified sort descriptions.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="sortDescriptions">The sort descriptions that determine how the data will be sort.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.AttachSortChanged``1(C1.CollectionView.ICollectionView{``0},System.EventHandler)">
+            <summary>
+            Attaches the specified handler to the sort changed event.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collectionView">The collection view.</param>
+            <param name="handler">The event handler.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.DettachSortChanged``1(C1.CollectionView.ICollectionView{``0},System.EventHandler)">
+            <summary>
+            Dettaches the specified handler from the sort changed event.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collectionView">The collection view.</param>
+            <param name="handler">The event handler.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.CanFilter``1(C1.CollectionView.ICollectionView{``0},C1.CollectionView.FilterExpression)">
+            <summary>
+            Returns whether the collection view is able to filter the specified expression.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="filterExpression">The filter expression that determine how the data would be filtered.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.GetFilterExpression``1(C1.CollectionView.ICollectionView{``0})">
+            <summary>
+            Returns a the current filter expression.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.FilterAsync``1(C1.CollectionView.ICollectionView{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},C1.CollectionView.FilterOperation,System.Object)">
+            <summary>
+            Filters the data using specified filter parameters.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="filterPath">The path of the data item to which the filter will be applied.</param>
+            <param name="filterOperation">The filter operation.</param>
+            <param name="value">The value used in the expression.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.FilterAsync``1(C1.CollectionView.ICollectionView{``0},System.String,C1.CollectionView.FilterOperation,System.Object)">
+            <summary>
+            Filters the data using specified filter parameters.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="filterPath">The path of the data item to which the filter will be applied.</param>
+            <param name="filterOperation">The filter operation.</param>
+            <param name="value">The value used in the expression.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.FilterAsync``1(C1.CollectionView.ICollectionView{``0},System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Filters the data from a query string.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="query">The query string to be filtered.</param>
+            <param name="treatSpacesAsAndOperator">if set to <c>true</c> treat spaces as and operator.</param>
+            <param name="matchNumbers">if set to <c>true</c> it will look into numeric fields.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.FilterAsync``1(C1.CollectionView.ICollectionView{``0},System.Func{System.Object,System.Boolean})">
+            <summary>
+            Filters the data from a query string.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="predicate">The preicate which will filter the collection.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.FilterAsync``1(C1.CollectionView.ICollectionView{``0},C1.CollectionView.FilterExpression)">
+            <summary>
+            Filters the data using specified filter expression.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="filterExpression">The filter expression applied to the data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.CreateFilterFromString``1(C1.CollectionView.ICollectionView{``0},System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Creates a <see cref="T:C1.CollectionView.FilterExpression"/> from a query string.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="query">The query string to be filtered.</param>
+            <param name="treatSpacesAsAndOperator">if set to <c>true</c> treat spaces as and operator.</param>
+            <param name="matchNumbers">if set to <c>true</c> it will look into numeric fields.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.RemoveFilterAsync``1(C1.CollectionView.ICollectionView{``0})">
+            <summary>
+            Removes any filter applied to the collection previously.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.AttachFilterChanged``1(C1.CollectionView.ICollectionView{``0},System.EventHandler)">
+            <summary>
+            Attaches the specified handler to the filter changed event.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collectionView">The collection view.</param>
+            <param name="handler">The event handler.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.DettachFilterChanged``1(C1.CollectionView.ICollectionView{``0},System.EventHandler)">
+            <summary>
+            Dettaches the specified handler from the filter changed event.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collectionView">The collection view.</param>
+            <param name="handler">The event handler.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.CanGroup``1(C1.CollectionView.ICollectionView{``0},System.String)">
+            <summary>
+            Returns true if the collection view supports sorting.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="groupPath">The path of the data item to which the group would be applied.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.CanGroup``1(C1.CollectionView.ICollectionView{``0},C1.CollectionView.GroupDescription[])">
+            <summary>
+            Returns true if the collection view supports sorting.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="groupDescriptions">The group descriptions that determine how the data will be grouped.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.GetGroupDescriptions``1(C1.CollectionView.ICollectionView{``0})">
+            <summary>
+            Returns a list of the current group descriptions.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.GroupAsync``1(C1.CollectionView.ICollectionView{``0},System.String[])">
+            <summary>
+            Groups the collection view according to the specified group fields.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="fields">The fields.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.GroupAsync``1(C1.CollectionView.ICollectionView{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">
+            <summary>
+            Groups the collection view according to the specified group path.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="groupPath">The group path.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.GroupAsync``1(C1.CollectionView.ICollectionView{``0},C1.CollectionView.GroupDescription[])">
+            <summary>
+            Groups the collection view according to the specified group descriptions.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="groupDescriptions">The group descriptions that determine how the data will be grouped.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.AttachGroupChanged``1(C1.CollectionView.ICollectionView{``0},System.EventHandler)">
+            <summary>
+            Attaches the specified handler to the group changed event.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collectionView">The collection view.</param>
+            <param name="handler">The event handler.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.DettachGroupChanged``1(C1.CollectionView.ICollectionView{``0},System.EventHandler)">
+            <summary>
+            Dettaches the specified handler from the group changed event.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collectionView">The collection view.</param>
+            <param name="handler">The event handler.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.CanLoadMoreItems``1(C1.CollectionView.ICollectionView{``0})">
+            <summary>
+            Returns true if the collection view can load items on demand.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.LoadMoreItemsAsync``1(C1.CollectionView.ICollectionView{``0},System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <summary>
+            Loads more items.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="count">Specifies the desired number of items to be loaded.</param>
+            <param name="cancellationToken">The cancellation token</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.CanRefresh``1(C1.CollectionView.ICollectionView{``0})">
+            <summary>
+            Returns true if the collection view can be refreshed.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.RefreshAsync``1(C1.CollectionView.ICollectionView{``0})">
+            <summary>
+            Refreshes the collection view.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.CanInsert``1(C1.CollectionView.ICollectionView{``0},System.Int32)">
+            <summary>
+            Determines whether a new item can be inserted in the collection at the specified index.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="index">The index where the items would be inserted.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.CanRemove``1(C1.CollectionView.ICollectionView{``0},System.Int32)">
+            <summary>
+            Determines whether the item at the specified index can be removed from the collection.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="index">The index of the item that would be removed.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.CanReplace``1(C1.CollectionView.ICollectionView{``0},System.Int32)">
+            <summary>
+            Determines whether the item at the specified index can be replaced in the collection.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="index">The index of the item that would be replaced.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.CanMove``1(C1.CollectionView.ICollectionView{``0},System.Int32,System.Int32)">
+            <summary>
+            Determines whether the item at fromIndex can be moved to toIndex.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="fromIndex">The original index.</param>
+            <param name="toIndex">The destination index.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.AddAsync``1(C1.CollectionView.ICollectionView{``0},``0)">
+            <summary>
+            Adds the specified item to the collection.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="item">The item to be added.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.InsertAsync``1(C1.CollectionView.ICollectionView{``0},System.Int32,``0)">
+            <summary>
+            Inserts the specified item at the specified index in the collection.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="index">The index where the item will be inserted.</param>
+            <param name="item">The item to be inserted.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.RemoveAsync``1(C1.CollectionView.ICollectionView{``0},System.Int32)">
+            <summary>
+            Removes the item at the specified index from the collection.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="index">The index of the item that will be removed.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.ReplaceAsync``1(C1.CollectionView.ICollectionView{``0},System.Int32,``0)">
+            <summary>
+            Replaces the item at the specified index by the specified item.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="index">The index.</param>
+            <param name="item">The item.</param>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionViewEx.MoveAsync``1(C1.CollectionView.ICollectionView{``0},System.Int32,System.Int32)">
+            <summary>
+            Moves an item from the specified position to the new one.
+            </summary>
+            <param name="collectionView">The collection view.</param>
+            <param name="fromIndex">From index.</param>
+            <param name="toIndex">To index.</param>
+        </member>
+        <member name="T:C1.CollectionView.IReadOnlyListEx">
+            <summary>
+            Extensions for <see cref="T:System.Collections.Generic.IReadOnlyList`1"/>.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.IReadOnlyListEx.IndexOf``1(System.Collections.Generic.IReadOnlyList{``0},``0)">
+            <summary>
+            Gets the index of the specified item.
+            </summary>
+            <param name="list">The list.</param>
+            <param name="item">The item to look for.</param>
+            <returns>The index of the item.</returns>
+        </member>
+        <member name="T:C1.CollectionView.FilterExpression">
+            <summary>
+            Abstract filter expression. Use <see cref="T:C1.CollectionView.FilterUnaryExpression"/> to create a concrete filter and <see cref="T:C1.CollectionView.FilterBinaryExpression"/> to apply logical operations between filter expressions.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.FilterExpression.Combine(C1.CollectionView.FilterCombination,C1.CollectionView.FilterExpression[])">
+            <summary>
+            Combines a range of expressions using the specified logical operator.
+            </summary>
+            <param name="combination">The logical operator.</param>
+            <param name="expressions">The expressions to be combined.</param>
+            <returns>The resulting expression.</returns>
+        </member>
+        <member name="M:C1.CollectionView.FilterExpression.FromString(System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean)">
+            <summary>
+            Creates a <see cref="T:C1.CollectionView.FilterExpression"/> from a string.
+            </summary>
+            <param name="query">The query to be filtered.</param>
+            <param name="fields">The fields taken into account in the filter operation.</param>
+            <param name="treatSpacesAsAndOperator">if set to <c>true</c> treat spaces as and operator.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.CollectionView.FilterExpression.GetSQLFilterExpression``1">
+            <summary>
+            Gets a filtering expression suitable for Linq to SQL.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.FilterBinaryExpression">
+            <summary>
+            Combines two filter expressions using a logical operator.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.FilterBinaryExpression.#ctor(C1.CollectionView.FilterCombination,C1.CollectionView.FilterExpression,C1.CollectionView.FilterExpression)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.FilterBinaryExpression"/> class.
+            </summary>
+            <param name="combination">The logical operator applied between the left and right expressions.</param>
+            <param name="leftExpression">The left expression.</param>
+            <param name="rightExpression">The right expression.</param>
+        </member>
+        <member name="P:C1.CollectionView.FilterBinaryExpression.FilterCombination">
+            <summary>
+            Gets the logical operator applied between the left and right expressions.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.FilterBinaryExpression.LeftExpression">
+            <summary>
+            Gets the left expression.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.FilterBinaryExpression.RightExpression">
+            <summary>
+            Gets the right expression.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.FilterBinaryExpression.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.FilterUnaryExpression">
+            <summary>
+            Describes a concrete filter expression.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.FilterUnaryExpression.FilterPath">
+            <summary>
+            Path of the data item used get the value to which the expression will be applied.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.FilterUnaryExpression.FilterOperation">
+            <summary>
+            The current filter operation: e.g. for a text filter, the
+            FilterOperation is one of: 'Contains', 'StartsWith'.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.FilterUnaryExpression.Value">
+            <summary>
+            The filter info value used when applying the filter.
+            e.g. when creating a text filter: text.StartsWith("AAA"), the
+            Value would be "AAA".
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.FilterUnaryExpression.#ctor(System.String,C1.CollectionView.FilterOperation,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.FilterUnaryExpression"/> class.
+            </summary>
+            <param name="filterPath">The path of the data item to which the filter will be applied.</param>
+            <param name="filterOperation">The filter operation.</param>
+            <param name="value">The value to be filtered.</param>
+        </member>
+        <member name="M:C1.CollectionView.FilterUnaryExpression.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.FilterUnaryExpression`1">
+            <summary>
+            Describes a concrete filter expression.
+            </summary>
+            <typeparam name="T">The type of the data item.</typeparam>
+        </member>
+        <member name="M:C1.CollectionView.FilterUnaryExpression`1.#ctor(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},C1.CollectionView.FilterOperation,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.FilterUnaryExpression`1"/> class.
+            </summary>
+            <param name="filterPath">The path of the data item to which the filter will be applied.</param>
+            <param name="filterOperation">The filter operation.</param>
+            <param name="value">The value to be filtered.</param>
+        </member>
+        <member name="T:C1.CollectionView.FilterPredicateExpression">
+            <summary>
+            Filter expresssion which takes a predicate as the filtering function.
+            </summary>
+            <remarks>
+            Because predicates are opaque to the collection views, this kind of filterings can not be passed to servers.
+            </remarks>
+        </member>
+        <member name="M:C1.CollectionView.FilterPredicateExpression.#ctor(System.Func{System.Object,System.Boolean})">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.FilterPredicateExpression"/> class.
+            </summary>
+            <param name="predicate">The predicate.</param>
+        </member>
+        <member name="P:C1.CollectionView.FilterPredicateExpression.Predicate">
+            <summary>
+            Gets the predicate which will filter the collection.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.FilterCombination">
+            <summary>
+            Represents the valid filter combinations to create a filter expression.
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterCombination.And">
+            <summary>
+            An And logical operation is applied to the filters
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterCombination.Or">
+            <summary>
+            A Or logical operation is applied to the filters
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.FilterOperation">
+            <summary>
+            Represents the valid operations.
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterOperation.Equal">
+            <summary>
+            Represents an equal operation
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterOperation.NotEqual">
+            <summary>
+            Represents a not equal operation
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterOperation.GreaterThan">
+            <summary>
+            Represents a greater than operation
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterOperation.GreaterThanOrEqual">
+            <summary>
+            Represents a greater than or equal operation
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterOperation.LessThan">
+            <summary>
+            Represents a less than operation
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterOperation.LessThanOrEqual">
+            <summary>
+            Represents a less than or equal operation
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterOperation.EqualText">
+            <summary>
+            Represents an equal text operation
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterOperation.NotEqualText">
+            <summary>
+            Represents a not equal text operation
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterOperation.Contains">
+            <summary>
+            Represents a contains operation
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterOperation.StartsWith">
+            <summary>
+            Represents a starts with operation
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterOperation.EndsWith">
+            <summary>
+            Represents a ends with operation
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.FilterOperation.IsOneOf">
+            <summary>
+            Represents an is one of operation
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.GroupDescription">
+            <summary>
+            Describes a group operation.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.GroupDescription.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.GroupDescription"/> class.
+            </summary>
+            <param name="groupPath">The path of the data item to which the group operation will be applied.</param>
+        </member>
+        <member name="M:C1.CollectionView.GroupDescription.#ctor(System.String,C1.CollectionView.GroupDirection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.GroupDescription"/> class.
+            </summary>
+            <param name="groupPath">The path of the data item to which the group operation will be applied.</param>
+            <param name="direction">The direction of the group operation.</param>
+        </member>
+        <member name="P:C1.CollectionView.GroupDescription.GroupPath">
+            <summary>
+            Path of the data item to which the group operation will be applied.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.GroupDescription.Direction">
+            <summary>
+            Direction of the group operation.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.GroupDirection">
+            <summary>
+            Direction of the group operation.
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.GroupDirection.Ascending">
+            <summary>
+            The group will be performed in ascending mode.
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.GroupDirection.Descending">
+            <summary>
+            The group will be performed in descending mode.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.ICollectionView`1">
+            <summary>
+            Abstracts the transformation of a data source into a collection view.
+            </summary>
+            <typeparam name="T">The type of the items in the collection.</typeparam>
+        </member>
+        <member name="M:C1.CollectionView.ICollectionView`1.GetItemType">
+            <summary>
+            Gets the type of the item.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.ICollectionViewGroup`2">
+            <summary>
+            Abstracts a group of <see cref="T:C1.CollectionView.ICollectionView`1"/>.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.ICollectionViewGroup`2.Group">
+            <summary>
+            Gets the key that identifies the group.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.ISupportCurrency">
+            <summary>
+            Specifies a calling contract for collection views that support currency management.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.ISupportCurrency.CurrentPosition">
+            <summary>
+            Gets the current position.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.ISupportCurrency.MoveCurrentToPosition(System.Int32)">
+            <summary>
+            Sets the item at the specified index in the view as the current item.
+            </summary>
+            <param name="index">The index.</param>
+        </member>
+        <member name="E:C1.CollectionView.ISupportCurrency.CurrentChanging">
+            <summary>
+            Occurs when the current item is changing.
+            </summary>
+        </member>
+        <member name="E:C1.CollectionView.ISupportCurrency.CurrentChanged">
+            <summary>
+            Occurs after the current item changed.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.ISupportEditing">
+            <summary>
+            Specifies a calling contract for collection views that support editing.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.ISupportEditing.CanInsert(System.Int32)">
+            <summary>
+            Determines whether a new item can be inserted in the collection at the specified index.
+            </summary>
+            <param name="index">The index where the items would be inserted.</param>
+        </member>
+        <member name="M:C1.CollectionView.ISupportEditing.CanRemove(System.Int32)">
+            <summary>
+            Determines whether the item at the specified index can be removed from the collection.
+            </summary>
+            <param name="index">The index of the item that would be removed.</param>
+        </member>
+        <member name="M:C1.CollectionView.ISupportEditing.CanReplace(System.Int32)">
+            <summary>
+            Determines whether the item at the specified index can be replaced in the collection.
+            </summary>
+            <param name="index">The index of the item that would be replaced.</param>
+        </member>
+        <member name="M:C1.CollectionView.ISupportEditing.CanMove(System.Int32,System.Int32)">
+            <summary>
+            Determines whether the item at fromIndex can be moved to toIndex.
+            </summary>
+            <param name="fromIndex">The original index.</param>
+            <param name="toIndex">The destination index.</param>
+        </member>
+        <member name="M:C1.CollectionView.ISupportEditing.InsertAsync(System.Int32,System.Object)">
+            <summary>
+            Inserts the specified item at the specified index in the collection.
+            </summary>
+            <param name="index">The index where the item will be inserted.</param>
+            <param name="item">The item to be inserted.</param>
+        </member>
+        <member name="M:C1.CollectionView.ISupportEditing.RemoveAsync(System.Int32)">
+            <summary>
+            Removes the item at the specified index from the collection.
+            </summary>
+            <param name="index">The index.</param>
+        </member>
+        <member name="M:C1.CollectionView.ISupportEditing.ReplaceAsync(System.Int32,System.Object)">
+            <summary>
+            Replaces the item at the specified index by the specified item.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="item">The item.</param>
+        </member>
+        <member name="M:C1.CollectionView.ISupportEditing.MoveAsync(System.Int32,System.Int32)">
+            <summary>
+            Moves an item from the specified position to the new one.
+            </summary>
+            <param name="fromIndex">From index.</param>
+            <param name="toIndex">To index.</param>
+        </member>
+        <member name="T:C1.CollectionView.ISupportFiltering">
+            <summary>
+            Specifies a calling contract for collection views that support filtering.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.ISupportFiltering.CanFilter(C1.CollectionView.FilterExpression)">
+            <summary>
+            Returns whether the collection view is able to filter the specified expression.
+            </summary>
+            <param name="filterExpression">The filter expression that determine how the data would be filtered.</param>
+        </member>
+        <member name="P:C1.CollectionView.ISupportFiltering.FilterExpression">
+            <summary>
+            Gets the filter expression applied to the data.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.ISupportFiltering.FilterAsync(C1.CollectionView.FilterExpression)">
+            <summary>
+            Filters the data using specified filter expression.
+            </summary>
+            <param name="filterExpression">The filter expression applied to the data.</param>
+        </member>
+        <member name="E:C1.CollectionView.ISupportFiltering.FilterChanged">
+            <summary>
+            Raised after a filter operation was performed.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.ISupportGrouping">
+            <summary>
+            Specifies a calling contract for collection views that support grouping.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.ISupportGrouping.CanGroup(C1.CollectionView.GroupDescription[])">
+            <summary>
+            Returns whether the collection view is able to group the specified group descriptions.
+            </summary>
+            <param name="groupDescriptions">The group descriptions that determine how the data would be grouped.</param>
+        </member>
+        <member name="P:C1.CollectionView.ISupportGrouping.GroupDescriptions">
+            <summary>
+            Gets the group descriptions applied to the data.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.ISupportGrouping.GroupAsync(C1.CollectionView.GroupDescription[])">
+            <summary>
+            Groups the collection view according to the specified group descriptions.
+            </summary>
+            <param name="groupDescriptions">The group descriptions that determine how the data will be grouped.</param>
+        </member>
+        <member name="E:C1.CollectionView.ISupportGrouping.GroupChanged">
+            <summary>
+            Raised after a grouping operation was performed.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.ISupportIncrementalLoading">
+            <summary>
+            Specifies a calling contract for collection views that support incremental loading.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.ISupportIncrementalLoading.HasMoreItems">
+            <summary>
+            Gets a value that indicates whether more items can be loaded.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.ISupportIncrementalLoading.LoadMoreItemsAsync(System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <summary>
+            Loads more items.
+            </summary>
+            <param name="count">Specifies the desired number of items to be loaded.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+        </member>
+        <member name="T:C1.CollectionView.ISupportRefreshing">
+            <summary>
+            Specifies a calling contract for collection views that support refreshing.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.ISupportRefreshing.CanRefresh">
+            <summary>
+            Determines whether the collection can be refreshed.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.ISupportRefreshing.RefreshAsync(System.Threading.CancellationToken)">
+            <summary>
+            Called when the data needs to be refreshed.
+            </summary>
+            <param name="cancellationToken">The cancellation token.</param>
+        </member>
+        <member name="T:C1.CollectionView.ISupportSorting">
+            <summary>
+            Specifies a calling contract for collection views that support sorting.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.ISupportSorting.CanSort(C1.CollectionView.SortDescription[])">
+            <summary>
+            Returns whether the collection view is able to sort the specified sort descriptions.
+            </summary>
+            <param name="sortDescriptions">The sort descriptions to be checked whether the collection view can be sorted.</param>
+        </member>
+        <member name="P:C1.CollectionView.ISupportSorting.SortDescriptions">
+            <summary>
+            Gets the sort descriptions applied to the data.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.ISupportSorting.SortAsync(C1.CollectionView.SortDescription[])">
+            <summary>
+            Sorts the collection view according to the specified sort descriptions.
+            </summary>
+            <param name="sortDescriptions">The sort descriptions that determine how the data will be sort.</param>
+        </member>
+        <member name="E:C1.CollectionView.ISupportSorting.SortChanged">
+            <summary>
+            Raised after a sort operation was performed.
+            </summary>
+        </member>
+        <member name="T:C1.CollectionView.SortDescription">
+            <summary>
+            Describes a sort operation.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.SortDescription.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.SortDescription"/> class.
+            </summary>
+            <param name="sortPath">The path of the data item to which the sort operation will be applied.</param>
+        </member>
+        <member name="M:C1.CollectionView.SortDescription.#ctor(System.String,C1.CollectionView.SortDirection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.CollectionView.SortDescription"/> class.
+            </summary>
+            <param name="sortPath">The path of the data item to which the sort operation will be applied.</param>
+            <param name="direction">The direction of the sort operation.</param>
+        </member>
+        <member name="P:C1.CollectionView.SortDescription.SortPath">
+            <summary>
+            Path of the data item to which the sort operation will be applied.
+            </summary>
+        </member>
+        <member name="P:C1.CollectionView.SortDescription.Direction">
+            <summary>
+            Direction of the sort operation.
+            </summary>
+        </member>
+        <member name="M:C1.CollectionView.SortDescription.GetSortExpression``1">
+            <summary>
+            Gets the sorting expression.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.CollectionView.SortDirection">
+            <summary>
+            Direction of the sort operation.
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.SortDirection.Ascending">
+            <summary>
+            The sort will be performed in ascending mode.
+            </summary>
+        </member>
+        <member name="F:C1.CollectionView.SortDirection.Descending">
+            <summary>
+            The sort will be performed in descending mode.
+            </summary>
+        </member>
+        <member name="T:C1.Core.AsyncEventArgs">
+            <summary>
+            Provides event data for asynchronous events.
+            </summary>
+        </member>
+        <member name="P:C1.Core.AsyncEventArgs.Awaiter">
+            <summary>
+            Gets the deferrals awaiter.
+            </summary>
+        </member>
+        <member name="M:C1.Core.AsyncEventArgs.GetDeferral">
+            <summary>
+            Gets the deferral.
+            </summary>
+            <remarks>
+            The event won't finish until all the deferrals call the comlete method.
+            </remarks>
+        </member>
+        <member name="M:C1.Core.AsyncEventArgs.WaitDeferralsAsync">
+            <summary>
+            Waits until all the deferrals are complete.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Core.AsyncEventArgsDeferralsAwaiter">
+            <summary>
+            Deferrals awaiter used to wait for the deferrals of an async event.
+            </summary>
+        </member>
+        <member name="M:C1.Core.AsyncEventArgsDeferralsAwaiter.GetDeferral">
+            <summary>
+            Gets the deferral.
+            </summary>
+            <remarks>
+            The event won't finish until all the deferrals call the comlete method.
+            </remarks>
+        </member>
+        <member name="M:C1.Core.AsyncEventArgsDeferralsAwaiter.WaitDeferralsAsync">
+            <summary>
+            Waits until all the deferrals are complete.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Core.AsyncEventArgsDeferral">
+            <summary>
+            Deferral used to block the event until <see cref="M:C1.Core.AsyncEventArgsDeferral.Complete"/> method is called. 
+            </summary>
+        </member>
+        <member name="M:C1.Core.AsyncEventArgsDeferral.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.Core.AsyncEventArgsDeferral"/> class.
+            </summary>
+        </member>
+        <member name="M:C1.Core.AsyncEventArgsDeferral.Complete">
+            <summary>
+            Notifies the event the handler is ready to continue.
+            </summary>
+        </member>
+        <member name="M:C1.Core.ObjectEx.GetPropertyValue(System.Object,System.String)">
+            <summary>
+            Gets the value of a property or property path of the specified object.
+            </summary>
+            <remarks>
+            This extension DON'T evaluate ICustomTypeDescriptor interface. 
+            Use generic extension with the same name if you are evaluating the path 
+            of a DataTable or any object that implements ICustomTypeDescriptor.
+            </remarks>
+            <param name="target">The target object.</param>
+            <param name="path">The name of the property or the property path.</param>
+            <returns>The value contained in the property</returns>
+        </member>
+        <member name="M:C1.Core.ObjectEx.SetPropertyValue``1(System.Object,System.String,``0)">
+            <summary>
+            Sets the value of a property or property path of the specified object.
+            </summary>
+            <typeparam name="T">Type of the property to set.</typeparam>
+            <param name="target">Object that contains the property.</param>
+            <param name="path">Name or path of the property that contains the value.</param>
+            <param name="value">New value for the property.</param>
+        </member>
+        <member name="T:C1.Core.TypeEx">
+            <summary>
+            The <see cref="T:C1.Core.TypeEx"/> class provides useful extension methods for the <see cref="T:System.Type"/> class.
+            </summary>
+        </member>
+        <member name="M:C1.Core.TypeEx.New``1(System.Type)">
+            <summary>
+            Creates a new instance of this type using the default constructor.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="type">The type.</param>
+            <returns>A new instance of type T.</returns>
+        </member>
+        <member name="M:C1.Core.TypeEx.New(System.Type)">
+            <summary>
+            Creates a new instance of this type using the default constructor.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>A new instance of type T.</returns>
+        </member>
+        <member name="M:C1.Core.TypeEx.GetDefaultPublicCtor(System.Type)">
+            <summary>
+            Returns default public instance parameter-less constructor for the specified type.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The default constructor for the specified type if it exists; Null otherwise.</returns>
+        </member>
+        <member name="M:C1.Core.TypeEx.New``1(System.Type,System.Action{``0})">
+            <summary>
+            Creates a new instance of this type using the default constructor.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="type">The type.</param>
+            <param name="initializers">The initializers.</param>
+            <returns>A new instance of type T</returns>
+        </member>
+        <member name="M:C1.Core.TypeEx.GetNonNullableType(System.Type)">
+            <summary>
+            Returns the underlying type of a nullable type:
+            e.g. if Type = double?, then returns double.
+            </summary>
+            <param name="type">Type.</param>
+            <returns>The underlying type.</returns>
+        </member>
+        <member name="M:C1.Core.TypeEx.IsNullableType(System.Type)">
+            <summary>
+            Returns true if the type is a nullable type.
+            </summary>
+            <param name="type">Type.</param>
+            <returns>True if the type is nullable.</returns>
+        </member>
+        <member name="M:C1.Core.TypeEx.IsNumeric(System.Type)">
+            <summary>
+            Returns true if the type is any of the numeric data types:
+            double, float, int, uint, long, ulong, short, ushort, sbyte, byte and decimal.
+            </summary>
+            <param name="type">Type.</param>
+            <returns>True if the type is numeric.</returns>
+        </member>
+        <member name="M:C1.Core.TypeEx.IsNumericIntegral(System.Type)">
+            <summary>
+            Returns true if the type is any of the integral numeric data types:
+            int, uint, long, ulong, short, ushort, sbyte and byte.
+            </summary>
+            <param name="type">Type.</param>
+            <returns>True if the type is an integral numeric.</returns>
+        </member>
+        <member name="M:C1.Core.TypeEx.IsNumericIntegralSigned(System.Type)">
+            <summary>
+            Returns true if the type is any of the integral signed numeric data types:
+            int, long, short and sbyte.
+            </summary>
+            <param name="type">Type.</param>
+            <returns>True if the type is a signed integral numeric.</returns>
+        </member>
+        <member name="M:C1.Core.TypeEx.IsNumericIntegralUnsigned(System.Type)">
+            <summary>
+            Returns true if the type is any of the integral unsigned numeric data types:
+            uint, ulong, ushort and byte.
+            </summary>
+            <param name="type">Type.</param>
+            <returns>True if the type is an unsigned integral numeric.</returns>
+        </member>
+        <member name="M:C1.Core.TypeEx.IsNumericNonIntegral(System.Type)">
+            <summary>
+            Returns true if the type is any of the numeric non-integral data types:
+            double, float and decimal.
+            </summary>
+            <param name="type">Type.</param>
+            <returns>True if the type is a non-integral numeric.</returns>
+        </member>
+        <member name="M:C1.Core.TypeEx.GetEnumValues``1(System.Type)">
+            <summary>
+            Returns the values of an Enum type (Type.IsEnum == true).
+            </summary>
+            <typeparam name="T">Enum type.</typeparam>
+            <param name="enumType">Enum type.</param>
+            <returns>The list of values for that enum type.</returns>
+        </member>
+    </members>
+</doc>

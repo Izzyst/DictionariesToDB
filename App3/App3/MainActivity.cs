@@ -6,7 +6,8 @@ using Android.Preferences;
 using App3.LevelStrategy;
 using Android.Views;
 using App3.Resources.DataHelper;
-
+using System.Collections.Generic;
+using System;
 
 namespace App3
 {
@@ -14,7 +15,11 @@ namespace App3
     public class MainActivity : Activity
     {
         public static bool isWorking;
-        TextView scores;
+        TextView scoresText;
+        TextView dictionaryText;
+        TextView correctText;
+        TextView wrongText;
+        TextView textView;
 
         public static string level;
         ISharedPreferences prefs;
@@ -25,7 +30,12 @@ namespace App3
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Main);
-            scores = FindViewById<TextView>(Resource.Id.textView1);
+            scoresText = FindViewById<TextView>(Resource.Id.textView1);
+            dictionaryText = FindViewById<TextView>(Resource.Id.textView3);
+            correctText = FindViewById<TextView>(Resource.Id.textView2);
+            wrongText = FindViewById<TextView>(Resource.Id.textView4);
+            //textView = FindViewById<TextView>(Resource.Id.textView5);
+            
 
             int isShown = 0;
             ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(this);
@@ -35,6 +45,14 @@ namespace App3
 
             Database ob = new Database();
             var scoresResults = ob.GetScoreResults();
+            List<string> list = new List<string>();
+            if (scoresResults != null)
+            {
+                foreach (var item in scoresResults)
+                {
+                    list.Add(item.Scores + ", " + item.Answers);
+                }
+            }          
 
         }
 
@@ -70,8 +88,22 @@ namespace App3
         protected override void OnResume()
         {
             base.OnResume();
+            Database bd = new Database();
             if (GetSharedPreferences("isDbCreated", isDbCreated) == 1)
-                scores.Text = GettingItemsFromDatabase.GetScoresFromDatabase();
+            {
+                var correct = bd.GetAmountOfCorrectAnswers();
+                var wrong = bd.GetAmountOfWrongAnswers();
+                var sumOfPoints = correct + wrong;
+                double amount = 0;
+                if (sumOfPoints != 0)
+                    amount = Math.Round((double)correct / sumOfPoints, 2)*100;
+                scoresText.Text = " Wynik:         " + amount.ToString() + "%";
+                correctText.Text = "Poprawnie: " + System.Environment.NewLine +"     "+ bd.GetAmountOfCorrectAnswers().ToString();
+                wrongText.Text = "        Źle: " + System.Environment.NewLine +"         "+ bd.GetAmountOfWrongAnswers().ToString();
+                string language = GetSharedPreferences("language_data");
+                dictionaryText.Text = "Słownik: " + language;
+            }
+
             bool firstRun = prefs.GetBoolean("firstRun", true);
             if (firstRun)
             {
@@ -79,7 +111,6 @@ namespace App3
                 editor.PutBoolean("firstRun", false);
                 // editor.Commit();    // applies changes synchronously on older APIs
                 editor.Apply();        // applies changes asynchronously on newer APIs
-                Database bd = new Database();
                 bd.CreateScoresTable();
                 Intent intent = new Intent(Application.Context, typeof(InfoActivity));
                 intent.SetFlags(ActivityFlags.NewTask);
@@ -95,6 +126,13 @@ namespace App3
             return levelData;
         }
 
+        public string GetSharedPreferences(string keyName)
+        {
+            //getting data from shared prefs
+            prefs = PreferenceManager.GetDefaultSharedPreferences(this.ApplicationContext);
+            string levelData = prefs.GetString(keyName, level);
+            return levelData;
+        }
     }
 
 }

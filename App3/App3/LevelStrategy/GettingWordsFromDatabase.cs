@@ -41,11 +41,18 @@ namespace App3.LevelStrategy
             Database db;
             try
             {
-                using (WebClient wc = new WebClient())
+                //using (WebClient wc = new WebClient())
+                //{
+                //string url = "http://izzyst-001-site1.etempurl.com/Word/GetWords?language=" + language;
+                //json = wc.DownloadString(url);
+                AssetManager assets = Application.Context.Assets;// Asset umożliwia otwieranie plików na systemie android
+                string nameOfFile = "";
+                if (language == "pl") nameOfFile = "writepl.txt";
+                else nameOfFile = "write.txt";
+                using (StreamReader sr = new StreamReader(assets.Open(nameOfFile)))
                 {
-                    string url = "http://izzyst-001-site1.etempurl.com/Word/GetWords?language=" + language;
-                    json = wc.DownloadString(url);
-                    List<Word> items = JsonConvert.DeserializeObject<List<Word>>(json);
+                    json = sr.ReadToEnd();
+                    List<Words> items = JsonConvert.DeserializeObject<List<Words>>(json);
                     db = new Database();
                     db.DropTable();
                     db.CreateDatabase();
@@ -54,18 +61,18 @@ namespace App3.LevelStrategy
                     {
                         WordTable wordTable = new WordTable();
                         wordTable.IdWordJson = item.Id;
-                        wordTable.W = FirstCharToUpper(item.W);
-                        wordTable.Def = FirstCharToUpper(item.Def);
-                        wordTable.Lang = item.Lang;
+                        wordTable.W = FirstCharToUpper(item.Word);
+                        wordTable.Def = FirstCharToUpper(item.Defs[0]);
+                        wordTable.Lang = item.Language;
                         wordTable.Score = 0;
                         wordTable.NumberOfAnswers = 0;
-                      
+
                         db.InsertIntoTableWord(wordTable);
                     }
-                }              
+                }
                 return 1;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return 0;
             }
@@ -131,7 +138,7 @@ namespace App3.LevelStrategy
             //string json;
             
             AssetManager assets = Application.Context.Assets;// Asset umożliwia otwieranie plików na systemie android
-            using (StreamReader sr = new StreamReader(assets.Open("pl.json")))
+            using (StreamReader sr = new StreamReader(assets.Open("writepl.txt")))
             {
                 json = sr.ReadToEnd();
                 dynamic items = JsonConvert.DeserializeObject<List<Word>>(json);
